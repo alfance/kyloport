@@ -22,10 +22,6 @@
     "webpack": "^1.12.2",
     "webpack-dev-server": "^1.12.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/alfance/kylo_port.git"
-  },
   "bugs": {
     "url": "https://github.com/ColeMurray/Todo-Tutorial/issues"
   },
