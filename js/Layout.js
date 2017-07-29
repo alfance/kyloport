@@ -1,13 +1,12 @@
 import React from 'react'
-import Content from './components/Content'
 import Nav from './components/Navbar/Nav'
 
 class Layout extends React.Component {
   render () {
     return (
-      <div>
+      <div className="page-layout">
         <Nav />
-        <Content />
+        {this.props.children}
       </div>
     )
   }

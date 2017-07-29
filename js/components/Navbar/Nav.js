@@ -16,9 +16,12 @@ export default class Nav extends React.Component {
       return <NavItem key={each.id} {...each} />
     })
     return (
-      <div className='nav'>
+      <div className='nav col-lg-5'>
         <p>KX</p>
         {navComponents}
+        <i className ='linkedin1' />
+        <i className ='mail' />
+        <i className ='twitter1' />
       </div>
     )
   }

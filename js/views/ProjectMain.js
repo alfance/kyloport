@@ -1,11 +1,16 @@
 import React from 'react'
+import PortfolioLayout from '../components/Portfolio/PortfolioLayout'
 
-class Main extends React.Component {
+class ProjectMain extends React.Component {
   render () {
     return (
-      <h1> main </h1>
+      <div>
+        <h1> Hello, Kylo Xue here. </h1>
+        <p>Nulla pharetra augue magna, et egestas nulla pellentesque tempor. Duis mattis pulvinar ultrices. Proin sit amet ultricies neque, iaculis iaculis lorem.</p>
+        <PortfolioLayout />
+      </div>
     )
   }
 }
 
-export default Main
+export default ProjectMain

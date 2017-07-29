@@ -1,0 +1,871 @@
+@font-face {
+  font-family: 'Areo-Icon-Font';
+  src:
+    url('../assets/icon-font/Areo-Icon-Font.ttf') format('truetype'),
+    url('../assets/icon-font/Areo-Icon-Font.woff') format('woff'),
+    url('../assets/icon-font/Areo-Icon-Font.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$iconSmall:24px;
+
+
+
+
+$iconMedium: 44px;
+
+
+
+
+$iconLarge :68px;
+
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Areo-Icon-Font', 'Source Sans Pro', sans-serif;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  position:relative;
+  top:17%;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.hdri:before {
+  content: "\e9ca";
+}
+.animation2:before {
+  content: "\e9cb";
+}
+.annotation2:before {
+  content: "\e9cc";
+}
+.behaviour-animation-parallel:before {
+  content: "\e907";
+}
+.behaviour-animation:before {
+  content: "\e908";
+}
+.behaviour-animtion-sequence:before {
+  content: "\e909";
+}
+.behaviour-divider1:before {
+  content: "\e90a";
+}
+.behaviour-divider2:before {
+  content: "\e90b";
+}
+.behaviour-object1:before {
+  content: "\e90c";
+  color: #fff;
+}
+.behaviour-object2:before {
+  content: "\e90d";
+}
+.behaviour-trigger:before {
+  content: "\e90e";
+}
+.fadein:before {
+  content: "\e90f";
+}
+.fadeOut:before {
+  content: "\e910";
+}
+.bloom:before {
+  content: "\e9ef";
+}
+.cloudy:before {
+  content: "\e9f0";
+}
+.color-picker:before {
+  content: "\e9f1";
+}
+.deliver:before {
+  content: "\e9f2";
+}
+.exit:before {
+  content: "\e9f3";
+}
+.figure:before {
+  content: "\e9f4";
+}
+.hitchcock:before {
+  content: "\e9f5";
+}
+.shopping-add:before {
+  content: "\e9f6";
+}
+.shopping-num:before {
+  content: "\e9f7";
+}
+.shoppingCart:before {
+  content: "\e9f8";
+}
+.star:before {
+  content: "\e9f9";
+}
+.ungroup2:before {
+  content: "\e9fa";
+}
+.video3:before {
+  content: "\e9fb";
+}
+.slack1:before {
+  content: "\e9ed";
+}
+.slack2:before {
+  content: "\e9ee";
+}
+.fog:before {
+  content: "\e9ec";
+}
+.crystal:before {
+  content: "\e9ea";
+}
+.question:before {
+  content: "\e9eb";
+}
+.curve:before {
+  content: "\e9e3";
+}
+.group:before {
+  content: "\e9e4";
+}
+.out:before {
+  content: "\e9e5";
+}
+.sharp:before {
+  content: "\e9e6";
+}
+.skull:before {
+  content: "\e9e7";
+}
+.ungroup:before {
+  content: "\e9e8";
+}
+.user:before {
+  content: "\e9e9";
+}
+.circle-plain:before {
+  content: "\e9ce";
+}
+.view2:before {
+  content: "\e9cd";
+}
+.close2:before {
+  content: "\e9cf";
+}
+.fork:before {
+  content: "\e9d0";
+}
+.left-lick:before {
+  content: "\e9d1";
+}
+.mouse-wheel:before {
+  content: "\e9d2";
+}
+.next2:before {
+  content: "\e9d3";
+}
+.panning:before {
+  content: "\e9d4";
+}
+.paperplane:before {
+  content: "\e9d5";
+}
+.perspective:before {
+  content: "\e9d6";
+}
+.previous2:before {
+  content: "\e9d7";
+}
+.reset:before {
+  content: "\e9d8";
+}
+.righ-click:before {
+  content: "\e9d9";
+}
+.slider:before {
+  content: "\e9da";
+}
+.square-plain:before {
+  content: "\e9db";
+}
+.swipe1:before {
+  content: "\e9dc";
+}
+.swipe2:before {
+  content: "\e9dd";
+}
+.unlock2:before {
+  content: "\e9de";
+}
+.up:before {
+  content: "\e9df";
+}
+.view-off:before {
+  content: "\e9e0";
+}
+.waypoing1:before {
+  content: "\e9e1";
+}
+.waypoing2:before {
+  content: "\e9e2";
+}
+.google1:before {
+  content: "\e950";
+}
+.google2:before {
+  content: "\e951";
+}
+.add:before {
+  content: "\e911";
+}
+.add2:before {
+  content: "\e912";
+}
+.alert:before {
+  content: "\e913";
+}
+.alignCentre:before {
+  content: "\e914";
+}
+.alignLeft:before {
+  content: "\e915";
+}
+.alignRight:before {
+  content: "\e916";
+}
+.ambientLight:before {
+  content: "\e917";
+}
+.angle:before {
+  content: "\e918";
+}
+.animation:before {
+  content: "\e919";
+}
+.annotation:before {
+  content: "\e91a";
+}
+.areaLight:before {
+  content: "\e91b";
+}
+.audio:before {
+  content: "\e91c";
+}
+.audioBG:before {
+  content: "\e91d";
+}
+.audioLocation:before {
+  content: "\e91e";
+}
+.audiovisual:before {
+  content: "\e91f";
+}
+.back:before {
+  content: "\e920";
+}
+.background:before {
+  content: "\e921";
+}
+.behaviour:before {
+  content: "\e922";
+}
+.bold:before {
+  content: "\e923";
+}
+.building:before {
+  content: "\e924";
+}
+.circle:before {
+  content: "\e925";
+}
+.circle2 .path1:before {
+  content: "\e926";
+  color: rgb(203, 203, 203);
+}
+.circle2 .path2:before {
+  content: "\e927";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.circle2 .path3:before {
+  content: "\e928";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.circle2 .path4:before {
+  content: "\e929";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.circle2 .path5:before {
+  content: "\e92a";
+  margin-left: -1em;
+  color: rgb(203, 203, 203);
+}
+.circle2 .path6:before {
+  content: "\e92b";
+  margin-left: -1em;
+  color: rgb(129, 126, 133);
+}
+.circle2 .path7:before {
+  content: "\e92c";
+  margin-left: -1em;
+  color: rgb(203, 203, 203);
+}
+.circle2 .path8:before {
+  content: "\e92d";
+  margin-left: -1em;
+  color: rgb(129, 126, 133);
+}
+.circle2 .path9:before {
+  content: "\e92e";
+  margin-left: -1em;
+  color: rgb(129, 126, 133);
+}
+.click:before {
+  content: "\e92f";
+}
+.clone:before {
+  content: "\e930";
+}
+.close:before {
+  content: "\e931";
+}
+.collision:before {
+  content: "\e932";
+}
+.comment:before {
+  content: "\e933";
+}
+.condense2:before {
+  content: "\e934";
+}
+.cone1:before {
+  content: "\e935";
+}
+.cone2 .path1:before {
+  content: "\e936";
+  color: rgb(255, 255, 255);
+}
+.cone2 .path2:before {
+  content: "\e937";
+  margin-left: -1em;
+  color: rgb(203, 203, 203);
+}
+.cube1:before {
+  content: "\e938";
+}
+.cube2 .path1:before {
+  content: "\e939";
+  color: rgb(203, 203, 203);
+}
+.cube2 .path2:before {
+  content: "\e93a";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.cube2 .path3:before {
+  content: "\e93b";
+  margin-left: -1em;
+  color: rgb(129, 126, 133);
+}
+.cylinder1:before {
+  content: "\e93c";
+}
+.cylinder2 .path1:before {
+  content: "\e93d";
+  color: rgb(255, 255, 255);
+}
+.cylinder2 .path2:before {
+  content: "\e93e";
+  margin-left: -1em;
+  color: rgb(203, 203, 203);
+}
+.delete:before {
+  content: "\e93f";
+}
+.doubleTab:before {
+  content: "\e940";
+}
+.download:before {
+  content: "\e941";
+}
+.drag:before {
+  content: "\e942";
+}
+.edit:before {
+  content: "\e943";
+}
+.emoji:before {
+  content: "\e944";
+}
+.environment:before {
+  content: "\e945";
+}
+.expand:before {
+  content: "\e946";
+}
+.explode:before {
+  content: "\e947";
+}
+.export:before {
+  content: "\e948";
+}
+.facebook1:before {
+  content: "\e949";
+}
+.facebook2:before {
+  content: "\e94a";
+}
+.file:before {
+  content: "\e94b";
+}
+.files:before {
+  content: "\e94c";
+}
+.filter:before {
+  content: "\e94d";
+}
+.float:before {
+  content: "\e94e";
+}
+.follower:before {
+  content: "\e94f";
+}
+.gravity:before {
+  content: "\e952";
+}
+.help:before {
+  content: "\e953";
+}
+.horizontalScale:before {
+  content: "\e954";
+}
+.hyperLink:before {
+  content: "\e955";
+}
+.iForgot:before {
+  content: "\e956";
+}
+.image:before {
+  content: "\e957";
+}
+.imagePano:before {
+  content: "\e958";
+}
+.instagram1:before {
+  content: "\e959";
+}
+.instagram2:before {
+  content: "\e95a";
+}
+.inZone:before {
+  content: "\e95b";
+}
+.italic:before {
+  content: "\e95c";
+}
+.itemList:before {
+  content: "\e95d";
+}
+.knox:before {
+  content: "\e95e";
+}
+.knox2 .path1:before {
+  content: "\e95f";
+  color: rgb(255, 255, 255);
+}
+.knox2 .path2:before {
+  content: "\e960";
+  margin-left: -1em;
+  color: rgb(203, 203, 203);
+}
+.knox2 .path3:before {
+  content: "\e961";
+  margin-left: -1em;
+  color: rgb(203, 203, 203);
+}
+.knox2 .path4:before {
+  content: "\e962";
+  margin-left: -1em;
+  color: rgb(203, 203, 203);
+}
+.knox2 .path5:before {
+  content: "\e963";
+  margin-left: -1em;
+  color: rgb(203, 203, 203);
+}
+.knox2 .path6:before {
+  content: "\e964";
+  margin-left: -1em;
+  color: rgb(203, 203, 203);
+}
+.knox2 .path7:before {
+  content: "\e965";
+  margin-left: -1em;
+  color: rgb(203, 203, 203);
+}
+.left:before {
+  content: "\e966";
+}
+.linkedin1:before {
+  content: "\e967";
+}
+.linkedin2:before {
+  content: "\e968";
+}
+.location:before {
+  content: "\e969";
+}
+.locationCircle:before {
+  content: "\e96a";
+}
+.lock:before {
+  content: "\e96b";
+}
+.lookAt:before {
+  content: "\e96c";
+}
+.mail:before {
+  content: "\e96d";
+}
+.more:before {
+  content: "\e96e";
+}
+.move:before {
+  content: "\e96f";
+}
+.moveRotate:before {
+  content: "\e970";
+}
+.next:before {
+  content: "\e971";
+}
+.oculus:before {
+  content: "\e972";
+}
+.particle:before {
+  content: "\e973";
+}
+.pause:before {
+  content: "\e974";
+}
+.personView:before {
+  content: "\e975";
+}
+.plane:before {
+  content: "\e976";
+}
+.plane2 .path1:before {
+  content: "\e977";
+  color: rgb(255, 255, 255);
+}
+.plane2 .path2:before {
+  content: "\e978";
+  margin-left: -1em;
+  color: rgb(203, 203, 203);
+}
+.plane2 .path3:before {
+  content: "\e979";
+  margin-left: -1em;
+  color: rgb(203, 203, 203);
+}
+.plane2 .path4:before {
+  content: "\e97a";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.plane2 .path5:before {
+  content: "\e97b";
+  margin-left: -1em;
+  color: rgb(129, 126, 133);
+}
+.plane2 .path6:before {
+  content: "\e97c";
+  margin-left: -1em;
+  color: rgb(129, 126, 133);
+}
+.plane2 .path7:before {
+  content: "\e97d";
+  margin-left: -1em;
+  color: rgb(129, 126, 133);
+}
+.plane2 .path8:before {
+  content: "\e97e";
+  margin-left: -1em;
+  color: rgb(203, 203, 203);
+}
+.plane2 .path9:before {
+  content: "\e97f";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.play:before {
+  content: "\e980";
+}
+.pointLight:before {
+  content: "\e981";
+}
+.present:before {
+  content: "\e982";
+}
+.presentOff:before {
+  content: "\e983";
+}
+.presentON:before {
+  content: "\e984";
+}
+.previous:before {
+  content: "\e985";
+}
+.Proximity:before {
+  content: "\e986";
+}
+.psvr:before {
+  content: "\e987";
+}
+.redo:before {
+  content: "\e988";
+}
+.report:before {
+  content: "\e989";
+}
+.right:before {
+  content: "\e98a";
+}
+.rotate:before {
+  content: "\e98b";
+}
+.save:before {
+  content: "\e98c";
+}
+.scale:before {
+  content: "\e98d";
+}
+.search:before {
+  content: "\e98e";
+}
+.shake:before {
+  content: "\e98f";
+}
+.share:before {
+  content: "\e990";
+}
+.shutDown:before {
+  content: "\e991";
+}
+.skybox:before {
+  content: "\e992";
+}
+.skydome:before {
+  content: "\e993";
+}
+.slidePath:before {
+  content: "\e994";
+}
+.snap:before {
+  content: "\e995";
+}
+.sound:before {
+  content: "\e996";
+}
+.sphere:before {
+  content: "\e997";
+}
+.sphere2 .path1:before {
+  content: "\e998";
+  color: rgb(255, 255, 255);
+}
+.sphere2 .path2:before {
+  content: "\e999";
+  margin-left: -1em;
+  color: rgb(203, 203, 203);
+}
+.spotlight:before {
+  content: "\e99a";
+}
+.star1:before {
+  content: "\e99b";
+}
+.star2:before {
+  content: "\e99c";
+}
+.sunlight:before {
+  content: "\e99d";
+}
+.swap:before {
+  content: "\e99e";
+}
+.swipe:before {
+  content: "\e99f";
+}
+.tag:before {
+  content: "\e9a0";
+}
+.teapot:before {
+  content: "\e9a1";
+}
+.teapot2 .path1:before {
+  content: "\e9a2";
+  color: rgb(255, 255, 255);
+}
+.teapot2 .path2:before {
+  content: "\e9a3";
+  margin-left: -1em;
+  color: rgb(203, 203, 203);
+}
+.teleport:before {
+  content: "\e9a4";
+}
+.text:before {
+  content: "\e9a5";
+}
+.texture1:before {
+  content: "\e9a6";
+}
+.texture2:before {
+  content: "\e9a7";
+}
+.texture3:before {
+  content: "\e9a8";
+}
+.texture4:before {
+  content: "\e9a9";
+}
+.timer:before {
+  content: "\e9aa";
+}
+.torus:before {
+  content: "\e9ab";
+}
+.torus2 .path1:before {
+  content: "\e9ac";
+  color: rgb(255, 255, 255);
+}
+.torus2 .path2:before {
+  content: "\e9ad";
+  margin-left: -1em;
+  color: rgb(203, 203, 203);
+}
+.torus2 .path3:before {
+  content: "\e9ae";
+  margin-left: -1em;
+  color: rgb(203, 203, 203);
+}
+.treasure:before {
+  content: "\e9af";
+}
+.tri1:before {
+  content: "\e9b0";
+}
+.tri2 .path1:before {
+  content: "\e9b1";
+  color: rgb(255, 255, 255);
+}
+.tri2 .path2:before {
+  content: "\e9b2";
+  margin-left: -1em;
+  color: rgb(129, 126, 133);
+}
+.tri2 .path3:before {
+  content: "\e9b3";
+  margin-left: -1em;
+  color: rgb(203, 203, 203);
+}
+.triangle:before {
+  content: "\e9b4";
+}
+.triangle2:before {
+  content: "\e9b5";
+  color: #fff;
+}
+.trigger:before {
+  content: "\e9b6";
+}
+.twitter1:before {
+  content: "\e9b7";
+}
+.twitter2:before {
+  content: "\e9b8";
+}
+.underline:before {
+  content: "\e9b9";
+}
+.undo:before {
+  content: "\e9ba";
+}
+.unlock:before {
+  content: "\e9bb";
+}
+.upload:before {
+  content: "\e9bc";
+}
+.url:before {
+  content: "\e9bd";
+}
+.verticalScale:before {
+  content: "\e9be";
+}
+.video2:before {
+  content: "\e9bf";
+}
+.video360:before {
+  content: "\e9c0";
+}
+.videoDepth:before {
+  content: "\e9c1";
+}
+.view:before {
+  content: "\e9c2";
+}
+.volume:before {
+  content: "\e9c3";
+}
+.vr:before {
+  content: "\e9c4";
+}
+.web:before {
+  content: "\e9c5";
+}
+.wechat1:before {
+  content: "\e9c6";
+}
+.wechat2:before {
+  content: "\e9c7";
+}
+.windowFull:before {
+  content: "\e9c8";
+}
+.windowPartial:before {
+  content: "\e9c9";
+}
+.Checkmark:before {
+  content: "\e900";
+}
+.viewAngle:before {
+  content: "\e901";
+}
+.viewBack:before {
+  content: "\e902";
+}
+.viewFront:before {
+  content: "\e903";
+}
+.viewLeft:before {
+  content: "\e904";
+}
+.ViewPort:before {
+  content: "\e905";
+}
+.viewRight:before {
+  content: "\e906";
+}

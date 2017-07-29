@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router'
 
 export default class NavItem extends React.Component {
   constructor (props) {
@@ -8,7 +9,7 @@ export default class NavItem extends React.Component {
     const {id, name, link} = this.props
     return (
       <div>
-        <p>{name}</p>
+        <Link to={link}><p>{name}</p></Link>
       </div>
     )
   }

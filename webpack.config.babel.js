@@ -12,11 +12,29 @@ export default {
 // pre-process files. all ends with js.
 // react-hot:update module without page reload.
   module: {
-    loaders: [{
-      test: /\.js$/,
-      exclude: /node_modules/,
-      loaders: ['react-hot', 'babel']
-    }]
+    loaders: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loaders: ['react-hot', 'babel']
+      },
+      {
+        test: /\.scss$/,
+        loaders: ['style', 'css', 'sass']
+      },
+      {
+        test: /\.(png|jpg|gif|svg|mtl|obj|drc)$/,
+        loader: 'file-loader?name=img/img-[hash:6].[ext]'
+      },
+      {
+        test: /\.(json|conf)$/,
+        loader: 'json'
+      },
+      {
+        test: /\.(woff|ttf)$/,
+        loader: 'file-loader?'
+      }
+    ]
   }
 // localhost:8080
 }

@@ -1,0 +1,12 @@
+.projectPanel {
+  width:100%;
+  display:flex;
+}
+
+$project-each-width: 20vw;
+
+.projectItem {
+  width:$project-each-width;
+  height:$project-each-width;
+  background-color: $color-grey1;
+}
