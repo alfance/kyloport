@@ -30,10 +30,3 @@ user port 8080
 ```
 http://localhost:8080/
 ```
-
-## File Structure
-* [app.js] - contains routers
-* [layout.js] - divided into nav and Content
-* Components
-  : Navbar - Navbar
-  : Portfolio - contains all the projects
