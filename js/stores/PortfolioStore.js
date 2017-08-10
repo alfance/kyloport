@@ -7,34 +7,35 @@ class PortfolioStore extends EventEmitter {
       {
         id: 1,
         name: 'Project 1',
-        title:'brioVR',
-        category:'mobile',
+        title: 'brioVR',
+        category: 'mobile',
         link: 'Project1',
-        url:''
+        headerImage: '../../assets/images/projects/header/1.jpg',
+        url: ''
       },
       {
         id: 2,
         name: 'Project 2',
-        title:'brioVR',
-        category:'mobile',
+        title: 'brioVR',
+        category: 'mobile',
         link: 'Project2',
-        url:''
+        url: ''
       },
       {
         id: 3,
         name: 'Project 3',
-        title:'brioVR',
-        category:'mobile',
+        title: 'brioVR',
+        category: 'mobile',
         link: 'Project3',
-        url:''
+        url: ''
       },
       {
         id: 4,
         name: 'Project 4',
-        title:'brioVR',
-        category:'mobile',
+        title: 'brioVR',
+        category: 'mobile',
         link: 'Project4',
-        url:''
+        url: ''
       }
     ]
   }

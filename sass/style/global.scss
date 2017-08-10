@@ -1,4 +1,30 @@
+
+
 a {
   text-decoration: none;
   outline: 0;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.container-wrapper {
+  width:$container-wrapper-width;
+  position: relative;
+  left: calc((100vw - #{$container-wrapper-width}) / 2 - #{$nav-width}/2);
+
+  @include largeS {
+    max-width:80vw;
+  }
+
+  @include mediumS {
+    width: calc(100vw - 200px);
+    left:40px;
+  }
+
+  @include xsmall {
+    width:87vw;
+    left:4vw;
+  }
 }

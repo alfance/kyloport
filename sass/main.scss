@@ -1,6 +1,8 @@
 // main.scss
 
 //mixins
+@import "./mixins/_variables.scss";
+@import "./mixins/_global.scss";
 @import "./mixins/_grid-framework.scss";
 @import "./mixins/_grid.scss";
 
@@ -8,9 +10,11 @@
 @import "./style/Grid.scss";
 @import "./style/colors.scss";
 @import "./style/typography.scss";
+@import "./style/responsive.scss";
+@import "./style/icon-font.scss";
+
 @import "./style/layout.scss";
 @import "./style/global.scss";
-@import "./style/icon-font.scss";
 
 //component specific styles
 @import "./Components/nav.scss";

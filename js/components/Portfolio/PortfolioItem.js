@@ -8,8 +8,11 @@ export default class PortfolioItem extends React.Component {
   render () {
     const {id, title, link} = this.props
     return (
-      <div className='projectItem'>
-        <Link to={link}><p>{title}</p></Link>
+      <div>
+        <Link to={link}><div className='projectItem'>
+          <p>{title}</p>
+        </div>
+        </Link>
       </div>
     )
   }

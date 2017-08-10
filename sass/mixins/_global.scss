@@ -1,0 +1,15 @@
+@mixin flex-box-setup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 0;     /* do not grow   - initial value: 0 */
+  flex-shrink: 1;   /* do not shrink - initial value: 1 */
+  flex-wrap: wrap;
+}
+
+@mixin center-align-absolute {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
