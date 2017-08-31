@@ -1,6 +1,7 @@
 .nav {
   display: block;
   width:$nav-width;
+  border-left:1px solid black;
 
   * {
     width:100%;
@@ -8,6 +9,7 @@
 
   i {
     font-size: $iconMedium;
+    display: block;
   }
 
   @include xsmall {
