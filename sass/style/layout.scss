@@ -2,3 +2,12 @@
   display: flex;
   text-align: center;
 }
+
+.main-content {
+  width: calc(100vw - 100px);
+  margin-left:$nav-width;
+}
+
+.main-intro {
+  padding:30px;
+}

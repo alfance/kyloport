@@ -6,11 +6,16 @@ export default class PortfolioItem extends React.Component {
     super()
   }
   render () {
-    const {id, title, link} = this.props
+    const {id, title, link, pitch, headerImage} = this.props
+
     return (
       <div>
         <Link to={link}><div className='projectItem'>
-          <p>{title}</p>
+          <img src={headerImage} />
+          <div className='projectTitle'>
+            <h3>{title}</h3>
+            <p>{pitch}</p>
+          </div>
         </div>
         </Link>
       </div>

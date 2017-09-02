@@ -17,11 +17,13 @@ export default class Nav extends React.Component {
     })
     return (
       <div className='nav'>
-        <p>KX</p>
-        {navComponents}
-        <i className='linkedin1' />
-        <i className='mail' />
-        <i className='twitter1' />
+        <div className='nav-content'>
+          <p>KX</p>
+          {navComponents}
+          <a href='mailto:jiao_xue@hotmail.com'><i className='mail' /></a>
+          <a target='_blank' href='https://www.linkedin.com/in/kyloxue/'><i className='linkedin1' /></a>
+          <a target='_blank' href='https://twitter.com/kyloxue'><i className='twitter1' /></a>
+        </div>
       </div>
     )
   }
