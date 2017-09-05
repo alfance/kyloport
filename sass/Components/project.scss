@@ -16,6 +16,7 @@
     height:auto;
     position: absolute;
     left:0px;
+      @include animation('image-hover-out 0.5s forwards');
   }
 
   .projectTitle {
@@ -25,6 +26,7 @@
     color:$color-black;
   }
 
+  // projectItem hover
   &:hover {
     img {
     @include animation('image-hover 0.5s forwards');
