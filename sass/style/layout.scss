@@ -1,13 +1,91 @@
-.page-layout {
-  display: flex;
-  text-align: center;
+// /////////////////////////////// Page containers //////////////////////////////////
+
+.page-container {
+  width:calc($container-wrapper-width - 100px);
+  position: relative;
+  padding: 0px 45px;
+  margin-left:$nav-width;
+
+  @include smallS {
+      padding:40px 30px;
+      margin-left: 0px;
+  }
+
+  @include xsmall {
+      margin:0px;
+      padding-top:50px;
+      margin-left: 0px;
+  }
 }
 
-.main-content {
-  width: calc(100vw - 100px);
-  margin-left:$nav-width;
+.project-content-layout {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .main-intro {
-  padding:30px;
+
+}
+
+// /////////////////////////////// Project Title ///////////////////////////////
+.project-title-layout{
+  background-color: $color-accent;
+  min-height: 15vh;
+}
+
+
+// /////////////////////////////// defines the split contents in each project ///////////////////////////////
+
+// general css for the container css
+@mixin project-container-css {
+  width:100%;
+  display: flex;
+
+  @include smallS {
+    display: inline-block;
+    background-color: red;
+  }
+}
+
+// 1/2 1/2
+.project_layout-half {
+  @include project-container-css;
+  * {
+    width:50%;
+    @include smallS {
+      width:100%;
+      background-color: red;
+    }
+  }
+}
+
+// 1/3 2/3
+.project_layout-13 {
+  @include project-container-css;
+  *:first-child  {
+    width:calc(100%/3);
+  }
+  *:nth-child(2) {
+    width:calc(100%/3 *2);
+  }
+
+  @include smallS {
+    * {width:100%;}
+  }
+}
+
+// 2/3 1/3
+.project_layout-23 {
+  @include project-container-css;
+  *:first-child  {
+    width:calc(100%/3*2);
+  }
+  *:nth-child(2) {
+    width:calc(100%/3);
+  }
+
+  @include smallS {
+    * {width:100%;}
+  }
 }

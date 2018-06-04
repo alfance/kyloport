@@ -3,12 +3,27 @@
   width:$nav-width;
   position: fixed;
 
+  @include smallS {
+    width:100vw;
+    z-index: 99;
+    background-color: $color-white;
+    height: 60px;
+    top:0px;
+    left:0px;
+  }
+
   .nav-content {
-   @include center-align-page-vertical;
-   transform:translateY(-65%);
-   padding:15px;
-   border-right:1px solid $color-grey2;
+  @include smallB {
+    @include center-align-page-vertical;
+    transform:translateY(-65%);
+    padding:15px;
+    border-right:1px solid $color-grey2;
+  }
   //  box-shadow: 5px 0px 5px #888888;
+
+  @include smallS {
+    display: flex;
+  }
   }
 
   * {
@@ -19,9 +34,5 @@
   i {
     font-size: $iconMedium;
     display: block;
-  }
-
-  @include xsmall {
-    display: none;
   }
 }

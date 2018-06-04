@@ -10,7 +10,20 @@
   margin:20px;
   position: relative;
   overflow: hidden;
+  border-radius: 13px;
 
+  // media size
+  @include smallS {
+      width: $project-each-width-small;
+      height: $project-each-height-small;
+  }
+
+  @include xsmall {
+      width: 85vw;
+      height: calc(85vw / 1.5);
+      padding-left:auto;
+      padding-right:auto;
+  }
   img {
     width:100%;
     height:auto;
