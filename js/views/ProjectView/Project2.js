@@ -31,18 +31,32 @@ class Project2 extends React.Component {
           </p>
 
           <h2>Personas</h2>
-          <div className='project_layout-13'>
-            <div>sdfsdfsdf</div>
-            <div>sdfsdfsdfdf<br />sdfsdfsdfsdfsdf</div>
+          <div className='project-layout-third'>
+            <div>
+              <b>Jason Wong</b><br />
+              Working Professional<br />
+               Age: 24 to 60<br />
+               Bikes 2 times a day, to and from work<br />
+               Jason bikes mainly between work and home because of its convenience, he values safety the most then speed.<br />
+            </div>
+
+            <div>
+              <b>Ann Goldshire</b><br />
+               Student<br />
+               Age: 17 to 27<br />
+               Bikes 2 - 6 times a day<br />
+               Allen uses bikes for most of his daily commute. Thus Ann values most effortless routes. <br />
+            </div>
+
+            <div>
+              <b>Oliver Dimaran</b><br />
+              Food Delivery<br />
+               Age: 19 to 40<br />
+               Bikes multiple times a day<br />
+               Biking is Oliver&#39; main source of income and he wants nothing but to get to the destination in the shortest amount of time.<br />
+            </div>
           </div>
-          <div className='project_layout-23'>
-            <div>sdfsdfsdf</div>
-            <div>sdfsdfsdfdf<br />sdfsdfsdfsdfsdf</div>
-          </div>
-          <div className='project_layout-half'>
-            <div>sdfsdfsdf</div>
-            <div>sdfsdfsdfdf<br />sdfsdfsdfsdfsdf</div>
-          </div>
+
         </div>
       </div>
     )
