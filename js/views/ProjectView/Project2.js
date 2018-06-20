@@ -141,45 +141,73 @@ class Project2 extends React.Component {
               </tr>
             </tbody>
           </table>
-        </div>
-        <h3>A lot of the solutions out in the market is either app based, or hardware based. Many times, the problem can not be simply solved with just one method.
+
+          <h3>A lot of the solutions out in the market is either app based, or hardware based. Many times, the problem can not be simply solved with just one method.
         As for Nacnav, it is a combined solution that tackle the problem using both technologies.</h3>
 
-        <h2> User Journey</h2>
-        <p>Cycnav focuses on the two main purposes: 1) Get to the destination. 2) Fast and safe.</p>
-        <p>The highlighted bubble are the main functions users will be using, while supporting features(grey bubble) will be the key to the overall NUX</p>
+          <h2> User Journey</h2>
+          <p>Cycnav focuses on the two main purposes: 1) Get to the destination. 2) Fast and safe.</p>
+          <p>The highlighted bubble are the main functions users will be using, while supporting features(grey bubble) will be the key to the overall NUX</p>
 
-        <h2>Wireframes</h2>
-        <div className='project-layout-13'>
-          <div>We started by creating several different versions of wireframes. Based on internal test result, we decided to:
-        <ul>
-          <li>Spend more time with the user on the onboarding</li>
-          <li>Reduce the number of button on the lights, and increase the size</li>
-        </ul>
+          <h2>Solutions</h2>
+          <p>We decide to adapt both digial and physical solutions for the problems we are facing. </p>
+          <div className='project-layout-half'>
+            <div>
+              Cycnav Navigational App: The app uses googles map api to calculate the best route for the users, use can also input their finding of road conditions using the app.
+            </div>
+            <div>
+              Cycnav Bike Light: The bike light is connected to the app using bluetooth. While the app is calculating and adjusting the route,
+              the bike light functions as the visual portal to help guide the cyclists while they are biking.
+            </div>
           </div>
-          <div>
-          sdfsdfsdfdf</div>
+
+          <h2>Wireframes - Digital</h2>
+          <div className='project-layout-13'>
+            <div>
+              We started by creating several different versions of wireframes. Based on internal test result, we decided to:
+              Spend more time with the user on the onboarding, especially when they are connecting the bike light to the app.
+                Reduce the number of button on the lights, and increase the size
+            </div>
+
+            <div>
+               images places skdjfsldjfsldkjfsj
+            </div>
+          </div>
+
+          <h2>Prototype - Bike Light </h2>
+          <p>We used Revit to do the modeling of the bikelight, the main idea is to have a fluid shape of a light that canbe easily attached </p>
+          <ul>
+            <li>Serves the core functioanl requirements: Feeding and receiving data to the phone, Major biking light, indicational lights</li>
+            <li>Fluid shape that can be easily attached to the bike, and easily dettached for charging</li>
+            <li>Secure enough for threfting </li>
+          </ul>
+          <div className='project-layout-third'>
+            <div> prototype 1 </div>
+            <div> prototype 2 </div>
+            <div> prototype 3 </div>
+          </div>
+
+          <h2>Usability Test</h2>
+          <p>Test with the wireframes revealed some major areas to improve on:</p>
+          <ul>
+            <li>Spend more time with the user on the onboarding, especially when they are connecting the bike light to the app.</li>
+            <li>Reduce the number of button on the lights, and increase the size</li>
+          </ul>
+
+          <h2> Solution - Wireframe N </h2>
+
+          <h2> Prototype - APP</h2>
+          <div className='project-layout-half'>
+            <div>
+              <h3> Version 1 </h3>
+            </div>
+            <div>
+              <h3> Version 2 </h3>
+            </div>
+          </div>
+
+          <h2> Prototype - BIKE LIGHT</h2>
         </div>
-
-        <h2>Usability Test</h2>
-        Test with the wireframes revealed some major areas to improve on:
-        <br />
-        <b>"sdfsdfsdf"</b> sdfsdfsdjlfksjdflskdf
-
-        <h2> Solution - Wireframe N </h2>
-
-        <h2> Prototype - APP</h2>
-        <div className='project-layout-half'>
-          <div>
-            <h3> Version 1 </h3>
-          </div>
-          <div>
-            <h3> Version 2 </h3>
-          </div>
-        </div>
-
-        <h2> Prototype - BIKE LIGHT</h2>
-
       </div>
     )
   }
