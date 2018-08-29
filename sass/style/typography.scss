@@ -8,26 +8,26 @@ font-family: 'Roboto', sans-serif;
 
 .font-white {
   color:$color-white;
-  h1, h2, h3, h4, h5, p {
+  h1, h2, h3, h4, p {
     color:$color-white;
   }
 }
 .font-black {
   color:$color-black;
-  h1, h2, h3, h4, h5, p {
+  h1, h2, h3, h4, p {
     color:$color-black;
   }
 }
 .font-grey4 {
   color:$color-grey4;
-  h1, h2, h3, h4, h5, p {
+  h1, h2, h3, h4, p {
     color:$color-grey4;
   }
 }
 
 .font-grey3 {
   color:$color-grey3;
-  h1, h2, h3, h4, h5, p {
+  h1, h2, h3, h4, p {
     color:$color-grey3;
   }
 }
@@ -48,4 +48,34 @@ font-family: 'Roboto', sans-serif;
   font-weight: 700;
 }
 
-//All of icon fonts //
+/////////////////////   FONT SIZE VARIATION, SAME AS MATERIAL DESIGN  ///////////////////////
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 34px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 16px;
+  color:$color-grey4;
+}
+
+.body2 {
+  font-size: 14px;
+}
+
+
+/////////////////////   FONT WEIGHT  ///////////////////////
+h1, h2, h3, h4, p {
+  font-weight: normal;
+}

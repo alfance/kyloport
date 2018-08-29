@@ -19,9 +19,14 @@
 }
 
 .project-content-layout {
-  max-width: 1200px;
+  max-width: 760px;
   margin-left: auto;
   margin-right: auto;
+
+  // /////////////////////////////// paragrahes spaces ///////////////////////////////
+  h2, h3, h4 {
+    margin: 8% 0 3% 0;
+  }
 }
 
 .main-intro {
@@ -101,5 +106,18 @@
   }
   @include smallS {
     * {width:100%;}
+  }
+}
+
+
+// /////////////////////////////// The findign div highlights the findings I have found from the researches, studies and tests.   ///////////////////////////////
+.finding-div {
+  padding: 25px;
+  background-color: $color-grey2;
+  margin: 5% 0;
+
+  b {
+    font-size: 1.7em;
+    text-transform: uppercase;
   }
 }

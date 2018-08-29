@@ -6,24 +6,27 @@ class Project2 extends React.Component {
       <div>
         <div className='project-title-layout'>
           <h1> CYCNAV </h1>
-          <h2> UI/UX, Interaction Design</h2>
+          <h3> UI/UX, Interaction Design</h3>
         </div>
 
         <div className='project-content-layout'>
-          <p>CYCNAV is both an app and a physical IOT that provides real time and interactive bikers map of the city. It allows cyclists to see where current construction, potholes and obstructions are taking place.
-          It offers user the best route suggestions according to the road condition. Users, in return, can contribute to the community to create real time map.
+          <p>CYCNAV is a combination of an navigational app and a physical bike light to guide the cyclists roaming around the city. It not only provide the fastest routes,
+          but also guarantees the users safety by avoiding bad road conditions.
         </p>
-          <p>The project began in 2014 as an UX research project for my master study at Ryerson. I have been continously revisiting it through out the years.
-            After spending years working and living in Downtown Toronto, I discovered the potential of the app as more than a navigational mapping tool,
-            but it can become a handy aid for the food delivery business.
-        </p>
+          <h4>my Role </h4>
+          <p>  I worked as the UX designer for this project. Some of my responsibilities included:<br />
+              1. Conduct user and market research and analysis <br />
+              2. Defining strategies & Scope<br />
+              3. Facilitate ideation & design decisions<br />
+              4. Create Wireframes & Prototypes<br />
+              5. 3D modeling & printing of the physical Component<br />
+              6. Validation test and evaluations<br />
+          </p>
 
-          <h2>Where is the problem coming from</h2>
+          <h3>Source of the Problem</h3>
           <p>
-          The biggest pain that every cyclist has experienced, especially the urban cyclist, is various road conditions and incidents that lead to unexpected detours.
+          The biggest pain that every cyclist has experienced, especially the urban cyclist, is to navigate in various road conditions and incidents that lead to unexpected detours.
           Looking for an applicable route can be time consuming, while bypassing the original road can be dangerous.
-          Currently there have been apps that help cyclists navigate through the road, but they do not offer alternate route options.
-          most importantly, cyclists needed to be constantly updated while they are biking.
           <ul>
             <li>Troubled by the Downtown road conditions</li>
             <li>Limited apps to give guidence and suggestions on routes</li>
@@ -31,7 +34,8 @@ class Project2 extends React.Component {
           </ul>
           </p>
 
-          <h2> Interviews </h2>
+          <h3>Who are the users? </h3>
+          <h4> Interviews </h4>
           <p>At the discovery phase of my project, we conducted user interviews from people use bike on a regular basis. Following is a summary of the answers:</p>
           <table className='table table-bordered'>
             <thead>
@@ -70,7 +74,7 @@ class Project2 extends React.Component {
             </tbody>
           </table>
 
-          <h2>Personas</h2>
+          <h4>Personas</h4>
           <p> As a result, the two types of users that will be benfited the most from our app are student bikers and Food delivery individula.
           Their similarity is the need of safe and correct route when cycling in the urban environment.</p>
           <div className='project-layout-half'>
@@ -92,7 +96,9 @@ class Project2 extends React.Component {
             </div>
           </div>
 
-          <h2>Comparative Analysis</h2>
+          <div className='finding-div'><b>Finding </b> The users who will benefit the most from our app are frequent users of bicycles, and travel to various places </div>
+
+          <h3>Comparative Analysis</h3>
           <table className='table table-bordered'>
             <thead>
               <tr>
@@ -142,14 +148,14 @@ class Project2 extends React.Component {
             </tbody>
           </table>
 
-          <h3>A lot of the solutions out in the market is either app based, or hardware based. Many times, the problem can not be simply solved with just one method.
-        As for Nacnav, it is a combined solution that tackle the problem using both technologies.</h3>
+          <div className='finding-div'><b>Finding </b> A lot of the solutions out in the market is either app based, or hardware based. Many times, the problem can not be simply solved with just one method.
+        As for Nacnav, it is a combined solution that tackle the problem using both technologies.</div>
 
-          <h2> User Journey</h2>
+          <h3> User Journey</h3>
           <p>Cycnav focuses on the two main purposes: 1) Get to the destination. 2) Fast and safe.</p>
           <p>The highlighted bubble are the main functions users will be using, while supporting features(grey bubble) will be the key to the overall NUX</p>
 
-          <h2>Solutions</h2>
+          <h3>Solutions</h3>
           <p>We decide to adapt both digial and physical solutions for the problems we are facing. </p>
           <div className='project-layout-half'>
             <div>
@@ -161,7 +167,7 @@ class Project2 extends React.Component {
             </div>
           </div>
 
-          <h2>Wireframes - Digital</h2>
+          <h3>Wireframes - Digital</h3>
           <div className='project-layout-13'>
             <div>
               We started by creating several different versions of wireframes. Based on internal test result, we decided to:
@@ -174,7 +180,7 @@ class Project2 extends React.Component {
             </div>
           </div>
 
-          <h2>Prototype - Bike Light </h2>
+          <h3>Prototype - Bike Light </h3>
           <p>We used Revit to do the modeling of the bikelight, the main idea is to have a fluid shape of a light that canbe easily attached </p>
           <ul>
             <li>Serves the core functioanl requirements: Feeding and receiving data to the phone, Major biking light, indicational lights</li>
@@ -187,16 +193,16 @@ class Project2 extends React.Component {
             <div> prototype 3 </div>
           </div>
 
-          <h2>Usability Test</h2>
+          <h3>Usability Test</h3>
           <p>Test with the wireframes revealed some major areas to improve on:</p>
           <ul>
             <li>Spend more time with the user on the onboarding, especially when they are connecting the bike light to the app.</li>
             <li>Reduce the number of button on the lights, and increase the size</li>
           </ul>
 
-          <h2> Solution - Wireframe N </h2>
+          <h3> Solution - Wireframe N </h3>
 
-          <h2> Prototype - APP</h2>
+          <h3> Prototype - APP</h3>
           <div className='project-layout-half'>
             <div>
               <h3> Version 1 </h3>
@@ -205,7 +211,7 @@ class Project2 extends React.Component {
               <h3> Version 2 </h3>
             </div>
           </div>
-          <h2> Prototype - BIKE LIGHT</h2>
+          <h3> Prototype - BIKE LIGHT</h3>
           test esldfjlskdhflskdjf;sldkhfskdhflsdkf;slei
         </div>
       </div>
