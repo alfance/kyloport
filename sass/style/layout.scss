@@ -35,8 +35,20 @@
 
 // /////////////////////////////// Project Title ///////////////////////////////
 .project-title-layout{
-  background-color: $color-accent;
-  min-height: 15vh;
+  height:25vh;
+  min-height:350px;
+  margin-top:50px;
+
+  .project-title-text {
+      margin:auto;
+      text-align: center;
+  }
+
+  .project-title-logo{
+      width:20vw;
+      height:13vw;
+      min-width:300px;
+  }
 }
 
 
@@ -120,4 +132,23 @@
     font-size: 1.7em;
     text-transform: uppercase;
   }
+}
+
+
+
+
+
+  // /////////////////////////////// PROJECT SPECIFIC CSS ///////////////////////////////
+
+//////// PROJECT CYCNAV ///////
+.project-title-cycnav {
+    background: url("../assets/images/proj_cycnav/title_img2.png") no-repeat right top;
+    background-size: contain;
+    background-color: $color-black;
+    color:$color-white;
+}
+
+.cycnav-logo {
+    background: url("../assets/images/proj_cycnav/cycnav_logo_w.svg") no-repeat right top;
+    background-size: contain;
 }

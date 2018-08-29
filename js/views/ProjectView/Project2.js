@@ -1,18 +1,22 @@
 import React from 'react'
 
+const img1 = require('../../assets/images/journey_map.jpg')
+
 class Project2 extends React.Component {
   render () {
     return (
       <div>
-        <div className='project-title-layout'>
-          <h1> CYCNAV </h1>
-          <h3> UI/UX, Interaction Design</h3>
+        <div className='project-title-layout project-title-cycnav'>
+            <div className='project-title-text'>
+              <div className ='cycnav-logo project-title-logo' />
+              <h3> UI/UX, Interaction Design</h3>
+          </div>
         </div>
 
         <div className='project-content-layout'>
-          <p>CYCNAV is a combination of an navigational app and a physical bike light to guide the cyclists roaming around the city. It not only provide the fastest routes,
+          <h4>CYCNAV is a combination of an navigational app and a physical bike light to guide the cyclists roaming around the city. It not only provide the fastest routes,
           but also guarantees the users safety by avoiding bad road conditions.
-        </p>
+        </h4>
           <h4>my Role </h4>
           <p>  I worked as the UX designer for this project. Some of my responsibilities included:<br />
               1. Conduct user and market research and analysis <br />
@@ -149,10 +153,11 @@ class Project2 extends React.Component {
           </table>
 
           <div className='finding-div'><b>Finding </b> A lot of the solutions out in the market is either app based, or hardware based. Many times, the problem can not be simply solved with just one method.
-        As for Nacnav, it is a combined solution that tackle the problem using both technologies.</div>
+        As for CYCNAV, it is a combined solution that tackle the problem using both technologies.</div>
 
           <h3> User Journey</h3>
           <p>Cycnav focuses on the two main purposes: 1) Get to the destination. 2) Fast and safe.</p>
+          <img src ={img1} />
           <p>The highlighted bubble are the main functions users will be using, while supporting features(grey bubble) will be the key to the overall NUX</p>
 
           <h3>Solutions</h3>
