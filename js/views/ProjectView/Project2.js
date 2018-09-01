@@ -1,6 +1,6 @@
 import React from 'react'
 
-const img1 = require('../../assets/images/journey_map.jpg')
+const img1 = require('../../../assets/images/proj_cycnav/journey_map.jpg')
 
 class Project2 extends React.Component {
   render () {
@@ -17,15 +17,23 @@ class Project2 extends React.Component {
           <h4>CYCNAV is a combination of an navigational app and a physical bike light to guide the cyclists roaming around the city. It not only provide the fastest routes,
           but also guarantees the users safety by avoiding bad road conditions.
         </h4>
-          <h4>my Role </h4>
-          <p>  I worked as the UX designer for this project. Some of my responsibilities included:<br />
-              1. Conduct user and market research and analysis <br />
-              2. Defining strategies & Scope<br />
-              3. Facilitate ideation & design decisions<br />
-              4. Create Wireframes & Prototypes<br />
-              5. 3D modeling & printing of the physical Component<br />
-              6. Validation test and evaluations<br />
-          </p>
+        <div className='project-layout-half'>
+            <div>
+              <h4>my Role </h4>
+              <p>  I worked as the UX designer for this project. Some of my responsibilities included:<br />
+                  1. Conduct user and market research and analysis <br />
+                  2. Defining strategies & Scope<br />
+                  3. Facilitate ideation & design decisions<br />
+                  4. Create Wireframes & Prototypes<br />
+                  5. 3D modeling & printing of the physical Component<br />
+                  6. Validation test and evaluations<br />
+              </p>
+              </div>
+
+              <div>
+                <img src ={img1} />
+              </div>
+          </div>
 
           <h3>Source of the Problem</h3>
           <p>
@@ -102,7 +110,13 @@ class Project2 extends React.Component {
 
           <div className='finding-div'><b>Finding </b> The users who will benefit the most from our app are frequent users of bicycles, and travel to various places </div>
 
-          <h3>Comparative Analysis</h3>
+          <h3> User Journey</h3>
+          <p>Cycnav focuses on the two main purposes: 1) Get to the destination. 2) Fast and safe.</p>
+          <img src ={img1} />
+          <p>The highlighted bubble are the main functions users will be using, while supporting features(grey bubble) will be the key to the overall NUX</p>
+
+          <h3>Competitors in the Market</h3>
+          <h4>Comparactive Analysis </h4>
           <table className='table table-bordered'>
             <thead>
               <tr>
@@ -155,38 +169,62 @@ class Project2 extends React.Component {
           <div className='finding-div'><b>Finding </b> A lot of the solutions out in the market is either app based, or hardware based. Many times, the problem can not be simply solved with just one method.
         As for CYCNAV, it is a combined solution that tackle the problem using both technologies.</div>
 
-          <h3> User Journey</h3>
-          <p>Cycnav focuses on the two main purposes: 1) Get to the destination. 2) Fast and safe.</p>
-          <img src ={img1} />
-          <p>The highlighted bubble are the main functions users will be using, while supporting features(grey bubble) will be the key to the overall NUX</p>
+          <h4>App vs IOT </h4>
+          <br />
+          <table className='table'>
+            <thead>
+              <tr>
+                <th>Digital App</th>
+                <th>Physical Device</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src= {img1} /></td>
+                    <td><img src= {img1} /></td>
+                </tr>
+              <tr>
+                <td>
+                advantage 1 <br />
+                advantage 1 <br />
+                advantage 1 <br />
+                </td>
+                <td>
+                  advantage 1 <br />
+                  advantage 1 <br />
+                  advantage 1 <br />
+                </td>
+            </tr>
+            </tbody>
+            </table>
 
-          <h3>Solutions</h3>
-          <p>We decide to adapt both digial and physical solutions for the problems we are facing. </p>
+            <h3>Solutions</h3>
+             <p>Based on the result of comparative analysis, we decide to approach the problem using both digital and physical solutions. that is building a physical navigational device that would be powered by a digital app.</p>
+             <img src={img1} />
           <div className='project-layout-half'>
             <div>
-              Cycnav Navigational App: The app uses googles map api to calculate the best route for the users, use can also input their finding of road conditions using the app.
+              <b>Cycnav Navigational App</b>: The app uses googles map api to calculate the best route for the users, use can also input their finding of road conditions using the app.
             </div>
             <div>
-              Cycnav Bike Light: The bike light is connected to the app using bluetooth. While the app is calculating and adjusting the route,
+              <b>Cycnav Bike Light</b>: The bike light is connected to the app using bluetooth. While the app is calculating and adjusting the route,
               the bike light functions as the visual portal to help guide the cyclists while they are biking.
             </div>
           </div>
 
           <h3>Wireframes - Digital</h3>
-          <div className='project-layout-13'>
-            <div>
-              We started by creating several different versions of wireframes. Based on internal test result, we decided to:
-              Spend more time with the user on the onboarding, especially when they are connecting the bike light to the app.
-                Reduce the number of button on the lights, and increase the size
-            </div>
-
-            <div>
-               images places skdjfsldjfsldkjfsj
-            </div>
-          </div>
+            <p>
+              We started by creating several different versions of wireframes. The focus of the wireframe is to help the user find the route of their destination. Then leads them to the bike light.
+            </p>
+            <p>
+            the features of the app: <br />
+            Search for destination <br />
+            Find the desired route <br />
+            Initiate navigationalon <br />
+            </p>
+            <img src={img1} />
 
           <h3>Prototype - Bike Light </h3>
-          <p>We used Revit to do the modeling of the bikelight, the main idea is to have a fluid shape of a light that canbe easily attached </p>
+          <p>Once the user has done deciding on the route, we would like them to put away their phone and use the bike light to navigate. We used Revit to do the modeling of the bikelight, the main idea is to have a fluid shape of a light that canbe easily attached </p>
           <ul>
             <li>Serves the core functioanl requirements: Feeding and receiving data to the phone, Major biking light, indicational lights</li>
             <li>Fluid shape that can be easily attached to the bike, and easily dettached for charging</li>
@@ -205,7 +243,7 @@ class Project2 extends React.Component {
             <li>Reduce the number of button on the lights, and increase the size</li>
           </ul>
 
-          <h3> Solution - Wireframe N </h3>
+          <h3> Improvements on the Wireframes </h3>
 
           <h3> Prototype - APP</h3>
           <div className='project-layout-half'>
