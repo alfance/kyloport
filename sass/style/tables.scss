@@ -128,6 +128,14 @@ table {
     padding: $table-condensed-padding;
 }
 
+/* Donot have borders for the tables */
+.table-noborder {
+  td, th, tr {
+    border:none;
+  }
+}
+
+
 /* Adds borders and border-radius. */
 .table-bordered,
 %table-bordered {

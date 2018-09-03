@@ -1,3 +1,14 @@
+.project-content-layout {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+
+  // /////////////////////////////// paragrahes spaces ///////////////////////////////
+  h2, h3, h4 {
+    margin: 8% 0 3% 0;
+  }
+}
+
 .projectPanel {
   width:100%;
   @include flex-box-setup;
@@ -50,4 +61,64 @@
   }
   }
 
+}
+
+
+// /////////////////////////////// The findign div highlights the findings I have found from the researches, studies and tests.   ///////////////////////////////
+.finding-div {
+  padding: 25px;
+  background-color: $color-grey2;
+  margin: 5% 0;
+
+  b {
+    font-size: 1.7em;
+    text-transform: uppercase;
+  }
+}
+
+
+////////// PERSONA STYLE, standard style for persona.    ////////
+.persona-div {
+    @include center-align-content;
+    padding:0px 15px;
+}
+.persona-img {
+  padding: 15px;
+  width:200px;
+  height:200px;
+  display: block;
+}
+
+
+.center-img {
+  margin-left: 50%;
+  transform:translateX(-50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// /////////////////////////////// PROJECT SPECIFIC CSS ///////////////////////////////
+
+//////// PROJECT CYCNAV ///////
+.project-title-cycnav {
+  background: url("../assets/images/proj_cycnav/title_img2.png") no-repeat right top;
+  background-size: contain;
+  background-color: $color-black;
+  color:$color-white;
+}
+
+.cycnav-logo {
+  background: url("../assets/images/proj_cycnav/cycnav_logo_w.svg") no-repeat right top;
+  background-size: contain;
 }

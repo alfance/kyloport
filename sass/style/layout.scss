@@ -18,21 +18,6 @@
   }
 }
 
-.project-content-layout {
-  max-width: 760px;
-  margin-left: auto;
-  margin-right: auto;
-
-  // /////////////////////////////// paragrahes spaces ///////////////////////////////
-  h2, h3, h4 {
-    margin: 8% 0 3% 0;
-  }
-}
-
-.main-intro {
-
-}
-
 // /////////////////////////////// Project Title ///////////////////////////////
 .project-title-layout{
   height:25vh;
@@ -75,7 +60,6 @@
 
     @include smallS {
       width:100%;
-      background-color: red;
     }
   }
 }
@@ -98,57 +82,25 @@
 // 2/3 1/3
 .project-layout-23 {
   @include project-container-css;
-  *:first-child  {
+  div:first-child  {
     width:calc(100%/3*2);
   }
-  *:nth-child(2) {
+  div:nth-child(2) {
     width:calc(100%/3);
   }
 
   @include smallS {
-    * {width:100%;}
+    div {width:100%;}
   }
 }
 
 // 1/3
 .project-layout-third {
   @include project-container-css;
-  *  {
+  div  {
     width:calc(100%/3);
   }
   @include smallS {
-    * {width:100%;}
+    div {width:100%;}
   }
-}
-
-
-// /////////////////////////////// The findign div highlights the findings I have found from the researches, studies and tests.   ///////////////////////////////
-.finding-div {
-  padding: 25px;
-  background-color: $color-grey2;
-  margin: 5% 0;
-
-  b {
-    font-size: 1.7em;
-    text-transform: uppercase;
-  }
-}
-
-
-
-
-
-  // /////////////////////////////// PROJECT SPECIFIC CSS ///////////////////////////////
-
-//////// PROJECT CYCNAV ///////
-.project-title-cycnav {
-    background: url("../assets/images/proj_cycnav/title_img2.png") no-repeat right top;
-    background-size: contain;
-    background-color: $color-black;
-    color:$color-white;
-}
-
-.cycnav-logo {
-    background: url("../assets/images/proj_cycnav/cycnav_logo_w.svg") no-repeat right top;
-    background-size: contain;
 }

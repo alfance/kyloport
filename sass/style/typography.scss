@@ -8,26 +8,26 @@ font-family: 'Roboto', sans-serif;
 
 .font-white {
   color:$color-white;
-  h1, h2, h3, h4, p {
+  h1, h2, h3, h4, p, li, span {
     color:$color-white;
   }
 }
 .font-black {
   color:$color-black;
-  h1, h2, h3, h4, p {
+  h1, h2, h3, h4, p, li, span {
     color:$color-black;
   }
 }
 .font-grey4 {
   color:$color-grey4;
-  h1, h2, h3, h4, p {
+  h1, h2, h3, h4, p, li, span {
     color:$color-grey4;
   }
 }
 
 .font-grey3 {
   color:$color-grey3;
-  h1, h2, h3, h4, p {
+  h1, h2, h3, h4, p, li, span {
     color:$color-grey3;
   }
 }
@@ -67,7 +67,6 @@ h4 {
 
 p {
   font-size: 16px;
-  color:$color-grey4;
 }
 
 .body2 {
@@ -75,7 +74,17 @@ p {
 }
 
 
+
 /////////////////////   FONT WEIGHT  ///////////////////////
 h1, h2, h3, h4, p {
   font-weight: normal;
+}
+
+/////////////////////   FONT COLOR  ///////////////////////
+p, li, span, ul, table {
+    color:$color-grey4;
+}
+
+b {
+  color:$color-black;
 }

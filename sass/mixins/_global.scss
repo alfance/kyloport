@@ -26,3 +26,11 @@
   top: 50vh;
   transform: translateY(-50%);
 }
+
+@mixin center-align-content {
+  text-align: center;
+  div, img {
+    margin-left: 50%;
+    transform:translateX(-50%);
+  }
+}

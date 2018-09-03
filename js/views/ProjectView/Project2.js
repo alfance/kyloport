@@ -1,15 +1,23 @@
 import React from 'react'
 
 const img1 = require('../../../assets/images/proj_cycnav/journey_map.jpg')
+const img2 = require('../../../assets/images/proj_cycnav/avatar-0.svg')
+const img3 = require('../../../assets/images/proj_cycnav/avatar-2.svg')
+const img6 = require('../../../assets/images/proj_cycnav/google_map.png')
+const img7 = require('../../../assets/images/proj_cycnav/vanhawks_logo.png')
+const img8 = require('../../../assets/images/proj_cycnav/waze.png')
+const img9 = require('../../../assets/images/proj_cycnav/phone.png')
+const img10 = require('../../../assets/images/proj_cycnav/bikelight.png')
+const img11 = require('../../../assets/images/proj_cycnav/app_wireframe.png')
 
 class Project2 extends React.Component {
   render () {
     return (
       <div>
         <div className='project-title-layout project-title-cycnav'>
-            <div className='project-title-text'>
-              <div className ='cycnav-logo project-title-logo' />
-              <h3> UI/UX, Interaction Design</h3>
+          <div className='project-title-text'>
+            <div className='cycnav-logo project-title-logo' />
+            <h3> UI/UX, Interaction Design</h3>
           </div>
         </div>
 
@@ -17,7 +25,7 @@ class Project2 extends React.Component {
           <h4>CYCNAV is a combination of an navigational app and a physical bike light to guide the cyclists roaming around the city. It not only provide the fastest routes,
           but also guarantees the users safety by avoiding bad road conditions.
         </h4>
-        <div className='project-layout-half'>
+          <div className='project-layout-half'>
             <div>
               <h4>my Role </h4>
               <p>  I worked as the UX designer for this project. Some of my responsibilities included:<br />
@@ -28,11 +36,11 @@ class Project2 extends React.Component {
                   5. 3D modeling & printing of the physical Component<br />
                   6. Validation test and evaluations<br />
               </p>
-              </div>
+            </div>
 
-              <div>
-                <img src ={img1} />
-              </div>
+            <div>
+              <img src={img1} />
+            </div>
           </div>
 
           <h3>Source of the Problem</h3>
@@ -91,7 +99,8 @@ class Project2 extends React.Component {
           Their similarity is the need of safe and correct route when cycling in the urban environment.</p>
           <div className='project-layout-half'>
 
-            <div>
+            <div className='persona-div'>
+              <img className='persona-img' src={img2} />
               <b>Ann Goldshire</b><br />
                Students<br />
                Age: 17 to 27<br />
@@ -99,7 +108,8 @@ class Project2 extends React.Component {
                Allen uses bikes for most of his daily commute. Thus Ann values most effortless routes. <br />
             </div>
 
-            <div>
+            <div className='persona-div'>
+              <img className='persona-img' src={img3} />
               <b>Oliver Dimaran</b><br />
               Food Delivery<br />
                Age: 19 to 40<br />
@@ -112,10 +122,10 @@ class Project2 extends React.Component {
 
           <h3> User Journey</h3>
           <p>Cycnav focuses on the two main purposes: 1) Get to the destination. 2) Fast and safe.</p>
-          <img src ={img1} />
+          <img src={img1} />
           <p>The highlighted bubble are the main functions users will be using, while supporting features(grey bubble) will be the key to the overall NUX</p>
 
-          <h3>Competitors in the Market</h3>
+          <h3>Market Research</h3>
           <h4>Comparactive Analysis </h4>
           <table className='table table-bordered'>
             <thead>
@@ -127,7 +137,10 @@ class Project2 extends React.Component {
             </thead>
             <tbody>
               <tr>
-                <td>Google Maps</td>
+                <td>
+                  <img src={img6} /><br />
+                Google Maps
+                </td>
                 <td>
                   <ul>
                     <li>Bike friendly trails and lanes</li>
@@ -141,7 +154,8 @@ class Project2 extends React.Component {
                 </ul></td>
               </tr>
               <tr>
-                <td>Vanhawk bikes</td>
+                <td><img src={img7} /><br />
+                Vanhawk bikes</td>
                 <td><ul>
                   <li>Self sustained, no need for phone / GPS</li>
                   <li>feature that notifies nearby traffic in the blindspot.</li>
@@ -153,7 +167,8 @@ class Project2 extends React.Component {
                 </ul></td>
               </tr>
               <tr>
-                <td>Waze app</td>
+                <td><img src={img8} /><br />
+                Waze app</td>
                 <td><ul>
                   <li>User Contribution</li>
                   <li>Social feature, friends option</li>
@@ -171,7 +186,7 @@ class Project2 extends React.Component {
 
           <h4>App vs IOT </h4>
           <br />
-          <table className='table'>
+          <table className='table table-noborder'>
             <thead>
               <tr>
                 <th>Digital App</th>
@@ -179,28 +194,44 @@ class Project2 extends React.Component {
               </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td><img src= {img1} /></td>
-                    <td><img src= {img1} /></td>
-                </tr>
+              <tr>
+                <td><img src={img9} /></td>
+                <td><img src={img10} /></td>
+              </tr>
               <tr>
                 <td>
-                advantage 1 <br />
-                advantage 1 <br />
-                advantage 1 <br />
+                  <ul>
+                    <li>Accurate and fast route search</li>
+                    <li>User contribution</li>
+                  </ul>
                 </td>
                 <td>
-                  advantage 1 <br />
-                  advantage 1 <br />
-                  advantage 1 <br />
+                  <ul>
+                    <li>More safe & all-in-one navigation</li>
+                    <li>Fast feedback, cost free</li>
+                  </ul>
                 </td>
-            </tr>
+              </tr>
+              <tr>
+                <td>
+                  <ul>
+                    <li>More distractions</li>
+                    <li>Dependent on light condition</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li>Costly, atleast $100</li>
+                    <li>Cannot be stand alone</li>
+                  </ul>
+                </td>
+              </tr>
             </tbody>
-            </table>
+          </table>
 
-            <h3>Solutions</h3>
-             <p>Based on the result of comparative analysis, we decide to approach the problem using both digital and physical solutions. that is building a physical navigational device that would be powered by a digital app.</p>
-             <img src={img1} />
+          <h3>Solutions</h3>
+          <p>Based on the result of comparative analysis, we decide to approach the problem using both digital and physical solutions. that is building a physical navigational device that would be powered by a digital app.</p>
+          <img src={img1} />
           <div className='project-layout-half'>
             <div>
               <b>Cycnav Navigational App</b>: The app uses googles map api to calculate the best route for the users, use can also input their finding of road conditions using the app.
@@ -212,16 +243,18 @@ class Project2 extends React.Component {
           </div>
 
           <h3>Wireframes - Digital</h3>
-            <p>
+          <p>
               We started by creating several different versions of wireframes. The focus of the wireframe is to help the user find the route of their destination. Then leads them to the bike light.
             </p>
-            <p>
+          <p>
             the features of the app: <br />
-            Search for destination <br />
-            Find the desired route <br />
-            Initiate navigationalon <br />
-            </p>
-            <img src={img1} />
+            <ul>
+              <li>Search for destination </li>
+              <li>Find the desired route </li>
+              <li>Initiate navigation </li>
+            </ul>
+          </p>
+          <img src={img11} />
 
           <h3>Prototype - Bike Light </h3>
           <p>Once the user has done deciding on the route, we would like them to put away their phone and use the bike light to navigate. We used Revit to do the modeling of the bikelight, the main idea is to have a fluid shape of a light that canbe easily attached </p>
@@ -239,23 +272,105 @@ class Project2 extends React.Component {
           <h3>Usability Test</h3>
           <p>Test with the wireframes revealed some major areas to improve on:</p>
           <ul>
-            <li>Spend more time with the user on the onboarding, especially when they are connecting the bike light to the app.</li>
-            <li>Reduce the number of button on the lights, and increase the size</li>
+            <li>Users encountered trouble moving from the mobile app to the bike light. They prefer staying on the app while biking.</li>
+            <li>Not enough feedback on botht the app and the bike light, users sometimes get confused while traveling. </li>
           </ul>
 
-          <h3> Improvements on the Wireframes </h3>
+          <h3> Iterations</h3>
+          <p>We focuse improvements on the following two major components: </p>
+          <ul>
+            <li>Spend more time with the user on the onboarding, especially when they are connecting the bike light to the app.</li>
+            <li>Redefine the search process to make it more intuitive, less steps.</li>
+            <li>Reduce the number of button on the lights, and increase the size</li>
+          </ul>
+          <img src={img1} />
+
+          <div className='finding-div'><b>Results: </b><br />
+           We tested the new design again to a different group of people and the results were way better.
+           <table className='table table-bordered'>
+             <thead>
+               <tr>
+                 <th>Features</th>
+                 <th>Test 1 Problem</th>
+                 <th>Fixes </th>
+                 <th> Results </th>
+               </tr>
+             </thead>
+             <tbody>
+               <tr>
+                 <td>App Onboarding</td>
+                 <td>
+                 Users stuck on connected page
+                 </td>
+                 <td>
+                 Automatically direct to Map page
+                 </td>
+                 <td>
+                 50% Up
+                 </td>
+               </tr>
+               <tr>
+                 <td>App to Device transition</td>
+                 <td>
+                  Popup intruct user to move to bike like often neglected
+                 </td>
+                 <td>
+                 Full screen instruction
+                 </td>
+                 <td>
+                 25% Up
+                 </td>
+               </tr>
+               <tr>
+                 <td>Bike light Navigation</td>
+                 <td>
+                  Arrow light not clear, no indication of road blocks.
+                 </td>
+                 <td>
+                 Increased the size of the arrow light, added road block type
+                 </td>
+                 <td>
+                 75% Up
+                 </td>
+               </tr>
+             </tbody>
+           </table>
+          </div>
 
           <h3> Prototype - APP</h3>
-          <div className='project-layout-half'>
+          <p>We had a few variations for the Prototype as shown below. One consideration that is more important than the asthetics of the app itself, is the readability of the screen under different light conditions.</p>
+          <div className='project-layout-third'>
             <div>
-              <h3> Version 1 </h3>
+              <img src={img1} /> <br />
+              <span><b>Design 1 </b>: a 'green' theme is used as we are hoping to achive a eco travel method. </span>
             </div>
             <div>
-              <h3> Version 2 </h3>
+              <img src={img1} /><br />
+              <span><b>Design 2</b>: a 'green' theme is used as we are hoping to achive a eco travel method. </span>
+            </div>
+            <div>
+              <img src={img1} /><br />
+              <span><b>Design 3</b>: a 'green' theme is used as we are hoping to achive a eco travel method. </span>
             </div>
           </div>
+          <p> In the end, we decide to go with design 3 due to its readability even under extreme sun light. For this design,
+          the users can grasp the information in the shortest amoutn of time, which is fatal when they are on the road.</p>
+          <img src={img1} />
+          <p>Following are the tests of the prototype under various light conditions </p>
+          <img src={img1} />
+
           <h3> Prototype - BIKE LIGHT</h3>
           test esldfjlskdhflskdjf;sldkhfskdhflsdkf;slei
+
+          <h3>Reflections </h3>
+          <p> <b>Sometimes the perfect solution is not one, but multiple approaches</b> <br />
+          If we have not done the user test and market analysis, we were Automatically assumed to go with one of the two
+          completely different method for the problem we are presented. By adapting the UX research process we were able to focus on our users, coming up with
+          valid solutions for the problems insead of making assumptions for the sake of building a tool.</p>
+          <p><b>Being able to pick up new skills and learn quickly is part of the UX.</b> This probject was done with limited time and resources. at times I had
+          to learn new softwares, pick up technical skills along the way. This is not only helpful to me personaly, but it broadens my pespective as an UX design,
+          where I was able to develop empathy for other field of personnels.
+          </p>
         </div>
       </div>
     )
