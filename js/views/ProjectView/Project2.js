@@ -1,5 +1,31 @@
 import React from 'react'
+import ProjectTitle from './components/ProjectTitle'
+import IntroRole from './components/IntroRole'
+import Problem from './components/Problem'
 
+const section1 = {
+  title: 'UI/UX, Interaction Design'
+}
+
+const section2 = {
+  content: 'CYCNAV is a combination of an navigational app and a physical bike light to guide the cyclists roaming around the city. It not only provide the fastest routes,but also guarantees the users safety by avoiding bad road conditions.',
+  role: 'UX designer',
+  duties: ['1. Conduct user and market research and analysis',
+    '2. Defining strategies & Scope',
+    '3. Facilitate ideation & design decisions',
+    '4. Create Wireframes & Prototypes',
+    '5. 3D modeling & printing of the physical Component',
+    '6. Validation test and evaluations'],
+  img: '../../../assets/images/proj_cycnav/journey_map.jpg'
+}
+
+const section3 = {
+  title: 'Source of the Problem',
+  content: 'The biggest pain that every cyclist has experienced, especially the urban cyclist, is to navigate in various road conditions and incidents that lead to unexpected detours. Looking for an applicable route can be time consuming, while bypassing the original road can be dangerous.',
+  list: ['Troubled by the Downtown road conditions',
+    'Limited apps to give guidence and suggestions on routes',
+    'Existing apps are often distractive and pause safety concerns to the users']
+}
 const img1 = require('../../../assets/images/proj_cycnav/journey_map.jpg')
 const img2 = require('../../../assets/images/proj_cycnav/avatar-0.svg')
 const img3 = require('../../../assets/images/proj_cycnav/avatar-2.svg')
@@ -14,45 +40,11 @@ class Project2 extends React.Component {
   render () {
     return (
       <div>
-        <div className='project-title-layout project-title-cycnav'>
-          <div className='project-title-text'>
-            <div className='cycnav-logo project-title-logo' />
-            <h3> UI/UX, Interaction Design</h3>
-          </div>
-        </div>
-
+        <ProjectTitle content={section1} />
         <div className='project-content-layout'>
-          <h4>CYCNAV is a combination of an navigational app and a physical bike light to guide the cyclists roaming around the city. It not only provide the fastest routes,
-          but also guarantees the users safety by avoiding bad road conditions.
-        </h4>
-          <div className='project-layout-half'>
-            <div>
-              <h4>my Role </h4>
-              <p>  I worked as the UX designer for this project. Some of my responsibilities included:<br />
-                  1. Conduct user and market research and analysis <br />
-                  2. Defining strategies & Scope<br />
-                  3. Facilitate ideation & design decisions<br />
-                  4. Create Wireframes & Prototypes<br />
-                  5. 3D modeling & printing of the physical Component<br />
-                  6. Validation test and evaluations<br />
-              </p>
-            </div>
-
-            <div>
-              <img src={img1} />
-            </div>
-          </div>
-
-          <h3>Source of the Problem</h3>
-          <p>
-          The biggest pain that every cyclist has experienced, especially the urban cyclist, is to navigate in various road conditions and incidents that lead to unexpected detours.
-          Looking for an applicable route can be time consuming, while bypassing the original road can be dangerous.
-          <ul>
-            <li>Troubled by the Downtown road conditions</li>
-            <li>Limited apps to give guidence and suggestions on routes</li>
-            <li>Existing apps are often distractive and pause safety concerns to the users</li>
-          </ul>
-          </p>
+          <IntroRole content={section2} />
+          <Problem content={section3} />
+          <ProjectTitle content={section3} />
 
           <h3>Who are the users? </h3>
           <h4> Interviews </h4>
