@@ -34,7 +34,7 @@ const img7 = require('../../../assets/images/proj_cycnav/vanhawks_logo.png')
 const img8 = require('../../../assets/images/proj_cycnav/waze.png')
 const img9 = require('../../../assets/images/proj_cycnav/phone.png')
 const img10 = require('../../../assets/images/proj_cycnav/bikelight.png')
-const img11 = require('../../../assets/images/proj_cycnav/app_wireframe.png')
+const img11 =  require('../../../assets/images/proj_cycnav/app_wireframe.png')
 
 class Project2 extends React.Component {
   render () {
@@ -44,7 +44,6 @@ class Project2 extends React.Component {
         <div className='project-content-layout'>
           <IntroRole content={section2} />
           <Problem content={section3} />
-          <ProjectTitle content={section3} />
 
           <h3>Who are the users? </h3>
           <h4> Interviews </h4>

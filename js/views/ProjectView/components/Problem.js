@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default class ProjectTitle extends React.Component {
+export default class Problem extends React.Component {
   render () {
     return (
       <div>

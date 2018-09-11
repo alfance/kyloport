@@ -1,14 +1,20 @@
 import React from 'react'
 
-export default class Problem extends React.Component {
+export default class ProjectTitle extends React.Component {
   render () {
+      const columns = [{
+  dataField: 'id',
+  text: 'Product ID'
+}, {
+  dataField: 'name',
+  text: 'Product Name'
+}, {
+  dataField: 'price',
+  text: 'Product Price'
+}];
+
     return (
-      <div className='project-title-layout project-title-cycnav'>
-        <div className='project-title-text'>
-          <div className='cycnav-logo project-title-logo' />
-          <h3> {this.props.content.title}</h3>
-        </div>
-      </div>
+     <BootstrapTable keyField='id' data={ products } columns={ columns } />
     )
   }
 }
