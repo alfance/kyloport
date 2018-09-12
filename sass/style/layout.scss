@@ -6,6 +6,9 @@
   padding: 0px 45px;
   margin-left:$nav-width;
 
+  img {
+     max-width:100%;
+  }
   @include smallS {
       padding:40px 30px;
       margin-left: 0px;
