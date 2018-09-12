@@ -2,6 +2,7 @@ import React from 'react'
 import ProjectTitle from './components/ProjectTitle'
 import IntroRole from './components/IntroRole'
 import Problem from './components/Problem'
+import TableComponent from './components/TableComponent'
 
 const section1 = {
   title: 'UI/UX, Interaction Design'
@@ -44,7 +45,7 @@ class Project2 extends React.Component {
         <div className='project-content-layout'>
           <IntroRole content={section2} />
           <Problem content={section3} />
-          <ProjectTitle content={section3} />
+          <TableComponent />
 
           <h3>Who are the users? </h3>
           <h4> Interviews </h4>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default class Problem extends React.Component {
+export default class ProjectTitle extends React.Component {
   render () {
     return (
       <div className='project-title-layout project-title-cycnav'>

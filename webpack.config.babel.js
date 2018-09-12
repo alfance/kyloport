@@ -16,11 +16,11 @@ export default {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loaders: ['react-hot', 'babel']
+        loaders: ['react-hot-loader', 'babel-loader']
       },
       {
         test: /\.scss$/,
-        loaders: ['style', 'css', 'sass']
+        loaders: ['style-loader', 'css-loader', 'sass-loader']
       },
       {
         test: /\.(png|jpg|gif|svg|mtl|obj|drc)$/,
@@ -28,7 +28,7 @@ export default {
       },
       {
         test: /\.(json|conf)$/,
-        loader: 'json'
+        loader: 'json-loader'
       },
       {
         test: /\.(woff|ttf)$/,
