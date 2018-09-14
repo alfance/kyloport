@@ -3,52 +3,35 @@ import ProjectTitle from './components/ProjectTitle'
 import IntroRole from './components/IntroRole'
 import Problem from './components/Problem'
 import TableComponent from './components/TableComponent'
+import CycnavStore from'./Cycnav'
 
-const projectTitle = {
-  title: 'UI/UX, Interaction Design'
-}
-
-const introRole = {
-  content: 'CYCNAV is a combination of an navigational app and a physical bike light to guide the cyclists roaming around the city. It not only provide the fastest routes,but also guarantees the users safety by avoiding bad road conditions.',
-  role: 'UX designer',
-  duties: ['1. Conduct user and market research and analysis',
-    '2. Defining strategies & Scope',
-    '3. Facilitate ideation & design decisions',
-    '4. Create Wireframes & Prototypes',
-    '5. 3D modeling & printing of the physical Component',
-    '6. Validation test and evaluations'],
-  img: '../../../assets/images/proj_cycnav/journey_map.jpg'
-}
-
-const problem = {
-  title: 'Source of the Problem',
-  content: 'The biggest pain that every cyclist has experienced, especially the urban cyclist, is to navigate in various road conditions and incidents that lead to unexpected detours. Looking for an applicable route can be time consuming, while bypassing the original road can be dangerous.',
-  list: ['Troubled by the Downtown road conditions',
-    'Limited apps to give guidence and suggestions on routes',
-    'Existing apps are often distractive and pause safety concerns to the users']
-}
-
-const tableComponent1 ={
-    columns:[{
-        Header: 'Name',
-        accessor: 'name' // String-based value accessors!
-      }, {
-        Header: 'Age',
-        accessor: 'age'
-    }, {
-        Header: 'Friend Name',
-        accessor: 'friendName'
-      }, {
-        Header: 'Age',
-        accessor: 'age',
-    }],
-    data:[{
-        name: 1,
-        age: 'Professional',
-        friendName: "dsfsdfsdf",
-        age:55
-    }]
-}
+const cycnavitems = [
+      {
+          section: 1,
+          style:'ProjectTitle',
+          title:'UI/UX, Interaction Design'
+      },
+      {
+          section:2,
+          content: 'CYCNAV is a combination of an navigational app and a physical bike light to guide the cyclists roaming around the city. It not only provide the fastest routes,but also guarantees the users safety by avoiding bad road conditions.',
+          role: 'UX designer',
+          duties: ['1. Conduct user and market research and analysis',
+            '2. Defining strategies & Scope',
+            '3. Facilitate ideation & design decisions',
+            '4. Create Wireframes & Prototypes',
+            '5. 3D modeling & printing of the physical Component',
+            '6. Validation test and evaluations'],
+          img: '../../../assets/images/proj_cycnav/journey_map.jpg'
+      },
+      {
+          section:3,
+          title: 'Source of the Problem',
+          content: 'The biggest pain that every cyclist has experienced, especially the urban cyclist, is to navigate in various road conditions and incidents that lead to unexpected detours. Looking for an applicable route can be time consuming, while bypassing the original road can be dangerous.',
+          list: ['Troubled by the Downtown road conditions',
+            'Limited apps to give guidence and suggestions on routes',
+            'Existing apps are often distractive and pause safety concerns to the users']
+      }
+  ]
 const img1 = require('../../../assets/images/proj_cycnav/journey_map.jpg')
 const img2 = require('../../../assets/images/proj_cycnav/avatar-0.svg')
 const img3 = require('../../../assets/images/proj_cycnav/avatar-2.svg')
@@ -60,15 +43,16 @@ const img10 = require('../../../assets/images/proj_cycnav/bikelight.png')
 const img11 = require('../../../assets/images/proj_cycnav/app_wireframe.png')
 
 class Project2 extends React.Component {
-
   render () {
+      const {test} = cycnavitems[0]
+      console.log('what is intro role', {test})
+
     return (
       <div>
-        <ProjectTitle content={projectTitle} />
+        <ProjectTitle content={cycnavitems[0]} />
         <div className='project-content-layout'>
-        <IntroRole content={introRole} />
-          <Problem content={problem} />
-          <TableComponent content={tableComponent1} />
+          <IntroRole content={cycnavitems[1]} />
+          <Problem content={cycnavitems[2]} />
           <h3>Who are the users? </h3>
           <h4> Interviews </h4>
           <p>At the discovery phase of my project, we conducted user interviews from people use bike on a regular basis. Following is a summary of the answers:</p>

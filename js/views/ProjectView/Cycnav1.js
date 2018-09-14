@@ -1,9 +1,4 @@
-import {EventEmitter} from 'events'
-
-class CycnavStore extends EventEmitter {
-    constructor () {
-      super()
-      this.cycnavitems = [
+const cycnav = [
             {
                 section: 1,
                 style:'ProjectTitle',
@@ -30,13 +25,3 @@ class CycnavStore extends EventEmitter {
                   'Existing apps are often distractive and pause safety concerns to the users']
             }
         ]
-
-    }
-    getAll () {
-      return this.cycnavitems
-    }
-}
-
-const cycnavStore = new CycnavStore()
-
-export default cycnavStore
