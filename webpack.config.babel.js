@@ -33,7 +33,15 @@ export default {
       {
         test: /\.(woff|ttf)$/,
         loader: 'file-loader?'
-      }
+    },
+    devServer: {
+   historyApiFallback: true,
+ },
+ plugins: [
+   new HtmlWebpackPlugin({
+     template: 'app/index.html'
+   })
+ ]
     ]
   }
 // localhost:8080
