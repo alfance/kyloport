@@ -3,6 +3,9 @@ import ProjectTitle from './components/ProjectTitle'
 import IntroRole from './components/IntroRole'
 import Problem from './components/Problem'
 import TableComponent from './components/TableComponent'
+import Persona from './components/persona'
+import FindingComponent from './components/FindingComponent'
+import RegImageComponent from './components/RegImageComponent'
 
 const projectTitle = {
   title: 'UI/UX, Interaction Design'
@@ -28,30 +31,80 @@ const problem = {
     'Existing apps are often distractive and pause safety concerns to the users']
 }
 
-const tableComponent1 ={
+const interviews ={
+    title:'Interviews',
+    content:'At the discovery phase of my project, we conducted user interviews from people use bike on a regular basis. Following is a summary of the answers:',
     columns:[{
-        Header: 'Name',
-        accessor: 'name' // String-based value accessors!
+        Header: '#',
+        accessor: 'number' // String-based value accessors!
       }, {
-        Header: 'Age',
-        accessor: 'age'
+        Header: 'Type',
+        accessor: 'type'
     }, {
-        Header: 'Friend Name',
-        accessor: 'friendName'
+        Header: 'Biking Frequency(daily)',
+        accessor: 'frequency'
       }, {
-        Header: 'Age',
-        accessor: 'age',
+        Header: 'Need for map?',
+        accessor: 'map',
     }],
     data:[{
-        name: 1,
-        age: 'Professional',
-        friendName: "dsfsdfsdf",
-        age:55
+        number: 1,
+        type: 'Professional',
+        frequency: "2 - 3",
+        map:'NO'
+    },{
+        number: 2,
+        type: 'Student',
+        frequency: "2 - 4",
+        map:'Sometimes'
+    },{
+        number: 3,
+        type: 'Delivery Worker',
+        frequency: "> 10",
+        map:'Yes'
+    },{
+        number: 4,
+        type: 'Hobbists',
+        frequency: "1 - 4",
+        map:'Sometimes'
     }]
 }
+
+const persona = {
+    title:'Personas',
+    content:'As a result, the two types of users that will be benfited the most from our app are student bikers and Food delivery individula.Their similarity is the need of safe and correct route when cycling in the urban environment.',
+p1Img: '../../../assets/images/proj_cycnav/avatar-0.svg',
+p2Img:'../../../assets/images/proj_cycnav/avatar-2.svg',
+p1content:[
+    'Ann Goldshire',
+    'Student',
+    'Age: 17 to 27',
+    'Bikes 2 - 6 times a day',
+    'Ann uses bikes for most of her daily commute. Thus Ann values most effortless routes.'
+],
+p2content:[
+    'Oliver Dimaran',
+    'Food Delivery',
+     'Age: 19 to 40',
+     'Bikes multiple times a day',
+     'Biking is Olivers main source of income and he wants nothing but to get to the destination in the shortest amount of time.'
+]
+}
+
+const findingPersona = {
+    subtitle:'finding',
+    content:'The users who will benefit the most from our app are frequent users of bicycles, and travel to various places'
+}
+
+const userJourney = {
+    title:'User journey',
+    content:'Cycnav focuses on the two main purposes: 1) Get to the destination. 2) Fast and safe.',
+    img:'../../../assets/images/proj_cycnav/journey_map.jpg',
+    label:'The highlighted bubble are the main functions users will be using, while supporting features(grey bubble) will be the key to the overall NUX'
+}
+
 const img1 = require('../../../assets/images/proj_cycnav/journey_map.jpg')
-const img2 = require('../../../assets/images/proj_cycnav/avatar-0.svg')
-const img3 = require('../../../assets/images/proj_cycnav/avatar-2.svg')
+
 const img6 = require('../../../assets/images/proj_cycnav/google_map.png')
 const img7 = require('../../../assets/images/proj_cycnav/vanhawks_logo.png')
 const img8 = require('../../../assets/images/proj_cycnav/waze.png')
@@ -68,77 +121,13 @@ class Project2 extends React.Component {
         <div className='project-content-layout'>
         <IntroRole content={introRole} />
           <Problem content={problem} />
-          <TableComponent content={tableComponent1} />
+
           <h3>Who are the users? </h3>
-          <h4> Interviews </h4>
-          <p>At the discovery phase of my project, we conducted user interviews from people use bike on a regular basis. Following is a summary of the answers:</p>
-          <table className='table table-bordered'>
-            <thead>
-              <tr>
-                <th>Number</th>
-                <th>Type</th>
-                <th>Biking Frequency (daily)</th>
-                <th>Need for Map?</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td> Professional</td>
-                <td>2 - 3</td>
-                <td> NO </td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>Student</td>
-                <td>2 - 4</td>
-                <td> Sometimes </td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>Delivery Worker</td>
-                <td> > 10</td>
-                <td> Yes </td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td>Hobbists</td>
-                <td>2 - 4</td>
-                <td>Sometimes</td>
-              </tr>
-            </tbody>
-          </table>
+          <TableComponent content={interviews} />
 
-          <h4>Personas</h4>
-          <p> As a result, the two types of users that will be benfited the most from our app are student bikers and Food delivery individula.
-          Their similarity is the need of safe and correct route when cycling in the urban environment.</p>
-          <div className='project-layout-half'>
-
-            <div className='persona-div'>
-              <img className='persona-img' src={img2} />
-              <b>Ann Goldshire</b><br />
-               Students<br />
-               Age: 17 to 27<br />
-               Bikes 2 - 6 times a day<br />
-               Allen uses bikes for most of his daily commute. Thus Ann values most effortless routes. <br />
-            </div>
-
-            <div className='persona-div'>
-              <img className='persona-img' src={img3} />
-              <b>Oliver Dimaran</b><br />
-              Food Delivery<br />
-               Age: 19 to 40<br />
-               Bikes multiple times a day<br />
-               Biking is Oliver&#39; main source of income and he wants nothing but to get to the destination in the shortest amount of time.<br />
-            </div>
-          </div>
-
-          <div className='finding-div'><b>Finding </b> The users who will benefit the most from our app are frequent users of bicycles, and travel to various places </div>
-
-          <h3> User Journey</h3>
-          <p>Cycnav focuses on the two main purposes: 1) Get to the destination. 2) Fast and safe.</p>
-          <img src={img1} />
-          <p>The highlighted bubble are the main functions users will be using, while supporting features(grey bubble) will be the key to the overall NUX</p>
+          <Persona content={persona} />
+          <FindingComponent content={findingPersona} />
+          <RegImageComponent content={userJourney} />
 
           <h3>Market Research</h3>
           <h4>Comparactive Analysis </h4>
