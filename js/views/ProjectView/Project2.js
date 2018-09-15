@@ -5,10 +5,17 @@ import Problem from './components/Problem'
 import TableComponent from './components/TableComponent'
 import Persona from './components/persona'
 import FindingComponent from './components/FindingComponent'
-import RegImageComponent from './components/RegImageComponent'
+import LayoutImage from './components/LayoutImage'
+import LayoutText from './components/LayoutText'
+import LayoutThree from './components/LayoutThree'
+import Reflection from './components/Reflection'
+
+const placeholder = require('../../../assets/images/proj_cycnav/journey_map.jpg')
 
 const projectTitle = {
-  title: 'UI/UX, Interaction Design'
+    logo: '../../../assets/images/proj_cycnav/cycnav_logo_w.svg',
+  title: 'UI/UX, Interaction Design',
+  bgImg:'../../../assets/images/proj_cycnav/journey_map.jpg'
 }
 
 const introRole = {
@@ -103,15 +110,172 @@ const userJourney = {
     label:'The highlighted bubble are the main functions users will be using, while supporting features(grey bubble) will be the key to the overall NUX'
 }
 
-const img1 = require('../../../assets/images/proj_cycnav/journey_map.jpg')
+const comparativeAnalysis ={
+    title:'Comparactive Analysis',
+    columns:[{
+        Header: 'App /Device',
+        accessor: 'app' // String-based value accessors!
+      }, {
+        Header: 'What works',
+        accessor: 'work'
+    }, {
+        Header: 'What doesnt work ',
+        accessor: 'nowork'
+      }],
+    data:[{
+        number: 1,
+        img:'../../../assets/images/proj_cycnav/google_map.png',
+        app: 'Google maps',
+        work: ['Bike friendly trails and lanes',
+        'Route suggestion based on cyclists preference',
+        '3D elevation on geographic features'
+    ],
+        nowork:['Driving centric navigation',
+        'No Bike share map'
+    ]
+    },{
+        number: 2,
+        img:'../../../assets/images/proj_cycnav/vanhawks_logo.png',
+        app: 'Google maps',
+        work: ['Bike friendly trails and lanes',
+        'Route suggestion based on cyclists preference',
+        '3D elevation on geographic features'
+    ],
+        nowork:['Driving centric navigation',
+        'No Bike share map'
+    ]
+    },{
+        number: 3,
+        img:'../../../assets/images/proj_cycnav/waze.png',
+        app: 'Google maps',
+        work: ['Bike friendly trails and lanes',
+        'Route suggestion based on cyclists preference',
+        '3D elevation on geographic features'
+    ],
+        nowork:['Driving centric navigation',
+        'No Bike share map'
+    ]
+    }]
+}
 
-const img6 = require('../../../assets/images/proj_cycnav/google_map.png')
-const img7 = require('../../../assets/images/proj_cycnav/vanhawks_logo.png')
-const img8 = require('../../../assets/images/proj_cycnav/waze.png')
-const img9 = require('../../../assets/images/proj_cycnav/phone.png')
-const img10 = require('../../../assets/images/proj_cycnav/bikelight.png')
-const img11 = require('../../../assets/images/proj_cycnav/app_wireframe.png')
+const findingCompare = {
+    subtitle:'Finding',
+    content:'A lot of the solutions out in the market is either app based, or hardware based. Many times, the problem can not be simply solved with just one method.As for CYCNAV, it is a combined solution that tackle the problem using both technologies.'
+}
 
+const devices ={
+        title:'App vs IOT',
+    p1Img: '../../../assets/images/proj_cycnav/phone.png',
+    p2Img:'../../../assets/images/proj_cycnav/bikelight.png',
+    p1content:[
+        'Digital App',
+        'Pros: Accurante and fast route search',
+        'Cons: Distractive, pro to light flare',
+    ],
+    p2content:[
+        'Physical Device',
+         'Pros: Safe & all-in-one navigation and user contribution',
+         'Cons: Costly',
+    ]
+}
+
+const solutions = {
+    title:'Solutions',
+    content:'Based on the result of comparative analysis, we decide to approach the problem using both digital and physical solutions. that is building a physical navigational device that would be powered by a digital app.',
+    img:'../../../assets/images/proj_cycnav/journey_map.jpg',
+    label: ['Nav App: The app uses googles map api to calculate the best route for the users, use can also input their finding of road conditions using the app.',
+'Cycnav Bike Light: The bike light is connected to the app using bluetooth. While the app is calculating and adjusting the route,the bike light functions as the visual portal to help guide the cyclists while they are biking.']
+}
+
+const usability = {
+    title:'Usability Test',
+    content:[
+        'Test with the wireframes revealed some major areas to improve on:',
+        'Users encountered trouble moving from the mobile app to the bike light. They prefer staying on the app while biking.',
+        'Not enough feedback on botht the app and the bike light, users sometimes get confused while traveling.'
+    ]
+}
+
+const iterations = {
+    title:'Iterations',
+    content:[
+        'We focuse improvements on the following two major components:',
+        'Spend more time with the user on the onboarding, especially when they are connecting the bike light to the app.',
+        'Redefine the search process to make it more intuitive, less steps.',
+        'Reduce the number of button on the lights, and increase the size'
+    ],
+    img:'../../../assets/images/proj_cycnav/journey_map.jpg'
+}
+
+const testResult = {
+    title:'Result',
+    columns:[{
+        Header: 'Feature',
+        accessor: 'feature' // String-based value accessors!
+      }, {
+        Header: 'Problem',
+        accessor: 'problem'
+    }, {
+        Header: 'Iteration',
+        accessor: 'iteration'
+      }, {
+          Header: 'Results',
+          accessor: 'result'
+        }],
+        data:[{
+            feature:'App to Device transition',
+            problem:'User stuck after connect to bike light',
+            iteration:'Redirect to app main map',
+            result:'50% Smooth'
+        },{
+            feature:'Onboarding',
+            problem:'User neglected message to transit to ',
+            iteration:'Full screen instruction',
+            result:'25% Smooth'
+        },{
+            feature:'Bike light navigation',
+            problem:'Missing or unclear indicators',
+            iteration:'Create vartions in indicator size',
+            result:'75% Smooth'
+        }]
+}
+
+const prototypeApp ={
+    title:' Prototype - APP',
+    content:'We had a few variations for the Prototype as shown below. One consideration that is more important than the asthetics of the app itself, is the readability of the screen under different light conditions.',
+    imgLeft:{placeholder},
+    imgMiddle:{placeholder},
+    imgRight:{placeholder},
+    contentLeft:'Design 1: a green theme is used as we are hoping to achive a eco travel method.',
+    contentMiddle:'Design 2: a green theme is used as we are hoping to achive a eco travel method.',
+    contentRight:'Design 3: a green theme is used as we are hoping to achive a eco travel method. '
+}
+
+const decision ={
+    title:'Decision',
+    content:'In the end, we decide to go with design 3 due to its readability even under extreme sun light. For this design,the users can grasp the information in the shortest amoutn of time, which is fatal when they are on the road.',
+    img:{placeholder}
+}
+
+const prototypeDevice ={
+    title:'Prototype - Bike Light',
+    content:'Same as the app, we tested multiple paper prototypes before making a decision. ',
+    img:{placeholder},
+    label:'The Best result is a fluid capsule with a slanted angle for optimized viewing experience.'
+}
+
+const reflections = {
+    title:'What did I learn?',
+    reflections: [
+        {
+            subject:'Sometimes the perfect solution is not one, but multiple approaches',
+            learn:'If we have not done the user test and market analysis, we were Automatically assumed to go with one of the twocompletely different method for the problem we are presented. By adapting the UX research process we were able to focus on our users, coming up with valid solutions for the problems insead of making assumptions for the sake of building a tool.'
+        },{
+            subject:'Being able to pick up new skills and learn quickly is part of the UX.',
+            learn:'his probject was done with limited time and resources. at times I had to learn new softwares, pick up technical skills along the way. This is not only helpful to me personaly, but it broadens my pespective as an UX design, where I was able to develop empathy for other field of personnels.'
+        }
+    ]
+}
 class Project2 extends React.Component {
 
   render () {
@@ -127,254 +291,22 @@ class Project2 extends React.Component {
 
           <Persona content={persona} />
           <FindingComponent content={findingPersona} />
-          <RegImageComponent content={userJourney} />
+          <LayoutImage content={userJourney} />
+          <TableComponent content={comparativeAnalysis} />
+          <FindingComponent content={findingCompare} />
 
           <h3>Market Research</h3>
-          <h4>Comparactive Analysis </h4>
-          <table className='table table-bordered'>
-            <thead>
-              <tr>
-                <th>App / Device name</th>
-                <th>What works</th>
-                <th>What doesn’t work</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <img src={img6} /><br />
-                Google Maps
-                </td>
-                <td>
-                  <ul>
-                    <li>Bike friendly trails and lanes</li>
-                    <li>Route suggestion based on cyclists preference</li>
-                    <li>3D elevation on geographic features</li>
-                  </ul>
-                </td>
-                <td><ul>
-                  <li>No relevant information such as bike shops & repare centre</li>
-                  <li>No Bike share map</li>
-                </ul></td>
-              </tr>
-              <tr>
-                <td><img src={img7} /><br />
-                Vanhawk bikes</td>
-                <td><ul>
-                  <li>Self sustained, no need for phone / GPS</li>
-                  <li>feature that notifies nearby traffic in the blindspot.</li>
-                  <li>Speed tracking</li>
-                </ul></td>
-                <td><ul>
-                  <li>Costly</li>
-                  <li>No live updates of current road condition</li>
-                </ul></td>
-              </tr>
-              <tr>
-                <td><img src={img8} /><br />
-                Waze app</td>
-                <td><ul>
-                  <li>User Contribution</li>
-                  <li>Social feature, friends option</li>
-                </ul></td>
-                <td><ul>
-                  <li>Car focused, not for cyclists</li>
-                  <li>no offline maps</li>
-                </ul></td>
-              </tr>
-            </tbody>
-          </table>
+          <Persona content={devices} />
 
-          <div className='finding-div'><b>Finding </b> A lot of the solutions out in the market is either app based, or hardware based. Many times, the problem can not be simply solved with just one method.
-        As for CYCNAV, it is a combined solution that tackle the problem using both technologies.</div>
+          <LayoutImage content={solutions} />
+          <LayoutText content={usability} />
+          <LayoutImage content={iterations} />
+          <TableComponent content={testResult} />
+          <LayoutThree content ={prototypeApp} />
+          <LayoutImage content={decision} />
+          <LayoutImage content={prototypeDevice} />
+          <Reflection content={reflections} />
 
-          <h4>App vs IOT </h4>
-          <br />
-          <table className='table table-noborder'>
-            <thead>
-              <tr>
-                <th>Digital App</th>
-                <th>Physical Device</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><img src={img9} /></td>
-                <td><img src={img10} /></td>
-              </tr>
-              <tr>
-                <td>
-                  <ul>
-                    <li>Accurate and fast route search</li>
-                    <li>User contribution</li>
-                  </ul>
-                </td>
-                <td>
-                  <ul>
-                    <li>More safe & all-in-one navigation</li>
-                    <li>Fast feedback, cost free</li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <ul>
-                    <li>More distractions</li>
-                    <li>Dependent on light condition</li>
-                  </ul>
-                </td>
-                <td>
-                  <ul>
-                    <li>Costly, atleast $100</li>
-                    <li>Cannot be stand alone</li>
-                  </ul>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-          <h3>Solutions</h3>
-          <p>Based on the result of comparative analysis, we decide to approach the problem using both digital and physical solutions. that is building a physical navigational device that would be powered by a digital app.</p>
-          <img src={img1} />
-          <div className='project-layout-half'>
-            <div>
-              <b>Cycnav Navigational App</b>: The app uses googles map api to calculate the best route for the users, use can also input their finding of road conditions using the app.
-            </div>
-            <div>
-              <b>Cycnav Bike Light</b>: The bike light is connected to the app using bluetooth. While the app is calculating and adjusting the route,
-              the bike light functions as the visual portal to help guide the cyclists while they are biking.
-            </div>
-          </div>
-
-          <h3>Wireframes - Digital</h3>
-          <p>
-              We started by creating several different versions of wireframes. The focus of the wireframe is to help the user find the route of their destination. Then leads them to the bike light.
-            </p>
-          <p>
-            the features of the app: <br />
-            <ul>
-              <li>Search for destination </li>
-              <li>Find the desired route </li>
-              <li>Initiate navigation </li>
-            </ul>
-          </p>
-          <img src={img11} />
-
-          <h3>Prototype - Bike Light </h3>
-          <p>Once the user has done deciding on the route, we would like them to put away their phone and use the bike light to navigate. We used Revit to do the modeling of the bikelight, the main idea is to have a fluid shape of a light that canbe easily attached </p>
-          <ul>
-            <li>Serves the core functioanl requirements: Feeding and receiving data to the phone, Major biking light, indicational lights</li>
-            <li>Fluid shape that can be easily attached to the bike, and easily dettached for charging</li>
-            <li>Secure enough for threfting </li>
-          </ul>
-          <div className='project-layout-third'>
-            <div> prototype 1 </div>
-            <div> prototype 2 </div>
-            <div> prototype 3 </div>
-          </div>
-
-          <h3>Usability Test</h3>
-          <p>Test with the wireframes revealed some major areas to improve on:</p>
-          <ul>
-            <li>Users encountered trouble moving from the mobile app to the bike light. They prefer staying on the app while biking.</li>
-            <li>Not enough feedback on botht the app and the bike light, users sometimes get confused while traveling. </li>
-          </ul>
-
-          <h3> Iterations</h3>
-          <p>We focuse improvements on the following two major components: </p>
-          <ul>
-            <li>Spend more time with the user on the onboarding, especially when they are connecting the bike light to the app.</li>
-            <li>Redefine the search process to make it more intuitive, less steps.</li>
-            <li>Reduce the number of button on the lights, and increase the size</li>
-          </ul>
-          <img src={img1} />
-
-          <div className='finding-div'><b>Results: </b><br />
-           We tested the new design again to a different group of people and the results were way better.
-           <table className='table table-bordered'>
-             <thead>
-               <tr>
-                 <th>Features</th>
-                 <th>Test 1 Problem</th>
-                 <th>Fixes </th>
-                 <th> Results </th>
-               </tr>
-             </thead>
-             <tbody>
-               <tr>
-                 <td>App Onboarding</td>
-                 <td>
-                 Users stuck on connected page
-                 </td>
-                 <td>
-                 Automatically direct to Map page
-                 </td>
-                 <td>
-                 50% Up
-                 </td>
-               </tr>
-               <tr>
-                 <td>App to Device transition</td>
-                 <td>
-                  Popup intruct user to move to bike like often neglected
-                 </td>
-                 <td>
-                 Full screen instruction
-                 </td>
-                 <td>
-                 25% Up
-                 </td>
-               </tr>
-               <tr>
-                 <td>Bike light Navigation</td>
-                 <td>
-                  Arrow light not clear, no indication of road blocks.
-                 </td>
-                 <td>
-                 Increased the size of the arrow light, added road block type
-                 </td>
-                 <td>
-                 75% Up
-                 </td>
-               </tr>
-             </tbody>
-           </table>
-          </div>
-
-          <h3> Prototype - APP</h3>
-          <p>We had a few variations for the Prototype as shown below. One consideration that is more important than the asthetics of the app itself, is the readability of the screen under different light conditions.</p>
-          <div className='project-layout-third'>
-            <div>
-              <img src={img1} /> <br />
-              <span><b>Design 1 </b>: a 'green' theme is used as we are hoping to achive a eco travel method. </span>
-            </div>
-            <div>
-              <img src={img1} /><br />
-              <span><b>Design 2</b>: a 'green' theme is used as we are hoping to achive a eco travel method. </span>
-            </div>
-            <div>
-              <img src={img1} /><br />
-              <span><b>Design 3</b>: a 'green' theme is used as we are hoping to achive a eco travel method. </span>
-            </div>
-          </div>
-          <p> In the end, we decide to go with design 3 due to its readability even under extreme sun light. For this design,
-          the users can grasp the information in the shortest amoutn of time, which is fatal when they are on the road.</p>
-          <img src={img1} />
-          <p>Following are the tests of the prototype under various light conditions </p>
-          <img src={img1} />
-
-          <h3> Prototype - BIKE LIGHT</h3>
-          test esldfjlskdhflskdjf;sldkhfskdhflsdkf;slei
-
-          <h3>Reflections </h3>
-          <p> <b>Sometimes the perfect solution is not one, but multiple approaches</b> <br />
-          If we have not done the user test and market analysis, we were Automatically assumed to go with one of the two
-          completely different method for the problem we are presented. By adapting the UX research process we were able to focus on our users, coming up with
-          valid solutions for the problems insead of making assumptions for the sake of building a tool.</p>
-          <p><b>Being able to pick up new skills and learn quickly is part of the UX.</b> This probject was done with limited time and resources. at times I had
-          to learn new softwares, pick up technical skills along the way. This is not only helpful to me personaly, but it broadens my pespective as an UX design,
-          where I was able to develop empathy for other field of personnels.
-          </p>
         </div>
       </div>
     )

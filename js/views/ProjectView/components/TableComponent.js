@@ -4,8 +4,7 @@ import ReactTable from "react-table";
 export default class TableComponent extends React.Component {
     render() {
         const {data, columns, content, title} =this.props.content
-        const rowCount = ({columns}).length
-        console.log('row count :::', rowCount)
+        const count = data.length
 
 return (
     <div>
@@ -16,7 +15,7 @@ return (
       columns={columns}
       resolveData={data => data.map(row => row)}
       showPagination ={false}
-      minRows = {4}
+      minRows = {count}
     />
 </div>
 )

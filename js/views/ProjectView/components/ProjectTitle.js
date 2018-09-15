@@ -2,12 +2,16 @@ import React from 'react'
 
 export default class ProjectTitle extends React.Component {
   render () {
-      const {title} =this.props.content
+      const {title, logo, bgImg} =this.props.content
+      const titleBG = {
+          backgroundImage:'url(' + {bgImg} + ')'
+      }
+      console.log('bg imge::::', bgImg)
     return (
-      <div className='project-title-layout project-title-cycnav'>
+      <div className='project-title-layout' style={titleBG}>
         <div className='project-title-text'>
-          <div className='cycnav-logo project-title-logo' />
-          <h3> {this.props.content.title}</h3>
+          <img className=' project-title-logo' src={logo} />
+          <h3> {title}</h3>
         </div>
       </div>
     )

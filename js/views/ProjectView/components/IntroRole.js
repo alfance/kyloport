@@ -15,7 +15,7 @@ console.log('media is :::::', media)
         <div className='project-layout-half'>
           <div>
             <h4>my Role </h4>
-            <p>  I worked as the{role}for this project. Some of my responsibilities included:<br />
+            <span>  I worked as the{role}for this project. Some of my responsibilities included: </span>
               <ul>
                 {duties.map(duty => {
                   return (
@@ -23,12 +23,10 @@ console.log('media is :::::', media)
                   )
                 })}
               </ul>
-            </p>
           </div>
 
           <div>
               {media}
-              <ReactPlayer url='https://youtu.be/e8OPmP75HJU' />
           </div>
         </div>
 
