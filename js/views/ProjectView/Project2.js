@@ -204,7 +204,8 @@ const iterations = {
         'Redefine the search process to make it more intuitive, less steps.',
         'Reduce the number of button on the lights, and increase the size'
     ],
-    img:'../../../assets/images/proj_cycnav/journey_map.jpg'
+    img:'../../../assets/images/proj_cycnav/journey_map.jpg',
+
 }
 
 const testResult = {

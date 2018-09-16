@@ -4,26 +4,35 @@ export default class LayoutImage extends React.Component {
   render () {
       const {title, img, video, label, content} = this.props.content
 
-      if(Array.isArray(content)){
-          {content.map(each => {
-            <li key={each}>{each}</li>
-          })}
-      } else {
-         <p>{content}</p>
-      }
-
-      if(Array.isArray(label)){
-          label.map(each => {
-                      <li> key={each}>{each}</li>
+      let listContent = {}
+      let listLabel = {}
+      console.log("find out the label:::::", label)
+      if(content.constructor === Array){
+        listContent = content.map(list => {
+            return (
+              <li key={list}>{list}</li>
+            )
           })
       } else {
-         <span>{label}</span>
+          listContent = <p>{content}</p>
       }
-    
+
+      // if(label.constructor === Array){
+      //   listLabel = label.map(each => {
+      //       return (
+      //         <li key={each}>{each}</li>
+      //       )
+      //     })
+      // } else if (label.constructor !== Array) {
+      //     listLabel = <p>{label}</p>
+      // } else {
+      //     listLabel = <p>fsdfsdfsfe</p>
+      // }
+
     return (
       <div>
           <h3>{title}</h3>
-          {content}
+          {label}
           <img src={img} />
           {label}
       </div>

@@ -6,7 +6,6 @@ export default class ProjectTitle extends React.Component {
      const {content, role, duties, img, video} = this.props.content
      const media= this.props.content.img === undefined ? <ReactPlayer url={video} /> : <img src={img} />
 
-console.log('media is :::::', media)
     return (
       <div >
         <h4>
