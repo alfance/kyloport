@@ -6,7 +6,7 @@ export default class LayoutImage extends React.Component {
 
       let listContent = {}
       let listLabel = {}
-      console.log("find out the label:::::", label)
+
       if(content.constructor === Array){
         listContent = content.map(list => {
             return (
@@ -17,24 +17,25 @@ export default class LayoutImage extends React.Component {
           listContent = <p>{content}</p>
       }
 
-      // if(label.constructor === Array){
-      //   listLabel = label.map(each => {
-      //       return (
-      //         <li key={each}>{each}</li>
-      //       )
-      //     })
-      // } else if (label.constructor !== Array) {
-      //     listLabel = <p>{label}</p>
-      // } else {
-      //     listLabel = <p>fsdfsdfsfe</p>
-      // }
+      // checkout the label, some of the label is undefine so render a null obj.
+      if (typeof label === 'undefined') {
+          listLabel = null
+      }else if (label.constructor === Array){
+        listLabel = label.map(each => {
+            return (
+              <li key={each}>{each}</li>
+            )
+          })
+      } else {
+          listLabel = <p>{label}</p>
+      }
 
     return (
       <div>
           <h3>{title}</h3>
-          {label}
+          {listContent}
           <img src={img} />
-          {label}
+          {listLabel}
       </div>
     )
   }
