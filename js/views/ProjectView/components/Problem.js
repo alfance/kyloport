@@ -17,7 +17,7 @@ export default class Problem extends React.Component {
         <div style={probStyle}>
           <p>{content}</p>
           <ul>
-            {ComponentHelp.createContentMap(content)}
+            {ComponentHelp.createContentMap(list)}
           </ul>
         </div>
       </div>
