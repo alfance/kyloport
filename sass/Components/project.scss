@@ -1,23 +1,8 @@
-.project-content-layout {
-  max-width: 760px;
-  margin-left: auto;
-  margin-right: auto;
 
 
-  // /////////////////////////////// paragrahes spaces ///////////////////////////////
-  h2, h3, h4 {
-    margin: 8% 0 3% 0;
-  }
+////////////////////////////// Individual Project
 
-  .project-component-title {
-      width: 100%;
-    text-align: center;
-    padding: 48px 0px;
-    margin-top:120px;
-  }
-}
-
-// /////////////////////////////// Project Title ///////////////////////////////
+// /////////////////////////////// Individual Project Title ///////////////////////////////
 .project-title-layout{
   height:25vh;
   min-height:350px;
@@ -35,10 +20,10 @@
   .project-title-text {
       margin:auto;
       text-align: center;
-      width:100%;
       position: absolute;
       top:50%;
       transform: translateY(-50%);
+      width:100%;
 
       .project-title-logo{
           width:50%;
@@ -46,76 +31,13 @@
           object-fit: contain;
       }
 
-      h3 span{
+      h3{
           margin:0px;
           color: $color-white;
       }
   }
 }
 //////////////////
-
-
-.projectPanel {
-  width:100%;
-  @include flex-box-setup;
-}
-
-.projectItem {
-  width:$project-each-width;
-  height:$project-each-height;
-  background-color: $color-white;
-  margin:20px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 13px;
-
-  // media size
-  @include smallS {
-      width: $project-each-width-small;
-      height: $project-each-height-small;
-  }
-
-  @include xsmall {
-      width: 85vw;
-      height: calc(85vw / 1.5);
-      padding-left:auto;
-      padding-right:auto;
-  }
-  img {
-    width:100%;
-    height:auto;
-    position: absolute;
-    left:0px;
-      @include animation('image-hover-out 0.5s forwards');
-  }
-
-  .projectTitle {
-    @include center-align-absolute;
-    opacity: 0;
-    color:$color-black;
-  }
-
-  // projectItem hover
-  &:hover {
-    img {
-    @include animation('image-hover 0.5s forwards');
-  }
-
-  .projectTitle {
-    @include animation('fadeIn 0.5s forwards');
-  }
-  }
-
-}
-
-
-/////////////////
-/////////////////
-/////////////////
-/////////////////
-/////////////////
-/////////////////
-/////////////////
 
 
 

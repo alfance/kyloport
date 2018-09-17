@@ -298,7 +298,7 @@ const reflections = {
 }
 }
 
-class Project2 extends React.Component {
+class Cycnav extends React.Component {
 
   render () {
     return (
@@ -344,4 +344,4 @@ class Project2 extends React.Component {
   }
 }
 
-export default Project2
+export default Cycnav

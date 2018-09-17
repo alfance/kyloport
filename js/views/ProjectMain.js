@@ -6,8 +6,13 @@ class ProjectMain extends React.Component {
     return (
       <div>
         <div className='main-intro'>
+            <div className='project-title-layout designer-intro' >
           <h1> Hello, Kylo Xue here. </h1>
-          <p>Nulla pharetra augue magna, et egestas nulla pellentesque tempor. Duis mattis pulvinar ultrices. Proin sit amet ultricies neque, iaculis iaculis lorem.</p>
+          <p>I'm a product designer with a background in digital media. <br />
+          UX / UI  <br />
+      I am also in the progress to progressively expand my T zone into Interaction design and front-end deveopment.
+            </p>
+          </div>
         </div>
         <PortfolioLayout />
       </div>
