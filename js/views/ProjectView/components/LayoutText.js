@@ -1,24 +1,14 @@
 import React from 'react'
+import ComponentHelp from './ComponentHelp'
 
 export default class LayoutText extends React.Component {
   render () {
-      const {title, content, className} = this.props.content
-      let listContent = {}
-
-      if(content.constructor === Array){
-        listContent = content.map(list => {
-            return (
-              <li className={className} key={list}>{list}</li>
-            )
-          })
-      } else {
-          listContent = <p>{content}</p>
-      }
+    const {title, content, className} = this.props.content
 
     return (
       <div>
-          <h3>{title}</h3>
-          {listContent}
+        <h3>{title}</h3>
+        {ComponentHelp.createContentMap(content, className)}
       </div>
     )
   }
