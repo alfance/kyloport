@@ -6,7 +6,7 @@ export default {
 // exported file, bundle.js
   output: {
     filename: 'bundle.js',
-    path: path.join(__dirname, 'build'),
+    path: path.join(__dirname, 'dist'),
     publicPath: 'http://localhost:8080/'
   },
 // pre-process files. all ends with js.
