@@ -2,13 +2,13 @@ import React from 'react'
 
 export default class LayoutText extends React.Component {
   render () {
-      const {title, content} = this.props.content
+      const {title, content, className} = this.props.content
       let listContent = {}
 
       if(content.constructor === Array){
         listContent = content.map(list => {
             return (
-              <li key={list}>{list}</li>
+              <li className={className} key={list}>{list}</li>
             )
           })
       } else {
@@ -21,10 +21,5 @@ export default class LayoutText extends React.Component {
           {listContent}
       </div>
     )
-  }
-
-  ContentType(){
-      isArrary = (content.constructor === Arrray)? true : false
-      console.log('content is array::::', isArray)
   }
 }

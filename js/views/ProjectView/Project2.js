@@ -10,6 +10,10 @@ import LayoutText from './components/LayoutText'
 import LayoutThree from './components/LayoutThree'
 import Reflection from './components/Reflection'
 
+const style ={
+    color:'#1A923C'
+}
+
 const placeholder = require('../../../assets/images/proj_cycnav/journey_map.jpg')
 
 const projectTitle = {
@@ -191,8 +195,9 @@ const usability = {
     title:'Usability Test',
     content:[
         'Test with the wireframes revealed some major areas to improve on:',
-        'Users encountered trouble moving from the mobile app to the bike light. They prefer staying on the app while biking.',
-        'Not enough feedback on botht the app and the bike light, users sometimes get confused while traveling.'
+        '1. Users encountered trouble moving from the mobile app to the bike light. ',
+        '2. They prefer staying on the app while biking.',
+        '3. Not enough feedback on botht the app and the bike light, users sometimes get confused while traveling.'
     ]
 }
 
@@ -200,9 +205,9 @@ const iterations = {
     title:'Iterations',
     content:[
         'We focuse improvements on the following two major components:',
-        'Spend more time with the user on the onboarding, especially when they are connecting the bike light to the app.',
-        'Redefine the search process to make it more intuitive, less steps.',
-        'Reduce the number of button on the lights, and increase the size'
+        '• Spend more time with the user on the onboarding, especially when they are connecting the bike light to the app.',
+        '• Redefine the search process to make it more intuitive, less steps.',
+        '• Reduce the number of button on the lights, and increase the size'
     ],
     img:'../../../assets/images/proj_cycnav/journey_map.jpg',
 
@@ -267,22 +272,24 @@ const prototypeDevice ={
 
 const reflections = {
     title:'What did I learn?',
-    reflections: [
-        {
-            subject:'Sometimes the perfect solution is not one, but multiple approaches',
-            learn:'If we have not done the user test and market analysis, we were Automatically assumed to go with one of the twocompletely different method for the problem we are presented. By adapting the UX research process we were able to focus on our users, coming up with valid solutions for the problems insead of making assumptions for the sake of building a tool.'
-        },{
-            subject:'Being able to pick up new skills and learn quickly is part of the UX.',
-            learn:'his probject was done with limited time and resources. at times I had to learn new softwares, pick up technical skills along the way. This is not only helpful to me personaly, but it broadens my pespective as an UX design, where I was able to develop empathy for other field of personnels.'
-        }
+    reflections: {
+        subject:[
+            'Sometimes the perfect solution is not one, but multiple approaches',
+            'Being able to pick up new skills and learn quickly is part of the UX.'
+        ],
+        learn:[
+            'If we have not done the user test and market analysis, we were Automatically assumed to go with one of the twocompletely different method for the problem we are presented. By adapting the UX research process we were able to focus on our users, coming up with valid solutions for the problems insead of making assumptions for the sake of building a tool.',
+            'his probject was done with limited time and resources. at times I had to learn new softwares, pick up technical skills along the way. This is not only helpful to me personaly, but it broadens my pespective as an UX design, where I was able to develop empathy for other field of personnels.'
     ]
 }
+}
+
 class Project2 extends React.Component {
 
   render () {
     return (
       <div>
-        <ProjectTitle content={projectTitle} />
+        <ProjectTitle content={projectTitle} style={style} />
         <div className='project-content-layout'>
         <IntroRole content={introRole} />
           <Problem content={problem} />
@@ -291,17 +298,17 @@ class Project2 extends React.Component {
           <TableComponent content={interviews} />
 
           <Persona content={persona} />
-          <FindingComponent content={findingPersona} />
+          <FindingComponent content={findingPersona} style={style} />
           <LayoutImage content={userJourney} />
           <TableComponent content={comparativeAnalysis} />
-          <FindingComponent content={findingCompare} />
+          <FindingComponent content={findingCompare} style={style} />
 
           <h3>Market Research</h3>
           <Persona content={devices} />
 
           <LayoutImage content={solutions} />
           <LayoutText content={usability} />
-          <LayoutImage content={iterations} />
+          <LayoutImage className ='bullet-list' content={iterations} />
           <TableComponent content={testResult} />
           <LayoutThree content ={prototypeApp} />
           <LayoutImage content={decision} />

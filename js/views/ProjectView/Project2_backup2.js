@@ -45,7 +45,6 @@ const img11 = require('../../../assets/images/proj_cycnav/app_wireframe.png')
 class Project2 extends React.Component {
   render () {
       const {test} = cycnavitems[0]
-      console.log('what is intro role', {test})
 
     return (
       <div>

@@ -7,7 +7,7 @@ class Header extends React.Component {
   }
 
   onSave (text) {
-    console.log(text)
+    console.log('onsave', text)
   }
 
   render () {
