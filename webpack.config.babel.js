@@ -16,11 +16,15 @@ export default {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loaders: ['react-hot', 'babel']
+        loaders: ['react-hot-loader', 'babel-loader']
       },
       {
-        test: /\.scss$/,
-        loaders: ['style', 'css', 'sass']
+          test: /\.scss$/,
+              use: [
+                  "style-loader", // creates style nodes from JS strings
+                  "css-loader", // translates CSS into CommonJS
+                  "sass-loader" // compiles Sass to CSS, using Node Sass by default
+              ]
       },
       {
         test: /\.(png|jpg|gif|svg|mtl|obj|drc)$/,
@@ -28,12 +32,12 @@ export default {
       },
       {
         test: /\.(json|conf)$/,
-        loader: 'json'
+        loader: 'json-loader'
       },
       {
         test: /\.(woff|ttf)$/,
         loader: 'file-loader?'
-      }
+    }
     ]
   }
 // localhost:8080

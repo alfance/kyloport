@@ -5,15 +5,23 @@ $color-blue: #64F6F0;
 
 $color-white: #fff;
 
-$color-grey1: #F8F5FF;
-$color-grey2: #D9D9E8;
-$color-grey3: #97A3B8;
-$color-grey4: #68687D;
+$color-grey1: #f5f5f5;
+$color-grey2: #9e9e9e;
+$color-grey3: #616161;
+$color-grey4: #212121;
 
-$color-black: #0B0C0F;
+$color-black: #000000;
 
 $color-transparent:rgba(0,0,0, 0);
 
 $color-alert:#D93C3C;
 $color-normal:#9FE600;
 $color-warn:#FDEE35;
+
+.text-light * {
+    color:$color-white;
+}
+
+.text-dark * {
+    color:$color-black;
+}

@@ -15,7 +15,7 @@ class ProjectStore1 extends EventEmitter {
         id: 2,
         name: 'Project 2',
         category:'mobile',
-        link: 'Project2',
+        link: 'cycnav',
         url:''
       },
       {

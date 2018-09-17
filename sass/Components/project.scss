@@ -1,73 +1,140 @@
-.project-content-layout {
-  max-width: 760px;
-  margin-left: auto;
-  margin-right: auto;
 
-  // /////////////////////////////// paragrahes spaces ///////////////////////////////
-  h2, h3, h4 {
-    margin: 8% 0 3% 0;
-  }
-}
 
-.projectPanel {
-  width:100%;
-  @include flex-box-setup;
-}
+////////////////////////////// Individual Project
 
-.projectItem {
-  width:$project-each-width;
-  height:$project-each-height;
-  background-color: $color-white;
-  margin:20px;
+// /////////////////////////////// Individual Project Title ///////////////////////////////
+.project-title-layout{
+  height:25vh;
+  min-height:350px;
+  margin-top:50px;
+  background-size: contain;
   position: relative;
-  overflow: hidden;
-  border-radius: 13px;
 
-  // media size
   @include smallS {
-      width: $project-each-width-small;
-      height: $project-each-height-small;
+      height:auto;
+  }
+  .project-title-bg{
+      width:100%;
+      height: 100%;
+      opacity: 0.5;
+      position: absolute;
   }
 
-  @include xsmall {
-      width: 85vw;
-      height: calc(85vw / 1.5);
-      padding-left:auto;
-      padding-right:auto;
+  .project-title-text {
+      margin:auto;
+      text-align: center;
+      position: absolute;
+      top:50%;
+      transform: translateY(-50%);
+      width:100%;
+
+      .project-title-logo{
+          width:50%;
+          min-width:300px;
+          object-fit: contain;
+      }
+
+      h3{
+          margin:0px;
+          color: $color-white;
+      }
   }
-  img {
-    width:100%;
-    height:auto;
-    position: absolute;
-    left:0px;
-      @include animation('image-hover-out 0.5s forwards');
+}
+//////////////////
+
+
+
+/////////////////////////////// defines the split contents in each project ///////////////////////////////
+
+// general css for the container css
+@mixin project-container-css {
+  width:100%;
+  display: flex;
+
+  * :first-of-type {
+      padding-left:8px;
+  }
+  * :last-of-type {
+      padding-right:8px;
   }
 
-  .projectTitle {
-    @include center-align-absolute;
-    opacity: 0;
-    line-height: 0.6em;
-    color:$color-black;
+  @include smallS {
+    display: inline-block;
   }
-
-  // projectItem hover
-  &:hover {
-    img {
-    @include animation('image-hover 0.5s forwards');
-  }
-
-  .projectTitle {
-    @include animation('fadeIn 0.5s forwards');
-  }
-  }
-
 }
 
+// 1/2 1/2
+.project-layout-half {
+  @include project-container-css;
+  div {
+    width:50%;
+
+    @include smallS {
+      width:100%;
+    }
+  }
+}
+
+// 1/3 2/3
+.project-layout-13 {
+  @include project-container-css;
+  div:first-child  {
+    width:calc(100%/3);
+  }
+  div:nth-child(2) {
+    width:calc(100%/3 *2);
+  }
+
+  @include smallS {
+    div {width:100%;}
+  }
+}
+
+// 2/3 1/3
+.project-layout-23 {
+  @include project-container-css;
+  div:first-child  {
+    width:calc(100%/3*2);
+  }
+  div:nth-child(2) {
+    width:calc(100%/3);
+  }
+
+  @include smallS {
+    div {width:100%;}
+  }
+}
+
+// 1/3
+.project-layout-third {
+  @include project-container-css;
+  div  {
+    width:calc(100%/3);
+  }
+  @include smallS {
+    div {width:100%;}
+  }
+}
+
+
+/////////////////
+/////////////////
+/////////////////
+/////////////////
+/////////////////
+/////////////////
+
+
+
+
+/////////////////////////////////// get rid the 10px left and right for {myrole} in IntroRole.js ///////////////
+.introRole-top span{
+    padding:0px;
+}
 
 // /////////////////////////////// The findign div highlights the findings I have found from the researches, studies and tests.   ///////////////////////////////
 .finding-div {
-  padding: 25px;
-  background-color: $color-grey2;
+  padding: 24px;
   margin: 5% 0;
 
   b {
@@ -79,13 +146,18 @@
 
 ////////// PERSONA STYLE, standard style for persona.    ////////
 .persona-div {
-    @include center-align-content;
     padding:0px 15px;
+    text-align: left;
+
+    li:first-of-type {
+        font-weight: bold;
+        padding-left: 0px;
+    }
 }
 .persona-img {
   padding: 15px;
-  width:200px;
-  height:200px;
+  width:144px;
+  height:144px;
   display: block;
 }
 
@@ -96,15 +168,22 @@
 }
 
 
+///////////////////  Reflection div /////////////////
+.project-reflections {
+    p {
+        padding-bottom: 8px;
+    }
+    padding-bottom: 72px;
+}
+/////////
 
 
-
-
-
-
-
-
-
+/////////////////
+/////////////////
+/////////////////
+/////////////////
+/////////////////
+/////////////////
 
 
 
