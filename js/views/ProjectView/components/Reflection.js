@@ -12,9 +12,8 @@ export default class Reflection extends React.Component {
          </div>)
       })
 
-
     return (
-      <div>
+      <div className='project-reflections'>
         <h3>{title}</h3>
         {subjectList}
       </div>

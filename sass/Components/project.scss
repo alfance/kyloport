@@ -4,34 +4,56 @@
   margin-right: auto;
 
 
-  // /////////////////////////////// Project Title ///////////////////////////////
-  .project-title-layout{
-    height:25vh;
-    min-height:350px;
-    margin-top:50px;
-
-    .project-title-text {
-        margin:auto;
-        text-align: center;
-        width:500px;
-        
-        img {
-            width: 50px;
-        }
-        .project-title-logo{
-            width:50%;
-            min-width:300px;
-            object-fit: contain;
-        }
-    }
-  }
-
-
   // /////////////////////////////// paragrahes spaces ///////////////////////////////
   h2, h3, h4 {
     margin: 8% 0 3% 0;
   }
+
+  .project-component-title {
+      width: 100%;
+    text-align: center;
+    padding: 48px 0px;
+    margin-top:120px;
+  }
 }
+
+// /////////////////////////////// Project Title ///////////////////////////////
+.project-title-layout{
+  height:25vh;
+  min-height:350px;
+  margin-top:50px;
+  background-size: contain;
+  position: relative;
+
+  .project-title-bg{
+      width:100%;
+      height: 100%;
+      opacity: 0.5;
+      position: absolute;
+  }
+
+  .project-title-text {
+      margin:auto;
+      text-align: center;
+      width:100%;
+      position: absolute;
+      top:50%;
+      transform: translateY(-50%);
+
+      .project-title-logo{
+          width:50%;
+          min-width:300px;
+          object-fit: contain;
+      }
+
+      h3 span{
+          margin:0px;
+          color: $color-white;
+      }
+  }
+}
+//////////////////
+
 
 .projectPanel {
   width:100%;
@@ -70,7 +92,6 @@
   .projectTitle {
     @include center-align-absolute;
     opacity: 0;
-    line-height: 0.6em;
     color:$color-black;
   }
 
@@ -87,6 +108,17 @@
 
 }
 
+
+/////////////////
+/////////////////
+/////////////////
+/////////////////
+/////////////////
+/////////////////
+/////////////////
+
+
+
 /////////////////////////////// defines the split contents in each project ///////////////////////////////
 
 // general css for the container css
@@ -94,9 +126,13 @@
   width:100%;
   display: flex;
 
-* {
-  padding:0px 10px;
-}
+  * :first-of-type {
+      padding-left:8px;
+  }
+  * :last-of-type {
+      padding-right:8px;
+  }
+
   @include smallS {
     display: inline-block;
   }
@@ -156,10 +192,24 @@
 }
 
 
+/////////////////
+/////////////////
+/////////////////
+/////////////////
+/////////////////
+/////////////////
+
+
+
+
+/////////////////////////////////// get rid the 10px left and right for {myrole} in IntroRole.js ///////////////
+.introRole-top span{
+    padding:0px;
+}
+
 // /////////////////////////////// The findign div highlights the findings I have found from the researches, studies and tests.   ///////////////////////////////
 .finding-div {
-  padding: 25px;
-  background-color: $color-grey2;
+  padding: 24px;
   margin: 5% 0;
 
   b {
@@ -188,6 +238,22 @@
 }
 
 
+///////////////////  Reflection div /////////////////
+.project-reflections {
+    p {
+        padding-bottom: 8px;
+    }
+    padding-bottom: 72px;
+}
+/////////
+
+
+/////////////////
+/////////////////
+/////////////////
+/////////////////
+/////////////////
+/////////////////
 
 
 

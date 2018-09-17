@@ -5,7 +5,7 @@ export default class LayoutThree extends React.Component {
       const {title, content, imgLeft, imgMiddle, imgRight, contentLeft, contentMiddle, contentRight} = this.props.content
     return (
       <div>
-          <h4>{title}</h4>
+          <h3>{title}</h3>
           <p>{content}</p>
           <div className='project-layout-third'>
             <div>

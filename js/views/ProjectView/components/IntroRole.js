@@ -13,8 +13,8 @@ export default class ProjectTitle extends React.Component {
         </h4>
         <div className='project-layout-half'>
           <div>
-            <h4>my Role </h4>
-            <span>  I worked as the{role}for this project. Some of my responsibilities included: </span>
+            <h4>My Role </h4>
+            <p className='introRole-top'>I worked as the {role} for this project. Some of my responsibilities included: </p>
               <ul>
                 {duties.map(duty => {
                   return (

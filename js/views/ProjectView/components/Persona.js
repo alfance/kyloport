@@ -5,7 +5,7 @@ export default class Persona extends React.Component {
       const {title, content, p1Img, p2Img, p1content, p2content} = this.props.content
     return (
       <div>
-          <h4>{title}</h4>
+          <h3>{title}</h3>
           <p>{content}</p>
           <div className='project-layout-half'>
 

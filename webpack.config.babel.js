@@ -19,8 +19,12 @@ export default {
         loaders: ['react-hot-loader', 'babel-loader']
       },
       {
-        test: /\.scss$/,
-        loaders: ['style-loader', 'css-loader', 'sass-loader']
+          test: /\.scss$/,
+              use: [
+                  "style-loader", // creates style nodes from JS strings
+                  "css-loader", // translates CSS into CommonJS
+                  "sass-loader" // compiles Sass to CSS, using Node Sass by default
+              ]
       },
       {
         test: /\.(png|jpg|gif|svg|mtl|obj|drc)$/,

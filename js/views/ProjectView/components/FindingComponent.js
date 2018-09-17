@@ -1,16 +1,18 @@
 import React from 'react'
+import classNames from 'classnames'
 
 export default class FindingComponent extends React.Component {
   render () {
       const {subtitle, content} = this.props.content
-      const {color} =this.props.style
+      const {color, TextonColor} =this.props.style
 
       const divStyle = {
-      color: 'white',
-      backgroundColor: color
+          borderWidth: 1,
+          borderColor: color,
+          borderStyle: 'solid'
 };
     return (
-      <div className='finding-div' style={divStyle}><b>{subtitle} </b> {content}</div>
+      <div className={classNames('finding-div')} style={divStyle}><b style={{color:color}}>{subtitle} </b> {content}</div>
     )
   }
 }

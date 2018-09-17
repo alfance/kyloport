@@ -1,4 +1,5 @@
 import React from 'react'
+import TitleDivier from './components/TitleDivider'
 import ProjectTitle from './components/ProjectTitle'
 import IntroRole from './components/IntroRole'
 import Problem from './components/Problem'
@@ -11,8 +12,21 @@ import LayoutThree from './components/LayoutThree'
 import Reflection from './components/Reflection'
 
 const style ={
-    color:'#1A923C'
+    color:'#1A923C',
+    TextonColor:'text-light',
+    titleBgP:'right',
+    bgSize:''
 }
+
+const titleText1 = {title:'Who are the users?'}
+
+const titleText2 = {title:'Market Research'}
+
+const titleText3 ={title:'Solution'}
+
+const titleText4 ={title:'UI Design'}
+
+const titleText5 ={title:'Learnings'}
 
 const placeholder = require('../../../assets/images/proj_cycnav/journey_map.jpg')
 
@@ -35,7 +49,7 @@ const introRole = {
 }
 
 const problem = {
-  title: 'Source of the Problem',
+  title: 'Problem',
   content: 'The biggest pain that every cyclist has experienced, especially the urban cyclist, is to navigate in various road conditions and incidents that lead to unexpected detours. Looking for an applicable route can be time consuming, while bypassing the original road can be dangerous.',
   list: ['Troubled by the Downtown road conditions',
     'Limited apps to give guidence and suggestions on routes',
@@ -184,7 +198,6 @@ const devices ={
 }
 
 const solutions = {
-    title:'Solutions',
     content:'Based on the result of comparative analysis, we decide to approach the problem using both digital and physical solutions. that is building a physical navigational device that would be powered by a digital app.',
     img:'../../../assets/images/proj_cycnav/journey_map.jpg',
     label: ['Nav App: The app uses googles map api to calculate the best route for the users, use can also input their finding of road conditions using the app.',
@@ -271,7 +284,6 @@ const prototypeDevice ={
 }
 
 const reflections = {
-    title:'What did I learn?',
     reflections: {
         subject:[
             'Sometimes the perfect solution is not one, but multiple approaches',
@@ -292,27 +304,36 @@ class Project2 extends React.Component {
         <ProjectTitle content={projectTitle} style={style} />
         <div className='project-content-layout'>
         <IntroRole content={introRole} />
-          <Problem content={problem} />
+            {/* early state UX research */}
+          <Problem content={problem} style={style} />
 
-          <h3>Who are the users? </h3>
+          <TitleDivier content={titleText1} style={style} />
           <TableComponent content={interviews} />
-
           <Persona content={persona} />
           <FindingComponent content={findingPersona} style={style} />
           <LayoutImage content={userJourney} />
+
+          {/* market research */}
+          <TitleDivier content={titleText2} style={style} />
           <TableComponent content={comparativeAnalysis} />
           <FindingComponent content={findingCompare} style={style} />
-
-          <h3>Market Research</h3>
           <Persona content={devices} />
 
+          {/* UX solutions */}
+          <TitleDivier content={titleText3} style={style} />
           <LayoutImage content={solutions} />
           <LayoutText content={usability} />
-          <LayoutImage className ='bullet-list' content={iterations} />
+          <LayoutImage content={iterations} />
           <TableComponent content={testResult} />
+
+          {/* UI design */}
+          <TitleDivier content={titleText4} style={style} />
           <LayoutThree content ={prototypeApp} />
           <LayoutImage content={decision} />
           <LayoutImage content={prototypeDevice} />
+
+          {/* results and reflections */}
+          <TitleDivier content={titleText5} style={style} />
           <Reflection content={reflections} />
 
         </div>

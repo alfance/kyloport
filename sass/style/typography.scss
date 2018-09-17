@@ -8,26 +8,26 @@ font-family: 'Roboto', sans-serif;
 
 .font-white {
   color:$color-white;
-  h1, h2, h3, h4, p, li, span {
+  h1, h2, h3, h4, p, li {
     color:$color-white;
   }
 }
 .font-black {
   color:$color-black;
-  h1, h2, h3, h4, p, li, span {
+  h1, h2, h3, h4, p, li {
     color:$color-black;
   }
 }
 .font-grey4 {
   color:$color-grey4;
-  h1, h2, h3, h4, p, li, span {
+  h1, h2, h3, h4, p, li {
     color:$color-grey4;
   }
 }
 
 .font-grey3 {
   color:$color-grey3;
-  h1, h2, h3, h4, p, li, span {
+  h1, h2, h3, h4, p, li {
     color:$color-grey3;
   }
 }
@@ -51,29 +51,37 @@ font-family: 'Roboto', sans-serif;
 /////////////////////   FONT SIZE VARIATION, SAME AS MATERIAL DESIGN  ///////////////////////
 h1 {
   font-size: 60px;
+  line-height: 72px;
 }
 
 h2 {
   font-size: 48px;
+  line-height: 60px;
 }
 
 h3 {
   font-size: 34px;
+  line-height: 44px;
 }
 
 h4 {
   font-size: 24px;
+  line-height: 36px;
 }
 
 p {
   font-size: 16px;
+  line-height: 24px;
 }
 
 .body2 {
   font-size: 14px;
+  line-height: 20px;
 }
 
-
+li, span, b, table {
+    line-height: 24px;
+}
 
 /////////////////////   FONT WEIGHT  ///////////////////////
 h1, h2, h3, h4, p {
@@ -81,10 +89,17 @@ h1, h2, h3, h4, p {
 }
 
 /////////////////////   FONT COLOR  ///////////////////////
-p, li, span, ul, table {
+p, li, ul, table {
     color:$color-grey4;
 }
 
 b {
   color:$color-black;
+}
+
+h1, h2, h3, h4, p, li, span, ul, table, b {
+    @include xsmall {
+        font-size: 0.9em;
+        line-height: 0.9em;
+    }
 }
