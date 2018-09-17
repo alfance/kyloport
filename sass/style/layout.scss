@@ -3,20 +3,20 @@
 .page-container {
   width:calc($container-wrapper-width - 100px);
   position: relative;
-  padding: 0px 45px;
+  padding: 0px 48px;
   margin-left:$nav-width;
 
   img {
      max-width:100%;
   }
   @include smallS {
-      padding:40px 30px;
+      padding:40px 32px;
       margin-left: 0px;
   }
 
   @include xsmall {
       margin:0px;
-      padding-top:50px;
+      padding-top:56px;
       margin-left: 0px;
   }
 }
@@ -40,4 +40,26 @@ li {
 hr {
     margin-top:50px;
     border-top: 2px solid $color-grey1;
+}
+
+///////////////  react table /////////////////
+
+.ReactTable {
+    border: 1px solid $color-grey1
+}
+
+.ReactTable .rt-th, .ReactTable .rt-td {
+    white-space:normal;
+    padding: 8px;
+}
+.ReactTable .rt-thead .rt-resizable-header {
+    background-color: $color-grey1
+}
+
+.ReactTable .rt-thead.-header {
+    box-shadow: none;
+}
+
+.ReactTable .rt-thead .rt-th, .ReactTable .rt-thead .rt-td {
+    padding:8px;
 }

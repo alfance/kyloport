@@ -11,7 +11,7 @@ class NavbarStore extends EventEmitter {
       },
       {
         id: 2,
-        name: 'Photos',
+        name: 'B-Side',
         link: 'photos'
       },
       {

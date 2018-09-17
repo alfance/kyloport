@@ -45,7 +45,27 @@
 .projectPanel {
   width:100%;
   @include flex-box-setup;
+  justify-content: left;
   padding-bottom:120px;
+
+  .single-proj-container {
+      @include smallS {
+          width:100%;
+      }
+  }
+.single-proj-container:first-child , .single-proj-container:nth-child(3),  .single-proj-container:nth-child(5),  .single-proj-container:nth-child(7),  .single-proj-container:nth-child(9),  .single-proj-container:nth-child(11),  .single-proj-container:nth-child(13),  .single-proj-container:nth-child(15)
+.single-proj-container:nth-child(17){
+      margin-right:32px;
+      margin-bottom: 32px;
+
+      @include smallS {
+          margin-right:0px;
+      }
+  }
+.single-proj-container:nth-child(2),
+.single-proj-container:nth-child(4),  .single-proj-container:nth-child(6),  .single-proj-container:nth-child(8),  .single-proj-container:nth-child(10),  .single-proj-container:nth-child(12),  .single-proj-container:nth-child(14),  .single-proj-container:nth-child(16) .single-proj-container:nth-child(18), {
+        margin-bottom: 32px;
+    }
 }
 
 .projectItem {
@@ -54,7 +74,6 @@
   background-color: $color-white;
   position: relative;
   overflow: hidden;
-  margin:16px;
 
   // media size
   @include smallS {
@@ -63,7 +82,7 @@
   }
 
   @include xsmall {
-      width: 85vw;
+      width: $project-each-width-small;
       height: calc(85vw / 1.5);
       padding-left:auto;
       padding-right:auto;

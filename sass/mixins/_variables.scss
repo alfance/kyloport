@@ -5,8 +5,8 @@ $nav-width: 100px;
 $container-wrapper-width: 100%;
 
 // main page project card width
-$project-each-width: calc((100vw - #{$nav-width}) / 2 - 105px);
-$project-each-height: calc(((100vw - #{$nav-width}) / 2 - 105px) / 1.5);
+$project-each-width: calc(((100vw - #{$nav-width}) - 96px - 64px )/ 2);
+$project-each-height: calc(((100vw - #{$nav-width}) - 96px - 64px )/ 2);
 
-$project-each-width-small: calc((100vw - #{$nav-width}) - 105px);
-$project-each-height-small: calc(((100vw - #{$nav-width}) - 105px) / 1.5);
+$project-each-width-small: 100%;
+$project-each-height-small: calc(85vw / 1.5);

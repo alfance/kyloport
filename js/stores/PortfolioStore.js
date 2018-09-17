@@ -8,18 +8,18 @@ class PortfolioStore extends EventEmitter {
         id: 1,
         name: 'Project 1',
         title: 'BRIOVR',
-        pitch: 'VR Presentation',
-        category: 'mobile',
-        link: 'Project1',
+        pitch: 'UX / UI / Interaction Design',
+        category: 'Behaviour system for online VR platform',
+        link: 'briovr',
         headerImage: '../../assets/images/projects/header/proj1.jpg',
         url: ''
       },
       {
         id: 2,
         name: 'Project 2',
-        title: 'CYCNAV',
-        pitch: 'IOT and Mobile UX/UI',
-        category: 'mobile',
+        title: 'FairTrade',
+        pitch: 'Product design, UX & UI',
+        category: 'Non-profit mobile & web platform',
         link: 'cycnav',
         headerImage: '../../assets/images/projects/header/proj2.jpg',
         url: ''
@@ -37,9 +37,9 @@ class PortfolioStore extends EventEmitter {
       {
         id: 4,
         name: 'Project 4',
-        title: 'GAMEON',
-        pitch: 'Mobile App for Sports Fan',
-        category: 'mobile',
+        title: 'M-Arcade',
+        pitch: 'UX & UI redesign',
+        category: 'Mobile arcade game app',
         link: 'Project4',
         headerImage: '../../assets/images/projects/header/proj1.jpg',
         url: ''

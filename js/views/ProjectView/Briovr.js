@@ -12,7 +12,7 @@ import LayoutThree from './components/LayoutThree'
 import Reflection from './components/Reflection'
 
 const style ={
-    color:'#1A923C',
+    color:'#5C41B4',
     TextonColor:'text-light',
     titleBgP:'right',
     bgSize:''
@@ -298,7 +298,7 @@ const reflections = {
 }
 }
 
-class Cycnav extends React.Component {
+class Briovr extends React.Component {
 
   render () {
     return (
@@ -310,14 +310,14 @@ class Cycnav extends React.Component {
           <Problem content={problem} style={style} />
 
           <TitleDivier content={titleText1} style={style} />
-          <TableComponent content={interviews} style={style} />
+          <TableComponent content={interviews} />
           <Persona content={persona} />
           <FindingComponent content={findingPersona} style={style} />
           <LayoutImage content={userJourney} />
 
           {/* market research */}
           <TitleDivier content={titleText2} style={style} />
-          <TableComponent content={comparativeAnalysis} style={style} />
+          <TableComponent content={comparativeAnalysis} />
           <FindingComponent content={findingCompare} style={style} />
           <Persona content={devices} />
 
@@ -326,7 +326,7 @@ class Cycnav extends React.Component {
           <LayoutImage content={solutions} />
           <LayoutText content={usability} />
           <LayoutImage content={iterations} />
-          <TableComponent content={testResult} style={style} />
+          <TableComponent content={testResult} />
 
           {/* UI design */}
           <TitleDivier content={titleText4} style={style} />
@@ -344,4 +344,4 @@ class Cycnav extends React.Component {
   }
 }
 
-export default Cycnav
+export default Briovr
