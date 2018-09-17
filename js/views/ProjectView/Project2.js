@@ -286,10 +286,12 @@ const prototypeDevice ={
 const reflections = {
     reflections: {
         subject:[
+            'Adaptive design is crucial for various format of medium.',
             'Sometimes the perfect solution is not one, but multiple approaches',
             'Being able to pick up new skills and learn quickly is part of the UX.'
         ],
         learn:[
+            'The essense of UX design is to solve problems, not using templates ',
             'If we have not done the user test and market analysis, we were Automatically assumed to go with one of the twocompletely different method for the problem we are presented. By adapting the UX research process we were able to focus on our users, coming up with valid solutions for the problems insead of making assumptions for the sake of building a tool.',
             'his probject was done with limited time and resources. at times I had to learn new softwares, pick up technical skills along the way. This is not only helpful to me personaly, but it broadens my pespective as an UX design, where I was able to develop empathy for other field of personnels.'
     ]

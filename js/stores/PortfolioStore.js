@@ -27,10 +27,10 @@ class PortfolioStore extends EventEmitter {
       {
         id: 3,
         name: 'Project 3',
-        title: 'VGARDEN',
-        pitch: 'IOT',
-        category: 'mobile',
-        link: 'Project3',
+        title: 'CYCNAV',
+        pitch: 'Product design, UX & UI',
+        category: 'mobile app & IOT',
+        link: 'cycnav',
         headerImage: '../../assets/images/projects/header/proj3.jpg',
         url: ''
       },
