@@ -1,5 +1,6 @@
 import React from 'react'
 import ComponentHelp from './ComponentHelp'
+
 export default class LayoutText extends React.Component {
   render () {
       const {title, content, className} = this.props.content
@@ -7,7 +8,7 @@ export default class LayoutText extends React.Component {
     return (
       <div>
           <h3>{title}</h3>
-          
+          {ComponentHelp.createContentMap(content, className)}
       </div>
     )
   }

@@ -183,8 +183,8 @@ const findingCompare = {
 
 const devices ={
         title:'App vs IOT',
-    p1Img: '../../../assets/images/proj_cycnav/phone.png',
-    p2Img:'../../../assets/images/proj_cycnav/bikelight.png',
+    p1Img: '../../../assets/images/proj_cycnav/phone.svg',
+    p2Img:'../../../assets/images/proj_cycnav/bikelight.svg',
     p1content:[
         'Digital App',
         'Pros: Accurante and fast route search',
