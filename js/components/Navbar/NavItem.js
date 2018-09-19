@@ -7,11 +7,11 @@ export default class NavItem extends React.Component {
   }
   render () {
     const {id, name, link} = this.props
+
     return (
       <div>
-        <Link to={link}><p>{name}</p></Link>
+        <Link key={id} to={link}><p>{name}</p></Link>
       </div>
     )
   }
-
 }
