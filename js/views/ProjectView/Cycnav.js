@@ -4,7 +4,7 @@ import ProjectTitle from './components/ProjectTitle'
 import IntroRole from './components/IntroRole'
 import Problem from './components/Problem'
 import TableComponent from './components/TableComponent'
-import Persona from './components/persona'
+import LayoutHalf from './components/LayoutHalf'
 import FindingComponent from './components/FindingComponent'
 import LayoutImage from './components/LayoutImage'
 import LayoutText from './components/LayoutText'
@@ -31,8 +31,11 @@ const titleText5 = {title: 'Learnings'}
 const placeholder = require('../../../assets/images/proj_cycnav/journey_map.jpg')
 
 const projectTitle = {
+  title: 'CYCNAV',
   logo: '../../../assets/images/proj_cycnav/cycnav_logo_w.svg',
-  title: 'UI/UX, Interaction Design',
+  field: 'UI/UX, Interaction Design',
+  intro: 'Behaviour system for online VR platform',
+  link: 'briovr',
   bgImg: '../../../assets/images/proj_cycnav/journey_map.jpg'
 }
 
@@ -98,16 +101,27 @@ const interviews = {
 const persona = {
   title: 'Personas',
   content: 'As a result, the two types of users that will be benfited the most from our app are student bikers and Food delivery individula.Their similarity is the need of safe and correct route when cycling in the urban environment.',
+<<<<<<< HEAD
   p1Img: '../../../assets/images/proj_cycnav/avatar-0.svg',
   p2Img: '../../../assets/images/proj_cycnav/avatar-2.svg',
   p1content: [
+=======
+  imgLeft: '../../../assets/images/proj_cycnav/avatar-0.svg',
+  imgRight: '../../../assets/images/proj_cycnav/avatar-2.svg',
+  sectionClass: 'section-persona',
+  contentLeft: [
+>>>>>>> 38f18c27fd3ade93f83a288d6fc68e2eb319f69c
     'Ann Goldshire',
     'Student',
     'Age: 17 to 27',
     'Bikes 2 - 6 times a day',
     'Ann uses bikes for most of her daily commute. Thus Ann values most effortless routes.'
   ],
+<<<<<<< HEAD
   p2content: [
+=======
+  contentRight: [
+>>>>>>> 38f18c27fd3ade93f83a288d6fc68e2eb319f69c
     'Oliver Dimaran',
     'Food Delivery',
     'Age: 19 to 40',
@@ -183,14 +197,15 @@ const findingCompare = {
 
 const devices = {
   title: 'App vs IOT',
-  p1Img: '../../../assets/images/proj_cycnav/phone.png',
-  p2Img: '../../../assets/images/proj_cycnav/bikelight.png',
-  p1content: [
+  imgLeft: '../../../assets/images/proj_cycnav/phone.svg',
+  imgRight: '../../../assets/images/proj_cycnav/bikelight.svg',
+  sectionClass: 'section-devices',
+  contentLeft: [
     'Digital App',
     'Pros: Accurante and fast route search',
     'Cons: Distractive, pro to light flare'
   ],
-  p2content: [
+  contentRight: [
     'Physical Device',
     'Pros: Safe & all-in-one navigation and user contribution',
     'Cons: Costly'
@@ -287,10 +302,12 @@ const reflections = [
   {subject: 'Adaptive design is crucial for various format of medium.',
     learn: 'The essense of UX design is to solve problems, not using templates '
   }, {
-    subject: 'Sometimes the perfect solution is not one, but multiple approaches',
+    subject: 'Sometimes the perfect solution is not one, but multiple approaches.',
     learn: 'If we have not done the user test and market analysis, we were Automatically assumed to go with one of the twocompletely different method for the problem we are presented. By adapting the UX research process we were able to focus on our users, coming up with valid solutions for the problems insead of making assumptions for the sake of building a tool.'
-  }, {subject: 'Being able to pick up new skills and learn quickly is part of the UX.',
-    learn: 'his probject was done with limited time and resources. at times I had to learn new softwares, pick up technical skills along the way. This is not only helpful to me personaly, but it broadens my pespective as an UX design, where I was able to develop empathy for other field of personnels.'}
+  }, {
+    subject: 'Being able to pick up new skills and learn quickly is part of the UX.',
+    learn: 'This probject was done with limited time and resources. at times I had to learn new softwares, pick up technical skills along the way. This is not only helpful to me personaly, but it broadens my pespective as an UX design, where I was able to develop empathy for other field of personnels.'
+  }
 ]
 
 class Cycnav extends React.Component {
@@ -305,7 +322,7 @@ class Cycnav extends React.Component {
 
           <TitleDivier content={titleText1} style={style} />
           <TableComponent content={interviews} style={style} />
-          <Persona content={persona} />
+          <LayoutHalf content={persona} />
           <FindingComponent content={findingPersona} style={style} />
           <LayoutImage content={userJourney} />
 
@@ -313,7 +330,7 @@ class Cycnav extends React.Component {
           <TitleDivier content={titleText2} style={style} />
           <TableComponent content={comparativeAnalysis} style={style} />
           <FindingComponent content={findingCompare} style={style} />
-          <Persona content={devices} />
+          <LayoutHalf content={devices} />
 
           {/* UX solutions */}
           <TitleDivier content={titleText3} style={style} />

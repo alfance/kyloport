@@ -1,33 +1,27 @@
 import React from 'react'
+import LayoutHelper from './LayoutHelper'
+import classNames from 'classnames'
 
 export default class LayoutHalf extends React.Component {
   render () {
-    const {title, content, imgLeft, imgRight, contentLeft, contentRight} = this.props.content
+    const {title, content, imgLeft, videoLeft, imgRight, videoRight, contentLeft, contentRight, sectionClass} = this.props.content
     return (
       <div>
         <h4>{title}</h4>
         <p>{content}</p>
-        <div className='project-layout-half'>
+        <div className={classNames('project-layout-half', sectionClass)}>
 
           <div>
-            <img src={imgLeft} />
+            {LayoutHelper.mediaType(imgLeft, videoLeft)}
             <ul>
-              {contentLeft.map(p1 => {
-                return (
-                  <li key={p1}>{p1}</li>
-                )
-              })}
+              {LayoutHelper.layoutArrayContent(contentLeft)}
             </ul>
           </div>
 
           <div>
-            <img src={imgRight} />
+            {LayoutHelper.mediaType(imgRight, videoRight)}
             <ul>
-              {contentRight.map(p2 => {
-                return (
-                  <li key={p2}>{p2}</li>
-                )
-              })}
+              {LayoutHelper.layoutArrayContent(contentRight)}
             </ul>
           </div>
         </div>

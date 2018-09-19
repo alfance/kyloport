@@ -1,5 +1,5 @@
 import React from 'react'
-import ComponentHelp from './ComponentHelp'
+import LayoutHelper from './LayoutHelper'
 
 export default class Problem extends React.Component {
   render () {
@@ -17,7 +17,7 @@ export default class Problem extends React.Component {
         <div style={probStyle}>
           <p>{content}</p>
           <ul>
-            {ComponentHelp.createContentMap(list)}
+            {LayoutHelper.layoutArrayContent(list)}
           </ul>
         </div>
       </div>

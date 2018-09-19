@@ -1,14 +1,15 @@
 import React from 'react'
-import ComponentHelp from './ComponentHelp'
+import LayoutHelper from './LayoutHelper'
 
 export default class LayoutText extends React.Component {
   render () {
-    const {title, content, className} = this.props.content
-
+    const {title, content} = this.props.content
     return (
       <div>
         <h3>{title}</h3>
-        {ComponentHelp.createContentMap(content, className)}
+        <ul>
+          {LayoutHelper.layoutArrayContent(content)}
+        </ul>
       </div>
     )
   }
