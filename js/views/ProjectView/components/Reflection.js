@@ -1,21 +1,19 @@
 import React from 'react'
 
 export default class Reflection extends React.Component {
+  getReflection (array) {
+    return array.map((each, index) => {
+      return (
+        <div key={each.subject}>
+          <p><b>{each.subject}</b><br />
+            {each.learn}</p>
+        </div>)
+    })
+  }
   render () {
-      const {title, reflections} = this.props.content
-
-      const subjectList = reflections.subject.map((each, index) => {
-         return (
-         <div>
-             <b>{each}</b><br />
-             {reflections.learn[index]} <p />
-         </div>)
-      })
-
     return (
       <div className='project-reflections'>
-        <h3>{title}</h3>
-        {subjectList}
+        {this.getReflection(this.props.content)}
       </div>
     )
   }

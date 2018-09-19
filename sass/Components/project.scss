@@ -145,7 +145,7 @@
 
 
 ////////// PERSONA STYLE, standard style for persona.    ////////
-.persona-div {
+.section-persona {
     padding:0px 15px;
     text-align: left;
 
@@ -153,14 +153,20 @@
         font-weight: bold;
         padding-left: 0px;
     }
-}
-.persona-img {
-  padding: 15px;
-  width:144px;
-  height:144px;
-  display: block;
+    img{
+      padding: 15px;
+      width:144px;
+      height:144px;
+      display: block;
+    }
 }
 
+.section-devices {
+  img {
+    width:90px;
+    fill:red;
+  }
+}
 
 .center-img {
   margin-left: 50%;

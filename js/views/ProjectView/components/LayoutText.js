@@ -1,24 +1,15 @@
 import React from 'react'
+import LayoutHelper from './LayoutHelper'
 
 export default class LayoutText extends React.Component {
   render () {
-      const {title, content, className} = this.props.content
-      let listContent = {}
-
-      if(content.constructor === Array){
-        listContent = content.map(list => {
-            return (
-              <li className={className} key={list}>{list}</li>
-            )
-          })
-      } else {
-          listContent = <p>{content}</p>
-      }
-
+    const {title, content} = this.props.content
     return (
       <div>
-          <h3>{title}</h3>
-          {listContent}
+        <h3>{title}</h3>
+        <ul>
+          {LayoutHelper.layoutArrayContent(content)}
+        </ul>
       </div>
     )
   }
