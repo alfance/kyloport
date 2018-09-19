@@ -40,7 +40,7 @@ const projectTitle = {
 }
 
 const introRole = {
-  content: 'CYCNAV is a combination of an navigational app and a physical bike light to guide the cyclists roaming around the city. It not only provide the fastest routes,but also guarantees the users safety by avoiding bad road conditions.',
+  content: 'CYCNAV is an IOT bike light guilding the cyclists traveling around the city. Together with the crowd sourcing mobile app, users are updated with the latest road conditions and are provided with the best cycling route.',
   role: 'UX designer',
   duties: ['1. Conduct user and market research and analysis',
     '2. Defining strategies & Scope',
@@ -101,27 +101,17 @@ const interviews = {
 const persona = {
   title: 'Personas',
   content: 'As a result, the two types of users that will be benfited the most from our app are student bikers and Food delivery individula.Their similarity is the need of safe and correct route when cycling in the urban environment.',
-<<<<<<< HEAD
-  p1Img: '../../../assets/images/proj_cycnav/avatar-0.svg',
-  p2Img: '../../../assets/images/proj_cycnav/avatar-2.svg',
-  p1content: [
-=======
   imgLeft: '../../../assets/images/proj_cycnav/avatar-0.svg',
   imgRight: '../../../assets/images/proj_cycnav/avatar-2.svg',
   sectionClass: 'section-persona',
   contentLeft: [
->>>>>>> 38f18c27fd3ade93f83a288d6fc68e2eb319f69c
     'Ann Goldshire',
     'Student',
     'Age: 17 to 27',
     'Bikes 2 - 6 times a day',
     'Ann uses bikes for most of her daily commute. Thus Ann values most effortless routes.'
   ],
-<<<<<<< HEAD
-  p2content: [
-=======
   contentRight: [
->>>>>>> 38f18c27fd3ade93f83a288d6fc68e2eb319f69c
     'Oliver Dimaran',
     'Food Delivery',
     'Age: 19 to 40',

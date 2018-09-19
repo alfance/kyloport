@@ -10,7 +10,7 @@ export default class PortfolioItem extends React.Component {
     const {title, link, pitch, headerImage, category} = this.props
 
     return (
-      <div className='single-proj-container' style={{backgroundColor: Cycnav.style.color}}>
+      <div className='single-proj-container'>
         <Link to={link}><div className='projectItem'>
           <img src={headerImage} />
           <div className='projectTitle'>
