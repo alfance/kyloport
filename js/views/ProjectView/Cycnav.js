@@ -36,7 +36,7 @@ const projectTitle = {
   field: 'UI/UX, Interaction Design',
   intro: 'Behaviour system for online VR platform',
   link: 'briovr',
-  bgImg: '../../../assets/images/proj_cycnav/journey_map.jpg'
+  bgImg: '../../../assets/images/proj_cycnav/title_img.png'
 }
 
 const introRole = {
@@ -48,7 +48,7 @@ const introRole = {
     '4. Create Wireframes & Prototypes',
     '5. 3D modeling & printing of the physical Component',
     '6. Validation test and evaluations'],
-  img: '../../../assets/images/proj_cycnav/journey_map.jpg'
+  img: '../../../assets/images/proj_cycnav/title_img.png'
 }
 
 const problem = {
@@ -267,9 +267,9 @@ const testResult = {
 const prototypeApp = {
   title: ' Prototype - APP',
   content: 'We had a few variations for the Prototype as shown below. One consideration that is more important than the asthetics of the app itself, is the readability of the screen under different light conditions.',
-  imgLeft: {placeholder},
-  imgMiddle: {placeholder},
-  imgRight: {placeholder},
+  imgLeft: '../../../assets/images/proj_cycnav/prototye-1.png',
+  imgMiddle: '../../../assets/images/proj_cycnav/prototye-2.png',
+  imgRight: '../../../assets/images/proj_cycnav/prototype-3.png',
   contentLeft: 'Design 1: a green theme is used as we are hoping to achive a eco travel method.',
   contentMiddle: 'Design 2: a green theme is used as we are hoping to achive a eco travel method.',
   contentRight: 'Design 3: a green theme is used as we are hoping to achive a eco travel method. '
