@@ -6,8 +6,8 @@ export default {
 // exported file, bundle.js
   output: {
     filename: 'bundle.js',
-    path: path.join(__dirname,'dist'),
-    publicPath: 'http://localhost:8080/'
+    path: path.join(__dirname, 'dist'),
+    publicPath: '/dist/'
   },
 // pre-process files. all ends with js.
 // react-hot:update module without page reload.
@@ -16,15 +16,16 @@ export default {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loaders: ['react-hot-loader', 'babel-loader']
+        loaders: ['react-hot-loader', 'babel-loader'],
+        presets: ['react', 'es2015']
       },
       {
-          test: /\.scss$/,
-              use: [
-                  "style-loader", // creates style nodes from JS strings
-                  "css-loader", // translates CSS into CommonJS
-                  "sass-loader" // compiles Sass to CSS, using Node Sass by default
-              ]
+        test: /\.scss$/,
+        loaders: [
+          'style-loader', // creates style nodes from JS strings
+          'css-loader', // translates CSS into CommonJS
+          'sass-loader' // compiles Sass to CSS, using Node Sass by default
+        ]
       },
       {
         test: /\.(png|jpg|gif|svg|mtl|obj|drc)$/,
@@ -37,7 +38,7 @@ export default {
       {
         test: /\.(woff|ttf)$/,
         loader: 'file-loader?'
-    }
+      }
     ]
   }
 // localhost:8080

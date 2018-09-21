@@ -15,8 +15,8 @@ export default class PortfolioItem extends React.Component {
           <img src={headerImage} />
           <div className='projectTitle'>
             <h3>{title}</h3>
-            <h4>{pitch}</h4>
-            <p>{category}</p>
+            <h4>{category}</h4>
+            <p>{pitch}</p>
           </div>
         </div>
         </Link>

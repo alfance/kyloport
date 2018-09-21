@@ -18,7 +18,7 @@ class PortfolioStore extends EventEmitter {
         id: 2,
         name: 'Project 2',
         title: 'FairTrade',
-        pitch: 'Product design, UX & UI',
+        pitch: 'Product development',
         category: 'Non-profit mobile & web platform',
         link: 'cycnav',
         headerImage: '../../assets/images/projects/header/proj2.jpg',
@@ -31,7 +31,7 @@ class PortfolioStore extends EventEmitter {
         pitch: 'Product design, UX & UI',
         category: 'Mobile app & IOT for cyclists',
         link: 'cycnav',
-        headerImage: '../../assets/images/projects/header/proj3.jpg',
+        headerImage: '../../assets/images/proj_cycnav/title_img2.png',
         url: ''
       },
       {

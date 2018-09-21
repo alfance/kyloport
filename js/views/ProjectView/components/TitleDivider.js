@@ -3,14 +3,14 @@ import classNames from 'classnames'
 
 export default class TitleDivider extends React.Component {
   render () {
-      const {title} = this.props.content
-      const {color, TextonColor} =this.props.style
+    const {title} = this.props.content
+    const {color, textonColor} = this.props.style
 
-      const divStyle = {
+    const divStyle = {
       backgroundColor: color
-};
+    }
     return (
-      <h3 className={classNames('project-component-title',TextonColor)} style={divStyle}> {title}</h3>
+      <h3 className={classNames('project-component-title', textonColor)} style={divStyle}> {title}</h3>
     )
   }
 }

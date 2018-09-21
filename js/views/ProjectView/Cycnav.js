@@ -13,12 +13,12 @@ import Reflection from './components/Reflection'
 
 const style = {
   color: '#1A923C',
-  TextonColor: 'text-light',
+  textonColor: 'text-light',
   titleBgP: 'right',
   bgSize: ''
 }
 
-const titleText1 = {title: 'Who are the users?'}
+const titleText1 = {title: 'User Insights'}
 
 const titleText2 = {title: 'Market Research'}
 
@@ -169,7 +169,7 @@ const comparativeAnalysis = {
   }, {
     number: 3,
     img: '../../../assets/images/proj_cycnav/waze.png',
-    app: 'Google maps',
+    app: 'Waze',
     work: ['Bike friendly trails and lanes',
       'Route suggestion based on cyclists preference',
       '3D elevation on geographic features'

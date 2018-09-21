@@ -79,7 +79,7 @@ p {
   line-height: 20px;
 }
 
-li, span, b, table {
+li, span, b, table, .rt-td {
     line-height: 24px;
 }
 
@@ -89,10 +89,10 @@ h1, h2, h3, h4, p {
 }
 
 /////////////////////   FONT COLOR  ///////////////////////
-p, li, ul, table {
-    color:$color-grey6;
+p, li, ul, table, .rt-td {
+    color:$color-grey5;
 }
 
 b {
-  color:$color-black;
+  color:$color-grey6;
 }
