@@ -41,7 +41,7 @@ const projectTitle = {
 
 const introRole = {
   content: 'CYCNAV is an IOT bike light guilding the cyclists traveling around the city. Together with the crowd sourcing mobile app, users are updated with the latest road conditions and are provided with the best cycling route.',
-  role: 'UX designer',
+  role: 'I worked as the UX designerfor this project. Some of my responsibilities included:',
   duties: ['1. Conduct user and market research and analysis',
     '2. Defining strategies & Scope',
     '3. Facilitate ideation & design decisions',
@@ -53,8 +53,9 @@ const introRole = {
 
 const problem = {
   title: 'Problem',
-  content: 'The biggest pain that every cyclist has experienced, especially the urban cyclist, is to navigate in various road conditions and incidents that lead to unexpected detours. Looking for an applicable route can be time consuming, while bypassing the original road can be dangerous.',
-  list: ['Troubled by the Downtown road conditions',
+  sectionClass:'list-style-circle',
+  content:[ 'The biggest pain that every cyclist has experienced, especially the urban cyclist, is to navigate in various road conditions and incidents that lead to unexpected detours. Looking for an applicable route can be time consuming, while bypassing the original road can be dangerous.',
+  'Troubled by the Downtown road conditions',
     'Limited apps to give guidence and suggestions on routes',
     'Existing apps are often distractive and pause safety concerns to the users']
 }
@@ -191,12 +192,12 @@ const devices = {
   imgRight: '../../../assets/images/proj_cycnav/bikelight.svg',
   sectionClass: 'section-devices',
   contentLeft: [
-    'Digital App',
+    <b className='b-indent'>Digital App</b>,
     'Pros: Accurante and fast route search',
     'Cons: Distractive, pro to light flare'
   ],
   contentRight: [
-    'Physical Device',
+    <b className='b-indent'>Physical Device</b>,
     'Pros: Safe & all-in-one navigation and user contribution',
     'Cons: Costly'
   ]
@@ -206,26 +207,28 @@ const solutions = {
   content: 'Based on the result of comparative analysis, we decide to approach the problem using both digital and physical solutions. that is building a physical navigational device that would be powered by a digital app.',
   img: '../../../assets/images/proj_cycnav/journey_map.jpg',
   label: ['Nav App: The app uses googles map api to calculate the best route for the users, use can also input their finding of road conditions using the app.',
-    'Cycnav Bike Light: The bike light is connected to the app using bluetooth. While the app is calculating and adjusting the route,the bike light functions as the visual portal to help guide the cyclists while they are biking.']
+  'Bike light:The bike light is connected to the app using bluetooth. While the app is calculating and adjusting the route,the bike light functions as the visual portal to help guide the cyclists while they are biking.']
 }
 
 const usability = {
   title: 'Usability Test',
+  sectionClass:'list-style-number',
   content: [
     'Test with the wireframes revealed some major areas to improve on:',
-    '1. Users encountered trouble moving from the mobile app to the bike light. ',
-    '2. They prefer staying on the app while biking.',
-    '3. Not enough feedback on botht the app and the bike light, users sometimes get confused while traveling.'
+    'Users encountered trouble moving from the mobile app to the bike light. ',
+    'They prefer staying on the app while biking.',
+    'Not enough feedback on botht the app and the bike light, users sometimes get confused while traveling.'
   ]
 }
 
 const iterations = {
   title: 'Iterations',
+  sectionClass:'list-style-circle',
   content: [
     'We focuse improvements on the following two major components:',
-    '• Spend more time with the user on the onboarding, especially when they are connecting the bike light to the app.',
-    '• Redefine the search process to make it more intuitive, less steps.',
-    '• Reduce the number of button on the lights, and increase the size'
+    'Spend more time with the user on the onboarding, especially when they are connecting the bike light to the app.',
+    'Redefine the search process to make it more intuitive, less steps.',
+    'Reduce the number of button on the lights, and increase the size'
   ],
   img: '../../../assets/images/proj_cycnav/journey_map.jpg'
 

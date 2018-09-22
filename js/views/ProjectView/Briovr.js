@@ -18,11 +18,11 @@ const style = {
   bgSize: ''
 }
 
-const titleText1 = {title: 'Who are the users?'}
+const titleText1 = {title: 'Research'}
 
-const titleText2 = {title: 'Market Research'}
+const titleText2 = {title: 'Solution'}
 
-const titleText3 = {title: 'Solution'}
+const titleText3 = {title: 'UX Design'}
 
 const titleText4 = {title: 'UI Design'}
 
@@ -31,196 +31,164 @@ const titleText5 = {title: 'Learnings'}
 const placeholder = require('../../../assets/images/proj_cycnav/journey_map.jpg')
 
 const projectTitle = {
+  title: 'CYCNAV',
   logo: '../../../assets/images/proj_cycnav/cycnav_logo_w.svg',
-  title: 'UI/UX, Interaction Design',
-  bgImg: '../../../assets/images/proj_cycnav/journey_map.jpg'
+  field: 'UI/UX, Interaction Design',
+  intro: 'Behaviour system for online VR platform',
+  link: 'briovr',
+  bgImg: '../../../assets/images/proj_cycnav/title_img.png'
 }
 
 const introRole = {
-  content: 'CYCNAV is a combination of an navigational app and a physical bike light to guide the cyclists roaming around the city. It not only provide the fastest routes,but also guarantees the users safety by avoiding bad road conditions.',
-  role: 'UX designer',
-  duties: ['1. Conduct user and market research and analysis',
-    '2. Defining strategies & Scope',
-    '3. Facilitate ideation & design decisions',
-    '4. Create Wireframes & Prototypes',
-    '5. 3D modeling & printing of the physical Component',
-    '6. Validation test and evaluations'],
-  img: '../../../assets/images/proj_cycnav/journey_map.jpg'
+  content: 'BRIOVR is an online 3D platform for creating Interactive VR content. This tool allows users to upload their models to the cloud, create animations and interactions, and share instantly with others.',
+  role: 'As the leading UX designer, my role is to create a modular system for users to add interactions in the 3D space. The steps I have taken are:',
+    duties:['User interviews',
+'Comparative analysis',
+'Affinity mapping',
+'Design workshops',
+'Wireframe development',
+'Usability testing',
+'Prototype development'],
+  img: '../../../assets/images/proj_cycnav/title_img.png'
 }
 
-const problem = {
-  title: 'Problem',
-  content: 'The biggest pain that every cyclist has experienced, especially the urban cyclist, is to navigate in various road conditions and incidents that lead to unexpected detours. Looking for an applicable route can be time consuming, while bypassing the original road can be dangerous.',
-  list: ['Troubled by the Downtown road conditions',
-    'Limited apps to give guidence and suggestions on routes',
-    'Existing apps are often distractive and pause safety concerns to the users']
+const challenge = {
+  title: 'Challenge',
+  sectionClass:'list-style-circle',
+  content:[ 'Create an intuitive and easy to use interactive system for BRIOVR. Client and management requests include:',
+    'No coding knowledge is required',
+    'Click, drag and drop only',
+    'No Node graph',
+    'Need to have game play mechanics (click, move, pickup etc)']
+}
+const background ={
+    title:'background',
+    imgLeft:'',
+    contentRight:['BRIOVR has all the major features contained in the card menu at the bottom. The center screen is the model viewer. ',
+'My goal is to seamlessly introduce the behaviour system into the current builder environment, allowing anyone to create complex interactions that could only be done by coders at comfort. ']
 }
 
-const interviews = {
-  title: 'Interviews',
-  content: 'At the discovery phase of my project, we conducted user interviews from people use bike on a regular basis. Following is a summary of the answers:',
+const competitor = {
+  title: 'Comparative Analysis',
+  content: 'At the discovery phase of my project, I researched other apps and softwares in order to get a better understanding of the problem.',
   columns: [{
-    Header: '#',
-    accessor: 'number' // String-based value accessors!
+    Header: 'Name',
+    accessor: 'name' // String-based value accessors!
   }, {
-    Header: 'Type',
-    accessor: 'type'
+    Header: 'Code type',
+    accessor: 'code'
   }, {
-    Header: 'Biking Frequency(daily)',
-    accessor: 'frequency'
+    Header: 'learning time',
+    accessor: 'time'
   }, {
-    Header: 'Need for map?',
-    accessor: 'map'
+    Header: 'User type',
+    accessor: 'user'
   }],
   data: [{
-    number: 1,
-    type: 'Professional',
-    frequency: '2 - 3',
-    map: 'NO'
-  }, {
-    number: 2,
-    type: 'Student',
-    frequency: '2 - 4',
-    map: 'Sometimes'
-  }, {
-    number: 3,
-    type: 'Delivery Worker',
-    frequency: '> 10',
-    map: 'Yes'
-  }, {
-    number: 4,
-    type: 'Hobbists',
-    frequency: '1 - 4',
-    map: 'Sometimes'
-  }]
+    name:'Unreal',
+    code: 'Blueprint (C++)',
+    time: '10 hours',
+    user: 'Game developer'
+},{
+  name:'Unity',
+  code: 'C#',
+  time: '12 hours',
+  user: 'Game developer'
+},{
+  name:'Play Canvas',
+  code: 'Javascript',
+  time: '2.5 hours',
+  user: 'Front End Dev'
+},{
+  name:'InstaVR',
+  code: '/',
+  time: '5 min',
+  user: '360 video maker'
+}]
 }
 
-const persona = {
-  title: 'Personas',
-  content: 'As a result, the two types of users that will be benfited the most from our app are student bikers and Food delivery individula.Their similarity is the need of safe and correct route when cycling in the urban environment.',
-  p1Img: '../../../assets/images/proj_cycnav/avatar-0.svg',
-  p2Img: '../../../assets/images/proj_cycnav/avatar-2.svg',
-  p1content: [
-    'Ann Goldshire',
-    'Student',
-    'Age: 17 to 27',
-    'Bikes 2 - 6 times a day',
-    'Ann uses bikes for most of her daily commute. Thus Ann values most effortless routes.'
-  ],
-  p2content: [
-    'Oliver Dimaran',
-    'Food Delivery',
-    'Age: 19 to 40',
-    'Bikes multiple times a day',
-    'Biking is Olivers main source of income and he wants nothing but to get to the destination in the shortest amount of time.'
-  ]
-}
-
-const findingPersona = {
+const findingCompetitor = {
   subtitle: 'finding',
-  content: 'The users who will benefit the most from our app are frequent users of bicycles, and travel to various places'
+  content: 'The capatibility of an app or software is often inversely corrolated with the amount of time the user need to spend learning. Unreal and Unity allows the users to create almost anything they can, but takes over 10 hrs to master such softwares, whereas InstaVR only requires the uses to spend 5 minutes learning how to make a 360 video.'
 }
 
 const userJourney = {
   title: 'User journey',
-  content: 'Cycnav focuses on the two main purposes: 1) Get to the destination. 2) Fast and safe.',
+  content: 'After studying other applications and interviews. I came up with a simplified user journey for the system. This helped me realize that Creating interactions comes at the late stage of the user flow.',
   img: '../../../assets/images/proj_cycnav/journey_map.jpg',
-  label: 'The highlighted bubble are the main functions users will be using, while supporting features(grey bubble) will be the key to the overall NUX'
+  label: 'I decide not to include the behaviour onboarding in the main onboarding. Only when people expressed enough interest to click on the feature should I show them how to play with behaviour.'
 }
 
-const comparativeAnalysis = {
-  title: 'Comparactive Analysis',
-  columns: [{
-    Header: 'App /Device',
-    accessor: 'app' // String-based value accessors!
-  }, {
-    Header: 'What works',
-    accessor: 'work'
-  }, {
-    Header: 'What doesnt work ',
-    accessor: 'nowork'
-  }],
-  data: [{
-    number: 1,
-    img: '../../../assets/images/proj_cycnav/google_map.png',
-    app: 'Google maps',
-    work: ['Bike friendly trails and lanes',
-      'Route suggestion based on cyclists preference',
-      '3D elevation on geographic features'
-    ],
-    nowork: ['Driving centric navigation',
-      'No Bike share map'
-    ]
-  }, {
-    number: 2,
-    img: '../../../assets/images/proj_cycnav/vanhawks_logo.png',
-    app: 'Google maps',
-    work: ['Bike friendly trails and lanes',
-      'Route suggestion based on cyclists preference',
-      '3D elevation on geographic features'
-    ],
-    nowork: ['Driving centric navigation',
-      'No Bike share map'
-    ]
-  }, {
-    number: 3,
-    img: '../../../assets/images/proj_cycnav/waze.png',
-    app: 'Google maps',
-    work: ['Bike friendly trails and lanes',
-      'Route suggestion based on cyclists preference',
-      '3D elevation on geographic features'
-    ],
-    nowork: ['Driving centric navigation',
-      'No Bike share map'
-    ]
-  }]
+const game ={
+    title:'Gamification Study',
+    contentLeft:['Other than the competitors, there are games and tools which make the creation of logics fun. To name a couple: ',
+'Little big planet: creates mode contains lots of trigger for user to create their own level.',
+ 'Little Bits: Electronic building blocks empowering kids to build bots. '],
+ imgRight:'',
 }
 
-const findingCompare = {
-  subtitle: 'Finding',
-  content: 'A lot of the solutions out in the market is either app based, or hardware based. Many times, the problem can not be simply solved with just one method.As for CYCNAV, it is a combined solution that tackle the problem using both technologies.'
-}
-
-const devices = {
-  title: 'App vs IOT',
-  p1Img: '../../../assets/images/proj_cycnav/phone.png',
-  p2Img: '../../../assets/images/proj_cycnav/bikelight.png',
-  p1content: [
-    'Digital App',
-    'Pros: Accurante and fast route search',
-    'Cons: Distractive, pro to light flare'
+const rules = {
+  title: 'Setting Rules',
+  content:'Once I am happy with when and how the behaviours should be introduced to the users, it is time to layout the logics. The system is compromised by two types: motion and trigger.',
+  imgLeft: '../../../assets/images/proj_cycnav/phone.svg',
+  imgRight: '../../../assets/images/proj_cycnav/bikelight.svg',
+  contentLeft: [
+    <b className='b-indent'>Motion</b>,
+    'Straight forward object transformation and animation.',
+    'Example: move, rotate, scale'
   ],
-  p2content: [
-    'Physical Device',
-    'Pros: Safe & all-in-one navigation and user contribution',
-    'Cons: Costly'
+  contentRight: [
+    <b className='b-indent'>Trigger</b>,
+    'The logic that sets off the mechanism.',
+    'Example: click, look, time'
   ]
 }
 
-const solutions = {
-  content: 'Based on the result of comparative analysis, we decide to approach the problem using both digital and physical solutions. that is building a physical navigational device that would be powered by a digital app.',
+const behaviourflow1 = {
+    title:'Behaviour flow',
+  content: 'After conducting the various studies to gather insight about how other people have created the interaction system. I had came up with the basic laws for users to create either simple or advanced behaviours. ',
   img: '../../../assets/images/proj_cycnav/journey_map.jpg',
-  label: ['Nav App: The app uses googles map api to calculate the best route for the users, use can also input their finding of road conditions using the app.',
-    'Cycnav Bike Light: The bike light is connected to the app using bluetooth. While the app is calculating and adjusting the route,the bike light functions as the visual portal to help guide the cyclists while they are biking.']
+}
+
+const behaviourflow2 = {
+  content: 'All of the interactions is based on the user adding types of behaviours (trigger or motion) to the object. This can be done actively or passively. To further expand the logics above, two examples are shown below:',
+  img: '../../../assets/images/proj_cycnav/journey_map.jpg',
+}
+
+const sketches ={
+    title:'Sketches',
+    imageLeft:'',
+    contentRight:['The design process started with low fidelity sketches. This was the way to iterate through many design options quickly. I asked the team to sketch with me during a design sprint. Collecting their ideas helped me to align with the team and gain better idea on the technical aspect.',
+    'After numerous validation and iteration, I am settled at design v6.']
+}
+
+const wireframes ={
+    title:'Wireframes',
+    contentLeft:['I have created both low and high fidelity wireframes with for different user test purposes.',
+    'The  paper wireframes are used to quickly obtain user feedback at group design workshops - testers were mainly from within the team.',
+    'The digital wireframes are used for individual user test so all the user behaviours are closely observed and recorded. I expanded the testers to be outside the company. '],
+    imgRight:''
 }
 
 const usability = {
   title: 'Usability Test',
+  sectionClass:'list-style-number',
   content: [
     'Test with the wireframes revealed some major areas to improve on:',
-    '1. Users encountered trouble moving from the mobile app to the bike light. ',
-    '2. They prefer staying on the app while biking.',
-    '3. Not enough feedback on botht the app and the bike light, users sometimes get confused while traveling.'
+    'Users encountered trouble moving from the mobile app to the bike light. ',
+    'They prefer staying on the app while biking.',
+    'Not enough feedback on botht the app and the bike light, users sometimes get confused while traveling.'
   ]
 }
 
 const iterations = {
   title: 'Iterations',
+  sectionClass:'list-style-circle',
   content: [
     'We focuse improvements on the following two major components:',
-    '• Spend more time with the user on the onboarding, especially when they are connecting the bike light to the app.',
-    '• Redefine the search process to make it more intuitive, less steps.',
-    '• Reduce the number of button on the lights, and increase the size'
+    'Spend more time with the user on the onboarding, especially when they are connecting the bike light to the app.',
+    'Redefine the search process to make it more intuitive, less steps.',
+    'Reduce the number of button on the lights, and increase the size'
   ],
   img: '../../../assets/images/proj_cycnav/journey_map.jpg'
 
@@ -262,9 +230,9 @@ const testResult = {
 const prototypeApp = {
   title: ' Prototype - APP',
   content: 'We had a few variations for the Prototype as shown below. One consideration that is more important than the asthetics of the app itself, is the readability of the screen under different light conditions.',
-  imgLeft: {placeholder},
-  imgMiddle: {placeholder},
-  imgRight: {placeholder},
+  imgLeft: '../../../assets/images/proj_cycnav/prototye-1.png',
+  imgMiddle: '../../../assets/images/proj_cycnav/prototye-2.png',
+  imgRight: '../../../assets/images/proj_cycnav/prototype-3.png',
   contentLeft: 'Design 1: a green theme is used as we are hoping to achive a eco travel method.',
   contentMiddle: 'Design 2: a green theme is used as we are hoping to achive a eco travel method.',
   contentRight: 'Design 3: a green theme is used as we are hoping to achive a eco travel method. '
@@ -283,20 +251,17 @@ const prototypeDevice = {
   label: 'The Best result is a fluid capsule with a slanted angle for optimized viewing experience.'
 }
 
-const reflections = {
-  reflections: {
-    subject: [
-      'Adaptive design is crucial for various format of medium.',
-      'Sometimes the perfect solution is not one, but multiple approaches',
-      'Being able to pick up new skills and learn quickly is part of the UX.'
-    ],
-    learn: [
-      'The essense of UX design is to solve problems, not using templates ',
-      'If we have not done the user test and market analysis, we were Automatically assumed to go with one of the twocompletely different method for the problem we are presented. By adapting the UX research process we were able to focus on our users, coming up with valid solutions for the problems insead of making assumptions for the sake of building a tool.',
-      'his probject was done with limited time and resources. at times I had to learn new softwares, pick up technical skills along the way. This is not only helpful to me personaly, but it broadens my pespective as an UX design, where I was able to develop empathy for other field of personnels.'
-    ]
+const reflections = [
+  {subject: 'Adaptive design is crucial for various format of medium.',
+    learn: 'The essense of UX design is to solve problems, not using templates '
+  }, {
+    subject: 'Sometimes the perfect solution is not one, but multiple approaches.',
+    learn: 'If we have not done the user test and market analysis, we were Automatically assumed to go with one of the twocompletely different method for the problem we are presented. By adapting the UX research process we were able to focus on our users, coming up with valid solutions for the problems insead of making assumptions for the sake of building a tool.'
+  }, {
+    subject: 'Being able to pick up new skills and learn quickly is part of the UX.',
+    learn: 'This probject was done with limited time and resources. at times I had to learn new softwares, pick up technical skills along the way. This is not only helpful to me personaly, but it broadens my pespective as an UX design, where I was able to develop empathy for other field of personnels.'
   }
-}
+]
 
 class Briovr extends React.Component {
   render () {
@@ -305,27 +270,29 @@ class Briovr extends React.Component {
         <ProjectTitle content={projectTitle} style={style} />
         <div className='project-content-layout'>
           <IntroRole content={introRole} />
-          {/* early state UX research */}
-          <Problem content={problem} style={style} />
-
+          {/* early state research */}
           <TitleDivier content={titleText1} style={style} />
-          <TableComponent content={interviews} />
-          <LayoutHalf content={persona} />
-          <FindingComponent content={findingPersona} style={style} />
+          <LayoutText content={challenge} style={style} />
+          <LayoutHalf content={background} style={style} />
+          <TableComponent content={competitor} style={style} />
+
           <LayoutImage content={userJourney} />
+          <LayoutHalf content={game} />
 
-          {/* market research */}
+          {/* Solution */}
           <TitleDivier content={titleText2} style={style} />
-          <TableComponent content={comparativeAnalysis} />
-          <FindingComponent content={findingCompare} style={style} />
-          <LayoutHalf content={devices} />
+          <LayoutHalf content={rules} />
+          <LayoutImage content={behaviourflow1} />
+          <LayoutImage content={behaviourflow2} />
 
-          {/* UX solutions */}
+          {/* UX */}
           <TitleDivier content={titleText3} style={style} />
-          <LayoutImage content={solutions} />
+          <LayoutHalf content ={sketches} style={style} />
+          <LayoutHalf content ={wireframes} style={style} />
+
           <LayoutText content={usability} />
           <LayoutImage content={iterations} />
-          <TableComponent content={testResult} />
+          <TableComponent content={testResult} style={style} />
 
           {/* UI design */}
           <TitleDivier content={titleText4} style={style} />

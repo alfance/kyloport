@@ -22,13 +22,37 @@
 }
 
 // ////////////////////
-ul {
+ol {
     padding-left:0px;
     padding-right: 0px;
 }
 
 li {
     list-style: none;
+
+    b {
+        float:left;
+    }
+}
+
+.list-style-circle, .list-style-number {
+    ol {
+        padding-left:20px;
+    }
+    li:first-of-type {
+        list-style-type: none;
+        margin-left: -20px;
+    }
+}
+.list-style-circle {
+    li {
+        list-style-type: square;
+    }
+}
+.list-style-number {
+    li {
+        list-style-type: decimal;
+    }
 }
 
 .project-title-logo{
@@ -42,6 +66,10 @@ hr {
     border-top: 2px solid $color-grey1;
 }
 
+.b-indent {
+    display: block;
+    width: 100%;
+}
 ///////////////  react table /////////////////
 
 .ReactTable {
