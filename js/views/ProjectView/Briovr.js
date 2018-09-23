@@ -172,13 +172,9 @@ const wireframes ={
 
 const usability = {
   title: 'Usability Test',
-  sectionClass:'list-style-number',
-  content: [
-    'Test with the wireframes revealed some major areas to improve on:',
-    'Users encountered trouble moving from the mobile app to the bike light. ',
-    'They prefer staying on the app while biking.',
-    'Not enough feedback on botht the app and the bike light, users sometimes get confused while traveling.'
-  ]
+  content: 'What I am aiming to finding out from the usability test is how well people can learn to understand the system. The testers were coming from all sorts of professions ranging from 18 to 60. ',
+  table:'',
+  label:'The result has showed promising improvements after the onboarding is been introduced. People with coding background tend to perform better. '
 }
 
 const iterations = {
@@ -290,7 +286,7 @@ class Briovr extends React.Component {
           <LayoutHalf content ={sketches} style={style} />
           <LayoutHalf content ={wireframes} style={style} />
 
-          <LayoutText content={usability} />
+    
           <LayoutImage content={iterations} />
           <TableComponent content={testResult} style={style} />
 
