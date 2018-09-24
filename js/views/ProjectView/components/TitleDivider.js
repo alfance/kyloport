@@ -5,7 +5,7 @@ export default class TitleDivider extends React.Component {
   render () {
     const {title} = this.props.content
     const {color, textonColor} = this.props.style
-    console.log('test color :::::::', textonColor)
+
     const divStyle = {
       backgroundColor: color
     }

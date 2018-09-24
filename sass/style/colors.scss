@@ -21,15 +21,16 @@ $color-alert:#D93C3C;
 $color-normal:#9FE600;
 $color-warn:#FDEE35;
 
-.text-light * {
-    color:$color-white;
-}
 .text-light {
     color:$color-white;
+    * {
+        color:$color-white;
+    }
 }
-.text-dark * {
-    color:$color-black;
-}
+
 .text-dark {
     color:$color-black;
+    * {
+        color:$color-black;
+    }
 }

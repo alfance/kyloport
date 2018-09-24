@@ -13,7 +13,7 @@ import LayoutHalf from './components/LayoutHalf'
 
 const style = {
   color: '#5C41B4',
-  TextonColor: 'text-light',
+  textonColor: 'text-light',
   titleBgP: 'right',
   bgSize: ''
 }
@@ -62,7 +62,7 @@ const challenge = {
     'Need to have game play mechanics (click, move, pickup etc)']
 }
 const background = {
-  title: 'background',
+  title: 'Background',
   imgLeft: '../../../assets/images/proj_cycnav/title_img.png',
   contentRight: ['BRIOVR has all the major features contained in the card menu at the bottom. The center screen is the model viewer. ',
     'My goal is to seamlessly introduce the behaviour system into the current builder environment, allowing anyone to create complex interactions that could only be done by coders at comfort. ']
@@ -147,12 +147,17 @@ const rules = {
 const behaviourflow1 = {
   title: 'Behaviour flow',
   content: 'After conducting the various studies to gather insight about how other people have created the interaction system. I had came up with the basic laws for users to create either simple or advanced behaviours. ',
-  img: '../../../assets/images/proj_cycnav/journey_map.jpg'
+  img: '../../../assets/images/proj_briovr/actionflow.png'
 }
 
 const behaviourflow2 = {
   content: 'All of the interactions is based on the user adding types of behaviours (trigger or motion) to the object. This can be done actively or passively. To further expand the logics above, two examples are shown below:',
-  img: '../../../assets/images/proj_cycnav/journey_map.jpg'
+  img: '../../../assets/images/proj_briovr/actionflow1.png'
+}
+
+const behaviourflow3 = {
+  content: 'All of the interactions is based on the user adding types of behaviours (trigger or motion) to the object. This can be done actively or passively. To further expand the logics above, two examples are shown below:',
+  img: '../../../assets/images/proj_briovr/actionflow2.png'
 }
 
 const sketches = {
@@ -223,28 +228,9 @@ const testResult = {
   }]
 }
 
-const prototypeApp = {
-  title: ' Prototype - APP',
-  content: 'We had a few variations for the Prototype as shown below. One consideration that is more important than the asthetics of the app itself, is the readability of the screen under different light conditions.',
-  imgLeft: '../../../assets/images/proj_cycnav/prototye-1.png',
-  imgMiddle: '../../../assets/images/proj_cycnav/prototye-2.png',
-  imgRight: '../../../assets/images/proj_cycnav/prototype-3.png',
-  contentLeft: 'Design 1: a green theme is used as we are hoping to achive a eco travel method.',
-  contentMiddle: 'Design 2: a green theme is used as we are hoping to achive a eco travel method.',
-  contentRight: 'Design 3: a green theme is used as we are hoping to achive a eco travel method. '
-}
-
-const decision = {
-  title: 'Decision',
-  content: 'In the end, we decide to go with design 3 due to its readability even under extreme sun light. For this design,the users can grasp the information in the shortest amoutn of time, which is fatal when they are on the road.',
-  img: {placeholder}
-}
-
-const prototypeDevice = {
-  title: 'Prototype - Bike Light',
-  content: 'Same as the app, we tested multiple paper prototypes before making a decision. ',
-  img: {placeholder},
-  label: 'The Best result is a fluid capsule with a slanted angle for optimized viewing experience.'
+const prototype ={
+    content:'',
+    img:'../../../assets/images/proj_briovr/prototype.png'
 }
 
 const reflections = [
@@ -271,7 +257,7 @@ class Briovr extends React.Component {
           <LayoutText content={challenge} style={style} />
           <LayoutHalf content={background} style={style} />
           <TableComponent content={competitor} style={style} />
-
+          <FindingComponent content ={findingCompetitor} style={style} />
           <LayoutImage content={userJourney} />
           <LayoutHalf content={game} />
 
@@ -280,6 +266,7 @@ class Briovr extends React.Component {
           <LayoutHalf content={rules} />
           <LayoutImage content={behaviourflow1} />
           <LayoutImage content={behaviourflow2} />
+          <LayoutImage content={behaviourflow3} />
 
           {/* UX */}
           <TitleDivier content={titleText3} style={style} />
@@ -291,9 +278,7 @@ class Briovr extends React.Component {
 
           {/* UI design */}
           <TitleDivier content={titleText4} style={style} />
-          <LayoutThree content={prototypeApp} />
-          <LayoutImage content={decision} />
-          <LayoutImage content={prototypeDevice} />
+          <LayoutImage content={prototype} />
 
           {/* results and reflections */}
           <TitleDivier content={titleText5} style={style} />
