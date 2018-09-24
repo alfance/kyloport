@@ -32,7 +32,7 @@ const placeholder = require('../../../assets/images/proj_cycnav/journey_map.jpg'
 
 const projectTitle = {
   title: 'CYCNAV',
-  logo: '../../../assets/images/proj_cycnav/cycnav_logo_w.svg',
+  logo: '../../../assets/images/proj_briovr/brioLogo_horizontal_Wgradient.svg',
   field: 'UI/UX, Interaction Design',
   intro: 'Behaviour system for online VR platform',
   link: 'briovr',
@@ -42,30 +42,30 @@ const projectTitle = {
 const introRole = {
   content: 'BRIOVR is an online 3D platform for creating Interactive VR content. This tool allows users to upload their models to the cloud, create animations and interactions, and share instantly with others.',
   role: 'As the leading UX designer, my role is to create a modular system for users to add interactions in the 3D space. The steps I have taken are:',
-    duties:['User interviews',
-'Comparative analysis',
-'Affinity mapping',
-'Design workshops',
-'Wireframe development',
-'Usability testing',
-'Prototype development'],
+  duties: ['User interviews',
+    'Comparative analysis',
+    'Affinity mapping',
+    'Design workshops',
+    'Wireframe development',
+    'Usability testing',
+    'Prototype development'],
   img: '../../../assets/images/proj_cycnav/title_img.png'
 }
 
 const challenge = {
   title: 'Challenge',
-  sectionClass:'list-style-circle',
-  content:[ 'Create an intuitive and easy to use interactive system for BRIOVR. Client and management requests include:',
+  sectionClass: 'list-style-circle',
+  content: [ 'Create an intuitive and easy to use interactive system for BRIOVR. Client and management requests include:',
     'No coding knowledge is required',
     'Click, drag and drop only',
     'No Node graph',
     'Need to have game play mechanics (click, move, pickup etc)']
 }
-const background ={
-    title:'background',
-    imgLeft:'',
-    contentRight:['BRIOVR has all the major features contained in the card menu at the bottom. The center screen is the model viewer. ',
-'My goal is to seamlessly introduce the behaviour system into the current builder environment, allowing anyone to create complex interactions that could only be done by coders at comfort. ']
+const background = {
+  title: 'background',
+  imgLeft: '../../../assets/images/proj_cycnav/title_img.png',
+  contentRight: ['BRIOVR has all the major features contained in the card menu at the bottom. The center screen is the model viewer. ',
+    'My goal is to seamlessly introduce the behaviour system into the current builder environment, allowing anyone to create complex interactions that could only be done by coders at comfort. ']
 }
 
 const competitor = {
@@ -85,26 +85,26 @@ const competitor = {
     accessor: 'user'
   }],
   data: [{
-    name:'Unreal',
+    name: 'Unreal',
     code: 'Blueprint (C++)',
     time: '10 hours',
     user: 'Game developer'
-},{
-  name:'Unity',
-  code: 'C#',
-  time: '12 hours',
-  user: 'Game developer'
-},{
-  name:'Play Canvas',
-  code: 'Javascript',
-  time: '2.5 hours',
-  user: 'Front End Dev'
-},{
-  name:'InstaVR',
-  code: '/',
-  time: '5 min',
-  user: '360 video maker'
-}]
+  }, {
+    name: 'Unity',
+    code: 'C#',
+    time: '12 hours',
+    user: 'Game developer'
+  }, {
+    name: 'Play Canvas',
+    code: 'Javascript',
+    time: '2.5 hours',
+    user: 'Front End Dev'
+  }, {
+    name: 'InstaVR',
+    code: '/',
+    time: '5 min',
+    user: '360 video maker'
+  }]
 }
 
 const findingCompetitor = {
@@ -115,25 +115,25 @@ const findingCompetitor = {
 const userJourney = {
   title: 'User journey',
   content: 'After studying other applications and interviews. I came up with a simplified user journey for the system. This helped me realize that Creating interactions comes at the late stage of the user flow.',
-  img: '../../../assets/images/proj_cycnav/journey_map.jpg',
+  img: '../../../assets/images/proj_briovr/user_journey_map.png',
   label: 'I decide not to include the behaviour onboarding in the main onboarding. Only when people expressed enough interest to click on the feature should I show them how to play with behaviour.'
 }
 
-const game ={
-    title:'Gamification Study',
-    contentLeft:['Other than the competitors, there are games and tools which make the creation of logics fun. To name a couple: ',
-'Little big planet: creates mode contains lots of trigger for user to create their own level.',
- 'Little Bits: Electronic building blocks empowering kids to build bots. '],
- imgRight:'',
+const game = {
+  title: 'Gamification Study',
+  contentLeft: ['Other than the competitors, there are games and tools which make the creation of logics fun. To name a couple: ',
+    'Little big planet: creates mode contains lots of trigger for user to create their own level.',
+    'Little Bits: Electronic building blocks empowering kids to build bots. '],
+  imgRight: '../../../assets/images/proj_briovr/game_study.jpg'
 }
 
 const rules = {
   title: 'Setting Rules',
-  content:'Once I am happy with when and how the behaviours should be introduced to the users, it is time to layout the logics. The system is compromised by two types: motion and trigger.',
-  imgLeft: '../../../assets/images/proj_cycnav/phone.svg',
-  imgRight: '../../../assets/images/proj_cycnav/bikelight.svg',
+  content: 'Once I am happy with when and how the behaviours should be introduced to the users, it is time to layout the logics. The system is compromised by two types: motion and trigger.',
+  imgLeft: '../../../assets/images/proj_briovr/action-icon.svg',
+  imgRight: '../../../assets/images/proj_briovr/trigger-icon.svg',
   contentLeft: [
-    <b className='b-indent'>Motion</b>,
+    <b className='b-indent'>Action</b>,
     'Straight forward object transformation and animation.',
     'Example: move, rotate, scale'
   ],
@@ -145,41 +145,41 @@ const rules = {
 }
 
 const behaviourflow1 = {
-    title:'Behaviour flow',
+  title: 'Behaviour flow',
   content: 'After conducting the various studies to gather insight about how other people have created the interaction system. I had came up with the basic laws for users to create either simple or advanced behaviours. ',
-  img: '../../../assets/images/proj_cycnav/journey_map.jpg',
+  img: '../../../assets/images/proj_cycnav/journey_map.jpg'
 }
 
 const behaviourflow2 = {
   content: 'All of the interactions is based on the user adding types of behaviours (trigger or motion) to the object. This can be done actively or passively. To further expand the logics above, two examples are shown below:',
-  img: '../../../assets/images/proj_cycnav/journey_map.jpg',
+  img: '../../../assets/images/proj_cycnav/journey_map.jpg'
 }
 
-const sketches ={
-    title:'Sketches',
-    imageLeft:'',
-    contentRight:['The design process started with low fidelity sketches. This was the way to iterate through many design options quickly. I asked the team to sketch with me during a design sprint. Collecting their ideas helped me to align with the team and gain better idea on the technical aspect.',
+const sketches = {
+  title: 'Sketches',
+  imageLeft: '',
+  contentRight: ['The design process started with low fidelity sketches. This was the way to iterate through many design options quickly. I asked the team to sketch with me during a design sprint. Collecting their ideas helped me to align with the team and gain better idea on the technical aspect.',
     'After numerous validation and iteration, I am settled at design v6.']
 }
 
-const wireframes ={
-    title:'Wireframes',
-    contentLeft:['I have created both low and high fidelity wireframes with for different user test purposes.',
+const wireframes = {
+  title: 'Wireframes',
+  contentLeft: ['I have created both low and high fidelity wireframes with for different user test purposes.',
     'The  paper wireframes are used to quickly obtain user feedback at group design workshops - testers were mainly from within the team.',
     'The digital wireframes are used for individual user test so all the user behaviours are closely observed and recorded. I expanded the testers to be outside the company. '],
-    imgRight:''
+  imgRight: ''
 }
 
 const usability = {
   title: 'Usability Test',
   content: 'What I am aiming to finding out from the usability test is how well people can learn to understand the system. The testers were coming from all sorts of professions ranging from 18 to 60. ',
-  table:'',
-  label:'The result has showed promising improvements after the onboarding is been introduced. People with coding background tend to perform better. '
+  table: '',
+  label: 'The result has showed promising improvements after the onboarding is been introduced. People with coding background tend to perform better. '
 }
 
 const iterations = {
   title: 'Iterations',
-  sectionClass:'list-style-circle',
+  sectionClass: 'list-style-circle',
   content: [
     'We focuse improvements on the following two major components:',
     'Spend more time with the user on the onboarding, especially when they are connecting the bike light to the app.',
@@ -283,10 +283,9 @@ class Briovr extends React.Component {
 
           {/* UX */}
           <TitleDivier content={titleText3} style={style} />
-          <LayoutHalf content ={sketches} style={style} />
-          <LayoutHalf content ={wireframes} style={style} />
+          <LayoutHalf content={sketches} style={style} />
+          <LayoutHalf content={wireframes} style={style} />
 
-    
           <LayoutImage content={iterations} />
           <TableComponent content={testResult} style={style} />
 

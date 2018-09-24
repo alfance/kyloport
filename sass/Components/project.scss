@@ -68,7 +68,6 @@
   @include project-container-css;
   div {
     width:50%;
-
     @include smallS {
       width:100%;
     }

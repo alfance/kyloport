@@ -17,6 +17,12 @@ export default class LayoutHelper {
   }
 
   static mediaType (image, video) {
-    return image === undefined ? <ReactPlayer url={video} /> : <img src={image} />
+    if (image !== undefined) {
+      return <img src={image} />
+    } else if (video !== undefined) {
+      return <ReactPlayer url={video} />
+    } else {
+      return <div />
+    }
   }
 }
