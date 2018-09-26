@@ -8,6 +8,7 @@ import FindingComponent from './components/FindingComponent'
 import LayoutImage from './components/LayoutImage'
 import LayoutText from './components/LayoutText'
 import LayoutThree from './components/LayoutThree'
+import LayoutOneThird from './components/LayoutOneThird'
 import Reflection from './components/Reflection'
 import LayoutHalf from './components/LayoutHalf'
 
@@ -26,7 +27,9 @@ const titleText3 = {title: 'UX Design'}
 
 const titleText4 = {title: 'UI Design'}
 
-const titleText5 = {title: 'Learnings'}
+const titleText5 = {title: 'Interaction Design'}
+
+const titleText6 = {title: 'Learnings'}
 
 const placeholder = require('../../../assets/images/proj_cycnav/journey_map.jpg')
 
@@ -40,6 +43,7 @@ const projectTitle = {
 }
 
 const introRole = {
+  sectionClass: 'list-style-circle',
   content: 'BRIOVR is an online 3D platform for creating Interactive VR content. This tool allows users to upload their models to the cloud, create animations and interactions, and share instantly with others.',
   role: 'As the leading UX designer, my role is to create a modular system for users to add interactions in the 3D space. The steps I have taken are:',
   duties: ['User interviews',
@@ -49,7 +53,7 @@ const introRole = {
     'Wireframe development',
     'Usability testing',
     'Prototype development'],
-  img: '../../../assets/images/proj_cycnav/title_img.png'
+  img: '../../../assets/images/proj_briovr/behaviourstart.gif'
 }
 
 const challenge = {
@@ -172,7 +176,7 @@ const wireframes = {
   contentLeft: ['I have created both low and high fidelity wireframes with for different user test purposes.',
     'The  paper wireframes are used to quickly obtain user feedback at group design workshops - testers were mainly from within the team.',
     'The digital wireframes are used for individual user test so all the user behaviours are closely observed and recorded. I expanded the testers to be outside the company. '],
-  imgRight: ''
+  imgRight: '../../../assets/images/proj_briovr/wireframe1.png'
 }
 
 const usability = {
@@ -195,42 +199,15 @@ const iterations = {
 
 }
 
-const testResult = {
-  title: 'Result',
-  columns: [{
-    Header: 'Feature',
-    accessor: 'feature' // String-based value accessors!
-  }, {
-    Header: 'Problem',
-    accessor: 'problem'
-  }, {
-    Header: 'Iteration',
-    accessor: 'iteration'
-  }, {
-    Header: 'Results',
-    accessor: 'result'
-  }],
-  data: [{
-    feature: 'App to Device transition',
-    problem: 'User stuck after connect to bike light',
-    iteration: 'Redirect to app main map',
-    result: '50% Smooth'
-  }, {
-    feature: 'Onboarding',
-    problem: 'User neglected message to transit to ',
-    iteration: 'Full screen instruction',
-    result: '25% Smooth'
-  }, {
-    feature: 'Bike light navigation',
-    problem: 'Missing or unclear indicators',
-    iteration: 'Create vartions in indicator size',
-    result: '75% Smooth'
-  }]
+const prototype = {
+  content: '',
+  img: '../../../assets/images/proj_briovr/prototype.png'
 }
 
-const prototype ={
-    content:'',
-    img:'../../../assets/images/proj_briovr/prototype.png'
+const interactionAction = {
+  title: 'Case 1: add an action',
+  contentLeft:'dlskjdfks',
+  videoRight: 'https://youtu.be/lRlnbEsEZtw'
 }
 
 const reflections = [
@@ -257,7 +234,7 @@ class Briovr extends React.Component {
           <LayoutText content={challenge} style={style} />
           <LayoutHalf content={background} style={style} />
           <TableComponent content={competitor} style={style} />
-          <FindingComponent content ={findingCompetitor} style={style} />
+          <FindingComponent content={findingCompetitor} style={style} />
           <LayoutImage content={userJourney} />
           <LayoutHalf content={game} />
 
@@ -274,14 +251,17 @@ class Briovr extends React.Component {
           <LayoutHalf content={wireframes} style={style} />
 
           <LayoutImage content={iterations} />
-          <TableComponent content={testResult} style={style} />
 
           {/* UI design */}
           <TitleDivier content={titleText4} style={style} />
           <LayoutImage content={prototype} />
 
-          {/* results and reflections */}
+          {/* Interaction design */}
           <TitleDivier content={titleText5} style={style} />
+          <LayoutOneThird content={interactionAction} style={style} />
+
+          {/* results and reflections */}
+          <TitleDivier content={titleText6} style={style} />
           <Reflection content={reflections} />
 
         </div>
