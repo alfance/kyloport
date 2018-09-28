@@ -20,7 +20,7 @@ export default class LayoutHelper {
     if (image !== undefined) {
       return <img src={image} />
     } else if (video !== undefined) {
-      return <ReactPlayer url={video} />
+      return <ReactPlayer width='100%' height='auto' className='project-video169' url={video} />
     } else {
       return <div />
     }

@@ -206,8 +206,14 @@ const prototype = {
 
 const interactionAction = {
   title: 'Case 1: add an action',
-  contentLeft:'dlskjdfks',
-  videoRight: 'https://youtu.be/lRlnbEsEZtw'
+  content: 'dlskjdfks',
+  video: 'https://youtu.be/VozS_FYJd_g'
+}
+
+const interactionTrigger = {
+  title: 'Case 1: add an action',
+  content: 'dlskjdfks',
+  video: 'https://youtu.be/SKdtGiESaO4'
 }
 
 const reflections = [
@@ -248,7 +254,7 @@ class Briovr extends React.Component {
           {/* UX */}
           <TitleDivier content={titleText3} style={style} />
           <LayoutHalf content={sketches} style={style} />
-          <LayoutHalf content={wireframes} style={style} />
+          <LayoutOneThird content={wireframes} style={style} />
 
           <LayoutImage content={iterations} />
 
@@ -258,7 +264,8 @@ class Briovr extends React.Component {
 
           {/* Interaction design */}
           <TitleDivier content={titleText5} style={style} />
-          <LayoutOneThird content={interactionAction} style={style} />
+          <LayoutImage content={interactionAction} style={style} />
+          <LayoutImage content={interactionTrigger} style={style} />
 
           {/* results and reflections */}
           <TitleDivier content={titleText6} style={style} />
