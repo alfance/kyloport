@@ -9,6 +9,7 @@ import LayoutImage from './components/LayoutImage'
 import LayoutText from './components/LayoutText'
 import LayoutThree from './components/LayoutThree'
 import LayoutOneThird from './components/LayoutOneThird'
+import LayoutTwoThird from './components/LayoutTwoThird'
 import Reflection from './components/Reflection'
 import LayoutHalf from './components/LayoutHalf'
 
@@ -27,9 +28,9 @@ const titleText3 = {title: 'UX Design'}
 
 const titleText4 = {title: 'UI Design'}
 
-const titleText5 = {title: 'Interaction Design'}
+const titleText5 = {title: 'Motion Design'}
 
-const titleText6 = {title: 'Learnings'}
+const titleText6 = {title: 'Out to the Market'}
 
 const placeholder = require('../../../assets/images/proj_cycnav/journey_map.jpg')
 
@@ -67,7 +68,7 @@ const challenge = {
 }
 const background = {
   title: 'Background',
-  imgLeft: '../../../assets/images/proj_cycnav/title_img.png',
+  imgLeft: '../../../assets/images/proj_briovr/background.png',
   contentRight: ['BRIOVR has all the major features contained in the card menu at the bottom. The center screen is the model viewer. ',
     'My goal is to seamlessly introduce the behaviour system into the current builder environment, allowing anyone to create complex interactions that could only be done by coders at comfort. ']
 }
@@ -181,9 +182,34 @@ const wireframes = {
 
 const usability = {
   title: 'Usability Test',
-  content: 'What I am aiming to finding out from the usability test is how well people can learn to understand the system. The testers were coming from all sorts of professions ranging from 18 to 60. ',
-  table: '',
-  label: 'The result has showed promising improvements after the onboarding is been introduced. People with coding background tend to perform better. '
+  content: ['Due to the nature of 3D app, I had to use aternative testing method that testers need to achieve goals. for example, they are asked to create an interaction to move an object after clicking triggers. ',
+  <b>"I thought it should be working this way but i was wrong."</b>,
+      'It is tricky for someone to figure out the flow themselves.',
+  'I wish there is a better tutorial',
+      'The onboarding sometimes were neglected',
+    <b>"Can I type code?"</b>,
+    'For programmers they prefer to do it in programming language.'
+]
+}
+
+const findingTest = {
+    subtitle: 'Roadblock',
+    content: 'Due to the nature of 3D app, we could only simulate a test environment that partially resembles the end product. This limit the outcomes we can get.'
+}
+const prototypeMain = {
+    title:'Main Interface',
+  content: 'The overall layout embraces the design of the app. The main feature panel at the bottom allows users to open up sub features list, and divided the triggers and actions.',
+  img: '../../../assets/images/proj_briovr/ui-main.png'
+}
+const prototypeChain = {
+    title:'Behvaiour chain panel',
+  contentLeft: 'The behaviour chain contains all the logics happening on an object. It is like a node system but linear.',
+  imgRight: '../../../assets/images/proj_briovr/chain.png'
+}
+const prototypePop = {
+    title:'Property popup',
+    imgLeft: '../../../assets/images/proj_briovr/property-popup.png',
+    contentRight: 'The behaviour chain contains all the logics happening on an object. It is like a node system but linear.'
 }
 
 const iterations = {
@@ -193,29 +219,29 @@ const iterations = {
     'We focuse improvements on the following two major components:',
     'Spend more time with the user on the onboarding, especially when they are connecting the bike light to the app.',
     'Redefine the search process to make it more intuitive, less steps.',
-    'Reduce the number of button on the lights, and increase the size'
+    'The result has showed promising improvements after the onboarding is been introduced. People with coding background tend to perform better. '
   ],
   img: '../../../assets/images/proj_cycnav/journey_map.jpg'
-
 }
 
-const prototype = {
-  content: '',
-  img: '../../../assets/images/proj_briovr/prototype.png'
-}
-
-const interactionAction = {
-  title: 'Case 1: add an action',
-  content: 'dlskjdfks',
+const motion = {
+  content: 'Differ from 2D apps, Motion in 3D plays an important role especially true for behaviours. I have came up with various motion designs for the components to distinguish eachother.',
   video: 'https://youtu.be/VozS_FYJd_g'
 }
 
-const interactionTrigger = {
-  title: 'Case 1: add an action',
+const endResult = {
+  title: 'The result',
   content: 'dlskjdfks',
   video: 'https://youtu.be/SKdtGiESaO4'
 }
 
+const achieve = {
+    title: 'Use Case',
+    content:['Based on the behaviour system, users were able to create something magnificent. HERE is our discover page.',
+    'Through collaboration, we had created an interactive Casino Royal experience for the Toronto Elevate Conference after party at Crowdlinkers. You can play it HERE'
+],
+    img:''
+}
 const reflections = [
   {subject: 'Adaptive design is crucial for various format of medium.',
     learn: 'The essense of UX design is to solve problems, not using templates '
@@ -238,7 +264,7 @@ class Briovr extends React.Component {
           {/* early state research */}
           <TitleDivier content={titleText1} style={style} />
           <LayoutText content={challenge} style={style} />
-          <LayoutHalf content={background} style={style} />
+          <LayoutTwoThird content={background} style={style} />
           <TableComponent content={competitor} style={style} />
           <FindingComponent content={findingCompetitor} style={style} />
           <LayoutImage content={userJourney} />
@@ -255,20 +281,25 @@ class Briovr extends React.Component {
           <TitleDivier content={titleText3} style={style} />
           <LayoutHalf content={sketches} style={style} />
           <LayoutOneThird content={wireframes} style={style} />
-
-          <LayoutImage content={iterations} />
+          <LayoutText content={usability} />
+          <FindingComponent content={findingTest} style={style} />
 
           {/* UI design */}
           <TitleDivier content={titleText4} style={style} />
-          <LayoutImage content={prototype} />
+          <LayoutImage content={prototypeMain} />
+          <LayoutOneThird content={prototypeChain} />
+          <LayoutHalf content={prototypePop} />
 
           {/* Interaction design */}
           <TitleDivier content={titleText5} style={style} />
-          <LayoutImage content={interactionAction} style={style} />
-          <LayoutImage content={interactionTrigger} style={style} />
+          <LayoutImage content={motion} style={style} />
+          <LayoutImage content={endResult} style={style} />
+
+          <LayoutImage content={iterations} />
 
           {/* results and reflections */}
           <TitleDivier content={titleText6} style={style} />
+          <LayoutImage content={achieve} />
           <Reflection content={reflections} />
 
         </div>

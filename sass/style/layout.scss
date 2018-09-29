@@ -47,11 +47,13 @@ li {
 .list-style-circle {
     li {
         list-style-type: square;
+        padding-bottom: 0px;
     }
 }
 .list-style-number {
     li {
         list-style-type: decimal;
+        padding-bottom: 0px;
     }
 }
 
