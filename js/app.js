@@ -14,6 +14,7 @@ import ProjectMain from './views/ProjectMain'
 import Arts from './views/Arts'
 import Photos from './views/Photos'
 import Contact from './views/Contact'
+import Resume from './views/Resume'
 
 // Project link
 import Briovr from './views/ProjectView/Briovr'
@@ -32,6 +33,7 @@ ReactDOM.render((
       <Route path='ProjectMain' component={ProjectMain} />
       <Route path='arts' component={Arts} />
       <Route path='Photos' component={Photos} />
+      <Route path='Resume' component={Resume} />
       <Route path='Contact' component={Contact} />
 
       <Route path='briovr' component={Briovr} />

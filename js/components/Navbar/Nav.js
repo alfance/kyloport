@@ -1,6 +1,9 @@
 import React from 'react'
 import NavbarStore from '../../stores/NavbarStore'
 import NavItem from './NavItem'
+import { Link } from 'react-router'
+
+const logo = '../../../assets/images/kx_logo.svg'
 
 export default class Nav extends React.Component {
   constructor () {
@@ -18,7 +21,7 @@ export default class Nav extends React.Component {
     return (
       <div className='nav'>
         <div className='nav-content'>
-          <p>KX</p>
+          <Link to='projectmain'><img className='nav-logo' src={logo} /></Link>
           {navComponents}
           <a href='mailto:jiao_xue@hotmail.com'><i className='mail' /></a>
           <a target='_blank' href='https://www.linkedin.com/in/kyloxue/'><i className='linkedin1' /></a>

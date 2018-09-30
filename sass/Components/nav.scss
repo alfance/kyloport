@@ -35,4 +35,14 @@
     font-size: $iconMedium;
     display: block;
   }
+
+  .nav-logo {
+      width: 80%;
+      margin-top: -15px;
+
+      @include smallS {
+          height: 40px;
+          margin-top:8px;
+      }
+  }
 }

@@ -9,14 +9,18 @@ export default class LayoutImage extends React.Component {
             video,
             label,
             content,
-            sectionClass
+            sectionClass,
+            deviceFrame
         } = this.props.content
         return (<div className={sectionClass}>
             <h3>{title}</h3>
             <ol start='0'>
                 {LayoutHelper.layoutArrayContent(content)}
             </ol>
-            {LayoutHelper.mediaType(img, video)}
+            <div className={deviceFrame}>
+                <img className={deviceFrame} />
+                {LayoutHelper.mediaType(img, video)}
+            </div>
             <ol start='0'>
                 {LayoutHelper.layoutArrayContent(label)}
             </ol>

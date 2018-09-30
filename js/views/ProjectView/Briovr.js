@@ -198,6 +198,7 @@ const findingTest = {
 }
 const prototypeMain = {
     title:'Main Interface',
+    deviceFrame:'laptop',
   content: 'The overall layout embraces the design of the app. The main feature panel at the bottom allows users to open up sub features list, and divided the triggers and actions.',
   img: '../../../assets/images/proj_briovr/ui-main.png'
 }
