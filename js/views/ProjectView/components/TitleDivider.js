@@ -7,10 +7,10 @@ export default class TitleDivider extends React.Component {
     const {color, textonColor} = this.props.style
 
     const divStyle = {
-      backgroundColor: color
+      color: color
     }
     return (
-      <h3 className={classNames('project-component-title', textonColor)} style={divStyle}> {title}</h3>
+      <h2 className={classNames('project-component-title')} style={divStyle}> {title}</h2>
     )
   }
 }

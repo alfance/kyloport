@@ -22,7 +22,7 @@ const style = {
 
 const titleText1 = {title: 'Research'}
 
-const titleText2 = {title: 'Solution'}
+const titleText2 = {title: 'Content Architecture'}
 
 const titleText3 = {title: 'UX Design'}
 
@@ -32,15 +32,13 @@ const titleText5 = {title: 'Motion Design'}
 
 const titleText6 = {title: 'Out to the Market'}
 
-const placeholder = require('../../../assets/images/proj_cycnav/journey_map.jpg')
-
 const projectTitle = {
   title: 'CYCNAV',
   logo: '../../../assets/images/proj_briovr/brioLogo_horizontal_Wgradient.svg',
   field: 'UI/UX, Interaction Design',
   intro: 'Behaviour system for online VR platform',
   link: 'briovr',
-  bgImg: '../../../assets/images/proj_cycnav/title_img.png'
+  bgImg: ''
 }
 
 const introRole = {
@@ -68,8 +66,8 @@ const challenge = {
 }
 const background = {
   title: 'Background',
-  imgLeft: '../../../assets/images/proj_briovr/background.png',
-  contentRight: ['BRIOVR has all the major features contained in the card menu at the bottom. The center screen is the model viewer. ',
+  img: '../../../assets/images/proj_briovr/background.png',
+  content: ['BRIOVR has all the major features contained in the card menu at the bottom. The center screen is the model viewer. ',
     'My goal is to seamlessly introduce the behaviour system into the current builder environment, allowing anyone to create complex interactions that could only be done by coders at comfort. ']
 }
 
@@ -167,50 +165,30 @@ const behaviourflow3 = {
 
 const sketches = {
   title: 'Sketches',
-  imageLeft: '',
-  contentRight: ['The design process started with low fidelity sketches. This was the way to iterate through many design options quickly. I asked the team to sketch with me during a design sprint. Collecting their ideas helped me to align with the team and gain better idea on the technical aspect.',
-    'After numerous validation and iteration, I am settled at design v6.']
+  img: '../../../assets/images/proj_briovr/brio_sketch.jpg',
+  content: ['The design process started with low fidelity sketches. This was the way to iterate through many design options quickly. I asked the team to sketch with me during a design sprint. Collecting their ideas helped me to align with the team and gain better idea on the technical aspect.',
+    'After numerous validation and iteration.']
 }
 
 const wireframes = {
   title: 'Wireframes',
-  contentLeft: ['I have created both low and high fidelity wireframes with for different user test purposes.',
+  content: ['I have created both low and high fidelity wireframes with for different user test purposes.',
     'The  paper wireframes are used to quickly obtain user feedback at group design workshops - testers were mainly from within the team.',
     'The digital wireframes are used for individual user test so all the user behaviours are closely observed and recorded. I expanded the testers to be outside the company. '],
-  imgRight: '../../../assets/images/proj_briovr/wireframe1.png'
+  img: '../../../assets/images/proj_briovr/wireframe.jpg'
 }
 
 const usability = {
   title: 'Usability Test',
-  content: ['Due to the nature of 3D app, I had to use aternative testing method that testers need to achieve goals. for example, they are asked to create an interaction to move an object after clicking triggers. ',
-  <b>"I thought it should be working this way but i was wrong."</b>,
-      'It is tricky for someone to figure out the flow themselves.',
-  'I wish there is a better tutorial',
-      'The onboarding sometimes were neglected',
-    <b>"Can I type code?"</b>,
+  content: ['We have conducted 5 usability tests with people from different background. Only 3 had successfully completed ',
+    'Tutorial was too fast',
+    'Users had hard time following the video tutorial. We then switched it to a more immersive onboarding that guide the users hand by hand',
+    'I want instant feedback',
+    'Whenever users added translation changes, they are unable to view the changes unless hit play button. A more direct and instant feed is needed',
+    'The onboarding sometimes were neglected',
+    'Can I type code?',
     'For programmers they prefer to do it in programming language.'
-]
-}
-
-const findingTest = {
-    subtitle: 'Roadblock',
-    content: 'Due to the nature of 3D app, we could only simulate a test environment that partially resembles the end product. This limit the outcomes we can get.'
-}
-const prototypeMain = {
-    title:'Main Interface',
-    deviceFrame:'laptop',
-  content: 'The overall layout embraces the design of the app. The main feature panel at the bottom allows users to open up sub features list, and divided the triggers and actions.',
-  img: '../../../assets/images/proj_briovr/ui-main.png'
-}
-const prototypeChain = {
-    title:'Behvaiour chain panel',
-  contentLeft: 'The behaviour chain contains all the logics happening on an object. It is like a node system but linear.',
-  imgRight: '../../../assets/images/proj_briovr/chain.png'
-}
-const prototypePop = {
-    title:'Property popup',
-    imgLeft: '../../../assets/images/proj_briovr/property-popup.png',
-    contentRight: 'The behaviour chain contains all the logics happening on an object. It is like a node system but linear.'
+  ]
 }
 
 const iterations = {
@@ -225,6 +203,27 @@ const iterations = {
   img: '../../../assets/images/proj_cycnav/journey_map.jpg'
 }
 
+const findingTest = {
+  subtitle: 'Roadblock',
+  content: 'Due to the nature of 3D app, we could only simulate a test environment that partially resembles the end product. This limit the outcomes we can get.'
+}
+const prototypeMain = {
+  title: 'Main Interface',
+  deviceFrame: 'laptop',
+  content: 'The overall layout embraces the design of the app. The main feature panel at the bottom allows users to open up sub features list, and divided the triggers and actions.',
+  img: '../../../assets/images/proj_briovr/ui-main.png'
+}
+const prototypeChain = {
+  title: 'Behvaiour chain panel',
+  contentLeft: 'The behaviour chain contains all the logics happening on an object. It is like a node system but linear.',
+  imgRight: '../../../assets/images/proj_briovr/chain.png'
+}
+const prototypePop = {
+  title: 'Property popup',
+  imgLeft: '../../../assets/images/proj_briovr/property-popup.png',
+  contentRight: 'The behaviour chain contains all the logics happening on an object. It is like a node system but linear.'
+}
+
 const motion = {
   content: 'Differ from 2D apps, Motion in 3D plays an important role especially true for behaviours. I have came up with various motion designs for the components to distinguish eachother.',
   video: 'https://youtu.be/VozS_FYJd_g'
@@ -237,11 +236,11 @@ const endResult = {
 }
 
 const achieve = {
-    title: 'Use Case',
-    content:['Based on the behaviour system, users were able to create something magnificent. HERE is our discover page.',
+  title: 'Use Case',
+  content: ['Based on the behaviour system, users were able to create something magnificent. HERE is our discover page.',
     'Through collaboration, we had created an interactive Casino Royal experience for the Toronto Elevate Conference after party at Crowdlinkers. You can play it HERE'
-],
-    img:''
+  ],
+  img: ''
 }
 const reflections = [
   {subject: 'Adaptive design is crucial for various format of medium.',
@@ -265,7 +264,7 @@ class Briovr extends React.Component {
           {/* early state research */}
           <TitleDivier content={titleText1} style={style} />
           <LayoutText content={challenge} style={style} />
-          <LayoutTwoThird content={background} style={style} />
+          <LayoutImage content={background} style={style} />
           <TableComponent content={competitor} style={style} />
           <FindingComponent content={findingCompetitor} style={style} />
           <LayoutImage content={userJourney} />
@@ -280,9 +279,10 @@ class Briovr extends React.Component {
 
           {/* UX */}
           <TitleDivier content={titleText3} style={style} />
-          <LayoutHalf content={sketches} style={style} />
-          <LayoutOneThird content={wireframes} style={style} />
+          <LayoutImage content={sketches} style={style} />
+          <LayoutImage content={wireframes} style={style} />
           <LayoutText content={usability} />
+          <LayoutImage content={iterations} />
           <FindingComponent content={findingTest} style={style} />
 
           {/* UI design */}
@@ -295,8 +295,6 @@ class Briovr extends React.Component {
           <TitleDivier content={titleText5} style={style} />
           <LayoutImage content={motion} style={style} />
           <LayoutImage content={endResult} style={style} />
-
-          <LayoutImage content={iterations} />
 
           {/* results and reflections */}
           <TitleDivier content={titleText6} style={style} />
