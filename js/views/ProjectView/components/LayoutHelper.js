@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactPlayer from 'react-player'
+import ReactMarkdown from 'react-markdown'
 
 export default class LayoutHelper {
   static layoutArrayContent (content) {
@@ -8,7 +9,7 @@ export default class LayoutHelper {
     } else if (content.constructor === Array) {
       return content.map(list => {
         return (
-          <li key={list}>{list}</li>
+          <li key={list}><ReactMarkdown source={list} /></li>
         )
       })
     } else {

@@ -125,8 +125,8 @@ const userJourney = {
 const game = {
   title: 'Gamification Study',
   contentLeft: ['Other than the competitors, there are games and tools which make the creation of logics fun. To name a couple: ',
-    'Little big planet: creates mode contains lots of trigger for user to create their own level.',
-    'Little Bits: Electronic building blocks empowering kids to build bots. '],
+    '**Little big planet**: creates mode contains lots of trigger for user to create their own level.',
+    '**Little Bits**: Electronic building blocks empowering kids to build bots. '],
   imgRight: '../../../assets/images/proj_briovr/game_study.jpg'
 }
 
@@ -181,12 +181,12 @@ const wireframes = {
 const usability = {
   title: 'Usability Test',
   content: ['We have conducted 5 usability tests with people from different background. Only 3 had successfully completed ',
-    'Tutorial was too fast',
+    '**Tutorial was too fast**',
     'Users had hard time following the video tutorial. We then switched it to a more immersive onboarding that guide the users hand by hand',
-    'I want instant feedback',
+    '**I want instant feedback**',
     'Whenever users added translation changes, they are unable to view the changes unless hit play button. A more direct and instant feed is needed',
     'The onboarding sometimes were neglected',
-    'Can I type code?',
+    '**Can I type code?**',
     'For programmers they prefer to do it in programming language.'
   ]
 }
