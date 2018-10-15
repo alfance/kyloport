@@ -117,6 +117,7 @@ const findingCompetitor = {
 
 const userJourney = {
   title: 'User journey',
+  sectionClass:'project-layout-wide',
   content: 'After studying other applications and interviews. I came up with a simplified user journey for the system. This helped me realize that Creating interactions comes at the late stage of the user flow.',
   img: '../../../assets/images/proj_briovr/user_journey_map.png',
   label: 'I decide not to include the behaviour onboarding in the main onboarding. Only when people expressed enough interest to click on the feature should I show them how to play with behaviour.'
@@ -124,6 +125,7 @@ const userJourney = {
 
 const game = {
   title: 'Gamification Study',
+  sectionClass:'project-layout-wide',
   contentLeft: ['Other than the competitors, there are games and tools which make the creation of logics fun. To name a couple: ',
     '**Little big planet**: creates mode contains lots of trigger for user to create their own level.',
     '**Little Bits**: Electronic building blocks empowering kids to build bots. '],
@@ -165,17 +167,19 @@ const behaviourflow3 = {
 
 const sketches = {
   title: 'Sketches',
-  img: '../../../assets/images/proj_briovr/brio_sketch.jpg',
-  content: ['The design process started with low fidelity sketches. This was the way to iterate through many design options quickly. I asked the team to sketch with me during a design sprint. Collecting their ideas helped me to align with the team and gain better idea on the technical aspect.',
+  sectionClass:'project-layout-wide',
+  imgLeft: '../../../assets/images/proj_briovr/brio_sketch.jpg',
+  contentRight: ['The design process started with low fidelity sketches. This was the way to iterate through many design options quickly. I asked the team to sketch with me during a design sprint. Collecting their ideas helped me to align with the team and gain better idea on the technical aspect.',
     'After numerous validation and iteration.']
 }
 
 const wireframes = {
   title: 'Wireframes',
-  content: ['I have created both low and high fidelity wireframes with for different user test purposes.',
+  sectionClass:'project-layout-wide',
+  contentLeft: ['I have created both low and high fidelity wireframes with for different user test purposes.',
     'The  paper wireframes are used to quickly obtain user feedback at group design workshops - testers were mainly from within the team.',
     'The digital wireframes are used for individual user test so all the user behaviours are closely observed and recorded. I expanded the testers to be outside the company. '],
-  img: '../../../assets/images/proj_briovr/wireframe.jpg'
+  imgRight: '../../../assets/images/proj_briovr/wireframe.jpg'
 }
 
 const usability = {
@@ -215,11 +219,13 @@ const prototypeMain = {
 }
 const prototypeChain = {
   title: 'Behvaiour chain panel',
+  sectionClass:'project-layout-wide',
   contentLeft: 'The behaviour chain contains all the logics happening on an object. It is like a node system but linear.',
   imgRight: '../../../assets/images/proj_briovr/chain.png'
 }
 const prototypePop = {
   title: 'Property popup',
+  sectionClass:'project-layout-wide',
   imgLeft: '../../../assets/images/proj_briovr/property-popup.png',
   contentRight: 'The behaviour chain contains all the logics happening on an object. It is like a node system but linear.'
 }
@@ -261,14 +267,15 @@ class Briovr extends React.Component {
         <ProjectTitle content={projectTitle} style={style} />
         <div className='project-content-layout'>
           <IntroRole content={introRole} />
+          <Problem content={challenge} style={style} />
+
           {/* early state research */}
           <TitleDivier content={titleText1} style={style} />
-          <LayoutText content={challenge} style={style} />
           <LayoutImage content={background} style={style} />
           <TableComponent content={competitor} style={style} />
           <FindingComponent content={findingCompetitor} style={style} />
           <LayoutImage content={userJourney} />
-          <LayoutHalf content={game} />
+          <LayoutOneThird content={game} />
 
           {/* Solution */}
           <TitleDivier content={titleText2} style={style} />
@@ -279,8 +286,8 @@ class Briovr extends React.Component {
 
           {/* UX */}
           <TitleDivier content={titleText3} style={style} />
-          <LayoutImage content={sketches} style={style} />
-          <LayoutImage content={wireframes} style={style} />
+          <LayoutTwoThird content={sketches} style={style} />
+          <LayoutOneThird content={wireframes} style={style} />
           <LayoutText content={usability} />
           <LayoutImage content={iterations} />
           <FindingComponent content={findingTest} style={style} />

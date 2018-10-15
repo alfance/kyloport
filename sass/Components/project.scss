@@ -55,6 +55,10 @@
     left:0px;
   }
 }
+
+.laptop {
+
+}
 //////////////////
 
 /////////////////////////////// defines the split contents in each project ///////////////////////////////
@@ -141,6 +145,10 @@
   }
 }
 
+// special width for divided divs
+.project-layout-wide {
+        @include max-width;
+}
 
 /////////////////
 /////////////////
@@ -151,6 +159,15 @@
 
 
 
+.project-title-hr {
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    opacity: 0.3;
+    @include max-width;
+    @include mediumS {
+        width:calc(100% - 64px);
+    }
+}
 
 /////////////////////////////////// get rid the 10px left and right for {myrole} in IntroRole.js ///////////////
 .introRole-top span{
@@ -161,7 +178,6 @@
 .finding-div {
   padding: 24px;
   margin: 5% 0;
-  line-height: 26px;
 
   b {
     font-size: 1.7em;
