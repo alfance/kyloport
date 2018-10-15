@@ -1,6 +1,4 @@
 import React from 'react'
-import classNames from 'classnames'
-
 export default class TitleDivider extends React.Component {
   render () {
     const {title} = this.props.content
@@ -10,7 +8,10 @@ export default class TitleDivider extends React.Component {
       color: color
     }
     return (
-      <h2 className={classNames('project-component-title')} style={divStyle}> {title}</h2>
+        <div className='project-component-title' >
+            <h2 style={divStyle}> {title}</h2>
+            <div className='project-title-hr' style={divStyle} />
+      </div>
     )
   }
 }
