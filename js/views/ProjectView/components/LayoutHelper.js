@@ -9,7 +9,7 @@ export default class LayoutHelper {
     } else if (content.constructor === Array) {
       return content.map(list => {
         return (
-          <li key={list}><ReactMarkdown source={list} /></li>
+          <li key={list}><ReactMarkdown className='markdown-list' source={list} /></li>
         )
       })
     } else {
