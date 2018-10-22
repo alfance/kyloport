@@ -40,14 +40,15 @@ const projectTitle = {
 }
 
 const introRole = {
+    sectionClass: 'list-style-circle',
   content: 'CYCNAV is an IOT bike light guilding the cyclists traveling around the city. Together with the crowd sourcing mobile app, users are updated with the latest road conditions and are provided with the best cycling route.',
   role: 'I worked as the UX designerfor this project. Some of my responsibilities included:',
-  duties: ['1. Conduct user and market research and analysis',
-    '2. Defining strategies & Scope',
-    '3. Facilitate ideation & design decisions',
-    '4. Create Wireframes & Prototypes',
-    '5. 3D modeling & printing of the physical Component',
-    '6. Validation test and evaluations'],
+  duties: ['Conduct user and market research and analysis',
+    'Defining strategies & Scope',
+    'Facilitate ideation & design decisions',
+    'Create Wireframes & Prototypes',
+    '3D modeling & printing of the physical Component',
+    'Validation test and evaluations'],
   img: '../../../assets/images/proj_cycnav/title_img.png'
 }
 
@@ -106,14 +107,14 @@ const persona = {
   imgRight: '../../../assets/images/proj_cycnav/avatar-2.svg',
   sectionClass: 'section-persona',
   contentLeft: [
-    'Ann Goldshire',
+    '**Ann Goldshire**',
     'Student',
     'Age: 17 to 27',
     'Bikes 2 - 6 times a day',
     'Ann uses bikes for most of her daily commute. Thus Ann values most effortless routes.'
   ],
   contentRight: [
-    'Oliver Dimaran',
+    '**Oliver Dimaran**',
     'Food Delivery',
     'Age: 19 to 40',
     'Bikes multiple times a day',
@@ -192,22 +193,22 @@ const devices = {
   imgRight: '../../../assets/images/proj_cycnav/bikelight.svg',
   sectionClass: 'section-devices',
   contentLeft: [
-    <b className='b-indent'>Digital App</b>,
-    'Pros: Accurante and fast route search',
-    'Cons: Distractive, pro to light flare'
+    '**Digital App**',
+    '**Pros**: Accurante and fast route search',
+    '**Cons**: Distractive, pro to light flare'
   ],
   contentRight: [
-    <b className='b-indent'>Physical Device</b>,
-    'Pros: Safe & all-in-one navigation and user contribution',
-    'Cons: Costly'
+    '**Physical Device**',
+    '**Pros**: Safe & all-in-one navigation and user contribution',
+    '**Cons**: Costly'
   ]
 }
 
 const solutions = {
   content: 'Based on the result of comparative analysis, we decide to approach the problem using both digital and physical solutions. that is building a physical navigational device that would be powered by a digital app.',
   img: '../../../assets/images/proj_cycnav/journey_map.jpg',
-  label: ['Nav App: The app uses googles map api to calculate the best route for the users, use can also input their finding of road conditions using the app.',
-  'Bike light:The bike light is connected to the app using bluetooth. While the app is calculating and adjusting the route,the bike light functions as the visual portal to help guide the cyclists while they are biking.']
+  label: ['**Nav App**: The app uses googles map api to calculate the best route for the users, use can also input their finding of road conditions using the app.',
+  '**Bike light**:The bike light is connected to the app using bluetooth. While the app is calculating and adjusting the route,the bike light functions as the visual portal to help guide the cyclists while they are biking.']
 }
 
 const usability = {
@@ -273,9 +274,9 @@ const prototypeApp = {
   imgLeft: '../../../assets/images/proj_cycnav/prototye-1.png',
   imgMiddle: '../../../assets/images/proj_cycnav/prototye-2.png',
   imgRight: '../../../assets/images/proj_cycnav/prototype-3.png',
-  contentLeft: 'Design 1: a green theme is used as we are hoping to achive a eco travel method.',
-  contentMiddle: 'Design 2: a green theme is used as we are hoping to achive a eco travel method.',
-  contentRight: 'Design 3: a green theme is used as we are hoping to achive a eco travel method. '
+  contentLeft: '**Design 1**: a green theme is used as we are hoping to achive a eco travel method.',
+  contentMiddle: '**Design 2**: a green theme is used as we are hoping to achive a eco travel method.',
+  contentRight: '**Design 3**: a green theme is used as we are hoping to achive a eco travel method. '
 }
 
 const decision = {

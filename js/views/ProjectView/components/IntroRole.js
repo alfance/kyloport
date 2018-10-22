@@ -10,7 +10,7 @@ export default class ProjectTitle extends React.Component {
         {content}
       </h4>
       <div className='project-layout-half'>
-        <div>
+        <div className='div-left'>
           <h4>My Role</h4>
           <p className='introRole-top'>{role}
           </p>
@@ -19,7 +19,7 @@ export default class ProjectTitle extends React.Component {
           </ol>
         </div>
 
-        <div>
+        <div className='div-right'>
           {LayoutHelper.mediaType(img, video)}
         </div>
       </div>

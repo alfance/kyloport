@@ -164,9 +164,6 @@
     border-bottom-width: 2px;
     opacity: 0.3;
     @include max-width;
-    @include mediumS {
-        width:calc(100% - 64px);
-    }
 }
 
 /////////////////////////////////// get rid the 10px left and right for {myrole} in IntroRole.js ///////////////
@@ -178,6 +175,7 @@
 .finding-div {
   padding: 24px;
   margin: 5% 0;
+  line-height: 26px;
 
   b {
     font-size: 1.7em;

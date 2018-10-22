@@ -138,14 +138,14 @@ const rules = {
   imgLeft: '../../../assets/images/proj_briovr/action-icon.svg',
   imgRight: '../../../assets/images/proj_briovr/trigger-icon.svg',
   contentLeft: [
-    <b className='b-indent'>Action</b>,
+    '**Action**',
     'Straight forward object transformation and animation.',
-    'Example: move, rotate, scale'
+    '**Example**: move, rotate, scale'
   ],
   contentRight: [
-    <b className='b-indent'>Trigger</b>,
+    '**Trigger**',
     'The logic that sets off the mechanism.',
-    'Example: click, look, time'
+    '**Example**: click, look, time'
   ]
 }
 
