@@ -237,7 +237,7 @@ const motion = {
 
 const endResult = {
   title: 'The result',
-  content: 'dlskjdfks',
+  content: 'Following video displays a rather complex example of the behaviour design. We have been able to achive game-like quality functions using the sysm.',
   video: 'https://youtu.be/SKdtGiESaO4'
 }
 
