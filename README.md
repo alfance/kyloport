@@ -28,7 +28,7 @@ $ npm run start
 
 user port 8080
 ```
-http://localhost:8080/
+https://localhost:8080
 ```
 
 ## File Structure

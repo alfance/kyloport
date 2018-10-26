@@ -7,7 +7,7 @@ export default class LayoutHelper {
     if (typeof content === 'undefined') {
       return null
     } else if (content.constructor === Array) {
-      return content.map(list => {
+      return content.map((list) => {
         return (
           <li key={list}><ReactMarkdown className='markdown-list' source={list} /></li>
         )

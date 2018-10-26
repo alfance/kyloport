@@ -9,6 +9,9 @@ export default {
     path: path.join(__dirname, 'dist'),
     publicPath: '/dist/'
   },
+  devServer: {
+    historyApiFallback: true
+  },
 // pre-process files. all ends with js.
 // react-hot:update module without page reload.
   module: {

@@ -11,7 +11,7 @@ class PortfolioStore extends EventEmitter {
         pitch: 'UX / UI / Motion Design',
         category: 'Behaviour system for online VR platform',
         link: 'briovr',
-        headerImage: '../../assets/images/proj_cycnav/title_img2.png',
+        headerImage: '../../assets/images/proj_briovr/background.png',
         url: ''
       },
       {

@@ -2,7 +2,7 @@ import ReactDOM from 'react-dom'
 import React from 'react'
 
 // the react router with all the routes
-import { Router, Route, IndexRoute, browserHistory, hashHistory } from 'react-router'
+import { Router, Route, IndexRoute, browserHistory } from 'react-router'
 
 // import all the pages that has routes
 
@@ -26,7 +26,7 @@ import Project4 from './views/ProjectView/Project4'
 import '../sass/main.scss'
 
 ReactDOM.render((
-  <Router onUpdate={() => window.scrollTo(0, 0)} history={hashHistory}>
+  <Router onUpdate={() => window.scrollTo(0, 0)} history={browserHistory}>
     <Route path='/' component={Layout}>
       <IndexRoute component={ProjectMain} />
 

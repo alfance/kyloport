@@ -117,7 +117,7 @@ const findingCompetitor = {
 
 const userJourney = {
   title: 'User journey',
-  sectionClass:'project-layout-wide',
+  sectionClass: 'project-layout-wide',
   content: 'After studying other applications and interviews. I came up with a simplified user journey for the system. This helped me realize that Creating interactions comes at the late stage of the user flow.',
   img: '../../../assets/images/proj_briovr/user_journey_map.png',
   label: 'I decide not to include the behaviour onboarding in the main onboarding. Only when people expressed enough interest to click on the feature should I show them how to play with behaviour.'
@@ -125,7 +125,7 @@ const userJourney = {
 
 const game = {
   title: 'Gamification Study',
-  sectionClass:'project-layout-wide',
+  sectionClass: 'project-layout-wide',
   contentLeft: ['Other than the competitors, there are games and tools which make the creation of logics fun. To name a couple: ',
     '**Little big planet**: creates mode contains lots of trigger for user to create their own level.',
     '**Little Bits**: Electronic building blocks empowering kids to build bots. '],
@@ -167,7 +167,7 @@ const behaviourflow3 = {
 
 const sketches = {
   title: 'Sketches',
-  sectionClass:'project-layout-wide',
+  sectionClass: 'project-layout-wide',
   imgLeft: '../../../assets/images/proj_briovr/brio_sketch.jpg',
   contentRight: ['The design process started with low fidelity sketches. This was the way to iterate through many design options quickly. I asked the team to sketch with me during a design sprint. Collecting their ideas helped me to align with the team and gain better idea on the technical aspect.',
     'After numerous validation and iteration.']
@@ -175,7 +175,7 @@ const sketches = {
 
 const wireframes = {
   title: 'Wireframes',
-  sectionClass:'project-layout-wide',
+  sectionClass: 'project-layout-wide',
   contentLeft: ['I have created both low and high fidelity wireframes with for different user test purposes.',
     'The  paper wireframes are used to quickly obtain user feedback at group design workshops - testers were mainly from within the team.',
     'The digital wireframes are used for individual user test so all the user behaviours are closely observed and recorded. I expanded the testers to be outside the company. '],
@@ -219,13 +219,13 @@ const prototypeMain = {
 }
 const prototypeChain = {
   title: 'Behvaiour chain panel',
-  sectionClass:'project-layout-wide',
+  sectionClass: 'project-layout-wide',
   contentLeft: 'The behaviour chain contains all the logics happening on an object. It is like a node system but linear.',
   imgRight: '../../../assets/images/proj_briovr/chain.png'
 }
 const prototypePop = {
   title: 'Property popup',
-  sectionClass:'project-layout-wide',
+  sectionClass: 'project-layout-wide',
   imgLeft: '../../../assets/images/proj_briovr/property-popup.png',
   contentRight: 'The behaviour chain contains all the logics happening on an object. It is like a node system but linear.'
 }
