@@ -43,8 +43,8 @@ const projectTitle = {
 
 const introRole = {
   sectionClass: 'list-style-circle',
-  content: 'BRIOVR is an online 3D platform for creating Interactive VR content. This tool allows users to upload their models to the cloud, create animations and interactions, and share instantly with others.',
-  role: 'As the leading UX designer, my role is to create a modular system for users to add interactions in the 3D space. The steps I have taken are:',
+  content: 'BRIOVR is an online platform for 3D prototyping and VR/AR visualization. This tool allows users to upload their models to the cloud, create animations and interactions, and share instantly with others.',
+  role: 'As the product designer for BRIOVR, I will briefly talk about the behaviour system that enpowers users to creat game-like experience without coding. The steps I have taken are:',
   duties: ['User interviews',
     'Comparative analysis',
     'Affinity mapping',
@@ -58,11 +58,11 @@ const introRole = {
 const challenge = {
   title: 'Challenge',
   sectionClass: 'list-style-circle',
-  content: [ 'Create an intuitive and easy to use interactive system for BRIOVR. Client and management requests include:',
+  content: [ 'Create an intuitive and easy to use interactive system for BRIOVR. Some of the shareholder requirements include:',
     'No coding knowledge is required',
-    'Click, drag and drop only',
-    'No Node graph',
-    'Need to have game play mechanics (click, move, pickup etc)']
+    'Preferably as simple as click, drag and drop',
+    'Do not use Node graph',
+    'Need to have game mechanics (click, move, pickup etc)']
 }
 const background = {
   title: 'Background',
