@@ -19,7 +19,7 @@ import Resume from './views/Resume'
 // Project link
 import Briovr from './views/ProjectView/Briovr'
 import Cycnav from './views/ProjectView/Cycnav'
-import Project3 from './views/ProjectView/Project3'
+import Fairtrade from './views/ProjectView/Fairtrade'
 import Project4 from './views/ProjectView/Project4'
 
 // sass file
@@ -38,7 +38,7 @@ ReactDOM.render((
 
       <Route path='briovr' component={Briovr} />
       <Route path='cycnav' component={Cycnav} />
-      <Route path='Project3' component={Project3} />
+      <Route path='fairtrade' component={Fairtrade} />
       <Route path='Project4' component={Project4} />
     </Route>
   </Router>

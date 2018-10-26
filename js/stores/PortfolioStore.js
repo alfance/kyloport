@@ -20,8 +20,8 @@ class PortfolioStore extends EventEmitter {
         title: 'FairTrade',
         pitch: 'Product development',
         category: 'Non-profit mobile & web platform',
-        link: 'cycnav',
-        headerImage: '../../assets/images/projects/header/proj2.jpg',
+        link: 'fairtrade',
+        headerImage: '../../assets/images/proj_fairtrade/Homepage.png',
         url: ''
       },
       {
