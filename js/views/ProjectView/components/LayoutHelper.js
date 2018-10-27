@@ -13,7 +13,7 @@ export default class LayoutHelper {
         )
       })
     } else {
-      return <p>{content}</p>
+      return <p><ReactMarkdown source={content} /></p>
     }
   }
 

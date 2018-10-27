@@ -67,13 +67,12 @@ const challenge = {
 const background = {
   title: 'Background',
   img: '../../../assets/images/proj_briovr/background.png',
-  content: ['BRIOVR has all the major features contained in the card menu at the bottom. The center screen is the model viewer. ',
-    'My goal is to seamlessly introduce the behaviour system into the current builder environment, allowing anyone to create complex interactions that could only be done by coders at comfort. ']
+  content: 'The fundamental interface of BRIOVR is similar to major design and modeling apps. Majority of the screen is dedicated to the 3D working space while features and tools are located on the side nd bottom.'
 }
 
 const competitor = {
   title: 'Comparative Analysis',
-  content: 'At the discovery phase of my project, I researched other apps and softwares in order to get a better understanding of the problem.',
+  content: 'At the discovery phase of my project, I researched popular apps and softwares in the market to get a better understanding of the problem.',
   columns: [{
     Header: 'Name',
     accessor: 'name' // String-based value accessors!
@@ -112,21 +111,21 @@ const competitor = {
 
 const findingCompetitor = {
   subtitle: 'finding',
-  content: 'The capatibility of an app or software is often inversely corrolated with the amount of time the user need to spend learning. Unreal and Unity allows the users to create almost anything they can, but takes over 10 hrs to master such softwares, whereas InstaVR only requires the uses to spend 5 minutes learning how to make a 360 video.'
+  content: 'The capatibility of an app or software is often inversely corrolated with the amount of time the user need to spend learning. Unreal and Unity offer the users immensive freedom and abilities - at a cost of 10 plus hours of learning time. On another hand, InstaVR only requires the uses to spend 5 minutes learning how to make a 360 video.'
 }
 
 const userJourney = {
   title: 'User journey',
   sectionClass: 'project-layout-wide',
-  content: 'After studying other applications and interviews. I came up with a simplified user journey for the system. This helped me realize that Creating interactions comes at the late stage of the user flow.',
+  content: 'After studying other applications and interviews. I came up with a simplified user journey for the system. This helped me realize that Creating **interactions comes at the late stage** of the user flow.',
   img: '../../../assets/images/proj_briovr/user_journey_map.png',
-  label: 'I decide not to include the behaviour onboarding in the main onboarding. Only when people expressed enough interest to click on the feature should I show them how to play with behaviour.'
+  label: 'Bheaviour onboaridng is separate from the general onboarding.  Combining onboardings have resulted in lose of interests prior to the completion. I then changed the behaviour onboarding to be initiated only when users express interest.'
 }
 
 const game = {
   title: 'Gamification Study',
   sectionClass: 'project-layout-wide',
-  contentLeft: ['Other than the competitors, there are games and tools which make the creation of logics fun. To name a couple: ',
+  contentLeft: ['Other than the competitors, we also took inspiration from games and IOT that have creative builder mode. Differ from software, the behaviour system in games and IOT has much less cognitive overload at the learning stage, and is more fun.',
     '**Little big planet**: creates mode contains lots of trigger for user to create their own level.',
     '**Little Bits**: Electronic building blocks empowering kids to build bots. '],
   imgRight: '../../../assets/images/proj_briovr/game_study.jpg'
@@ -134,12 +133,12 @@ const game = {
 
 const rules = {
   title: 'Setting Rules',
-  content: 'Once I am happy with when and how the behaviours should be introduced to the users, it is time to layout the logics. The system is compromised by two types: motion and trigger.',
+  content: 'After studying the preceders and conducting studies to gather insights, I have layout the essential components of a viable behaviour system. The system is constructed by two types: motion and trigger.',
   imgLeft: '../../../assets/images/proj_briovr/action-icon.svg',
   imgRight: '../../../assets/images/proj_briovr/trigger-icon.svg',
   contentLeft: [
     '**Action**',
-    'Straight forward object transformation and animation.',
+    'Physical transformation and animation that altered the state of an object.',
     '**Example**: move, rotate, scale'
   ],
   contentRight: [
@@ -151,17 +150,17 @@ const rules = {
 
 const behaviourflow1 = {
   title: 'Behaviour flow',
-  content: 'After conducting the various studies to gather insight about how other people have created the interaction system. I had came up with the basic laws for users to create either simple or advanced behaviours. ',
+  content: 'The very first priority of behaviour flow is simplicity and flexibility. My reasoning behind is that if an user wants to make an item scale, they should not need to do excesstive steps other than specifying a scale value on the item',
   img: '../../../assets/images/proj_briovr/actionflow.png'
 }
 
 const behaviourflow2 = {
-  content: 'All of the interactions is based on the user adding types of behaviours (trigger or motion) to the object. This can be done actively or passively. To further expand the logics above, two examples are shown below:',
+  content: 'Method 1 and method 2 yield the same outcome. I would give users maximum freedom to achive their goal.',
   img: '../../../assets/images/proj_briovr/actionflow1.png'
 }
 
 const behaviourflow3 = {
-  content: 'All of the interactions is based on the user adding types of behaviours (trigger or motion) to the object. This can be done actively or passively. To further expand the logics above, two examples are shown below:',
+  content: 'Trigger in BRIOVR is equivalent to conditionals in coding. I wanted to ',
   img: '../../../assets/images/proj_briovr/actionflow2.png'
 }
 
