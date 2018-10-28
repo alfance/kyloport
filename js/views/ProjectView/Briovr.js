@@ -30,7 +30,7 @@ const titleText4 = {title: 'UI Design'}
 
 const titleText5 = {title: 'Motion Design'}
 
-const titleText6 = {title: 'Out to the Market'}
+const titleText6 = {title:'Reflections'}
 
 const projectTitle = {
   title: 'CYCNAV',
@@ -128,7 +128,7 @@ const game = {
   contentLeft: ['Other than the competitors, we also took inspiration from games and IOT that have creative builder mode. Differ from software, the behaviour system in games and IOT has much less cognitive overload at the learning stage, and is more fun.',
     '**Little big planet**: creates mode contains lots of trigger for user to create their own level.',
     '**Little Bits**: Electronic building blocks empowering kids to build bots. '],
-  imgRight: '../../../assets/images/proj_briovr/game_study.jpg'
+  imgRight: '../../../assets/images/proj_briovr/game_study.png'
 }
 
 const rules = {
@@ -150,17 +150,19 @@ const rules = {
 
 const behaviourflow1 = {
   title: 'Behaviour flow',
-  content: 'The very first priority of behaviour flow is simplicity and flexibility. My reasoning behind is that if an user wants to make an item scale, they should not need to do excesstive steps other than specifying a scale value on the item',
+  content:[ 'The very first priority of behaviour flow is simplicity and flexibility. My reasoning behind is that if an user wants to make an item scale in size, they should not need to do excesstive steps other than specifying a scale value on the item',
+'Method 1 and method 2 yield the same outcome. This gives users maximum freedom to achive their goals.'],
   img: '../../../assets/images/proj_briovr/actionflow.png'
 }
 
 const behaviourflow2 = {
-  content: 'Method 1 and method 2 yield the same outcome. I would give users maximum freedom to achive their goal.',
-  img: '../../../assets/images/proj_briovr/actionflow1.png'
+  content: ['Trigger in BRIOVR is equivalent to conditionals in coding. In order to compromise users with different technical backgrounds, I adapted the same logic as the basic mechanism.',
+'In the following diagram, method 1 and method have the same outcome. To trigger an action, the mandatory criterias are the item and the trigger method, order is not critical.'],
+  img: '../../../assets/images/proj_briovr/actionflow1.png',
 }
 
 const behaviourflow3 = {
-  content: 'Trigger in BRIOVR is equivalent to conditionals in coding. I wanted to ',
+  content: 'To expand further along the road, more complex inteactions can be generated. an example would be object A trigger an action of object B.',
   img: '../../../assets/images/proj_briovr/actionflow2.png'
 }
 
@@ -168,8 +170,7 @@ const sketches = {
   title: 'Sketches',
   sectionClass: 'project-layout-wide',
   imgLeft: '../../../assets/images/proj_briovr/brio_sketch.jpg',
-  contentRight: ['The design process started with low fidelity sketches. This was the way to iterate through many design options quickly. I asked the team to sketch with me during a design sprint. Collecting their ideas helped me to align with the team and gain better idea on the technical aspect.',
-    'After numerous validation and iteration.']
+  contentRight: 'The design process started with low fidelity sketches. This was the way to iterate through many design options quickly. I asked the team to sketch with me during a design sprint. Collecting their ideas helped me to align with the team and gain better idea on the technical aspect.'
 }
 
 const wireframes = {
@@ -183,27 +184,15 @@ const wireframes = {
 
 const usability = {
   title: 'Usability Test',
-  content: ['We have conducted 5 usability tests with people from different background. Only 3 had successfully completed ',
+  content: ['For each iteraction, We have conducted usability tests with people from different background. The initial designs had limited number of sucesses.',
     '**Tutorial was too fast**',
-    'Users had hard time following the video tutorial. We then switched it to a more immersive onboarding that guide the users hand by hand',
+    'Users had hard time following the video tutorial. We then switched it to a more immersive onboarding that guide the users hand by hand.',
     '**I want instant feedback**',
-    'Whenever users added translation changes, they are unable to view the changes unless hit play button. A more direct and instant feed is needed',
+    'Whenever users added translation changes, they are unable to view the changes right away. A more direct and instant feed is needed',
     'The onboarding sometimes were neglected',
-    '**Can I type code?**',
-    'For programmers they prefer to do it in programming language.'
+    '**Can I modify the code?**',
+    'This is commonly asked by people with programming background. After carefully analyzing and discussion, we decide to instead opening up the ability for this user group, letting them get used to the system we have decided.'
   ]
-}
-
-const iterations = {
-  title: 'Iterations',
-  sectionClass: 'list-style-circle',
-  content: [
-    'We focuse improvements on the following two major components:',
-    'Spend more time with the user on the onboarding, especially when they are connecting the bike light to the app.',
-    'Redefine the search process to make it more intuitive, less steps.',
-    'The result has showed promising improvements after the onboarding is been introduced. People with coding background tend to perform better. '
-  ],
-  img: '../../../assets/images/proj_cycnav/journey_map.jpg'
 }
 
 const findingTest = {
@@ -219,43 +208,47 @@ const prototypeMain = {
 const prototypeChain = {
   title: 'Behvaiour chain panel',
   sectionClass: 'project-layout-wide',
-  contentLeft: 'The behaviour chain contains all the logics happening on an object. It is like a node system but linear.',
+  contentLeft: 'The behaviour chain contains all the logics happening on an object. We embraced the flow of a node based system; however, we decide to take a bold step by making the behaviour chain linear. This comes at a cost of reduced flexibility, but reached our standards for simplicity and ease of use. ',
   imgRight: '../../../assets/images/proj_briovr/chain.png'
 }
 const prototypePop = {
   title: 'Property popup',
   sectionClass: 'project-layout-wide',
   imgLeft: '../../../assets/images/proj_briovr/property-popup.png',
-  contentRight: 'The behaviour chain contains all the logics happening on an object. It is like a node system but linear.'
+  contentRight: 'Property popup serves as adjustable value controller for each individual trigger ad action. We made it in context of the menu location and semi-Automatic. '
 }
 
 const motion = {
-  content: 'Differ from 2D apps, Motion in 3D plays an important role especially true for behaviours. I have came up with various motion designs for the components to distinguish eachother.',
-  video: 'https://youtu.be/VozS_FYJd_g'
+    sectionClass: 'list-style-circle',
+  content: ['Differ from 2D apps, Motion in 3D plays an important role especially true for behaviours. By applying motion design into our usability test, we have seen significant improvements in:',
+  'Retaining user attention.',
+  'More clear understanding of next step',
+  'More tolerance on wait time'
+],
+  video: ''
 }
 
 const endResult = {
-  title: 'The result',
-  content: 'Following video displays a rather complex example of the behaviour design. We have been able to achive game-like quality functions using the sysm.',
-  video: 'https://youtu.be/SKdtGiESaO4'
+  title: 'The Product',
+  content: 'Combining all the aspects, we were able to create a rather intuitive system that is been used by thousands of people. The following video is a 30 seconds demo showing how you can create a click button to trigger a movement of a rocket.',
+  video: 'https://youtu.be/SKdtGiESaO4',
+  label:'to see more of our user creation, <a href="briovr.com/discovery">Click HERE</a>'
 }
 
 const achieve = {
   title: 'Use Case',
-  content: ['Based on the behaviour system, users were able to create something magnificent. HERE is our discover page.',
-    'Through collaboration, we had created an interactive Casino Royal experience for the Toronto Elevate Conference after party at Crowdlinkers. You can play it HERE'
-  ],
-  img: ''
+  content: 'Through collaboration, we had created an interactive Casino Royal experience for the Toronto Elevate Conference after party at Crowdlinkers. You can play it HERE',
+  img: '../../../assets/images/proj_briovr/crowdlinker.png'
 }
 const reflections = [
-  {subject: 'Adaptive design is crucial for various format of medium.',
-    learn: 'The essense of UX design is to solve problems, not using templates '
+  {subject: 'Dont copy, adapt.',
+    learn: 'It is equally imperative to take inspiration from exisitng solutions and to adapt it to your solution. Part of the reason that people are accepting Brio behaviour system is because it has envolved based on products that are been approved by users.'
   }, {
-    subject: 'Sometimes the perfect solution is not one, but multiple approaches.',
-    learn: 'If we have not done the user test and market analysis, we were Automatically assumed to go with one of the twocompletely different method for the problem we are presented. By adapting the UX research process we were able to focus on our users, coming up with valid solutions for the problems insead of making assumptions for the sake of building a tool.'
+    subject: 'UX design is not just research and low fidelity prototypes',
+    learn: 'I learned that UX design exists in every step of a product development. Your job is not completed after the wireframe. It is curicial to stay all the way untill and after the product delivery.'
   }, {
-    subject: 'Being able to pick up new skills and learn quickly is part of the UX.',
-    learn: 'This probject was done with limited time and resources. at times I had to learn new softwares, pick up technical skills along the way. This is not only helpful to me personaly, but it broadens my pespective as an UX design, where I was able to develop empathy for other field of personnels.'
+    subject: 'Working in 3D is a different story than working in 2D',
+    learn: 'Add a dimension can meant a completely seperate design flow and system. I have encountered countless limitations prototyping and testing. On another hand, I learned and invented ways to validate the design method for a 3D app.'
   }
 ]
 
@@ -288,7 +281,6 @@ class Briovr extends React.Component {
           <LayoutTwoThird content={sketches} style={style} />
           <LayoutOneThird content={wireframes} style={style} />
           <LayoutText content={usability} />
-          <LayoutImage content={iterations} />
           <FindingComponent content={findingTest} style={style} />
 
           {/* UI design */}
@@ -305,6 +297,8 @@ class Briovr extends React.Component {
           {/* results and reflections */}
           <TitleDivier content={titleText6} style={style} />
           <LayoutImage content={achieve} />
+
+          <TitleDivier content={titleText6} style={style} />
           <Reflection content={reflections} />
 
         </div>
