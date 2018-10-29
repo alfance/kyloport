@@ -9,7 +9,6 @@ export default class LayoutText extends React.Component {
       <ol start='0'>
         {LayoutHelper.layoutArrayContent(content)}
       </ol>
-      <hr />
     </div>)
   }
 }
