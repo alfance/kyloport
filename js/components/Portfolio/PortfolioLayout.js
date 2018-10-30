@@ -3,15 +3,8 @@ import PortfolioItem from './PortfolioItem'
 import PortfolioStore from '../../stores/PortfolioStore'
 
 class PortfolioLayout extends React.Component {
-  constructor () {
-    super()
-    this.state = {
-      portItems: PortfolioStore.getAll()
-    }
-  }
   render () {
-    const {portItems} = this.state
-    const portfolioComponents = portItems.map((each) => {
+    const portfolioComponents = PortfolioStore.map((each) => {
       return <PortfolioItem key={each.id} {...each} />
     })
     return (

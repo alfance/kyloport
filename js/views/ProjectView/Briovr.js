@@ -7,18 +7,11 @@ import TableComponent from './components/TableComponent'
 import FindingComponent from './components/FindingComponent'
 import LayoutImage from './components/LayoutImage'
 import LayoutText from './components/LayoutText'
-import LayoutThree from './components/LayoutThree'
 import LayoutOneThird from './components/LayoutOneThird'
 import LayoutTwoThird from './components/LayoutTwoThird'
 import Reflection from './components/Reflection'
 import LayoutHalf from './components/LayoutHalf'
-
-const style = {
-  color: '#5C41B4',
-  textonColor: 'text-light',
-  titleBgP: 'right',
-  bgSize: ''
-}
+import PortfolioStore from '../../stores/PortfolioStore'
 
 const titleText1 = {title: 'Research'}
 
@@ -30,23 +23,14 @@ const titleText4 = {title: 'UI Design'}
 
 const titleText5 = {title: 'Motion Design'}
 
-const titleText6 = {title:'Reflections'}
-
-const projectTitle = {
-  title: 'BRIOVR',
-  logo: '../../../assets/images/proj_briovr/brioLogo_horizontal_Wgradient.svg',
-  field: 'UI/UX, Interaction Design',
-  intro: 'Interaction system for online VR platform',
-  link: 'briovr',
-  bgImg: ''
-}
+const titleText6 = {title: 'Reflections'}
 
 const introRole = {
   sectionClass: 'list-style-circle',
   content: 'BRIOVR is an online platform for 3D prototyping and VR/AR visualization. This tool allows users to upload their models to the cloud, create animations and interactions, and share instantly with others.',
   role: 'My responsibilities:',
   duties: [
-      'User interviews',
+    'User interviews',
     'Comparative analysis',
     'Affinity mapping',
     'Design workshops',
@@ -151,15 +135,15 @@ const rules = {
 
 const behaviourflow1 = {
   title: 'Behaviour flow',
-  content:[ 'The first priority of behaviour flow is simplicity and flexibility. My reasoning behind is that if an user wants to make an item scale in size, they should not need to do excessive steps other than specifying a scale value on the item',
-'Method 1 and method 2 yield the same outcome. This gives users maximum freedom to achive their goals.'],
+  content: [ 'The first priority of behaviour flow is simplicity and flexibility. My reasoning behind is that if an user wants to make an item scale in size, they should not need to do excessive steps other than specifying a scale value on the item',
+    'Method 1 and method 2 yield the same outcome. This gives users maximum freedom to achive their goals.'],
   img: '../../../assets/images/proj_briovr/actionflow.png'
 }
 
 const behaviourflow2 = {
   content: ['Trigger in BRIOVR is equivalent to conditionals in coding. In order to compromise users with different technical backgrounds, I adapted the same logic as the basic mechanism.',
-'In the following diagram, method 1 and method 2 have the same outcome. To trigger an action, the mandatory criterias are the item and the trigger method, order is not critical.'],
-  img: '../../../assets/images/proj_briovr/actionflow1.png',
+    'In the following diagram, method 1 and method 2 have the same outcome. To trigger an action, the mandatory criterias are the item and the trigger method, order is not critical.'],
+  img: '../../../assets/images/proj_briovr/actionflow1.png'
 }
 
 const behaviourflow3 = {
@@ -220,13 +204,13 @@ const prototypePop = {
 }
 
 const motion = {
-    title:'Motion design',
-    sectionClass: 'list-style-circle',
+  title: 'Motion design',
+  sectionClass: 'list-style-circle',
   content: ['Differ from 2D apps, Motion in 3D plays an important role especially true for behaviours. By applying motion design into our usability test, we have seen significant improvements in:',
-  'Retaining user attention.',
-  'More clear understanding of next step',
-  'More tolerance on wait time'
-],
+    'Retaining user attention.',
+    'More clear understanding of next step',
+    'More tolerance on wait time'
+  ],
   video: ''
 }
 
@@ -234,7 +218,7 @@ const endResult = {
   title: 'The Product',
   content: 'Combining all the aspects, we were able to create a rather intuitive system that is been used by thousands of people. The following video is a 30 seconds demo showing how you can create a click button to trigger a movement of a rocket.',
   video: 'https://youtu.be/SKdtGiESaO4',
-  label:'to see more of our user creation, <a href="briovr.com/discovery">Click HERE</a>'
+  label: 'to see more of our user creation, <a href="briovr.com/discovery">Click HERE</a>'
 }
 
 const achieve = {
@@ -256,9 +240,10 @@ const reflections = [
 
 class Briovr extends React.Component {
   render () {
+    const style = PortfolioStore.briovr
     return (
       <div>
-        <ProjectTitle content={projectTitle} style={style} />
+        <ProjectTitle content={style} style={style} />
         <div className='project-content-layout'>
           <IntroRole content={introRole} />
           <Problem content={challenge} style={style} />

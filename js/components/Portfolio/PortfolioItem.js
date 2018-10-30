@@ -1,13 +1,12 @@
 import React from 'react'
 import {Link} from 'react-router'
-import Cycnav from '../../views/ProjectView/Cycnav'
 
 export default class PortfolioItem extends React.Component {
   constructor (props) {
     super()
   }
   render () {
-    const {title, link, pitch, headerImage, category} = this.props
+    const {title, link, intro, headerImage, field} = this.props
 
     return (
       <div className='single-proj-container'>
@@ -15,8 +14,8 @@ export default class PortfolioItem extends React.Component {
           <img src={headerImage} />
           <div className='projectTitle'>
             <h3>{title}</h3>
-            <h4>{category}</h4>
-            <p>{pitch}</p>
+            <h4>{intro}</h4>
+            <p>{field}</p>
           </div>
         </div>
         </Link>
