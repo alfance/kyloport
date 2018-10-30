@@ -6,7 +6,7 @@ module.exports = [
     intro: 'Interaction system for online VR platform',
     link: 'briovr',
     headerImage: '../../assets/images/proj_briovr/background.png',
-    logo: '../../assets/images/proj_briovr/brio_logo_notext.svg',
+    logo: '../../assets/images/proj_briovr/brio_logo_notext.png',
     color: '#5C41B4',
     url: '',
     textonColor: 'text-light',
@@ -18,9 +18,9 @@ module.exports = [
     field: 'Product development',
     intro: 'Non-profit mobile & web platform',
     link: 'fairtrade',
-    headerImage: '../../assets/images/proj_fairtrade/Homepage.png',
-    logo: '../../assets/images/proj_briovr/brioLogo_horizontal_Wgradient.svg',
-    color: '#5C41B4',
+    headerImage: '../../assets/images/proj_fairtrade/logo-yellow.png',
+    logo: '../../assets/images/proj_fairtrade/logo-yellow.svg',
+    color: '#d8536d',
     url: ''
   },
   {
@@ -41,8 +41,8 @@ module.exports = [
     intro: 'Mobile arcade game app',
     link: 'Project4',
     headerImage: '../../assets/images/projects/header/proj1.jpg',
-    logo: '../../assets/images/proj_briovr/brioLogo_horizontal_Wgradient.svg',
-    color: '#5C41B4',
+    logo: '../../assets/images//construction.svg',
+    color: '#232323',
     url: ''
   }
 ]
