@@ -87,17 +87,16 @@
       padding-left:auto;
       padding-right:auto;
   }
-  img {
-    height:100%;
-    object-fit: cover;
-    position: absolute;
-    left:0px;
+  .projectLogo {
+    padding:16%;
+    object-fit: contain;
+    max-height: 80%;
       @include animation('image-hover-out 0.5s forwards');
   }
 
   .projectTitle {
     position: absolute;
-    color:$color-black;
+    color:$color-white;
     text-align: center;
     left:50%;
     transform: translateX(-50%);
@@ -110,16 +109,16 @@
         opacity: 0
     }
     h4{
-
+        border-top:1px solid rgba(255, 255, 255, 0.3);
         padding: 16px 24px;
-        background-color: rgba(255,255,255,0.8);
-        margin:8px 0px;
-        width: calc(100% + 48px);
-        margin-left: -24px;
+        width: 100%;
+        font-weight: 400;
+        margin-bottom: 0px;
     }
 
     p {
         margin:0px;
+        color:$color-grey1;
         opacity: 0
     }
   }

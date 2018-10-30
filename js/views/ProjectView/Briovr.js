@@ -240,7 +240,8 @@ const reflections = [
 
 class Briovr extends React.Component {
   render () {
-    const style = PortfolioStore.briovr
+    const style = PortfolioStore[0]
+
     return (
       <div>
         <ProjectTitle content={style} style={style} />
