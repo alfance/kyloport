@@ -3,8 +3,8 @@ import LayoutHelper from './LayoutHelper'
 import classNames from 'classnames'
 
 export default class LayoutHalf extends React.Component {
-  render () {
-    const {
+    render() {
+        const {
             title,
             content,
             imgLeft,
@@ -16,24 +16,26 @@ export default class LayoutHalf extends React.Component {
             sectionClass
         } = this.props.content
 
-    return (<div>
-      <h3>{title}</h3>
-      <p>{content}</p>
-      <div className={classNames('project-layout-half', sectionClass)}>
-        <div className='div-left'>
-          {LayoutHelper.mediaType(imgLeft, videoLeft)}
-          <ol start='0'>
-            {LayoutHelper.layoutArrayContent(contentLeft)}
-          </ol>
-        </div>
+        return (<div className={sectionClass}>
+            <h3>{title}</h3>
+            <ol start='0'>
+                {LayoutHelper.layoutArrayContent(content)}
+            </ol>
+            <div className={classNames('project-layout-half', sectionClass)}>
+                <div className='div-left'>
+                    {LayoutHelper.mediaType(imgLeft, videoLeft)}
+                    <ol start='0'>
+                        {LayoutHelper.layoutArrayContent(contentLeft)}
+                    </ol>
+                </div>
 
-        <div className='div-right'>
-          {LayoutHelper.mediaType(imgRight, videoRight)}
-          <ol start='0'>
-            {LayoutHelper.layoutArrayContent(contentRight)}
-          </ol>
-        </div>
-      </div>
-    </div>)
-  }
+                <div className='div-right'>
+                    {LayoutHelper.mediaType(imgRight, videoRight)}
+                    <ol start='0'>
+                        {LayoutHelper.layoutArrayContent(contentRight)}
+                    </ol>
+                </div>
+            </div>
+        </div>)
+    }
 }

@@ -247,3 +247,14 @@
   background: url("../assets/images/proj_cycnav/cycnav_logo_w.svg") no-repeat right top;
   background-size: contain;
 }
+
+#iframe-brio {
+    width:100%;
+    min-height: 340px;
+    border:0px;
+    height:calc(#{$project-content-width}/1.778);
+    padding-top:24px;
+    @include smallS {
+        height:90vh;
+    }
+}
