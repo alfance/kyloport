@@ -211,7 +211,7 @@ const motion = {
     'More clear understanding of next step',
     'More tolerance on wait time'
   ],
-  video: ''
+  video: 'https://youtu.be/vZ9zlpf5iwg'
 }
 
 const endResult = {
