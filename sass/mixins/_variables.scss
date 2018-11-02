@@ -1,12 +1,15 @@
 // navigation bar
 $nav-width: 100px;
 
+// max with on all pages.
+$max-layout-width:1000px;
+
 // container width for the main content
 $container-wrapper-width: 100%;
 
 // main page project card width
-$project-each-width: calc(((100vw - #{$nav-width}) - 96px - 64px )/ 2);
-$project-each-height: calc(((100vw - #{$nav-width}) - 96px - 64px )/ 2);
+$project-each-width: calc((#{$max-layout-width} - #{$nav-width})/ 2);
+$project-each-height: calc((#{$max-layout-width} - #{$nav-width})/ 2);
 
 $project-each-width-small: 100%;
 $project-each-height-small: calc(85vw / 1.5);
