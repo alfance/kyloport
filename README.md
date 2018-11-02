@@ -35,5 +35,15 @@ https://localhost:8080
 * [app.js] - contains routers
 * [layout.js] - divided into nav and Content
 * Components
-  : Navbar - Navbar
-  : Portfolio - contains all the projects
+*   : Navbar - Navbar
+*   : Portfolio - portfolio arrangement in the main page
+*   : Content - renders everything other than nav 
+* Stores - containing constant files
+*   : Navbar
+*   : Portfolio
+* Views - child page container
+*   : components - components that make up each project page
+*   : Individual Project file
+*   : B-side - secondary project container
+*   : Project main - projects container
+*   : Resume

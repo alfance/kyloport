@@ -175,7 +175,7 @@ const wireframes = {
   title: 'Wireframes',
   sectionClass: 'project-layout-wide',
   contentLeft: [
-    'I have created both low and high fidelity wireframes for different user test purposes.', 'The  paper wireframes are used to quickly obtain user feedback at group design workshops - testers were mainly from within the team.', 'The digital wireframes are used for individual user test so all the user behaviours are closely observed and recorded. I expanded the testers to be outside the company. '
+    'I have created both low and high fidelity wireframes for different user test purposes.', 'The  paper wireframes are used to quickly obtain user feedback at group design workshops - testers were mainly from within the team.', 'The digital wireframes are used for individual user test so all the user behaviours are closely observed and recorded. Afterwards I expanded the testers to be outside the company. '
   ],
   imgRight: '../../../assets/images/proj_briovr/wireframe.jpg'
 }
@@ -185,18 +185,18 @@ const usability = {
   content: [
     'For each iteration, We have conducted usability tests with people from different background. The initial designs had limited number of successes.',
     '**"Tutorial was too fast"**',
-    'Users had hard time following the video tutorial. We then switched it to a more immersive onboarding that guided the users step by step.',
+    'Users had a hard time following the video tutorial. We switched the tutorial to a more immersive onboarding that guided the users step by step.',
     '**"I want instant feedback"**',
     'Whenever users added translation changes, they are unable to view the changes right away. A more direct and instant feed is needed',
     'The onboarding sometimes were neglected',
     '**"Can I modify the code?""**',
-    'This is commonly asked by people with programming background. After carefully analyzing and discussion, we decide to instead opening up the ability for this user group, letting them get used to the system we have decided.'
+    'This is commonly asked by people with programming background. After carefully analyzing and discussion, instead of opening up the ability for this user group, we decided to make the system more friendly to technical users.'
   ]
 }
 
 const findingTest = {
   subtitle: 'Roadblock',
-  content: 'Due to the nature of 3D app, we could only simulate a test environment that partially resembles the end product. This limit the outcomes we can get.'
+  content: 'Due to the nature of 3D app, we could only simulate a test environment that partially resembles the end product. This limit the outcomes we can receive.'
 }
 const prototypeMain = {
   title: 'Main Interface',
@@ -214,14 +214,14 @@ const prototypePop = {
   title: 'Property popup',
   sectionClass: 'project-layout-wide',
   imgLeft: '../../../assets/images/proj_briovr/property-popup.png',
-  contentRight: 'Property popup serves as adjustable value controller for each individual trigger ad action. We made it in context of the menu location and semi-Automatic. '
+  contentRight: 'Property popup serves as adjustable value controller for each individual trigger and action. We made the popup in context of the menu location and semi-Automatic. '
 }
 
 const motion = {
   title: 'Motion design',
   sectionClass: 'list-style-circle',
   content: [
-    'Differ from 2D apps, Motion in 3D plays an important role especially true for behaviours. By applying motion design into our usability test, we have seen significant improvements in:', 'Retaining user attention.', 'More clear understanding of next step', 'More tolerance on wait time'
+    'Differ from 2D apps, Motion in 3D plays an important role especially true for behaviours. By applying motion design into our usability test, we have seen significant improvements in:', 'Retaining user attention.', 'More clear understanding of next step', 'Incrase tolerance in wait time'
   ],
   imgLeft: '../../../assets/images/proj_briovr/animate1.gif',
   contentLeft: '**Up**: Add behaviour to object. **Right**: Modify and Deleting a behaviour',
@@ -244,10 +244,10 @@ const achieve = {
 const reflections = [
   {
     subject: 'Dont copy, adapt.',
-    learn: 'It is equally imperative to take inspiration from exisitng solutions and to adapt it to your solution. Part of the reason that people are accepting Brio interaction system is because it has envolved based on products that are been approved by users.'
+    learn: 'It is equally imperative to take inspiration from exisitng solutions and to adapt it to your solution. Part of the reason that people are accepting Brio interaction system is because it has envolved from products that are been approved by users.'
   }, {
     subject: 'UX design is not just research and low fidelity prototypes',
-    learn: 'I learned that UX design exists in every step of a product development. Your job is not completed after the wireframe. It is curicial to stay all the way untill and after the product delivery.'
+    learn: 'I learned that UX design exists in every step of a product development. Your job is not completed after the wireframe. It is curicial to stay all the way until and after the product delivery.'
   }, {
     subject: 'Working in 3D is a different story than working in 2D',
     learn: 'Add a dimension can meant a completely seperate design flow and system. I have encountered countless limitations prototyping and testing. On another hand, I learned and invented ways to validate the design method for a 3D app.'

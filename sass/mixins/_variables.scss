@@ -11,6 +11,8 @@ $container-wrapper-width: 100%;
 $project-each-width: calc((#{$max-layout-width} - #{$nav-width})/ 2);
 $project-each-height: calc((#{$max-layout-width} - #{$nav-width})/ 2);
 
+$project-each-width-medium: calc(((100vw - #{$nav-width}) - 96px - 64px )/ 2);
+
 $project-each-width-small: 100%;
 $project-each-height-small: calc(85vw / 1.5);
 

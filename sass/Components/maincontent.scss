@@ -83,6 +83,11 @@
   position: relative;
   overflow: hidden;
 
+  @include largeS {
+      width:$project-each-width-medium;
+      height:$project-each-width-medium;
+  }
+  
   // media size
   @include smallS {
       width: $project-each-width-small;

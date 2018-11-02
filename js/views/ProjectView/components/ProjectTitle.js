@@ -1,4 +1,4 @@
-import React from 'react'
+ import React from 'react'
 
 export default class ProjectTitle extends React.Component {
   render () {
@@ -8,7 +8,9 @@ export default class ProjectTitle extends React.Component {
       backgroundImage: 'url(' + bgImg + ')',
       backgroundColor: color,
       backgroundRepeat: 'no-repeat',
-      backgroundPosition: titleBgP
+      backgroundPosition: titleBgP,
+      height:'350px',
+      backgroundSize:'contain',
     }
 
     return (
