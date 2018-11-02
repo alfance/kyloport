@@ -1,176 +1,173 @@
-
-
 ////////////////////////////// Individual Project
-
 // /////////////////////////////// Individual Project Title ///////////////////////////////
-.project-title-layout{
-  margin-top:50px;
+.project-title-layout {
+  margin-top: 50px;
   background-size: contain;
   position: relative;
-
   @include smallS {
-      height:auto;
+    height: auto;
   }
-  .project-title-bg{
-      width:100%;
-      height: 100%;
-      opacity: 0.5;
-      position: absolute;
+
+  .project-title-bg {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    position: absolute;
   }
 
   .project-title-text {
-      margin:auto;
-      text-align: center;
-      position: absolute;
-      top:50%;
-      transform: translateY(-50%);
-      width:100%;
-      padding:48px 0px;
+    margin: auto;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 48px 0;
 
-      .project-title-logo{
-          width:50%;
-          min-width:300px;
-          object-fit: contain;
-          padding-bottom: 32px;
-      }
+    .project-title-logo {
+      width: 50%;
+      min-width: 300px;
+      object-fit: contain;
+      padding-bottom: 32px;
+    }
 
-      h3{
-          margin:0px;
-          color: $color-white;
-      }
+    h3 {
+      margin: 0;
+      color: $color-white;
+    }
   }
 }
 
 .project-video169 {
   position: relative;
-  width:100%;
+  width: 100%;
   height: auto;
-  padding-top:56.25%;
+  padding-top: 56.25%;
 
   * {
     position: absolute;
-    width:100%;
+    width: 100%;
     height: 100%;
-    top:0px;
-    left:0px;
+    top: 0;
+    left: 0;
   }
 }
 
-.laptop {
-
-}
+.laptop {}
 //////////////////
-
 /////////////////////////////// defines the split contents in each project ///////////////////////////////
-
 // general css for the container css
 @mixin project-container-css {
-  width:100%;
+  width: 100%;
   display: flex;
-
   // div :first-of-type {
   //     padding-left:8px;
   // }
   // div :last-of-type {
   //     padding-right:8px;
   // }
-
   @include smallS {
     display: inline-block;
   }
 }
 
 .div-left {
-    padding-right: 16px;
-    @include smallS {
-      padding-right: 0px;
-    }
-}
-.div-right {
-    padding-left: 16px;
-    @include smallS {
-      padding-right: 0px;
-    }
+  padding-right: 16px;
+  @include smallS {
+    padding-right: 0;
+  }
 }
 
+.div-right {
+  padding-left: 16px;
+  @include smallS {
+    padding-right: 0;
+  }
+}
 // 1/2 1/2
 .project-layout-half {
   @include project-container-css;
-  .div-left , .div-right{
-    width:50%;
+
+  .div-left,
+  .div-right {
+    width: 50%;
     @include smallS {
-      width:100%;
+      width: 100%;
     }
   }
 }
-
 // 1/3 2/3
 .project-layout-13 {
   @include project-container-css;
-  .div-left  {
-    width:calc(100%/3);
-  }
-  .div-right {
-    width:calc(100%/3 *2);
+
+  .div-left {
+    width: calc(100%/3);
   }
 
+  .div-right {
+    width: calc(100%/3 *2);
+  }
   @include smallS {
-    .div-left, .div-right {width:100%;}
+    .div-left,
+    .div-right {
+      width: 100%;
+    }
   }
 }
-
 // 2/3 1/3
 .project-layout-23 {
   @include project-container-css;
-  .div-left  {
-    width:calc(100%/3*2);
-  }
-  .div-right {
-    width:calc(100%/3);
+
+  .div-left {
+    width: calc(100%/3*2);
   }
 
+  .div-right {
+    width: calc(100%/3);
+  }
   @include smallS {
-    .div-left, .div-right {width:100%;}
+    .div-left,
+    .div-right {
+      width: 100%;
+    }
   }
 }
-
 // 1/3
 .project-layout-third {
   @include project-container-css;
-  div  {
-    width:calc(100%/3);
+
+  div {
+    width: calc(100%/3);
   }
   @include smallS {
-    div {width:100%;}
+    div {
+      width: 100%;
+    }
   }
 }
-
 // special width for divided divs
 .project-layout-wide {
-        @include max-width;
+  @include max-width;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
-
 /////////////////
 /////////////////
 /////////////////
 /////////////////
 /////////////////
 /////////////////
-
-
 
 .project-title-hr {
-    border-bottom-style: solid;
-    border-bottom-width: 2px;
-    opacity: 0.3;
-    @include max-width;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  opacity: 0.3;
+  @include max-width;
 }
-
 /////////////////////////////////// get rid the 10px left and right for {myrole} in IntroRole.js ///////////////
-.introRole-top span{
-    padding:0px;
+.introRole-top span {
+  padding: 0;
 }
-
 // /////////////////////////////// The findign div highlights the findings I have found from the researches, studies and tests.   ///////////////////////////////
 .finding-div {
   padding: 24px;
@@ -182,65 +179,56 @@
     text-transform: uppercase;
   }
 }
-
-
 ////////// PERSONA STYLE, standard style for persona.    ////////
 .section-persona {
-    padding:0px 15px;
-    text-align: left;
+  padding: 0 15px;
+  text-align: left;
 
-    li:first-of-type {
-        font-weight: bold;
-        padding-left: 0px;
-    }
-    img{
-      padding: 15px;
-      width:144px;
-      height:144px;
-      display: block;
-    }
+  li:first-of-type {
+    font-weight: bold;
+    padding-left: 0;
+  }
+
+  img {
+    padding: 15px;
+    width: 144px;
+    height: 144px;
+    display: block;
+  }
 }
 
 .section-devices {
   img {
-    width:90px;
-    fill:red;
+    width: 90px;
+    fill: red;
   }
 }
 
 .center-img {
   margin-left: 50%;
-  transform:translateX(-50%);
+  transform: translateX(-50%);
 }
-
-
 ///////////////////  Reflection div /////////////////
 .project-reflections {
-    p {
-        padding-bottom: 8px;
-    }
-    padding-bottom: 72px;
+  p {
+    padding-bottom: 8px;
+  }
+  padding-bottom: 72px;
 }
 /////////
-
-
 /////////////////
 /////////////////
 /////////////////
 /////////////////
 /////////////////
 /////////////////
-
-
-
 // /////////////////////////////// PROJECT SPECIFIC CSS ///////////////////////////////
-
 //////// PROJECT CYCNAV ///////
 .project-title-cycnav {
   background: url("../assets/images/proj_cycnav/title_img2.png") no-repeat right top;
   background-size: contain;
   background-color: $color-black;
-  color:$color-white;
+  color: $color-white;
 }
 
 .cycnav-logo {
@@ -249,12 +237,12 @@
 }
 
 #iframe-brio {
-    width:100%;
-    min-height: 340px;
-    border:0px;
-    height:calc(#{$project-content-width}/1.778);
-    padding-top:24px;
-    @include smallS {
-        height:90vh;
-    }
+  width: 100%;
+  min-height: 340px;
+  border: 0;
+  height: calc(#{$project-content-width}/1.778);
+  padding-top: 24px;
+  @include smallS {
+    height: 90vh;
+  }
 }

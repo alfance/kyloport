@@ -39,6 +39,7 @@
     @include mediumB {
         width:calc(100vw - 96px - 100px);
         margin-left:calc(-50vw + 380px + 100px);
+        max-width:$project-max-width;
     }
     @include mediumS {
         width: 100%;

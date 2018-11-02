@@ -206,9 +206,8 @@ const prototypeMain = {
 }
 const prototypeChain = {
   title: 'Behaviour chain panel',
-  sectionClass: 'project-layout-wide',
   contentLeft: 'The behaviour chain contains all the logics happening on an object. We embraced the flow of a node based system; however, we decide to take a bold step by making the behaviour chain linear. This comes at a cost of reduced flexibility, but reached our standards for simplicity and ease of use. ',
-  imgRight: '../../../assets/images/proj_briovr/chain.png'
+  imgRight: '../../../assets/images/proj_briovr/behaviour_chain.png'
 }
 const prototypePop = {
   title: 'Property popup',
