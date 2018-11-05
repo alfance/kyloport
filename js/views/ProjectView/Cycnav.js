@@ -40,7 +40,7 @@ const projectTitle = {
 }
 
 const introRole = {
-    sectionClass: 'list-style-circle',
+  sectionClass: 'list-style-circle',
   content: 'CYCNAV is an IOT bike light guilding the cyclists traveling around the city. Together with the crowd sourcing mobile app, users are updated with the latest road conditions and are provided with the best cycling route.',
   role: 'I worked as the UX designerfor this project. Some of my responsibilities included:',
   duties: ['Conduct user and market research and analysis',
@@ -54,9 +54,9 @@ const introRole = {
 
 const problem = {
   title: 'Problem',
-  sectionClass:'list-style-circle',
-  content:[ 'The biggest pain that every cyclist has experienced, especially the urban cyclist, is to navigate in various road conditions and incidents that lead to unexpected detours. Looking for an applicable route can be time consuming, while bypassing the original road can be dangerous.',
-  'Troubled by the Downtown road conditions',
+  sectionClass: 'list-style-circle',
+  content: [ 'The biggest pain that every cyclist has experienced, especially the urban cyclist, is to navigate in various road conditions and incidents that lead to unexpected detours. Looking for an applicable route can be time consuming, while bypassing the original road can be dangerous.',
+    'Troubled by the Downtown road conditions',
     'Limited apps to give guidence and suggestions on routes',
     'Existing apps are often distractive and pause safety concerns to the users']
 }
@@ -136,6 +136,38 @@ const userJourney = {
 
 const comparativeAnalysis = {
   title: 'Comparactive Analysis',
+  data: [{
+    number: 1,
+    app: [<img src='../../../assets/images/proj_cycnav/google_map.png' />,<br />, 'Google maps'],
+    work: ['Bike friendly trails and lanes', <br />,
+      'Route suggestion based on cyclists preference', <br />,
+      '3D elevation on geographic features'
+    ],
+    nowork: ['Driving centric navigation', <br />,
+      'No Bike share map'
+    ]
+  }, {
+    number: 2,
+    app: [ <img src='../../../assets/images/proj_cycnav/vanhawks_logo.png' />,<br />,  'Vanhawks'],
+    work: ['Bike friendly trails and lanes', <br />,
+      'Route suggestion based on cyclists preference', <br />,
+      '3D elevation on geographic features'
+    ],
+    nowork: ['Driving centric navigation', <br />,
+      'No Bike share map'
+    ]
+  }, {
+    number: 3,
+    app: [<img src='../../../assets/images/proj_cycnav/waze.png' />,<br />, 'Waze'
+    ],
+    work: ['Bike friendly trails and lanes', <br />,
+      'Route suggestion based on cyclists preference', <br />,
+      '3D elevation on geographic features'
+    ],
+    nowork: ['Driving centric navigation', <br />,
+      'No Bike share map'
+    ]
+  }],
   columns: [{
     Header: 'App /Device',
     accessor: 'app' // String-based value accessors!
@@ -145,40 +177,6 @@ const comparativeAnalysis = {
   }, {
     Header: 'What doesnt work ',
     accessor: 'nowork'
-  }],
-  data: [{
-    number: 1,
-    img: '../../../assets/images/proj_cycnav/google_map.png',
-    app: 'Google maps',
-    work: ['Bike friendly trails and lanes',
-      'Route suggestion based on cyclists preference',
-      '3D elevation on geographic features'
-    ],
-    nowork: ['Driving centric navigation',
-      'No Bike share map'
-    ]
-  }, {
-    number: 2,
-    img: '../../../assets/images/proj_cycnav/vanhawks_logo.png',
-    app: 'Google maps',
-    work: ['Bike friendly trails and lanes',
-      'Route suggestion based on cyclists preference',
-      '3D elevation on geographic features'
-    ],
-    nowork: ['Driving centric navigation',
-      'No Bike share map'
-    ]
-  }, {
-    number: 3,
-    img: '../../../assets/images/proj_cycnav/waze.png',
-    app: 'Waze',
-    work: ['Bike friendly trails and lanes',
-      'Route suggestion based on cyclists preference',
-      '3D elevation on geographic features'
-    ],
-    nowork: ['Driving centric navigation',
-      'No Bike share map'
-    ]
   }]
 }
 
@@ -208,12 +206,12 @@ const solutions = {
   content: 'Based on the result of comparative analysis, we decide to approach the problem using both digital and physical solutions. that is building a physical navigational device that would be powered by a digital app.',
   img: '../../../assets/images/proj_cycnav/journey_map.jpg',
   label: ['**Nav App**: The app uses googles map api to calculate the best route for the users, use can also input their finding of road conditions using the app.',
-  '**Bike light**:The bike light is connected to the app using bluetooth. While the app is calculating and adjusting the route,the bike light functions as the visual portal to help guide the cyclists while they are biking.']
+    '**Bike light**:The bike light is connected to the app using bluetooth. While the app is calculating and adjusting the route,the bike light functions as the visual portal to help guide the cyclists while they are biking.']
 }
 
 const usability = {
   title: 'Usability Test',
-  sectionClass:'list-style-number',
+  sectionClass: 'list-style-number',
   content: [
     'Test with the wireframes revealed some major areas to improve on:',
     'Users encountered trouble moving from the mobile app to the bike light. ',
@@ -224,7 +222,7 @@ const usability = {
 
 const iterations = {
   title: 'Iterations',
-  sectionClass:'list-style-circle',
+  sectionClass: 'list-style-circle',
   content: [
     'We focuse improvements on the following two major components:',
     'Spend more time with the user on the onboarding, especially when they are connecting the bike light to the app.',

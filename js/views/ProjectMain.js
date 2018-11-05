@@ -10,8 +10,8 @@ class ProjectMain extends React.Component {
           <hr className='main-hr' />
           <h4>I'm an experience & interaction designer who loves building digital products. </h4>
           <p>As a problem solver and storyteller, I embrace and practice the principles of user-centred design and human-computer interaction. I have delivered projects in mobile & web app, IOT, game, and 3D app with the focus on seamless & delighted user journey.</p>
-          <p>When I am not designing, I enjoy spending time polish my skills in painting, photography, front-end programming, and building arduino toys. </p>
-        </div>
+          <p>When I am not designing, I enjoy spending time polish my skills in <i className='icon-image' /> painting, <i className='icon-present' /> photography, <i className='icon-desktop' /> front-end programming, and building <i className='icon-gear2' /> arduino toys. </p>
+      </div>
         <PortfolioLayout />
       </div>
     )

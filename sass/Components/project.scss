@@ -3,30 +3,25 @@
 .project-title-layout {
   margin-top: 50px;
   background-size: contain;
-  position: relative;
   @include smallS {
     height: auto;
   }
 
   .project-title-bg {
     width: 100%;
-    height: 100%;
     opacity: 0.5;
-    position: absolute;
   }
 
   .project-title-text {
     margin: auto;
     text-align: center;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     width: 100%;
     padding: 48px 0;
 
     .project-title-logo {
       width: 50%;
-      min-width: 300px;
+      max-height: 300px;
+      min-height: 150px;
       object-fit: contain;
       padding-bottom: 32px;
     }
@@ -136,11 +131,11 @@
 .project-layout-third {
   @include project-container-css;
 
-  div {
+  .div-left, .div-middle, .div-right {
     width: calc(100%/3);
   }
   @include smallS {
-    div {
+    .div-left, .div-middle, .div-right {
       width: 100%;
     }
   }
@@ -148,8 +143,6 @@
 // special width for divided divs
 .project-layout-wide {
   @include max-width;
-  margin-left: 50%;
-  transform: translateX(-50%);
 }
 /////////////////
 /////////////////
@@ -164,6 +157,24 @@
   opacity: 0.3;
   @include max-width;
 }
+
+
+/////////////////////////////////// FRAMES for devices ///////////////////////////////////////////
+.frame-desktop, .frame-laptop, .frame-phone {
+  position:relative;
+}
+.frame-laptop {
+  padding-bottom: 7%;
+}
+.frame-device-desktop, .frame-device-laptop, .frame-device-phone {
+  position:absolute;
+}
+.device-desktop, .device-laptop {
+  width:79%;
+  margin-left:10.5%;
+  margin-top: 2.9%;
+}
+
 /////////////////////////////////// get rid the 10px left and right for {myrole} in IntroRole.js ///////////////
 .introRole-top span {
   padding: 0;

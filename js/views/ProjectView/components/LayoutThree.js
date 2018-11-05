@@ -10,15 +10,15 @@ export default class LayoutThree extends React.Component {
         <h3>{title}</h3>
         <p>{content}</p>
         <div className={classNames('project-layout-third', sectionClass)}>
-          <div>
+          <div className='div-left'>
             {LayoutHelper.mediaType(imgLeft, videoLeft)}
             {LayoutHelper.layoutArrayContent(contentLeft)}
           </div>
-          <div>
+          <div className='div-middle'>
             {LayoutHelper.mediaType(imgMiddle, videoMiddle)}
             {LayoutHelper.layoutArrayContent(contentMiddle)}
           </div>
-          <div>
+          <div className='div-right'>
             {LayoutHelper.mediaType(imgRight, videoRight)}
             {LayoutHelper.layoutArrayContent(contentRight)}
           </div>

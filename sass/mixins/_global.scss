@@ -36,10 +36,10 @@
 }
 
 @mixin max-width {
-    @include mediumB {
+    @include largeB {
         width:calc(100vw - 96px - 100px);
-        margin-left:calc(-50vw + 380px + 100px);
         max-width:$project-max-width;
+        margin-left:calc(0px - (#{$project-max-width} / 2 - #{$project-content-width} / 2));
     }
     @include mediumS {
         width: 100%;

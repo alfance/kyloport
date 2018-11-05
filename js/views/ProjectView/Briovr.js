@@ -64,6 +64,7 @@ const challenge = {
 }
 const background = {
   title: 'Background',
+  deviceFrame: 'laptop',
   img: '../../../assets/images/proj_briovr/background.png',
   content: 'The fundamental interface of BRIOVR is similar to major design and modeling apps. Majority of the screen is dedicated to the 3D working space as features and tools are located on the side and bottom.'
 }
@@ -211,9 +212,8 @@ const prototypeChain = {
 }
 const prototypePop = {
   title: 'Property popup',
-  sectionClass: 'project-layout-wide',
-  imgLeft: '../../../assets/images/proj_briovr/property-popup.png',
-  contentRight: 'Property popup serves as adjustable value controller for each individual trigger and action. We made the popup in context of the menu location and semi-Automatic. '
+  img: '../../../assets/images/proj_briovr/property_panel.png',
+  content: 'Property popup serves as adjustable value controller for each individual trigger and action. We made the popup in context of the menu location and semi-Automatic. '
 }
 
 const motion = {
@@ -281,13 +281,13 @@ class Briovr extends React.Component {
         <TitleDivier content={titleText4} style={style} />
         <LayoutImage content={prototypeMain} />
         <LayoutOneThird content={prototypeChain} />
-        <LayoutHalf content={prototypePop} /> {/* Interaction design */}
+        <LayoutImage content={prototypePop} /> {/* Interaction design */}
         <TitleDivier content={titleText5} style={style} />
         <LayoutHalf content={motion} style={style} />
         <TitleDivier content={titleText6} style={style} />
         <LayoutImage content={endResult} style={style} /> {/* results and reflections */}
         <LayoutHalf content={achieve} />
-        <iframe id='iframe-brio' src='https://view.briovr.com/1cb632f4-2a89-45d3-9e4e-bd71c93ecaa1' frameborder='0' allowfullscreen />
+        <iframe id='iframe-brio' src='https://view.briovr.com/1cb632f4-2a89-45d3-9e4e-bd71c93ecaa1' frameBorder='0' allowFullScreen />
         <TitleDivier content={titleText7} style={style} />
         <Reflection content={reflections} />
 
