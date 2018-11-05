@@ -134,6 +134,12 @@ const userJourney = {
   label: 'The highlighted bubble are the main functions users will be using, while supporting features(grey bubble) will be the key to the overall NUX'
 }
 
+const storyboard ={
+    title: 'Storyboard',
+    content: 'To get a better understanding of users using the app...',
+    img:'../../../assets/images/proj_cycnav/journey_map.jpg',
+}
+
 const comparativeAnalysis = {
   title: 'Comparactive Analysis',
   data: [{
@@ -204,8 +210,8 @@ const devices = {
 
 const solutions = {
   content: 'Based on the result of comparative analysis, we decide to approach the problem using both digital and physical solutions. that is building a physical navigational device that would be powered by a digital app.',
-  img: '../../../assets/images/proj_cycnav/journey_map.jpg',
-  label: ['**Nav App**: The app uses googles map api to calculate the best route for the users, use can also input their finding of road conditions using the app.',
+  img: '../../../assets/images/proj_cycnav/phone_iot_wireframe.png',
+  label: ['**Nav App**: The app uses googles map api to calculate the best route for the users, users can also input their finding of road conditions using the app.',
     '**Bike light**:The bike light is connected to the app using bluetooth. While the app is calculating and adjusting the route,the bike light functions as the visual portal to help guide the cyclists while they are biking.']
 }
 
@@ -317,6 +323,7 @@ class Cycnav extends React.Component {
           <LayoutHalf content={persona} />
           <FindingComponent content={findingPersona} style={style} />
           <LayoutImage content={userJourney} />
+          <LayoutImage content={storyboard} />
 
           {/* market research */}
           <TitleDivier content={titleText2} style={style} />
