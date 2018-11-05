@@ -39,7 +39,7 @@
 
   // /////////////////////////////// paragrahes spaces ///////////////////////////////
   h2, h3, h4 {
-    margin: 8% 0 3% 0;
+    margin: 14% 0 3% 0;
   }
 
   .project-component-title {
@@ -87,7 +87,7 @@
       width:$project-each-width-medium;
       height:$project-each-width-medium;
   }
-  
+
   // media size
   @include smallS {
       width: $project-each-width-small;
