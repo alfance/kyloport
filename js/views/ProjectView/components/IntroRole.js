@@ -12,8 +12,6 @@ export default class ProjectTitle extends React.Component {
       <div className='project-layout-half'>
         <div className='div-left'>
           <h4>My Role</h4>
-          <p className='introRole-top'>{role}
-          </p>
           <ol>
             {LayoutHelper.layoutArrayContent(duties)}
           </ol>

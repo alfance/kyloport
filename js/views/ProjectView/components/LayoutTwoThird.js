@@ -13,7 +13,8 @@ export default class LayoutTwoThird extends React.Component {
             videoRight,
             contentLeft,
             contentRight,
-            sectionClass
+            sectionClass,
+            deviceFrame
         } = this.props.content
 
     return (<div>
@@ -21,14 +22,14 @@ export default class LayoutTwoThird extends React.Component {
       <p>{content}</p>
       <div className={classNames('project-layout-23', sectionClass)}>
         <div className='div-left'>
-          {LayoutHelper.mediaType(imgLeft, videoLeft)}
+          {LayoutHelper.mediaType(imgLeft, videoLeft, deviceFrame)}
           <ol start='0'>
             {LayoutHelper.layoutArrayContent(contentLeft)}
           </ol>
         </div>
 
         <div className='div-right'>
-          {LayoutHelper.mediaType(imgRight, videoRight)}
+          {LayoutHelper.mediaType(imgRight, videoRight, deviceFrame)}
           <ol start='0'>
             {LayoutHelper.layoutArrayContent(contentRight)}
           </ol>

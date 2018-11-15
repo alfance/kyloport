@@ -73,6 +73,13 @@
   }
 }
 
+.div-middle {
+    padding: 0px 8px;
+    @include smallS {
+      padding-right: 0;
+    }
+}
+
 .div-right {
   padding-left: 16px;
   @include smallS {
@@ -166,6 +173,25 @@
 .frame-laptop {
   padding-bottom: 7%;
 }
+.frame-phone {
+    padding-bottom: 18%;
+
+// video in a phone frame has different ratio than 16:9
+    .project-video169 {
+        position: relative;
+          width: 93% !important;
+          height: 0;
+          padding-bottom: 109.5%  !important;
+            height: auto;
+            margin-left: 3.5% !important;
+    }
+    .project-video169 iframe {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0; top: 11% !important;
+}
+}
 .frame-device-desktop, .frame-device-laptop, .frame-device-phone {
   position:absolute;
 }
@@ -173,6 +199,11 @@
   width:79%;
   margin-left:10.5%;
   margin-top: 2.9%;
+}
+.device-phone {
+    width: 94%;
+    margin-top: 20.8%;
+    margin-left: 3%;
 }
 
 /////////////////////////////////// get rid the 10px left and right for {myrole} in IntroRole.js ///////////////
@@ -235,12 +266,6 @@
 /////////////////
 // /////////////////////////////// PROJECT SPECIFIC CSS ///////////////////////////////
 //////// PROJECT CYCNAV ///////
-.project-title-cycnav {
-  background: url("../assets/images/proj_cycnav/title_img2.png") no-repeat right top;
-  background-size: contain;
-  background-color: $color-black;
-  color: $color-white;
-}
 
 .cycnav-logo {
   background: url("../assets/images/proj_cycnav/cycnav_logo_w.svg") no-repeat right top;

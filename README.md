@@ -31,13 +31,21 @@ user port 8080
 https://localhost:8080
 ```
 
+##Build - build to bundle.js
+
+```
+$ npm -d build
+
+```
+
+
 ## File Structure
 * [app.js] - contains routers
 * [layout.js] - divided into nav and Content
 * Components
 *   : Navbar - Navbar
 *   : Portfolio - portfolio arrangement in the main page
-*   : Content - renders everything other than nav 
+*   : Content - renders everything other than nav
 * Stores - containing constant files
 *   : Navbar
 *   : Portfolio

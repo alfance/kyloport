@@ -9,14 +9,9 @@ import FindingComponent from './components/FindingComponent'
 import LayoutImage from './components/LayoutImage'
 import LayoutText from './components/LayoutText'
 import LayoutThree from './components/LayoutThree'
+import LayoutTwoThird from './components/LayoutTwoThird'
 import Reflection from './components/Reflection'
-
-const style = {
-  color: '#1A923C',
-  textonColor: 'text-light',
-  titleBgP: 'right',
-  bgSize: ''
-}
+import PortfolioStore from '../../stores/PortfolioStore'
 
 const titleText1 = {title: 'User Insights'}
 
@@ -32,24 +27,24 @@ const placeholder = require('../../../assets/images/proj_cycnav/journey_map.jpg'
 
 const projectTitle = {
   title: 'CYCNAV',
-  logo: '../../../assets/images/proj_cycnav/cycnav_logo_w.svg',
+  logo: '../../../assets/images/proj_cycnav/cycnav_logo_c.svg',
   field: 'UI/UX, Interaction Design',
   intro: 'Behaviour system for online VR platform',
   link: 'briovr',
-  bgImg: '../../../assets/images/proj_cycnav/title_img.png'
+  bgImg: ''
 }
 
 const introRole = {
   sectionClass: 'list-style-circle',
   content: 'CYCNAV is an IOT bike light guilding the cyclists traveling around the city. Together with the crowd sourcing mobile app, users are updated with the latest road conditions and are provided with the best cycling route.',
-  role: 'I worked as the UX designerfor this project. Some of my responsibilities included:',
-  duties: ['Conduct user and market research and analysis',
+  duties: ['I worked as the UX designerfor this project. Some of my responsibilities included:',
+  'Conduct user and market research and analysis',
     'Defining strategies & Scope',
     'Facilitate ideation & design decisions',
     'Create Wireframes & Prototypes',
     '3D modeling & printing of the physical Component',
     'Validation test and evaluations'],
-  img: '../../../assets/images/proj_cycnav/title_img.png'
+  img: '../../../assets/images/proj_cycnav/cyc_thumb.png'
 }
 
 const problem = {
@@ -128,16 +123,18 @@ const findingPersona = {
 }
 
 const userJourney = {
-  title: 'User journey',
+  title: 'User Roadmap',
+  sectionClass:'project-layout-wide',
   content: 'Cycnav focuses on the two main purposes: 1) Get to the destination. 2) Fast and safe.',
-  img: '../../../assets/images/proj_cycnav/journey_map.jpg',
+  img: '../../../assets/images/proj_cycnav/roadmap.png',
   label: 'The highlighted bubble are the main functions users will be using, while supporting features(grey bubble) will be the key to the overall NUX'
 }
 
 const storyboard ={
+    sectionClass:'project-layout-wide',
     title: 'Storyboard',
-    content: 'To get a better understanding of users using the app...',
-    img:'../../../assets/images/proj_cycnav/journey_map.jpg',
+    content: 'I created storyboard to better help us visualize and predit the user experience with Cycnav. This let us realize that majority of the usage happens on the road where the bike light navigates cyclists. On the other hand, the app serves at the back to do all the calculation and processing.',
+    img:'../../../assets/images/proj_cycnav/storyboard.jpg',
 }
 
 const comparativeAnalysis = {
@@ -145,33 +142,31 @@ const comparativeAnalysis = {
   data: [{
     number: 1,
     app: [<img src='../../../assets/images/proj_cycnav/google_map.png' />,<br />, 'Google maps'],
-    work: ['Bike friendly trails and lanes', <br />,
-      'Route suggestion based on cyclists preference', <br />,
-      '3D elevation on geographic features'
+    work: ['• Bike friendly trails and lanes', <br />,
+      '• Route suggestion based on cyclists preference', <br />,
     ],
-    nowork: ['Driving centric navigation', <br />,
-      'No Bike share map'
+    nowork: ['•Driving centric navigation', <br />,
+      '• No Bike share map'
     ]
   }, {
     number: 2,
     app: [ <img src='../../../assets/images/proj_cycnav/vanhawks_logo.png' />,<br />,  'Vanhawks'],
-    work: ['Bike friendly trails and lanes', <br />,
-      'Route suggestion based on cyclists preference', <br />,
-      '3D elevation on geographic features'
+    work: ['• Self sustained, no need for phone / GPS', <br />,
+            '• Speed tracking', <br />,
+            '• feature that notifies nearby traffic in the blindspot.'
     ],
-    nowork: ['Driving centric navigation', <br />,
-      'No Bike share map'
+    nowork: ['• Costly', <br />,
+      '• No live updates of current road condition'
     ]
   }, {
     number: 3,
     app: [<img src='../../../assets/images/proj_cycnav/waze.png' />,<br />, 'Waze'
     ],
-    work: ['Bike friendly trails and lanes', <br />,
-      'Route suggestion based on cyclists preference', <br />,
-      '3D elevation on geographic features'
+    work: ['• User Contribution', <br />,
+      '• Social feature, friends option'
     ],
-    nowork: ['Driving centric navigation', <br />,
-      'No Bike share map'
+    nowork: ['• Car focused, not for cyclists', <br />,
+      '• no offline map'
     ]
   }],
   columns: [{
@@ -215,14 +210,24 @@ const solutions = {
     '**Bike light**:The bike light is connected to the app using bluetooth. While the app is calculating and adjusting the route,the bike light functions as the visual portal to help guide the cyclists while they are biking.']
 }
 
+const wireframe1 ={
+    title:'Wireframe',
+    sectionClass:'project-layout-wide',
+    content:'**Navigation App Wireframe 1**: For the earlier wireframe versions, we used Balsamiq to quickly block out the basic functionalities that cyclists had given us. We wan to make sure we include everything needed by our users and nothing unnecessary.',
+    img: '../../../assets/images/proj_cycnav/wireframes1.png'
+}
+const wireframe2 ={
+    sectionClass:'project-layout-wide',
+    content:'**Navigation App Wireframe 2**: I started laying out the frameworks of the app with consideration of the app&#39;s interaction with the IOT.',
+    img: '../../../assets/images/proj_cycnav/wireframes2.png'
+}
+
 const usability = {
   title: 'Usability Test',
-  sectionClass: 'list-style-number',
   content: [
     'Test with the wireframes revealed some major areas to improve on:',
-    'Users encountered trouble moving from the mobile app to the bike light. ',
-    'They prefer staying on the app while biking.',
-    'Not enough feedback on botht the app and the bike light, users sometimes get confused while traveling.'
+    '1) Users often forgot to move from the mobile app to the bike light. a more clear and obvious indication is needed',
+    '2) While using the bike light, people sometimes got confused by complex routes. This is caused by lack of instructive indicators.'
   ]
 }
 
@@ -231,9 +236,8 @@ const iterations = {
   sectionClass: 'list-style-circle',
   content: [
     'We focuse improvements on the following two major components:',
-    'Spend more time with the user on the onboarding, especially when they are connecting the bike light to the app.',
-    'Redefine the search process to make it more intuitive, less steps.',
-    'Reduce the number of button on the lights, and increase the size'
+    '1) Spend more time with the user on the onboarding, especially when they are connecting the bike light to the app.',
+    '2) Reformat the UI of buttons on the bike lights, increase the size to max out accessibility.'
   ],
   img: '../../../assets/images/proj_cycnav/journey_map.jpg'
 
@@ -258,42 +262,81 @@ const testResult = {
     feature: 'App to Device transition',
     problem: 'User stuck after connect to bike light',
     iteration: 'Redirect to app main map',
-    result: '50% Smooth'
+    result: [<i className='icon-up' />, '50% Smooth']
   }, {
     feature: 'Onboarding',
     problem: 'User neglected message to transit to ',
     iteration: 'Full screen instruction',
-    result: '25% Smooth'
+    result: [<i className='icon-up' />,'25% Smooth']
   }, {
     feature: 'Bike light navigation',
     problem: 'Missing or unclear indicators',
     iteration: 'Create vartions in indicator size',
-    result: '75% Smooth'
+    result: [<i className='icon-up' />, '75% Smooth']
   }]
 }
 
 const prototypeApp = {
-  title: ' Prototype - APP',
+  title: 'Prototype - APP',
+  deviceFrame: 'phone',
   content: 'We had a few variations for the Prototype as shown below. One consideration that is more important than the asthetics of the app itself, is the readability of the screen under different light conditions.',
-  imgLeft: '../../../assets/images/proj_cycnav/prototye-1.png',
-  imgMiddle: '../../../assets/images/proj_cycnav/prototye-2.png',
-  imgRight: '../../../assets/images/proj_cycnav/prototype-3.png',
+  imgLeft: '../../../assets/images/proj_cycnav/app_prototype1.png',
+  imgMiddle: '../../../assets/images/proj_cycnav/prototye-2.jpg',
+  imgRight: '../../../assets/images/proj_cycnav/app_prototype3.png',
   contentLeft: '**Design 1**: a green theme is used as we are hoping to achive a eco travel method.',
   contentMiddle: '**Design 2**: a green theme is used as we are hoping to achive a eco travel method.',
   contentRight: '**Design 3**: a green theme is used as we are hoping to achive a eco travel method. '
 }
 
+const accessibility = {
+    title:'Accessibility',
+    sectionClass:'project-layout-wide',
+    content:'Cycnav will be used by users with various backgrounds. It is our ',
+    imgLeft:'../../../assets/images/proj_cycnav/app_color.png',
+    contentRight:['The color scheme of Cycnav should be accessible to people with color vision deficiency. This is the reason for us to use complimentary colors in the navigational part. We had tested the accissibility of each screento make sure they are readable for everyone.',
+'**Left**: Red-Weak/Protanomaly',
+'**Middle**: Blue-Blind/Tritanopia',
+'**Right**: Blue Cone Monochromacy']
+}
+
 const decision = {
   title: 'Decision',
-  content: 'In the end, we decide to go with design 3 due to its readability even under extreme sun light. For this design,the users can grasp the information in the shortest amoutn of time, which is fatal when they are on the road.',
-  img: {placeholder}
+  deviceFrame:'phone',
+  contentLeft: ['In the end, we decide to go with design 3 due to its readability even under extreme conditions. In this design, we showed how the app is guiding the user to get to their destination.',
+'1) User searches destination place',
+'2) User picks a route fro the suggestions',
+'3) Popup directing user to switch to bike light while the app continues',
+'4) Upon arrival, the app notifies the user'],
+  videoRight: 'https://youtu.be/p88IbiP5b9U'
 }
 
 const prototypeDevice = {
   title: 'Prototype - Bike Light',
   content: 'Same as the app, we tested multiple paper prototypes before making a decision. ',
-  img: {placeholder},
+  img: '../../../assets/images/proj_cycnav/light_prototype.jpg',
   label: 'The Best result is a fluid capsule with a slanted angle for optimized viewing experience.'
+}
+
+const device3D = {
+    title: '3D & UI - Bike Light',
+    content:'We want to minimize the UI so bikers will not get distracted when using the bike light. ',
+    img:'../../../assets/images/proj_cycnav/3d_design.png',
+}
+
+const useCase = {
+    title:'Testing on the road',
+    sectionClass: 'project-layout-wide',
+    content:['There is no better way to test the prototype other than use it like a real use, so we 3D printed the prototype and brought the light to the road to see how it responded to an actual use case environment.',
+'Real life testing was a lot different than monitored testing, we had acquired usability data that could not be collected in a staged environment.'],
+    imgLeft:'../../../assets/images/proj_cycnav/case_img1.jpg',
+    imgMiddle:'../../../assets/images/proj_cycnav/case_img2.jpg',
+    imgRight:'../../../assets/images/proj_cycnav/case_img3.jpg'
+}
+
+const combine = {
+    title: 'Combine the app and the light',
+    content:'Finally, we combine the design prototypes together.',
+    img:'../../../assets/images/proj_cycnav/3d_design.png',
 }
 
 const reflections = [
@@ -310,6 +353,7 @@ const reflections = [
 
 class Cycnav extends React.Component {
   render () {
+    const style = PortfolioStore[2]
     return (
       <div>
         <ProjectTitle content={projectTitle} style={style} />
@@ -323,7 +367,6 @@ class Cycnav extends React.Component {
           <LayoutHalf content={persona} />
           <FindingComponent content={findingPersona} style={style} />
           <LayoutImage content={userJourney} />
-          <LayoutImage content={storyboard} />
 
           {/* market research */}
           <TitleDivier content={titleText2} style={style} />
@@ -334,6 +377,9 @@ class Cycnav extends React.Component {
           {/* UX solutions */}
           <TitleDivier content={titleText3} style={style} />
           <LayoutImage content={solutions} />
+          <LayoutImage content={storyboard} />
+          <LayoutImage content={wireframe1} />
+          <LayoutImage content={wireframe2} />
           <LayoutText content={usability} />
           <LayoutImage content={iterations} />
           <TableComponent content={testResult} style={style} />
@@ -341,10 +387,14 @@ class Cycnav extends React.Component {
           {/* UI design */}
           <TitleDivier content={titleText4} style={style} />
           <LayoutThree content={prototypeApp} />
-          <LayoutImage content={decision} />
+          <LayoutHalf content={accessibility} />
+          <LayoutHalf content={decision} />
           <LayoutImage content={prototypeDevice} />
+          <LayoutImage content={device3D} />
 
           {/* results and reflections */}
+          <LayoutThree content={useCase} />
+          <LayoutImage content={combine} />
           <TitleDivier content={titleText5} style={style} />
           <Reflection content={reflections} />
 

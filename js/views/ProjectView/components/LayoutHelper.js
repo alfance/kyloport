@@ -21,7 +21,7 @@ export default class LayoutHelper {
     if (image !== undefined) {
       return <div className={`frame-${deviceFrame}`}><DeviceFrame frame={deviceFrame} /><img src={image} className={`device-${deviceFrame}`} /></div>
     } else if (video !== undefined) {
-      return <ReactPlayer width='100%' height='auto' className='project-video169' url={video} />
+      return <div className={`frame-${deviceFrame}`}><DeviceFrame frame={deviceFrame} /><ReactPlayer width='100%' height='auto' className='project-video169' url={video} /></div>
     } else {
       return null
     }

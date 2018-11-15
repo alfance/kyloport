@@ -5,7 +5,7 @@
   margin-right: auto;
 }
 
-/////////////////////// to designer intro section ////////////////////
+/////////////////////// top designer intro section ////////////////////
 .designer-intro {
     color:$color-black;
     max-height: auto;
@@ -21,6 +21,16 @@
 .main-hr {
   margin-top:0px;
   margin-bottom: 32px;
+}
+
+#main-p-icon {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    i {
+        color: $color-grey4;
+        padding: 0px 4px;
+    }
 }
 
 //////////////

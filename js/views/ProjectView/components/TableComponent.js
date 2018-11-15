@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactTable from 'react-table'
-import LayoutHelper from './LayoutHelper'
 
 export default class TableComponent extends React.Component {
   render () {
