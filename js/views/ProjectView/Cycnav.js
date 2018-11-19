@@ -38,7 +38,7 @@ const introRole = {
   sectionClass: 'list-style-circle',
   content: 'CYCNAV is an IOT bike light guilding the cyclists traveling around the city. Together with the crowd sourcing mobile app, users are updated with the latest road conditions and are provided with the best cycling route.',
   duties: ['I worked as the UX designerfor this project. Some of my responsibilities included:',
-  'Conduct user and market research and analysis',
+    'Conduct user and market research and analysis',
     'Defining strategies & Scope',
     'Facilitate ideation & design decisions',
     'Create Wireframes & Prototypes',
@@ -124,43 +124,43 @@ const findingPersona = {
 
 const userJourney = {
   title: 'User Roadmap',
-  sectionClass:'project-layout-wide',
+  sectionClass: 'project-layout-wide',
   content: 'Cycnav focuses on the two main purposes: 1) Get to the destination. 2) Fast and safe.',
   img: '../../../assets/images/proj_cycnav/roadmap.png',
   label: 'The highlighted bubble are the main functions users will be using, while supporting features(grey bubble) will be the key to the overall NUX'
 }
 
-const storyboard ={
-    sectionClass:'project-layout-wide',
-    title: 'Storyboard',
-    content: 'I created storyboard to better help us visualize and predit the user experience with Cycnav. This let us realize that majority of the usage happens on the road where the bike light navigates cyclists. On the other hand, the app serves at the back to do all the calculation and processing.',
-    img:'../../../assets/images/proj_cycnav/storyboard.jpg',
+const storyboard = {
+  sectionClass: 'project-layout-wide',
+  title: 'Storyboard',
+  content: 'I created storyboard to better help us visualize and predit the user experience with Cycnav. This let us realize that majority of the usage happens on the road where the bike light navigates cyclists. On the other hand, the app serves at the back to do all the calculation and processing.',
+  img: '../../../assets/images/proj_cycnav/storyboard.jpg'
 }
 
 const comparativeAnalysis = {
   title: 'Comparactive Analysis',
   data: [{
     number: 1,
-    app: [<img src='../../../assets/images/proj_cycnav/google_map.png' />,<br />, 'Google maps'],
+    app: [<img src='../../../assets/images/proj_cycnav/google_map.png' />, <br />, 'Google maps'],
     work: ['• Bike friendly trails and lanes', <br />,
-      '• Route suggestion based on cyclists preference', <br />,
+      '• Route suggestion based on cyclists preference', <br />
     ],
     nowork: ['•Driving centric navigation', <br />,
       '• No Bike share map'
     ]
   }, {
     number: 2,
-    app: [ <img src='../../../assets/images/proj_cycnav/vanhawks_logo.png' />,<br />,  'Vanhawks'],
+    app: [ <img src='../../../assets/images/proj_cycnav/vanhawks_logo.png' />, <br />, 'Vanhawks'],
     work: ['• Self sustained, no need for phone / GPS', <br />,
-            '• Speed tracking', <br />,
-            '• feature that notifies nearby traffic in the blindspot.'
+      '• Speed tracking', <br />,
+      '• feature that notifies nearby traffic in the blindspot.'
     ],
     nowork: ['• Costly', <br />,
       '• No live updates of current road condition'
     ]
   }, {
     number: 3,
-    app: [<img src='../../../assets/images/proj_cycnav/waze.png' />,<br />, 'Waze'
+    app: [<img src='../../../assets/images/proj_cycnav/waze.png' />, <br />, 'Waze'
     ],
     work: ['• User Contribution', <br />,
       '• Social feature, friends option'
@@ -210,16 +210,16 @@ const solutions = {
     '**Bike light**:The bike light is connected to the app using bluetooth. While the app is calculating and adjusting the route,the bike light functions as the visual portal to help guide the cyclists while they are biking.']
 }
 
-const wireframe1 ={
-    title:'Wireframe',
-    sectionClass:'project-layout-wide',
-    content:'**Navigation App Wireframe 1**: For the earlier wireframe versions, we used Balsamiq to quickly block out the basic functionalities that cyclists had given us. We wan to make sure we include everything needed by our users and nothing unnecessary.',
-    img: '../../../assets/images/proj_cycnav/wireframes1.png'
+const wireframe1 = {
+  title: 'Wireframe',
+  sectionClass: 'project-layout-wide',
+  content: '**Navigation App Wireframe 1**: For the earlier wireframe versions, we used Balsamiq to quickly block out the basic functionalities that cyclists had given us. We wan to make sure we include everything needed by our users and nothing unnecessary.',
+  img: '../../../assets/images/proj_cycnav/wireframes1.png'
 }
-const wireframe2 ={
-    sectionClass:'project-layout-wide',
-    content:'**Navigation App Wireframe 2**: I started laying out the frameworks of the app with consideration of the app&#39;s interaction with the IOT.',
-    img: '../../../assets/images/proj_cycnav/wireframes2.png'
+const wireframe2 = {
+  sectionClass: 'project-layout-wide',
+  content: '**Navigation App Wireframe 2**: I started laying out the frameworks of the app with consideration of the app&#39;s interaction with the IOT.',
+  img: '../../../assets/images/proj_cycnav/wireframes2.png'
 }
 
 const usability = {
@@ -267,7 +267,7 @@ const testResult = {
     feature: 'Onboarding',
     problem: 'User neglected message to transit to ',
     iteration: 'Full screen instruction',
-    result: [<i className='icon-up' />,'25% Smooth']
+    result: [<i className='icon-up' />, '25% Smooth']
   }, {
     feature: 'Bike light navigation',
     problem: 'Missing or unclear indicators',
@@ -289,25 +289,25 @@ const prototypeApp = {
 }
 
 const accessibility = {
-    title:'Accessibility',
-    sectionClass:'project-layout-wide',
-    content:'Cycnav will be used by users with various backgrounds. It is our ',
-    imgLeft:'../../../assets/images/proj_cycnav/app_color.png',
-    contentRight:['The color scheme of Cycnav should be accessible to people with color vision deficiency. This is the reason for us to use complimentary colors in the navigational part. We had tested the accissibility of each screento make sure they are readable for everyone.',
-'**Left**: Red-Weak/Protanomaly',
-'**Middle**: Blue-Blind/Tritanopia',
-'**Right**: Blue Cone Monochromacy']
+  title: 'Accessibility',
+  sectionClass: 'project-layout-wide',
+  content: 'Cycnav will be used by users with various backgrounds. It is our ',
+  imgLeft: '../../../assets/images/proj_cycnav/app_color.png',
+  contentRight: ['The color scheme of Cycnav should be accessible to people with color vision deficiency. This is the reason for us to use complimentary colors in the navigational part. We had tested the accissibility of each screento make sure they are readable for everyone.',
+    '**Left**: Red-Weak/Protanomaly',
+    '**Middle**: Blue-Blind/Tritanopia',
+    '**Right**: Blue Cone Monochromacy']
 }
 
 const decision = {
   title: 'Decision',
-  deviceFrame:'phone',
+  deviceFrame: 'phone',
   contentLeft: ['In the end, we decide to go with design 3 due to its readability even under extreme conditions. In this design, we showed how the app is guiding the user to get to their destination.',
-'1) User searches destination place',
-'2) User picks a route fro the suggestions',
-'3) Popup directing user to switch to bike light while the app continues',
-'4) Upon arrival, the app notifies the user'],
-  videoRight: 'https://youtu.be/p88IbiP5b9U'
+    '1) User searches destination place',
+    '2) User picks a route fro the suggestions',
+    '3) Popup directing user to switch to bike light while the app continues',
+    '4) Upon arrival, the app notifies the user'],
+  videoRight: 'https://youtu.be/C-rnmIXUA0k'
 }
 
 const prototypeDevice = {
@@ -318,25 +318,26 @@ const prototypeDevice = {
 }
 
 const device3D = {
-    title: '3D & UI - Bike Light',
-    content:'We want to minimize the UI so bikers will not get distracted when using the bike light. ',
-    img:'../../../assets/images/proj_cycnav/3d_design.png',
+  title: '3D & UI - Bike Light',
+  content: 'We want to minimize the UI so bikers will not get distracted when using the bike light. ',
+  img: '../../../assets/images/proj_cycnav/3d_design.png'
 }
 
 const useCase = {
-    title:'Testing on the road',
-    sectionClass: 'project-layout-wide',
-    content:['There is no better way to test the prototype other than use it like a real use, so we 3D printed the prototype and brought the light to the road to see how it responded to an actual use case environment.',
-'Real life testing was a lot different than monitored testing, we had acquired usability data that could not be collected in a staged environment.'],
-    imgLeft:'../../../assets/images/proj_cycnav/case_img1.jpg',
-    imgMiddle:'../../../assets/images/proj_cycnav/case_img2.jpg',
-    imgRight:'../../../assets/images/proj_cycnav/case_img3.jpg'
+  title: 'Testing on the road',
+  sectionClass: 'project-layout-wide',
+  content: ['There is no better way to test the prototype other than use it like a real use, so we 3D printed the prototype and brought the light to the road to see how it responded to an actual use case environment.',
+    'Real life testing was a lot different than monitored testing, we had acquired usability data that could not be collected in a staged environment.'],
+  imgLeft: '../../../assets/images/proj_cycnav/case_img1.jpg',
+  imgMiddle: '../../../assets/images/proj_cycnav/case_img2.jpg',
+  imgRight: '../../../assets/images/proj_cycnav/case_img3.jpg'
 }
 
 const combine = {
-    title: 'Combine the app and the light',
-    content:'Finally, we combine the design prototypes together.',
-    img:'../../../assets/images/proj_cycnav/3d_design.png',
+  sectionClass: 'project-layout-wide',
+  title: 'Combine the app and the light',
+  content: 'Finally, we combine the design prototypes together.',
+  video: 'https://youtu.be/N4n03C902iY'
 }
 
 const reflections = [
