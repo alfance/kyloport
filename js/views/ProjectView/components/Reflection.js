@@ -11,8 +11,10 @@ export default class Reflection extends React.Component {
     })
   }
   render () {
+    const {title} = this.props.content
     return (
       <div className='project-reflections'>
+        <h3>Reflections</h3>
         {this.getReflection(this.props.content)}
       </div>
     )

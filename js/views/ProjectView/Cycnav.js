@@ -21,7 +21,7 @@ const titleText3 = {title: 'Solution'}
 
 const titleText4 = {title: 'UI Design'}
 
-const titleText5 = {title: 'Learnings'}
+const titleText5 = {title: 'Reflections'}
 
 const placeholder = require('../../../assets/images/proj_cycnav/journey_map.jpg')
 
@@ -340,8 +340,18 @@ const combine = {
   video: 'https://youtu.be/N4n03C902iY'
 }
 
+const dobetter = {
+  title: 'What can I do better?',
+  sectionClass: 'list-style-circle',
+  content: ['',
+    'If possible resource wise, I would love to spend more time to test out the feasibility of the physical bike light. ',
+    'The project was first started in 2014, a lot had since changed. Eventhough I did updated the research to be relevant to current market, the usability tests were outdated.',
+    'Create a MVP of the bike light.']
+}
+
 const reflections = [
-  {subject: 'Adaptive design is crucial for various format of medium.',
+  { title: 'Learning',
+    subject: 'Adaptive design is crucial for various format of medium.',
     learn: 'The essense of UX design is to solve problems, not using templates '
   }, {
     subject: 'Sometimes the perfect solution is not one, but multiple approaches.',
@@ -397,6 +407,7 @@ class Cycnav extends React.Component {
           <LayoutThree content={useCase} />
           <LayoutImage content={combine} />
           <TitleDivier content={titleText5} style={style} />
+          <LayoutText content={dobetter} />
           <Reflection content={reflections} />
 
         </div>

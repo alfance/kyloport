@@ -239,6 +239,19 @@ const achieve = {
   imgLeft: '../../../assets/images/proj_briovr/playing1.jpg',
   imgRight: '../../../assets/images/proj_briovr/playing2.jpg'
 }
+
+const dobetter = {
+  title: 'What can I do better?',
+  sectionClass: 'list-style-circle',
+  content: ['',
+    'The behaviour chain can be further optimized. The current design is too ambiguous.',
+    'Alternative way to let user create multiple-item triggers',
+    'More accessible design of the UI interface.']
+}
+
+const kidsimage = {
+  img: '../../../assets/images/proj_briovr/kidsuser.jpg'
+}
 const reflections = [
   {
     subject: 'Dont copy, adapt.',
@@ -288,6 +301,8 @@ class Briovr extends React.Component {
         <LayoutHalf content={achieve} />
         <iframe id='iframe-brio' src='https://view.briovr.com/1cb632f4-2a89-45d3-9e4e-bd71c93ecaa1' frameBorder='0' allowFullScreen />
         <TitleDivier content={titleText7} style={style} />
+        <LayoutText content={dobetter} />
+        <LayoutImage content={kidsimage} />
         <Reflection content={reflections} />
 
       </div>

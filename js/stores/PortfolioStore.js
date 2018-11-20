@@ -20,7 +20,7 @@ module.exports = [
     link: 'fairtrade',
     headerImage: '../../assets/images/proj_fairtrade/logo-yellow.png',
     logo: '../../assets/images/proj_fairtrade/logo-yellow.svg',
-    color: '#d8536d',
+    color: '#FDCB1C',
     url: ''
   },
   {
