@@ -14,7 +14,7 @@ import Reflection from './components/Reflection'
 import LayoutHalf from './components/LayoutHalf'
 import PortfolioStore from '../../stores/PortfolioStore'
 
-const titleText1 = {title: 'Background'}
+const titleText1 = {title: 'Goal'}
 
 const titleText2 = {title: 'Getting to know the users'}
 
@@ -54,53 +54,73 @@ const problem = {
   sectionClass: 'list-style-circle',
   content: 'Most refugees and newcomers arrive to a new country with only the clothes on their backs. Upon arrival, they are immediately reliant on donations. Many local families are willing to help. However, there is almost no way to tell whether the items that are donated in good faith are actually needed by the families that receive them. As a result, the recipients often receive an abundance of products that they do not need. '
 }
-const research = {
-  title: 'Research',
-  img: '../../../assets/images/proj_briovr/background.png',
-  content: 'The fundamental interface of BRIOVR is similar to major design and modeling apps. Majority of the screen is dedicated to the 3D working space while features and tools are located on the side nd bottom.'
+
+const goal = {
+    sectionClass: 'list-style-number',
+    title:'Our goal',
+    content:['','1. To help the new comers and refugees get the necessities when coming to a new country',
+            '2. Bridge the gap between new comers, refugees and locals',
+            '3. Build communications amoung people with various backgrounds']
 }
 
+const persona0 ={
+    title:'Personas',
+    content:'Our users are people who are new to the country, and whom were born or had spent years in the same country. We researched the habit of each group. Hence we can fit into their life instead of sole purse of using the app.'
+}
 const persona1 = {
-  title: 'Personas - New comers',
-  content: 'As a result, the two types of users that will be benfited the most from our app are student bikers and Food delivery individula.Their similarity is the need of safe and correct route when cycling in the urban environment.',
+  title: 'New comers',
+  content: '',
   imgLeft: '../../../assets/images/proj_fairtrade/avatar-10.svg',
   imgRight: '../../../assets/images/proj_fairtrade/avatar-13.svg',
   sectionClass: 'section-persona',
   contentLeft: [
-    '**Ann Goldshire**',
-    'Student',
-    'Age: 17 to 27',
-    'Bikes 2 - 6 times a day',
-    'Ann uses bikes for most of her daily commute. Thus Ann values most effortless routes.'
+    '**Ralphy**',
+    'Refugee',
+    'Less than a week in Canada',
+    'Has nothing other than clothing',
+    'Ralphy needs anything to get him started, from small housewares, accessories to large appliances'
   ],
   contentRight: [
-    '**Oliver Dimaran**',
-    'Food Delivery',
-    'Age: 19 to 40',
-    'Bikes multiple times a day',
-    'Biking is Olivers main source of income and he wants nothing but to get to the destination in the shortest amount of time.'
+    '**Sol**',
+    'International Students',
+    'Less than 2 months in Canada',
+    'Came with personal belongings',
+    'Sol needs more for stuffs she could not bring overseas, which means furnitures for her to start a new life that is not too far from her oirignal country'
   ]
 }
 const persona2 = {
-  title: 'Personas - Locals',
-  content: 'As a result, the two types of users that will be benfited the most from our app are student bikers and Food delivery individula.Their similarity is the need of safe and correct route when cycling in the urban environment.',
+  title: 'Locals',
+  content: '',
   imgLeft: '../../../assets/images/proj_fairtrade/avatar-3.svg',
   imgRight: '../../../assets/images/proj_fairtrade/avatar-6.svg',
   sectionClass: 'section-persona',
   contentLeft: [
-    '**Ann Goldshire**',
-    'Student',
-    'Age: 17 to 27',
-    'Bikes 2 - 6 times a day',
-    'Ann uses bikes for most of her daily commute. Thus Ann values most effortless routes.'
+    '**Rachel**',
+    'Immigrants',
+    'Being in Canada for over 10 years',
+    'Rachel was once a new comer. After spent over a decade adapting in the new country, she had made a life and would like to help out people whom once were in the same situation.',
   ],
   contentRight: [
-    '**Oliver Dimaran**',
-    'Food Delivery',
-    'Age: 19 to 40',
-    'Bikes multiple times a day',
-    'Biking is Olivers main source of income and he wants nothing but to get to the destination in the shortest amount of time.'
+    '**Brad**',
+    'Local',
+    'Born in Canada',
+    'brad is a local who never spent time outside of this country. He has abundant of housewares/electronics that he would like to donate to whom is in need.'
   ]
+}
+
+const idea1 = {
+    title:'Ideation 1 - Onling donation',
+    content:'The first ideation we came up was focusing on a donating platform dedicate to refugees and new comers.'
+}
+
+const idea2 ={
+    title:'Ideation 2 - Homecook from another culture',
+    content:'According to the feedback we got, we realized the importance of acknowledge people pride.'
+}
+
+const idea3 ={
+    title:'Ideation 2 - Exchange platform',
+    content:'Combining preivous ideations, we finally came to a unanimous decision.'
 }
 
 const endResult = {
@@ -146,15 +166,19 @@ class Fairtrade extends React.Component {
           <IntroRole content={introRole} />
           <Problem content={problem} style={style} />
 
-          {/* Background */}
-          <TitleDivier content={titleText1} style={style} />
-
+          {/* goal */}
+          <LayoutText content={goal} style={style} />
           {/* user */}
           <TitleDivier content={titleText2} style={style} />
+          <LayoutText content={persona0} style={style} />
           <LayoutHalf content={persona1} style={style} />
           <LayoutHalf content={persona2} style={style} />
+
           {/* ideations */}
           <TitleDivier content={titleText3} style={style} />
+          <LayoutText content={idea1} style={style} />
+          <LayoutText content={idea2} style={style} />
+          <LayoutText content={idea3} style={style} />
 
           {/* final prototype */}
           <TitleDivier content={titleText4} style={style} />
