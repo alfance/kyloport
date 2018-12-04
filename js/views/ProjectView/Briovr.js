@@ -229,13 +229,12 @@ const motion = {
 const endResult = {
   content: 'Combining all the aspects, we were able to create a rather intuitive system that is been used by thousands of people. The following video is a 30 seconds demo showing how you can create a click button to trigger a movement of a rocket.',
   video: 'https://youtu.be/SKdtGiESaO4',
-  label: 'to see more of our user creation, <a href="briovr.com/discovery">Click HERE</a>'
+  label: 'to see more of our user creation, __[Click Here](https://briovr.com/discover)__'
 }
 
 const achieve = {
   title: 'Use Case',
-  content: ['Through collaboration, we had created an interactive Casino Royal experience for the Toronto Elevate Conference after party at Crowdlinkers.',
-    <a href='https://briovr.com/discover'> You can play it HERE</a>],
+  content: 'Through collaboration, we had created an interactive Casino Royal experience for the Toronto Elevate Conference after party at Crowdlinkers.',
   imgLeft: '../../../assets/images/proj_briovr/playing1.jpg',
   imgRight: '../../../assets/images/proj_briovr/playing2.jpg'
 }
