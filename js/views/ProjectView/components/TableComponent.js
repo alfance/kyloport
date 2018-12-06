@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactTable from 'react-table'
+import LayoutHelper from './LayoutHelper'
 
 export default class TableComponent extends React.Component {
   render () {
@@ -8,7 +9,7 @@ export default class TableComponent extends React.Component {
     return (
       <div>
         <h3>{title}</h3>
-        <p>{content}</p>
+        {LayoutHelper.layoutArrayContent(content)}
         <ReactTable
           data={data}
           columns={columns}

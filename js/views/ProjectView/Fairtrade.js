@@ -29,7 +29,7 @@ const titleText6 = {title: 'Reflections'}
 const projectTitle = {
   title: 'Fairtrade',
   logo: '../../../assets/images/proj_fairtrade/logo-long.svg',
-  field: 'Product Design',
+  field: 'Product Design & Development',
   intro: 'Mobile platform connecting locals and newcomers',
   link: 'fairtrade',
   bgImg: ''
@@ -110,12 +110,13 @@ const persona2 = {
 
 const idea1 = {
   title: 'Ideation 1 - Onling donation',
-  contentLeft: 'The first ideation we came up was focusing on a donating platform dedicate to refugees and new comers.',
+  contentLeft: ['The first ideation we came up was focusing on a donating platform dedicate to underprivileged people. Since the pain points lies in intransparent donation process. What we are hoping to do is to let the users from both side &#39;communicate&#39; with each other regarding their needs and preferences.',
+    '**Ideation: Online platform for donor to donate items directly to the shoppers.**'],
   imgRight: ''
 }
 const validity1 = {
   title: 'Validation : Polarized feedbacks',
-  content: 'After we tested the ideation to potential users we received polarized reactions from the users. Donors are very receptive of the idea and are willing to donate their belongs. On the other hand, the concept of pure taking has put a burden on their self-esteem, especially if their profiles are exposed online.',
+  content: 'After we tested the ideation to potential users we received polarized reactions from the users. Donors are very receptive of the idea and are willing to donate their belongs; However, they perceive the concept as charitable rather than mutual beneficial. On the other hand, the concept of pure taking has put a **burden on their self-esteem**, especially if their profiles are exposed online.',
   columns: [{
     Header: 'User',
     accessor: 'user' // String-based value accessors!
@@ -127,13 +128,13 @@ const validity1 = {
     accessor: 'need'
   }],
   data: [{
-    user: 'Shopper',
-    accept: '3/5',
+    user: <b><font color='55DCB0'>Shopper</font></b>,
+    accept: <b>3/5</b>,
     need: '4/5'
   }, {
-    user: 'Donor',
+    user: <b><font color='f3446e'>Donor</font></b>,
     accept: '5/5',
-    need: '2/5'
+    need: <b>2/5</b>
   }]
 }
 
@@ -143,12 +144,14 @@ const feedback1 = {
 
 const idea2 = {
   title: 'Ideation 2 - Culturally diversified Homecook',
-  contentLeft: 'We realized the importance of acknowledge people pride. While we were conducting interviews, we came across a major ',
+  contentLeft: ['We realized the importance of acknowledge people pride. While we were conducting interviews, we came across a user type that is present almost in many shopper groups: **housewives** or **househusbands**. We found out that in most refugee or immigrant families, one of the two housholds would stay with the yongsters rather than making earning due to limitless resources. We wanted to provided a way for the stay-at-home people a way to make a profit while the donors get to experience authentic cuisines from another culture. ',
+    '**Ideation: an app that let the shopper sell their home cooked meal to the donor.**'
+  ],
   imgRight: ''
 }
 const validity2 = {
   title: 'Validation : Kitchen Hygiene',
-  content: 'After we tested the ideation to potential users we received polarized reactions from the users. Donors are very receptive of the idea and are willing to donate their belongs. On the other hand, the concept of pure taking has put a burden on their self-esteem, especially if their profiles are exposed online.',
+  content: 'Both the donors and shoppers are happy about this idea. The shoppers are notably more open and positive compare to ideation 1. However, after conducting validation research and interviews from authorities, the **concerns on cooking environment** emerged. In order for a home cook to legally sell their dishes, they first need to obtain operating license after their kitchen got examined by authorized officials. This steeps the difficulty of execution.',
   columns: [{
     Header: 'User',
     accessor: 'user' // String-based value accessors!
@@ -158,26 +161,40 @@ const validity2 = {
   }, {
     Header: 'Needs',
     accessor: 'need'
-  }],
+  },
+    {
+      Header: 'Feasibility',
+      accessor: 'feasible'
+    }],
   data: [{
-    user: 'Shopper',
-    accept: '3/5',
-    need: '4/5'
-  }, {
-    user: 'Donor',
+    user: <b><font color='55DCB0'>Shopper</font></b>,
     accept: '5/5',
-    need: '2/5'
+    need: '5/5',
+    feasible: <b>2/5</b>
+  }, {
+    user: <b><font color='f3446e'>Donor</font></b>,
+    accept: '5/5',
+    need: '3/5',
+    feasible: '5/5'
   }]
 }
 
 const idea3 = {
   title: 'Ideation 3 - Exchange platform',
-  contentLeft: 'Combining preivous ideations, we finally came to a unanimous decision.',
+  contentLeft: ['Combining preivous ideations, we finally came to a unanimous decision: a exchange platform that let users &#39;fairtrade&#39; anything. For donors, they can trade the abundant items. For shoppers, they can trade food, item or **karma points**: rewards points that the shoppers give to the donor as a form of appreciation. The karma points canbe used used as a redeemable currency at shops and stores.',
+    '**Ideation: Platform that allow the donor and shopper to exchange tangible items or &#39;karma&#39;. **'],
   imgRight: ''
 }
+
+const angelHack = {
+  title: 'Social Approval',
+  content: 'We brought the concept to the 2018 Toronto angelHack. At the hackthon, we had 2 days to build a workable prototype and present it to entrepreneurs, influencers, company executives and CEOs.',
+  img: '../../../assets/images/proj_fairtrade/angelhack.png'
+}
+
 const validity3 = {
-  title: 'Validation : Polarized feedbacks',
-  content: 'After we tested the ideation to potential users we received polarized reactions from the users. Donors are very receptive of the idea and are willing to donate their belongs. On the other hand, the concept of pure taking has put a burden on their self-esteem, especially if their profiles are exposed online.',
+  title: 'Validation : Executatble & accepted',
+  content: 'The concept is widly accepted by the donors and shoppers, and is feasible',
   columns: [{
     Header: 'User',
     accessor: 'user' // String-based value accessors!
@@ -187,15 +204,21 @@ const validity3 = {
   }, {
     Header: 'Needs',
     accessor: 'need'
-  }],
+  },
+    {
+      Header: 'Feasibility',
+      accessor: 'feasible'
+    }],
   data: [{
-    user: 'Shopper',
-    accept: '3/5',
-    need: '4/5'
-  }, {
-    user: 'Donor',
+    user: <b><font color='55DCB0'>Shopper</font></b>,
     accept: '5/5',
-    need: '2/5'
+    need: '5/5',
+    feasible: '5/5'
+  }, {
+    user: <b><font color='f3446e'>Donor</font></b>,
+    accept: '5/5',
+    need: '3/5',
+    feasible: '5/5'
   }]
 }
 
@@ -251,7 +274,9 @@ class Fairtrade extends React.Component {
 
           <LayoutHalf content={idea2} style={style} />
           <TableComponent content={validity2} style={style} />
+          <hr />
           <LayoutHalf content={idea3} style={style} />
+          <LayoutImage content={angelHack} style={style} />
           <TableComponent content={validity3} style={style} />
 
           {/* final prototype */}
