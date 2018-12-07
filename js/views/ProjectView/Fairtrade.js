@@ -188,7 +188,7 @@ const idea3 = {
 
 const angelHack = {
   title: 'Social Approval',
-  content: 'We brought the concept to the 2018 Toronto angelHack. At the hackthon, we had 2 days to build a workable prototype and present it to entrepreneurs, influencers, company executives and CEOs.',
+  content: 'We brought the concept to the 2018 Toronto angelHack. At the hackthon, we had 2 days to build a workable prototype and present it to entrepreneurs, influencers, company executives and CEOs. We received helpful suggestions towards the app. In the end we won the code for a cause award. ',
   img: '../../../assets/images/proj_fairtrade/angelhack.png'
 }
 
