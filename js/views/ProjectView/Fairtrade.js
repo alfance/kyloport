@@ -20,11 +20,13 @@ const titleText2 = {title: 'Getting to know the users'}
 
 const titleText3 = {title: 'Ideation + Validation'}
 
-const titleText4 = {title: 'The final prototype'}
+const titleText4 = {title: 'Design'}
 
-const titleText5 = {title: 'Recognition'}
+const titleText5 = {title: 'The final prototype'}
 
-const titleText6 = {title: 'Reflections'}
+const titleText6 = {title: 'Recognition'}
+
+const titleText7 = {title: 'Reflections'}
 
 const projectTitle = {
   title: 'Fairtrade',
@@ -188,13 +190,13 @@ const idea3 = {
 
 const angelHack = {
   title: 'Social Approval',
-  content: 'We brought the concept to the 2018 Toronto angelHack. At the hackthon, we had 2 days to build a workable prototype and present it to entrepreneurs, influencers, company executives and CEOs. We received helpful suggestions towards the app. In the end we won the code for a cause award. ',
+  content: 'We brought the concept to the 2018 Toronto angelHack. At the hackthon, we had 2 days to build a workable prototype and present it to entrepreneurs, influencers, company executives and CEOs. We communicated with various organizations and groups and received numerous suggestions and feedbacks. The event had shaped the path and guided the direction of the FairTrade. Gratfully, our concept had been approved and liked by the public. In the end, we were chosen to be the winner for "Code for a cause" Toronto, and had moved on to compete intertionally.',
   img: '../../../assets/images/proj_fairtrade/angelhack.png'
 }
 
 const validity3 = {
   title: 'Validation : Executatble & accepted',
-  content: 'The concept is widly accepted by the donors and shoppers, and is feasible',
+  content: 'The concept is widly accepted by the donors and shoppers, and is determined to be feasible from both business and technical perspective.',
   columns: [{
     Header: 'User',
     accessor: 'user' // String-based value accessors!
@@ -220,6 +222,32 @@ const validity3 = {
     need: '3/5',
     feasible: '5/5'
   }]
+}
+
+const flowChart = {
+  title: 'User Flow Chart',
+  content: '',
+  img: '../../../assets/images/proj_fairtrade/flowchart.jpg'
+}
+
+const wireframe1 = {
+  title: 'Wireframe',
+  sectionClass: 'project-layout-wide',
+  content: 'We have gone through 3 updates of the wireframe',
+  img: '../../../assets/images/proj_fairtrade/wireframe1.png'
+}
+
+const userTest = {
+  title: 'User test results',
+  content: ['Registration process is too long.',
+    'How could I tell if a trade is success?']
+}
+
+const wireframe2 = {
+  title: 'Wireframe',
+  sectionClass: 'project-layout-wide',
+  content: 'We have gone through 3 updates of the wireframe',
+  img: '../../../assets/images/proj_fairtrade/flowchart.jpg'
 }
 
 const achieve = {
@@ -279,18 +307,23 @@ class Fairtrade extends React.Component {
           <LayoutImage content={angelHack} style={style} />
           <TableComponent content={validity3} style={style} />
 
-          {/* final prototype */}
+          {/* Design */}
           <TitleDivier content={titleText4} style={style} />
+          <LayoutImage content={flowChart} style={style} />
+          <LayoutImage content={wireframe1} style={style} />
+          <layoutText content={userTest} style={style} />
+          <LayoutImage content={wireframe2} style={style} />
+
+          {/* final prototype */}
+          <TitleDivier content={titleText5} style={style} />
 
           {/* recognition */}
-          <TitleDivier content={titleText5} style={style} />
+          <TitleDivier content={titleText6} style={style} />
           <LayoutImage content={achieve} />
 
           {/* results and reflections */}
-          <TitleDivier content={titleText6} style={style} />
+          <TitleDivier content={titleText7} style={style} />
           <LayoutText content={dobetter} style={style} />
-
-          <TitleDivier content={titleText6} style={style} />
           <Reflection content={reflections} />
 
         </div>
