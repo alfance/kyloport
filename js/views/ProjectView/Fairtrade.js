@@ -196,7 +196,7 @@ const angelHack = {
 
 const validity3 = {
   title: 'Validation : Executatble & accepted',
-  content: 'The concept is widly accepted by the donors and shoppers, and is determined to be feasible from both business and technical perspective.',
+  content: 'The concept is widly accepted by the donors and shoppers, and is determined to be feasible from both business and technical perspective. ',
   columns: [{
     Header: 'User',
     accessor: 'user' // String-based value accessors!
@@ -222,6 +222,11 @@ const validity3 = {
     need: '3/5',
     feasible: '5/5'
   }]
+}
+
+const pitch = {
+    content:['## * There is value to good will. * ##',
+    '- Fairtrade: Exchaning platform between new comers and locals.']
 }
 
 const flowChart = {
@@ -306,6 +311,7 @@ class Fairtrade extends React.Component {
           <LayoutHalf content={idea3} style={style} />
           <LayoutImage content={angelHack} style={style} />
           <TableComponent content={validity3} style={style} />
+          <LayoutText content ={pitch} style={style} />
 
           {/* Design */}
           <TitleDivier content={titleText4} style={style} />
