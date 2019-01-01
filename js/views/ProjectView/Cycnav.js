@@ -23,8 +23,6 @@ const titleText4 = {title: 'UI Design'}
 
 const titleText5 = {title: 'Reflections'}
 
-const placeholder = require('../../../assets/images/proj_cycnav/journey_map.jpg')
-
 const projectTitle = {
   title: 'CYCNAV',
   logo: '../../../assets/images/proj_cycnav/cycnav_logo_c.svg',
@@ -48,7 +46,7 @@ const introRole = {
 }
 
 const problem = {
-  title: 'Problem',
+  title: 'Problem - Quick and Safe biking route',
   sectionClass: 'list-style-circle',
   content: [ 'The biggest pain that every cyclist has experienced, especially the urban cyclist, is to navigate in various road conditions and incidents that lead to unexpected detours. Looking for an applicable route can be time consuming, while bypassing the original road can be dangerous.',
     'Troubled by the Downtown road conditions',
@@ -225,7 +223,6 @@ const wireframe2 = {
 const usability = {
   title: 'Usability Test',
   content: [
-    'Test with the wireframes revealed some major areas to improve on:',
     '1) Users often forgot to move from the mobile app to the bike light. a more clear and obvious indication is needed',
     '2) While using the bike light, people sometimes got confused by complex routes. This is caused by lack of instructive indicators.'
   ]
@@ -288,21 +285,31 @@ const prototypeApp = {
   contentRight: '**Design 3**: a green theme is used as we are hoping to achive a eco travel method. '
 }
 
+const moreprototypes = {
+  deviceFrame: 'phone',
+  contentLeft: ['#### Crowd sourcing map ####',
+    'Crowdsourcing is an addon component to help live update the route. While doing research, we founded out that many of the minor road changes and modifications are not recorded in mainstream navigational apps. We wanted to adopt a similar strategy as Wazer. ',
+    'This is most beneficial to delivery courier due to their high demand on the road conditions.'],
+  imgMiddle: '../../../assets/images/proj_cycnav/prototype2.png',
+  imgRight: '../../../assets/images/proj_cycnav/prototype3.png'
+}
+
 const accessibility = {
   title: 'Accessibility',
   sectionClass: 'project-layout-wide',
-  content: 'Cycnav will be used by users with various backgrounds. It is our ',
+  content: 'Cycnav will be used by users with various backgrounds under unpredictable lighting conditions. It is our utmost priority to ensure the readability of the UI not only for regular users but also users with vision disabilities.',
   imgLeft: '../../../assets/images/proj_cycnav/app_color.png',
-  contentRight: ['The color scheme of Cycnav should be accessible to people with color vision deficiency. This is the reason for us to use complimentary colors in the navigational part. We had tested the accissibility of each screento make sure they are readable for everyone.',
+  contentRight: ['The color scheme of Cycnav should be accessible for vision deficient users. This is the reason for us to use complimentary colors in the navigational part. We had tested the accissibility of each screento make sure they are readable for everyone.',
     '**Left**: Red-Weak/Protanomaly',
     '**Middle**: Blue-Blind/Tritanopia',
-    '**Right**: Blue Cone Monochromacy']
+    '**Right**: Blue Cone Monochromacy',
+    'In the end, we decide to go with design 3 due to its readability even under extreme cenarios and conditions.']
 }
 
 const decision = {
-  title: 'Decision',
+  title: 'Final - Digital app',
   deviceFrame: 'phone',
-  contentLeft: ['In the end, we decide to go with design 3 due to its readability even under extreme conditions. In this design, we showed how the app is guiding the user to get to their destination.',
+  contentLeft: ['Putting everything together, the flow comes together. The video below briefly displayed the core flow of one of the most frequently used features. ',
     '1) User searches destination place',
     '2) User picks a route fro the suggestions',
     '3) Popup directing user to switch to bike light while the app continues',
@@ -319,8 +326,18 @@ const prototypeDevice = {
 
 const device3D = {
   title: '3D & UI - Bike Light',
+  sectionClass: 'project-layout-wide',
   content: 'We want to minimize the UI so bikers will not get distracted when using the bike light. ',
   img: '../../../assets/images/proj_cycnav/3d_design.png'
+}
+
+const variance3D = {
+  content: 'Thanks to the modern technology, I was able to rapidly model the light in Rhinoceros and 3D print it using Makerbot. By having a tangible prototype, It allowed us to perform user test beyong a conceptual level.',
+  sectionClass: 'project-layout-wide',
+  imgLeft: '../../../assets/images/proj_cycnav/final_model.jpg',
+  contentLeft: '**3D model**',
+  imgRight: '../../../assets/images/proj_cycnav/3dprint.jpg',
+  contentRight: '**3D printed light**'
 }
 
 const useCase = {
@@ -334,9 +351,8 @@ const useCase = {
 }
 
 const combine = {
-  sectionClass: 'project-layout-wide',
   title: 'Combine the app and the light',
-  content: 'Finally, we combine the design prototypes together.',
+  content: 'Finally, we combine the design prototypes together. The following video explained how the app and light onboard first time users. ',
   video: 'https://youtu.be/N4n03C902iY'
 }
 
@@ -345,7 +361,7 @@ const dobetter = {
   sectionClass: 'list-style-circle',
   content: ['',
     'If possible resource wise, I would love to spend more time to test out the feasibility of the physical bike light. ',
-    'The project was first started in 2014, a lot had since changed. Eventhough I did updated the research to be relevant to current market, the usability tests were outdated.',
+    'The project was first started in 2015, a lot had since changed. Eventhough I did updated the research to be relevant to current market, the usability tests were outdated.',
     'Create a MVP of the bike light.']
 }
 
@@ -391,17 +407,20 @@ class Cycnav extends React.Component {
           <LayoutImage content={storyboard} />
           <LayoutImage content={wireframe1} />
           <LayoutImage content={wireframe2} />
-          <LayoutText content={usability} />
+          <h4>Test with the wireframes revealed some major areas to improve on:</h4>
+          <FindingComponent content={usability} style={style} />
           <LayoutImage content={iterations} />
           <TableComponent content={testResult} style={style} />
 
           {/* UI design */}
           <TitleDivier content={titleText4} style={style} />
           <LayoutThree content={prototypeApp} />
-          <LayoutHalf content={accessibility} />
+          <LayoutTwoThird content={accessibility} />
           <LayoutHalf content={decision} />
+          <LayoutThree content={moreprototypes} />
           <LayoutImage content={prototypeDevice} />
           <LayoutImage content={device3D} />
+          <LayoutHalf content={variance3D} style={style} />
 
           {/* results and reflections */}
           <LayoutThree content={useCase} />

@@ -1,5 +1,6 @@
 import React from 'react'
 import classNames from 'classnames'
+import LayoutHelper from './LayoutHelper'
 
 export default class FindingComponent extends React.Component {
   render () {
@@ -12,7 +13,7 @@ export default class FindingComponent extends React.Component {
       borderStyle: 'solid'
     }
     return (
-      <div className={classNames('finding-div')} style={divStyle}><b style={{color: color}}>{subtitle} </b> {content}</div>
+      <div className={classNames('finding-div')} style={divStyle}><b style={{color: color}}>{subtitle} </b> {LayoutHelper.layoutArrayContent(content)}</div>
     )
   }
 }
