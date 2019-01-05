@@ -225,7 +225,7 @@ const validity3 = {
 }
 
 const pitch = {
-    content:['## * There is value to good will. * ##',
+    content:['### * "There is value to good will." * ###',
     '- Fairtrade: Exchaning platform between new comers and locals.']
 }
 
