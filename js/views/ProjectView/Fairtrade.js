@@ -22,7 +22,7 @@ const titleText3 = {title: 'Ideation + Validation'}
 
 const titleText4 = {title: 'Design'}
 
-const titleText5 = {title: 'The final prototype'}
+const titleText5 = {title: 'Prototype'}
 
 const titleText6 = {title: 'Recognition'}
 
@@ -231,28 +231,49 @@ const pitch = {
 
 const flowChart = {
   title: 'User Flow Chart',
-  content: '',
+  content: 'Now we have a solid product strategy we proceeded to mapping out the user flow. Fairtrade would have two separate portals for the shoppers and donnors. While their user experience flow are analogous the perception of interaction with the app is dissimilar. For the flow, we kept the two group&#39s local interaction with the app intact from each other until they started &#39trading&#39.',
   img: '../../../assets/images/proj_fairtrade/flowchart.jpg'
 }
 
 const wireframe1 = {
   title: 'Wireframe',
   sectionClass: 'project-layout-wide',
-  content: 'We have gone through 3 updates of the wireframe',
-  img: '../../../assets/images/proj_fairtrade/wireframe1.png'
+  content: 'We have gone through 3 versions of the wireframe each with a engagement upgrade. ',
+  img: '../../../assets/images/proj_fairtrade/wireframe1.png',
+  label:'**Wireframe 1**: The major problem with wireframe1 was laborious registration and onboarding. The user needed to fill their personal information as well as the trade item upfront before they get to explore the trading ground. This takes up approximately 5 pages and 6 steps.'
 }
 
-const userTest = {
-  title: 'User test results',
-  content: ['Registration process is too long.',
-    'How could I tell if a trade is success?']
+const userTest1 = {
+  content: ['*Registration process is too long.*',
+        '*How could I tell if a trade is success?*',
+        '*There is no skip button*']
 }
 
 const wireframe2 = {
-  title: 'Wireframe',
   sectionClass: 'project-layout-wide',
-  content: 'We have gone through 3 updates of the wireframe',
-  img: '../../../assets/images/proj_fairtrade/flowchart.jpg'
+  content: 'We reduced the registration process to minimum 2 pages and 3 steps, added flexible options for many of the pages. Now users don&#39t need to add items till they wanted to trade.',
+  img: '../../../assets/images/proj_fairtrade/flowchart.jpg',
+  label:'**wireframe2**: Users have an improved experience with the app, however we discovered that there is still a lot of rentention problem in the beginning of the flow. People feel intimidated by the personal questions upfront.'
+}
+
+const wireframe3 = {
+  sectionClass: 'project-layout-wide',
+  content: 'To take it a step further, we removed the registration and let people discover freely. The register process doesn&#39t kick in till the users had made any process or showed any interests.',
+  img: '../../../assets/images/proj_fairtrade/flowchart.jpg',
+  label:'**wireframe3**: We have seen promising improvements with the overall app interaction..'
+}
+
+const color = {
+    title:'Color Scheme',
+    sectionClass:'list-style-circle',
+    content:['We separated the two groups with two colors and used a third color to indicate neutral ground. The colors are used throughout the app as a guide to indicate various situations and cenarios.',
+    '**Private space**: own color',
+    '**Trading ground**: infused with the other group&#39ts color']
+}
+
+const uidesign = {
+    title:'UI Design',
+    content:'Instead of the warm and homie feeling that most social responsible app have, we used modern and trailblazing approach to  '
 }
 
 const achieve = {
@@ -317,12 +338,14 @@ class Fairtrade extends React.Component {
           <TitleDivier content={titleText4} style={style} />
           <LayoutImage content={flowChart} style={style} />
           <LayoutImage content={wireframe1} style={style} />
-          <layoutText content={userTest} style={style} />
+          <layoutText content={userTest1} style={style} />
           <LayoutImage content={wireframe2} style={style} />
+          <LayoutImage content={wireframe3} style={style} />
 
           {/* final prototype */}
           <TitleDivier content={titleText5} style={style} />
-
+          <LayoutImage content={color} style={style} />
+          <LayoutImage content={uidesign} style={style} />
           {/* recognition */}
           <TitleDivier content={titleText6} style={style} />
           <LayoutImage content={achieve} />

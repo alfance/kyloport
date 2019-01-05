@@ -416,8 +416,8 @@ class Cycnav extends React.Component {
           <TitleDivier content={titleText4} style={style} />
           <LayoutThree content={prototypeApp} />
           <LayoutTwoThird content={accessibility} />
-          <LayoutHalf content={decision} />
           <LayoutThree content={moreprototypes} />
+          <LayoutHalf content={decision} />
           <LayoutImage content={prototypeDevice} />
           <LayoutImage content={device3D} />
           <LayoutHalf content={variance3D} style={style} />
