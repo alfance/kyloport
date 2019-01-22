@@ -11,8 +11,6 @@ import Layout from './Layout'
 
 // main page
 import ProjectMain from './views/ProjectMain'
-import Arts from './views/Arts'
-import Photos from './views/Photos'
 import Contact from './views/Contact'
 import Resume from './views/Resume'
 
@@ -31,8 +29,6 @@ ReactDOM.render((
       <IndexRoute component={ProjectMain} />
 
       <Route path='ProjectMain' component={ProjectMain} />
-      <Route path='arts' component={Arts} />
-      <Route path='Photos' component={Photos} />
       <Route path='Resume' component={Resume} />
       <Route path='Contact' component={Contact} />
 

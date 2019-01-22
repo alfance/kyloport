@@ -24,7 +24,7 @@ const titleText4 = {title: 'Design'}
 
 const titleText5 = {title: 'Prototype'}
 
-const titleText6 = {title: 'Recognition'}
+const titleText6 = {title: 'Introducing - FairTrade'}
 
 const titleText7 = {title: 'Reflections'}
 
@@ -41,7 +41,7 @@ const introRole = {
   sectionClass: 'list-style-circle',
   content: 'Fairtrade is a website/app that enables newly arrived underprivileged migrants, refugees, and people in need to "fair trade" items with locals in order to improve the quality of their lives.',
   role: 'I was part of the funding member of Fairtrade, My responsibilities are the development of the app where I conducted',
-  duties: ['Market Research',
+  duties: ['Market research',
     'Comparative analysis',
     'Affinity mapping',
     'Design workshops',
@@ -114,11 +114,11 @@ const idea1 = {
   title: 'Ideation 1 - Onling donation',
   contentLeft: ['The first ideation we came up was focusing on a donating platform dedicate to underprivileged people. Since the pain points lies in intransparent donation process. What we are hoping to do is to let the users from both side &#39;communicate&#39; with each other regarding their needs and preferences.',
     '**Ideation: Online platform for donor to donate items directly to the shoppers.**'],
-  imgRight: ''
+  imgRight: '../../../assets/images/proj_fairtrade/idea1.png'
 }
 const validity1 = {
   title: 'Validation : Polarized feedbacks',
-  content: 'After we tested the ideation to potential users we received polarized reactions from the users. Donors are very receptive of the idea and are willing to donate their belongs; However, they perceive the concept as charitable rather than mutual beneficial. On the other hand, the concept of pure taking has put a **burden on their self-esteem**, especially if their profiles are exposed online.',
+  content: 'After we tested the ideation to potential users we received polarized reactions from the users. Donors are very receptive of the idea and are willing to donate their belongs; However, New comers perceive the concept as charitable rather than mutual beneficial. On the other hand, the concept of pure taking has put a **burden on the new comers&#39 self-esteem**, especially if their profiles are exposed online.',
   columns: [{
     Header: 'User',
     accessor: 'user' // String-based value accessors!
@@ -225,8 +225,7 @@ const validity3 = {
 }
 
 const pitch = {
-    content:['### * "There is value to good will." * ###',
-    '- Fairtrade: Exchaning platform between new comers and locals.']
+    content:'### * "There is value to good will." * ###'
 }
 
 const flowChart = {
@@ -234,6 +233,12 @@ const flowChart = {
   content: 'Now we have a solid product strategy we proceeded to mapping out the user flow. Fairtrade would have two separate portals for the shoppers and donnors. While their user experience flow are analogous the perception of interaction with the app is dissimilar. For the flow, we kept the two group&#39s local interaction with the app intact from each other until they started &#39trading&#39.',
   img: '../../../assets/images/proj_fairtrade/flowchart.jpg'
 }
+
+ const flowchart2 = {
+     contentLeft: 'Now we have a solid product strategy we proceeded to mapping out the user flow. Fairtrade would have two separate portals for the shoppers and donnors. While their user experience flow are analogous the perception of interaction with the app is dissimilar. For the flow, we kept the two group&#39s local interaction with the app intact from each other until they started &#39trading&#39.',
+     imgRight: '../../../assets/images/proj_fairtrade/frame.png'
+ }
+
 
 const wireframe1 = {
   title: 'Wireframe',
@@ -268,7 +273,8 @@ const color = {
     sectionClass:'list-style-circle',
     content:['We separated the two groups with two colors and used a third color to indicate neutral ground. The colors are used throughout the app as a guide to indicate various situations and cenarios.',
     '**Private space**: own color',
-    '**Trading ground**: infused with the other group&#39ts color']
+    '**Trading ground**: infused with the other group&#39ts color'],
+    img:'../../../assets/images/proj_fairtrade/color-palette.png'
 }
 
 const uidesign = {
@@ -276,10 +282,24 @@ const uidesign = {
     content:'Instead of the warm and homie feeling that most social responsible app have, we used modern and trailblazing approach to  '
 }
 
-const achieve = {
-  title: 'Recognition',
-  content: 'Through collaboration, we had created an interactive Casino Royal experience for the Toronto Elevate Conference after party at Crowdlinkers. You can play it HERE',
-  img: '../../../assets/images/proj_briovr/crowdlinker.png'
+const explore = {
+  title: 'Explore before register',
+  deviceFrame: 'phone',
+  content: 'The main screen has been designed to allow users quick access to the inventory. We strived to design for confidence - no commmitment is required to access the major pages. Users are able to discover freely within the app. Depending on the type, the interface is different for the shoppers and donors.',
+  imgLeft: '../../../assets/images/proj_fairtrade/donor_explore.png',
+  contentLeft:'Discover page for donors',
+  imgRight: '../../../assets/images/proj_fairtrade/shopper_explore.png',
+  contentRight:'Discover page for shoppers',
+}
+
+const additem = {
+    title:'Adding Inventory',
+    content:'adding item'
+}
+
+const trade = {
+    title:'Making a trade',
+    content:''
 }
 
 const dobetter = {
@@ -337,6 +357,7 @@ class Fairtrade extends React.Component {
           {/* Design */}
           <TitleDivier content={titleText4} style={style} />
           <LayoutImage content={flowChart} style={style} />
+          <LayoutOneThird content={flowchart2} style={style} />
           <LayoutImage content={wireframe1} style={style} />
           <layoutText content={userTest1} style={style} />
           <LayoutImage content={wireframe2} style={style} />
@@ -346,9 +367,12 @@ class Fairtrade extends React.Component {
           <TitleDivier content={titleText5} style={style} />
           <LayoutImage content={color} style={style} />
           <LayoutImage content={uidesign} style={style} />
-          {/* recognition */}
+
+          {/* Breakdown */}
           <TitleDivier content={titleText6} style={style} />
-          <LayoutImage content={achieve} />
+          <LayoutHalf content={explore} style={style} />
+          <layoutHalf content={additem} style={style} />
+          <LayoutImage content ={trade} style={style} />
 
           {/* results and reflections */}
           <TitleDivier content={titleText7} style={style} />

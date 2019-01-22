@@ -37,10 +37,10 @@ const introRole = {
   content: 'CYCNAV is an IOT bike light guilding the cyclists traveling around the city. Together with the crowd sourcing mobile app, users are updated with the latest road conditions and are provided with the best cycling route.',
   duties: ['I worked as the UX designerfor this project. Some of my responsibilities included:',
     'Conduct user and market research and analysis',
-    'Defining strategies & Scope',
+    'Defining strategies & scope',
     'Facilitate ideation & design decisions',
-    'Create Wireframes & Prototypes',
-    '3D modeling & printing of the physical Component',
+    'Create wireframes & prototypes',
+    '3D modeling & printing of the physical component',
     'Validation test and evaluations'],
   img: '../../../assets/images/proj_cycnav/cyc_thumb.png'
 }
@@ -48,7 +48,7 @@ const introRole = {
 const problem = {
   title: 'Problem - Quick and Safe biking route',
   sectionClass: 'list-style-circle',
-  content: [ 'The biggest pain that every cyclist has experienced, especially the urban cyclist, is to navigate in various road conditions and incidents that lead to unexpected detours. Looking for an applicable route can be time consuming, while bypassing the original road can be dangerous.',
+  content: [ 'One of the biggest problem that every cyclist has experienced, especially the urban cyclist, is to navigate in various road conditions and incidents that lead to unexpected detours. Looking for an applicable route can be time consuming, while bypassing the original road can be dangerous.',
     'Troubled by the Downtown road conditions',
     'Limited apps to give guidence and suggestions on routes',
     'Existing apps are often distractive and pause safety concerns to the users']
@@ -56,7 +56,7 @@ const problem = {
 
 const interviews = {
   title: 'Interviews',
-  content: 'At the discovery phase of my project, we conducted user interviews from people use bike on a regular basis. Following is a summary of the answers:',
+  content: 'At the discovery phase of my project, we conducted user interviews from people who use bike on a regular basis. Following is a summary of the answers:',
   columns: [{
     Header: '#',
     accessor: 'number' // String-based value accessors!
@@ -64,7 +64,7 @@ const interviews = {
     Header: 'Type',
     accessor: 'type'
   }, {
-    Header: 'Biking Frequency(daily)',
+    Header: 'Biking Frequency (daily)',
     accessor: 'frequency'
   }, {
     Header: 'Need for map?',
@@ -72,7 +72,7 @@ const interviews = {
   }],
   data: [{
     number: 1,
-    type: 'Professional',
+    type: 'Urban professional',
     frequency: '2 - 3',
     map: 'NO'
   }, {
@@ -82,7 +82,7 @@ const interviews = {
     map: 'Sometimes'
   }, {
     number: 3,
-    type: 'Delivery Worker',
+    type: 'Bike courier',
     frequency: '> 10',
     map: 'Yes'
   }, {
@@ -95,7 +95,7 @@ const interviews = {
 
 const persona = {
   title: 'Personas',
-  content: 'As a result, the two types of users that will be benfited the most from our app are student bikers and Food delivery individula.Their similarity is the need of safe and correct route when cycling in the urban environment.',
+  content: 'As a result, the two types of users that would benefit the most from our app are student bikers and Food delivery individual.Their commonality is the need for safe and accurate route when cycling in the urban environment.',
   imgLeft: '../../../assets/images/proj_cycnav/avatar-0.svg',
   imgRight: '../../../assets/images/proj_cycnav/avatar-2.svg',
   sectionClass: 'section-persona',
@@ -104,26 +104,26 @@ const persona = {
     'Student',
     'Age: 17 to 27',
     'Bikes 2 - 6 times a day',
-    'Ann uses bikes for most of her daily commute. Thus Ann values most effortless routes.'
+    'Ann uses her bike for most of her daily commute. Thus Ann values most effortless routes.'
   ],
   contentRight: [
     '**Oliver Dimaran**',
     'Food Delivery',
     'Age: 19 to 40',
     'Bikes multiple times a day',
-    'Biking is Olivers main source of income and he wants nothing but to get to the destination in the shortest amount of time.'
+    'Biking is Oliver&#8217;s main source of income and he wants nothing but to get to the destination in the shortest amount of time.'
   ]
 }
 
 const findingPersona = {
   subtitle: 'finding',
-  content: 'The users who will benefit the most from our app are frequent users of bicycles, and travel to various places'
+  content: 'The users who will benefit the most from our app are frequent users of bicycles, and travel to various places.'
 }
 
 const userJourney = {
   title: 'User Roadmap',
   sectionClass: 'project-layout-wide',
-  content: 'Cycnav focuses on the two main purposes: 1) Get to the destination. 2) Fast and safe.',
+  content: 'Cycnav focuses on the two main purposes: 1) Get to the destination. 2) Fast and safe routes.',
   img: '../../../assets/images/proj_cycnav/roadmap.png',
   label: 'The highlighted bubble are the main functions users will be using, while supporting features(grey bubble) will be the key to the overall NUX'
 }
