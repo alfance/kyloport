@@ -72,8 +72,8 @@ const persona0 = {
 const persona1 = {
   title: 'New comers',
   content: '',
-  imgLeft: '../../../assets/images/proj_fairtrade/avatar-10.svg',
-  imgRight: '../../../assets/images/proj_fairtrade/avatar-13.svg',
+  imgLeft: '../../../assets/images/proj_fairtrade/personafair-04.png',
+  imgRight: '../../../assets/images/proj_fairtrade/personafair-03.png',
   sectionClass: 'section-persona',
   contentLeft: [
     '**Ralphy**',
@@ -93,8 +93,8 @@ const persona1 = {
 const persona2 = {
   title: 'Locals',
   content: '',
-  imgLeft: '../../../assets/images/proj_fairtrade/avatar-3.svg',
-  imgRight: '../../../assets/images/proj_fairtrade/avatar-6.svg',
+  imgLeft: '../../../assets/images/proj_fairtrade/personafair-02.png',
+  imgRight: '../../../assets/images/proj_fairtrade/personafair-01.png',
   sectionClass: 'section-persona',
   contentLeft: [
     '**Rachel**',
@@ -114,7 +114,7 @@ const idea1 = {
   title: 'Ideation 1 - Onling donation',
   contentLeft: ['The first ideation we came up was focusing on a donating platform dedicate to underprivileged people. Since the pain points lies in intransparent donation process. What we are hoping to do is to let the users from both side &#39;communicate&#39; with each other regarding their needs and preferences.',
     '**Ideation: Online platform for donor to donate items directly to the shoppers.**'],
-  imgRight: '../../../assets/images/proj_fairtrade/idea1.png'
+  imgRight: '../../../assets/images/proj_fairtrade/idea1.svg'
 }
 const validity1 = {
   title: 'Validation : Polarized feedbacks',
@@ -149,7 +149,7 @@ const idea2 = {
   contentLeft: ['We realized the importance of acknowledge people pride. While we were conducting interviews, we came across a user type that is present almost in many shopper groups: **housewives** or **househusbands**. We found out that in most refugee or immigrant families, one of the two housholds would stay with the yongsters rather than making earning due to limitless resources. We wanted to provided a way for the stay-at-home people a way to make a profit while the donors get to experience authentic cuisines from another culture. ',
     '**Ideation: an app that let the shopper sell their home cooked meal to the donor.**'
   ],
-  imgRight: ''
+  imgRight: '../../../assets/images/proj_fairtrade/idea2.svg'
 }
 const validity2 = {
   title: 'Validation : Kitchen Hygiene',
@@ -185,7 +185,7 @@ const idea3 = {
   title: 'Ideation 3 - Exchange platform',
   contentLeft: ['Combining preivous ideations, we finally came to a unanimous decision: a exchange platform that let users &#39;fairtrade&#39; anything. For donors, they can trade the abundant items. For shoppers, they can trade food, item or **karma points**: rewards points that the shoppers give to the donor as a form of appreciation. The karma points canbe used used as a redeemable currency at shops and stores.',
     '**Ideation: Platform that allow the donor and shopper to exchange tangible items or &#39;karma&#39;. **'],
-  imgRight: ''
+  imgRight: '../../../assets/images/proj_fairtrade/idea3.svg'
 }
 
 const angelHack = {
