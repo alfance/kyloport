@@ -72,8 +72,13 @@ const persona0 = {
 const persona1 = {
   title: 'New comers',
   content: '',
+<<<<<<< HEAD
   imgLeft: '../../../assets/images/proj_fairtrade/personafair-04.png',
   imgRight: '../../../assets/images/proj_fairtrade/personafair-03.png',
+=======
+  imgLeft: '../../../assets/images/proj_fairtrade/persona4.svg',
+  imgRight: '../../../assets/images/proj_fairtrade/persona3.svg',
+>>>>>>> 9d85650c8583d89d6974c91bd71e8c71654671fa
   sectionClass: 'section-persona',
   contentLeft: [
     '**Ralphy**',
@@ -93,8 +98,13 @@ const persona1 = {
 const persona2 = {
   title: 'Locals',
   content: '',
+<<<<<<< HEAD
   imgLeft: '../../../assets/images/proj_fairtrade/personafair-02.png',
   imgRight: '../../../assets/images/proj_fairtrade/personafair-01.png',
+=======
+  imgLeft: '../../../assets/images/proj_fairtrade/persona2.svg',
+  imgRight: '../../../assets/images/proj_fairtrade/persona1.svg',
+>>>>>>> 9d85650c8583d89d6974c91bd71e8c71654671fa
   sectionClass: 'section-persona',
   contentLeft: [
     '**Rachel**',
@@ -225,7 +235,7 @@ const validity3 = {
 }
 
 const pitch = {
-    content:'### * "There is value to good will." * ###'
+  content: '### * "There is value to good will." * ###'
 }
 
 const flowChart = {
@@ -234,52 +244,51 @@ const flowChart = {
   img: '../../../assets/images/proj_fairtrade/flowchart.jpg'
 }
 
- const flowchart2 = {
-     contentLeft: 'Now we have a solid product strategy we proceeded to mapping out the user flow. Fairtrade would have two separate portals for the shoppers and donnors. While their user experience flow are analogous the perception of interaction with the app is dissimilar. For the flow, we kept the two group&#39s local interaction with the app intact from each other until they started &#39trading&#39.',
-     imgRight: '../../../assets/images/proj_fairtrade/frame.png'
- }
-
+const flowchart2 = {
+  contentLeft: 'Now we have a solid product strategy we proceeded to mapping out the user flow. Fairtrade would have two separate portals for the shoppers and donnors. While their user experience flow are analogous the perception of interaction with the app is dissimilar. For the flow, we kept the two group&#39s local interaction with the app intact from each other until they started &#39trading&#39.',
+  imgRight: '../../../assets/images/proj_fairtrade/frame.png'
+}
 
 const wireframe1 = {
   title: 'Wireframe',
   sectionClass: 'project-layout-wide',
   content: 'We have gone through 3 versions of the wireframe each with a engagement upgrade. ',
   img: '../../../assets/images/proj_fairtrade/wireframe1.png',
-  label:'**Wireframe 1**: The major problem with wireframe1 was laborious registration and onboarding. The user needed to fill their personal information as well as the trade item upfront before they get to explore the trading ground. This takes up approximately 5 pages and 6 steps.'
+  label: '**Wireframe 1**: The major problem with wireframe1 was laborious registration and onboarding. The user needed to fill their personal information as well as the trade item upfront before they get to explore the trading ground. This takes up approximately 5 pages and 6 steps.'
 }
 
 const userTest1 = {
   content: ['*Registration process is too long.*',
-        '*How could I tell if a trade is success?*',
-        '*There is no skip button*']
+    '*How could I tell if a trade is success?*',
+    '*There is no skip button*']
 }
 
 const wireframe2 = {
   sectionClass: 'project-layout-wide',
   content: 'We reduced the registration process to minimum 2 pages and 3 steps, added flexible options for many of the pages. Now users don&#39t need to add items till they wanted to trade.',
   img: '../../../assets/images/proj_fairtrade/flowchart.jpg',
-  label:'**wireframe2**: Users have an improved experience with the app, however we discovered that there is still a lot of rentention problem in the beginning of the flow. People feel intimidated by the personal questions upfront.'
+  label: '**wireframe2**: Users have an improved experience with the app, however we discovered that there is still a lot of rentention problem in the beginning of the flow. People feel intimidated by the personal questions upfront.'
 }
 
 const wireframe3 = {
   sectionClass: 'project-layout-wide',
   content: 'To take it a step further, we removed the registration and let people discover freely. The register process doesn&#39t kick in till the users had made any process or showed any interests.',
   img: '../../../assets/images/proj_fairtrade/flowchart.jpg',
-  label:'**wireframe3**: We have seen promising improvements with the overall app interaction..'
+  label: '**wireframe3**: We have seen promising improvements with the overall app interaction..'
 }
 
 const color = {
-    title:'Color Scheme',
-    sectionClass:'list-style-circle',
-    content:['We separated the two groups with two colors and used a third color to indicate neutral ground. The colors are used throughout the app as a guide to indicate various situations and cenarios.',
+  title: 'Color Scheme',
+  sectionClass: 'list-style-circle',
+  content: ['We separated the two groups with two colors and used a third color to indicate neutral ground. The colors are used throughout the app as a guide to indicate various situations and cenarios.',
     '**Private space**: own color',
     '**Trading ground**: infused with the other group&#39ts color'],
-    img:'../../../assets/images/proj_fairtrade/color-palette.png'
+  img: '../../../assets/images/proj_fairtrade/color-palette.png'
 }
 
 const uidesign = {
-    title:'UI Design',
-    content:'Instead of the warm and homie feeling that most social responsible app have, we used modern and trailblazing approach to  '
+  title: 'UI Design',
+  content: 'Instead of the warm and homie feeling that most social responsible app have, we used modern and trailblazing approach to  '
 }
 
 const explore = {
@@ -287,19 +296,19 @@ const explore = {
   deviceFrame: 'phone',
   content: 'The main screen has been designed to allow users quick access to the inventory. We strived to design for confidence - no commmitment is required to access the major pages. Users are able to discover freely within the app. Depending on the type, the interface is different for the shoppers and donors.',
   imgLeft: '../../../assets/images/proj_fairtrade/donor_explore.png',
-  contentLeft:'Discover page for donors',
+  contentLeft: 'Discover page for donors',
   imgRight: '../../../assets/images/proj_fairtrade/shopper_explore.png',
-  contentRight:'Discover page for shoppers',
+  contentRight: 'Discover page for shoppers'
 }
 
 const additem = {
-    title:'Adding Inventory',
-    content:'adding item'
+  title: 'Adding Inventory',
+  content: 'adding item'
 }
 
 const trade = {
-    title:'Making a trade',
-    content:''
+  title: 'Making a trade',
+  content: ''
 }
 
 const dobetter = {
@@ -352,7 +361,7 @@ class Fairtrade extends React.Component {
           <LayoutHalf content={idea3} style={style} />
           <LayoutImage content={angelHack} style={style} />
           <TableComponent content={validity3} style={style} />
-          <LayoutText content ={pitch} style={style} />
+          <LayoutText content={pitch} style={style} />
 
           {/* Design */}
           <TitleDivier content={titleText4} style={style} />
@@ -372,7 +381,7 @@ class Fairtrade extends React.Component {
           <TitleDivier content={titleText6} style={style} />
           <LayoutHalf content={explore} style={style} />
           <layoutHalf content={additem} style={style} />
-          <LayoutImage content ={trade} style={style} />
+          <LayoutImage content={trade} style={style} />
 
           {/* results and reflections */}
           <TitleDivier content={titleText7} style={style} />
