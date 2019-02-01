@@ -22,9 +22,9 @@ const titleText3 = {title: 'Ideation + Validation'}
 
 const titleText4 = {title: 'Design'}
 
-const titleText5 = {title: 'The final prototype'}
+const titleText5 = {title: 'Prototype'}
 
-const titleText6 = {title: 'Recognition'}
+const titleText6 = {title: 'Introducing - FairTrade'}
 
 const titleText7 = {title: 'Reflections'}
 
@@ -41,7 +41,7 @@ const introRole = {
   sectionClass: 'list-style-circle',
   content: 'Fairtrade is a website/app that enables newly arrived underprivileged migrants, refugees, and people in need to "fair trade" items with locals in order to improve the quality of their lives.',
   role: 'I was part of the funding member of Fairtrade, My responsibilities are the development of the app where I conducted',
-  duties: ['Market Research',
+  duties: ['Market research',
     'Comparative analysis',
     'Affinity mapping',
     'Design workshops',
@@ -72,8 +72,8 @@ const persona0 = {
 const persona1 = {
   title: 'New comers',
   content: '',
-  imgLeft: '../../../assets/images/proj_fairtrade/avatar-10.svg',
-  imgRight: '../../../assets/images/proj_fairtrade/avatar-13.svg',
+  imgLeft: '../../../assets/images/proj_fairtrade/personafair-04.png',
+  imgRight: '../../../assets/images/proj_fairtrade/personafair-03.png',
   sectionClass: 'section-persona',
   contentLeft: [
     '**Ralphy**',
@@ -93,8 +93,8 @@ const persona1 = {
 const persona2 = {
   title: 'Locals',
   content: '',
-  imgLeft: '../../../assets/images/proj_fairtrade/avatar-3.svg',
-  imgRight: '../../../assets/images/proj_fairtrade/avatar-6.svg',
+  imgLeft: '../../../assets/images/proj_fairtrade/personafair-02.png',
+  imgRight: '../../../assets/images/proj_fairtrade/personafair-01.png',
   sectionClass: 'section-persona',
   contentLeft: [
     '**Rachel**',
@@ -114,11 +114,11 @@ const idea1 = {
   title: 'Ideation 1 - Onling donation',
   contentLeft: ['The first ideation we came up was focusing on a donating platform dedicate to underprivileged people. Since the pain points lies in intransparent donation process. What we are hoping to do is to let the users from both side &#39;communicate&#39; with each other regarding their needs and preferences.',
     '**Ideation: Online platform for donor to donate items directly to the shoppers.**'],
-  imgRight: ''
+  imgRight: '../../../assets/images/proj_fairtrade/idea1.svg'
 }
 const validity1 = {
   title: 'Validation : Polarized feedbacks',
-  content: 'After we tested the ideation to potential users we received polarized reactions from the users. Donors are very receptive of the idea and are willing to donate their belongs; However, they perceive the concept as charitable rather than mutual beneficial. On the other hand, the concept of pure taking has put a **burden on their self-esteem**, especially if their profiles are exposed online.',
+  content: 'After we tested the ideation to potential users we received polarized reactions from the users. Donors are very receptive of the idea and are willing to donate their belongs; However, New comers perceive the concept as charitable rather than mutual beneficial. On the other hand, the concept of pure taking has put a **burden on the new comers&#39 self-esteem**, especially if their profiles are exposed online.',
   columns: [{
     Header: 'User',
     accessor: 'user' // String-based value accessors!
@@ -149,7 +149,7 @@ const idea2 = {
   contentLeft: ['We realized the importance of acknowledge people pride. While we were conducting interviews, we came across a user type that is present almost in many shopper groups: **housewives** or **househusbands**. We found out that in most refugee or immigrant families, one of the two housholds would stay with the yongsters rather than making earning due to limitless resources. We wanted to provided a way for the stay-at-home people a way to make a profit while the donors get to experience authentic cuisines from another culture. ',
     '**Ideation: an app that let the shopper sell their home cooked meal to the donor.**'
   ],
-  imgRight: ''
+  imgRight: '../../../assets/images/proj_fairtrade/idea2.svg'
 }
 const validity2 = {
   title: 'Validation : Kitchen Hygiene',
@@ -185,7 +185,7 @@ const idea3 = {
   title: 'Ideation 3 - Exchange platform',
   contentLeft: ['Combining preivous ideations, we finally came to a unanimous decision: a exchange platform that let users &#39;fairtrade&#39; anything. For donors, they can trade the abundant items. For shoppers, they can trade food, item or **karma points**: rewards points that the shoppers give to the donor as a form of appreciation. The karma points canbe used used as a redeemable currency at shops and stores.',
     '**Ideation: Platform that allow the donor and shopper to exchange tangible items or &#39;karma&#39;. **'],
-  imgRight: ''
+  imgRight: '../../../assets/images/proj_fairtrade/idea3.svg'
 }
 
 const angelHack = {
@@ -196,7 +196,7 @@ const angelHack = {
 
 const validity3 = {
   title: 'Validation : Executatble & accepted',
-  content: 'The concept is widly accepted by the donors and shoppers, and is determined to be feasible from both business and technical perspective.',
+  content: 'The concept is widly accepted by the donors and shoppers, and is determined to be feasible from both business and technical perspective. ',
   columns: [{
     Header: 'User',
     accessor: 'user' // String-based value accessors!
@@ -224,36 +224,81 @@ const validity3 = {
   }]
 }
 
+const pitch = {
+  content: '### * "There is value to good will." * ###'
+}
+
 const flowChart = {
   title: 'User Flow Chart',
-  content: '',
+  content: 'Now we have a solid product strategy we proceeded to mapping out the user flow. Fairtrade would have two separate portals for the shoppers and donnors. While their user experience flow are analogous the perception of interaction with the app is dissimilar. For the flow, we kept the two group&#39s local interaction with the app intact from each other until they started &#39trading&#39.',
   img: '../../../assets/images/proj_fairtrade/flowchart.jpg'
+}
+
+const flowchart2 = {
+  contentLeft: 'Now we have a solid product strategy we proceeded to mapping out the user flow. Fairtrade would have two separate portals for the shoppers and donnors. While their user experience flow are analogous the perception of interaction with the app is dissimilar. For the flow, we kept the two group&#39s local interaction with the app intact from each other until they started &#39trading&#39.',
+  imgRight: '../../../assets/images/proj_fairtrade/frame.png'
 }
 
 const wireframe1 = {
   title: 'Wireframe',
   sectionClass: 'project-layout-wide',
-  content: 'We have gone through 3 updates of the wireframe',
-  img: '../../../assets/images/proj_fairtrade/wireframe1.png'
+  content: 'We have gone through 3 versions of the wireframe each with a engagement upgrade. ',
+  img: '../../../assets/images/proj_fairtrade/wireframe1.png',
+  label: '**Wireframe 1**: The major problem with wireframe1 was laborious registration and onboarding. The user needed to fill their personal information as well as the trade item upfront before they get to explore the trading ground. This takes up approximately 5 pages and 6 steps.'
 }
 
-const userTest = {
-  title: 'User test results',
-  content: ['Registration process is too long.',
-    'How could I tell if a trade is success?']
+const userTest1 = {
+  content: ['*Registration process is too long.*',
+    '*How could I tell if a trade is success?*',
+    '*There is no skip button*']
 }
 
 const wireframe2 = {
-  title: 'Wireframe',
   sectionClass: 'project-layout-wide',
-  content: 'We have gone through 3 updates of the wireframe',
-  img: '../../../assets/images/proj_fairtrade/flowchart.jpg'
+  content: 'We reduced the registration process to minimum 2 pages and 3 steps, added flexible options for many of the pages. Now users don&#39t need to add items till they wanted to trade.',
+  img: '../../../assets/images/proj_fairtrade/flowchart.jpg',
+  label: '**wireframe2**: Users have an improved experience with the app, however we discovered that there is still a lot of rentention problem in the beginning of the flow. People feel intimidated by the personal questions upfront.'
 }
 
-const achieve = {
-  title: 'Recognition',
-  content: 'Through collaboration, we had created an interactive Casino Royal experience for the Toronto Elevate Conference after party at Crowdlinkers. You can play it HERE',
-  img: '../../../assets/images/proj_briovr/crowdlinker.png'
+const wireframe3 = {
+  sectionClass: 'project-layout-wide',
+  content: 'To take it a step further, we removed the registration and let people discover freely. The register process doesn&#39t kick in till the users had made any process or showed any interests.',
+  img: '../../../assets/images/proj_fairtrade/flowchart.jpg',
+  label: '**wireframe3**: We have seen promising improvements with the overall app interaction..'
+}
+
+const color = {
+  title: 'Color Scheme',
+  sectionClass: 'list-style-circle',
+  content: ['We separated the two groups with two colors and used a third color to indicate neutral ground. The colors are used throughout the app as a guide to indicate various situations and cenarios.',
+    '**Private space**: own color',
+    '**Trading ground**: infused with the other group&#39ts color'],
+  img: '../../../assets/images/proj_fairtrade/color-palette.png'
+}
+
+const uidesign = {
+  title: 'UI Design',
+  content: 'Instead of the warm and homie feeling that most social responsible app have, we used modern and trailblazing approach to  '
+}
+
+const explore = {
+  title: 'Explore before register',
+  deviceFrame: 'phone',
+  content: 'The main screen has been designed to allow users quick access to the inventory. We strived to design for confidence - no commmitment is required to access the major pages. Users are able to discover freely within the app. Depending on the type, the interface is different for the shoppers and donors.',
+  imgLeft: '../../../assets/images/proj_fairtrade/donor_explore.png',
+  contentLeft: 'Discover page for donors',
+  imgRight: '../../../assets/images/proj_fairtrade/shopper_explore.png',
+  contentRight: 'Discover page for shoppers'
+}
+
+const additem = {
+  title: 'Adding Inventory',
+  content: 'adding item'
+}
+
+const trade = {
+  title: 'Making a trade',
+  content: ''
 }
 
 const dobetter = {
@@ -306,20 +351,27 @@ class Fairtrade extends React.Component {
           <LayoutHalf content={idea3} style={style} />
           <LayoutImage content={angelHack} style={style} />
           <TableComponent content={validity3} style={style} />
+          <LayoutText content={pitch} style={style} />
 
           {/* Design */}
           <TitleDivier content={titleText4} style={style} />
           <LayoutImage content={flowChart} style={style} />
+          <LayoutOneThird content={flowchart2} style={style} />
           <LayoutImage content={wireframe1} style={style} />
-          <layoutText content={userTest} style={style} />
+          <layoutText content={userTest1} style={style} />
           <LayoutImage content={wireframe2} style={style} />
+          <LayoutImage content={wireframe3} style={style} />
 
           {/* final prototype */}
           <TitleDivier content={titleText5} style={style} />
+          <LayoutImage content={color} style={style} />
+          <LayoutImage content={uidesign} style={style} />
 
-          {/* recognition */}
+          {/* Breakdown */}
           <TitleDivier content={titleText6} style={style} />
-          <LayoutImage content={achieve} />
+          <LayoutHalf content={explore} style={style} />
+          <layoutHalf content={additem} style={style} />
+          <LayoutImage content={trade} style={style} />
 
           {/* results and reflections */}
           <TitleDivier content={titleText7} style={style} />

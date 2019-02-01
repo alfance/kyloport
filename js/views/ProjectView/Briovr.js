@@ -22,7 +22,7 @@ const titleText2 = {
 }
 
 const titleText3 = {
-  title: 'UX Design'
+  title: 'Prototype'
 }
 
 const titleText4 = {
@@ -57,12 +57,12 @@ const introRole = {
 }
 
 const challenge = {
-  title: 'Challenge',
+  title: 'Challenge - create an intuitive and easy to use interactive system',
   sectionClass: 'list-style-circle',
-  content: ['Create an intuitive and easy to use interactive system for BRIOVR. Some of the shareholder requirements include:', 'No coding knowledge is required', 'Preferably as simple as click, drag and drop', 'Do not use Node graph', 'Need to have game mechanics (click, move, pickup etc)']
+  content: [' Some of the shareholder requirements include:', 'No coding knowledge is required', 'Preferably as simple as click, drag and drop', 'Do not use Node graph', 'Need to have game mechanics (click, move, pickup etc)']
 }
 const background = {
-  title: 'Background',
+  title: 'Background - an online model viewering and editing app',
   deviceFrame: 'laptop',
   img: '../../../assets/images/proj_briovr/background.png',
   content: 'The fundamental interface of BRIOVR is similar to major design and modeling apps. Majority of the screen is dedicated to the 3D working space as features and tools are located on the side and bottom.'
@@ -117,7 +117,7 @@ const findingCompetitor = {
 }
 
 const userJourney = {
-  title: 'User journey',
+  title: 'Adding interactions comes at the end',
   sectionClass: 'project-layout-wide',
   content: 'After studying other applications and interviews. I came up with a simplified user journey for the system. This helped me realize that creating **interactions comes at the late stage** of the user flow.',
   img: '../../../assets/images/proj_briovr/user_journey_map.png',
@@ -134,7 +134,7 @@ const game = {
 }
 
 const rules = {
-  title: 'Setting Rules',
+  title: 'Setting Rules & Logics',
   content: 'After studying the preceders and conducting studies to gather insights, I have layout the essential components of a viable inteaction system. The system is constructed by two types: motion and trigger.',
   imgLeft: '../../../assets/images/proj_briovr/action-icon.svg',
   imgRight: '../../../assets/images/proj_briovr/trigger-icon.svg',
@@ -145,7 +145,7 @@ const rules = {
 }
 
 const behaviourflow1 = {
-  title: 'Behaviour flow',
+  title: 'Interactive Behaviour flow',
   content: [
     'The first priority of behaviour flow is simplicity and flexibility. My reasoning behind is that if an user wants to make an item scale in size, they should not need to do excessive steps other than specifying a scale value on the item', 'Method 1 and method 2 yield the same outcome. This gives users maximum freedom to achive their goals.'
   ],
@@ -216,10 +216,9 @@ const prototypePop = {
 }
 
 const motion = {
-  title: 'Motion design',
   sectionClass: 'list-style-circle',
   content: [
-    'Differ from 2D apps, Motion in 3D plays an important role especially true for behaviours. By applying motion design into our usability test, we have seen significant improvements in:', 'Retaining user attention.', 'More clear understanding of next step', 'Incrase tolerance in wait time'
+    'Differ from 2D apps, Motion in 3D plays an important role especially true for behaviours. By applying motion design into our usability test, we have seen significant improvements in:', 'Maintaining user attention.', 'More clear understanding of upcoming steps', 'Increase tolerance in wait time'
   ],
   imgLeft: '../../../assets/images/proj_briovr/animate1.gif',
   contentLeft: '**Up**: Add behaviour to object. **Right**: Modify and Deleting a behaviour',

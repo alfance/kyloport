@@ -11,8 +11,7 @@ export default {
   },
   devServer: {
     historyApiFallback: true,
-    contentBase: './',
-    hot: true
+    contentBase: './'
   },
 // pre-process files. all ends with js.
 // react-hot:update module without page reload.
@@ -21,7 +20,7 @@ export default {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loaders: ['react-hot-loader', 'babel-loader'],
+        loaders: ['babel-loader'],
         presets: ['react', 'es2015']
       },
       {

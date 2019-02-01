@@ -85,6 +85,7 @@
     padding-right: 0;
   }
 }
+
 // 1/2 1/2
 .project-layout-half {
   @include project-container-css;
@@ -173,7 +174,7 @@
   padding-bottom: 7%;
 }
 .frame-phone {
-    padding-bottom: 18%;
+    padding-bottom: 14%;
 
 // video in a phone frame has different ratio than 16:9
     .project-video169 {
@@ -200,9 +201,9 @@
   margin-top: 2.9%;
 }
 .device-phone {
-    width: 94%;
-    margin-top: 20.8%;
-    margin-left: 3%;
+    width: 92%;
+    margin-top: 16%;
+    margin-left: 4%;
 }
 
 /////////////////////////////////// get rid the 10px left and right for {myrole} in IntroRole.js ///////////////
