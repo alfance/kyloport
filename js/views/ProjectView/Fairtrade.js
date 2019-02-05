@@ -48,7 +48,7 @@ const introRole = {
     'Wireframe development',
     'Usability testing',
     'Prototype development'],
-  img: '../../../assets/images/proj_briovr/behaviourstart.gif'
+  img: '../../../assets/images/proj_fairtrade/thumb.gif'
 }
 
 const problem = {
@@ -243,7 +243,7 @@ const wireframe1 = {
   title: 'Wireframe',
   sectionClass: 'project-layout-wide',
   content: 'We have gone through 3 versions of the wireframe each with a engagement upgrade. ',
-  img: '../../../assets/images/proj_fairtrade/wireframe1.png',
+  img: '../../../assets/images/proj_fairtrade/wireframe_eg1.png',
   label: '**Wireframe 1**: The major problem with wireframe1 was laborious registration and onboarding. The user needed to fill their personal information as well as the trade item upfront before they get to explore the trading ground. This takes up approximately 5 pages and 6 steps.'
 }
 
@@ -256,14 +256,14 @@ const userTest1 = {
 const wireframe2 = {
   sectionClass: 'project-layout-wide',
   content: 'We reduced the registration process to minimum 2 pages and 3 steps, added flexible options for many of the pages. Now users don&#39t need to add items till they wanted to trade.',
-  img: '../../../assets/images/proj_fairtrade/flowchart.jpg',
+  img: '../../../assets/images/proj_fairtrade/wireframe_eg2.png',
   label: '**wireframe2**: Users have an improved experience with the app, however we discovered that there is still a lot of rentention problem in the beginning of the flow. People feel intimidated by the personal questions upfront.'
 }
 
 const wireframe3 = {
   sectionClass: 'project-layout-wide',
   content: 'To take it a step further, we removed the registration and let people discover freely. The register process doesn&#39t kick in till the users had made any process or showed any interests.',
-  img: '../../../assets/images/proj_fairtrade/flowchart.jpg',
+  img: '../../../assets/images/proj_fairtrade/wireframe_eg3.png',
   label: '**wireframe3**: We have seen promising improvements with the overall app interaction..'
 }
 
