@@ -63,6 +63,7 @@ const challenge = {
 }
 const background = {
   title: 'Background - an online model viewering and editing app',
+  sectionClass: 'project-layout-wide',
   deviceFrame: 'laptop',
   img: '../../../assets/images/proj_briovr/background.png',
   content: 'The fundamental interface of BRIOVR is similar to major design and modeling apps. Majority of the screen is dedicated to the 3D working space as features and tools are located on the side and bottom.'
@@ -200,14 +201,15 @@ const findingTest = {
 }
 const prototypeMain = {
   title: 'Main Interface',
+  sectionClass: 'project-layout-wide',
   deviceFrame: 'laptop',
   content: 'The overall layout embraces the design of the app. The main feature panel at the bottom allows users to open up sub features list, and divided the triggers and actions.',
   img: '../../../assets/images/proj_briovr/ui-main.png'
 }
 const prototypeChain = {
   title: 'Behaviour chain panel',
-  contentLeft: 'The behaviour chain contains all the logics happening on an object. We embraced the flow of a node based system; however, we decide to take a bold step by making the behaviour chain linear. This comes at a cost of reduced flexibility, but reached our standards for simplicity and ease of use. ',
-  imgRight: '../../../assets/images/proj_briovr/behaviour_chain.png'
+  content: 'The behaviour chain contains all the logics happening on an object. We embraced the flow of a node based system; however, we decide to take a bold step by making the behaviour chain linear. This comes at a cost of reduced flexibility, but reached our standards for simplicity and ease of use. ',
+  img: '../../../assets/images/proj_briovr/behaviour_chain.png'
 }
 const prototypePop = {
   title: 'Property popup',
@@ -290,7 +292,7 @@ class Briovr extends React.Component {
         <FindingComponent content={findingTest} style={style} /> {/* UI design */}
         <TitleDivier content={titleText4} style={style} />
         <LayoutImage content={prototypeMain} />
-        <LayoutOneThird content={prototypeChain} />
+        <LayoutImage content={prototypeChain} />
         <LayoutImage content={prototypePop} /> {/* Interaction design */}
         <TitleDivier content={titleText5} style={style} />
         <LayoutHalf content={motion} style={style} />
