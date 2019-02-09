@@ -22,9 +22,7 @@ const titleText3 = {title: 'Ideation + Validation'}
 
 const titleText4 = {title: 'Design'}
 
-const titleText5 = {title: 'Prototype'}
-
-const titleText6 = {title: 'Introducing - FairTrade'}
+const titleText5 = {title: 'Introducing - FairTrade'}
 
 const titleText7 = {title: 'Reflections'}
 
@@ -152,7 +150,7 @@ const idea2 = {
   imgRight: '../../../assets/images/proj_fairtrade/idea2.svg'
 }
 const validity2 = {
-  title: 'Validation : Kitchen Hygiene',
+  title: 'Validation : Kitchen hygiene',
   content: 'Both the donors and shoppers are happy about this idea. The shoppers are notably more open and positive compare to ideation 1. However, after conducting validation research and interviews from authorities, the **concerns on cooking environment** emerged. In order for a home cook to legally sell their dishes, they first need to obtain operating license after their kitchen got examined by authorized officials. This steeps the difficulty of execution.',
   columns: [{
     Header: 'User',
@@ -189,7 +187,7 @@ const idea3 = {
 }
 
 const angelHack = {
-  title: 'Social Approval',
+  title: 'Social approval',
   content: 'We brought the concept to the 2018 Toronto angelHack. At the hackthon, we had 2 days to build a workable prototype and present it to entrepreneurs, influencers, company executives and CEOs. We communicated with various organizations and groups and received numerous suggestions and feedbacks. The event had shaped the path and guided the direction of the FairTrade. Gratfully, our concept had been approved and liked by the public. In the end, we were chosen to be the winner for "Code for a cause" Toronto, and had moved on to compete intertionally.',
   img: '../../../assets/images/proj_fairtrade/angelhack.png'
 }
@@ -235,6 +233,7 @@ const flowChart = {
 }
 
 const flowchart2 = {
+  sectionClass: 'project-layout-wide',
   contentLeft: 'Now we have a solid product strategy we proceeded to mapping out the user flow. Fairtrade would have two separate portals for the shoppers and donnors. While their user experience flow are analogous the perception of interaction with the app is dissimilar. For the flow, we kept the two group&#39s local interaction with the app intact from each other until they started &#39trading&#39.',
   imgRight: '../../../assets/images/proj_fairtrade/frame.png'
 }
@@ -291,14 +290,19 @@ const explore = {
   contentRight: 'Discover page for shoppers'
 }
 
-const additem = {
-  title: 'Adding Inventory',
-  content: 'adding item'
+const trade = {
+  title: 'Offering Trade',
+  deviceFrame: 'phone',
+  content: '',
+  imgLeft: '../../../assets/images/proj_fairtrade/add_item_donor.png',
+  contentLeft: 'Discover page for donors',
+  imgRight: '../../../assets/images/proj_fairtrade/add_item_shop.gif',
+  contentRight: 'Discover page for shoppers'
 }
 
-const trade = {
-  title: 'Making a trade',
-  content: ''
+const tradeProcess = {
+  title: 'Trade Process',
+  content: 'adding item'
 }
 
 const dobetter = {
@@ -365,13 +369,9 @@ class Fairtrade extends React.Component {
           {/* final prototype */}
           <TitleDivier content={titleText5} style={style} />
           <LayoutImage content={color} style={style} />
-          <LayoutImage content={uidesign} style={style} />
-
-          {/* Breakdown */}
-          <TitleDivier content={titleText6} style={style} />
           <LayoutHalf content={explore} style={style} />
-          <layoutHalf content={additem} style={style} />
-          <LayoutImage content={trade} style={style} />
+          <LayoutHalf content={trade} style={style} />
+          <layoutHalf content={tradeProcess} style={style} />
 
           {/* results and reflections */}
           <TitleDivier content={titleText7} style={style} />
