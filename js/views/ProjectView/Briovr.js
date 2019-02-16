@@ -63,7 +63,12 @@ const challenge = {
 }
 const background = {
   title: 'Background - an online model viewering and editing app',
-  sectionClass: 'project-layout-wide',
+  deviceFrame: 'laptop',
+  video: 'https://youtu.be/YB8NMkyNdEc',
+  content: 'The fundamental interface of BRIOVR is similar to major design and modeling apps. Majority of the screen is dedicated to the 3D working space as features and tools are located on the side and bottom.'
+}
+const backgroundLayout = {
+  title: 'Background - an online model viewering and editing app',
   deviceFrame: 'laptop',
   img: '../../../assets/images/proj_briovr/background.png',
   content: 'The fundamental interface of BRIOVR is similar to major design and modeling apps. Majority of the screen is dedicated to the 3D working space as features and tools are located on the side and bottom.'
@@ -117,14 +122,6 @@ const findingCompetitor = {
   content: 'The capatibility of an app or software is often inversely corrolated with the amount of time the user need to spend learning. Unreal and Unity offer the users immensive freedom and abilities - at a cost of 10 plus hours of learning time. On another hand, InstaVR only requires the uses to spend 5 minutes learning how to make a 360 video.'
 }
 
-const userJourney = {
-  title: 'Adding interactions comes at the end',
-  sectionClass: 'project-layout-wide',
-  content: 'After studying other applications and interviews. I came up with a simplified user journey for the system. This helped me realize that creating **interactions comes at the late stage** of the user flow.',
-  img: '../../../assets/images/proj_briovr/user_journey_map.png',
-  label: 'Behaviour onboaridng is separate from the general onboarding.  Combining onboardings have resulted in lose of interests prior to the completion. I then changed the behaviour onboarding to be initiated only when users express interest.'
-}
-
 const game = {
   title: 'Gamification Study',
   content: 'We took inspirations from games and Internet of Things(IOT) that have creative builder mode. Differ from software, the Interaction system in games and IOT has much less cognitive overload at the learning stage, and is more entertaining.',
@@ -132,6 +129,14 @@ const game = {
   contentRight: '**Little Bits**: Electronic building blocks empowering kids to build bots. ',
   imgLeft: '../../../assets/images/proj_briovr/planet.jpg',
   imgRight: '../../../assets/images/proj_briovr/littlebits.jpg'
+}
+
+const userJourney = {
+  title: 'Adding interactions comes at the end',
+  sectionClass: 'project-layout-wide',
+  content: 'After studying other applications and interviews. I came up with a simplified user journey for the system. This helped me realize that creating **interactions comes at the late stage** of the user flow.',
+  img: '../../../assets/images/proj_briovr/user_journey_map.png',
+  label: 'Behaviour onboaridng is separate from the general onboarding.  Combining onboardings have resulted in lose of interests prior to the completion. I then changed the behaviour onboarding to be initiated only when users express interest.'
 }
 
 const rules = {
@@ -276,11 +281,12 @@ class Briovr extends React.Component {
         <Problem content={challenge} style={style} /> {/* early state research */}
         <TitleDivier content={titleText1} style={style} />
         <LayoutImage content={background} style={style} />
+        <LayoutImage content={backgroundLayout} style={style} />
         <TableComponent content={competitor} style={style} />
         <FindingComponent content={findingCompetitor} style={style} />
-        <LayoutImage content={userJourney} />
         <LayoutHalf content={game} /> {/* Solution */}
         <TitleDivier content={titleText2} style={style} />
+        <LayoutImage content={userJourney} />
         <LayoutHalf content={rules} />
         <LayoutImage content={behaviourflow1} />
         <LayoutImage content={behaviourflow2} />

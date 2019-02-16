@@ -242,7 +242,6 @@
 .section-devices {
   img {
     width: 90px;
-    fill: red;
   }
 }
 
@@ -265,6 +264,7 @@
 /////////////////
 /////////////////
 // /////////////////////////////// PROJECT SPECIFIC CSS ///////////////////////////////
+
 //////// PROJECT CYCNAV ///////
 
 .cycnav-logo {
@@ -280,5 +280,13 @@
   padding-top: 24px;
   @include smallS {
     height: 90vh;
+  }
+}
+
+//////// PROJECT FAIRTRADE ///////
+.trade-video {
+  .project-video169 {
+    width:100%;
+    height:calc(#{$project-content-width}/1.3) !important;
   }
 }
