@@ -172,6 +172,20 @@
 }
 .frame-laptop {
   padding-bottom: 7%;
+
+  // video in a laptop frame has different margin and padding-top
+  .project-video169 {
+      position: relative;
+        width: 79% !important;
+        padding-top:50%;
+  }
+  .project-video169 iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0; top: 5% !important;
+    bottom: 10%;
+}
 }
 .frame-phone {
     padding-bottom: 14%;

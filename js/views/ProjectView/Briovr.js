@@ -9,6 +9,7 @@ import LayoutImage from './components/LayoutImage'
 import LayoutText from './components/LayoutText'
 import LayoutOneThird from './components/LayoutOneThird'
 import LayoutTwoThird from './components/LayoutTwoThird'
+import LayoutThree from './components/LayoutThree'
 import Reflection from './components/Reflection'
 import LayoutHalf from './components/LayoutHalf'
 import PortfolioStore from '../../stores/PortfolioStore'
@@ -56,22 +57,22 @@ const introRole = {
   img: '../../../assets/images/proj_briovr/behaviourstart.gif'
 }
 
-const challenge = {
-  title: 'Challenge - create an intuitive and easy to use interactive system',
-  sectionClass: 'list-style-circle',
-  content: [' Some of the shareholder requirements include:', 'No coding knowledge is required', 'Preferably as simple as click, drag and drop', 'Do not use Node graph', 'Need to have game mechanics (click, move, pickup etc)']
-}
 const background = {
   title: 'Background - an online model viewering and editing app',
   deviceFrame: 'laptop',
   video: 'https://youtu.be/YB8NMkyNdEc',
-  content: 'The fundamental interface of BRIOVR is similar to major design and modeling apps. Majority of the screen is dedicated to the 3D working space as features and tools are located on the side and bottom.'
+  content: 'BRIOVR adapts the control scheme of other major 3D apps and softwares. User clicks, drags and holds to interact with the models and features. The following demo video shows a typical user flow of adding model, changing the background and previewing the scene. '
 }
 const backgroundLayout = {
-  title: 'Background - an online model viewering and editing app',
   deviceFrame: 'laptop',
   img: '../../../assets/images/proj_briovr/background.png',
   content: 'The fundamental interface of BRIOVR is similar to major design and modeling apps. Majority of the screen is dedicated to the 3D working space as features and tools are located on the side and bottom.'
+}
+
+const challenge = {
+  title: 'Challenge - create an intuitive and easy to use interactive system',
+  sectionClass: 'list-style-circle',
+  content: [' Some of the shareholder requirements include:', 'No coding knowledge is required', 'Preferably as simple as click, drag and drop', 'Do not use Node graph', 'Need to have game mechanics (click, move, pickup etc)']
 }
 
 const competitor = {
@@ -122,6 +123,13 @@ const findingCompetitor = {
   content: 'The capatibility of an app or software is often inversely corrolated with the amount of time the user need to spend learning. Unreal and Unity offer the users immensive freedom and abilities - at a cost of 10 plus hours of learning time. On another hand, InstaVR only requires the uses to spend 5 minutes learning how to make a 360 video.'
 }
 
+const competitorInterface = {
+    title:'',
+    content:'Most of the ',
+    imgLeft:'http://i.imgur.com/HT4qdAr.png',
+    imgMiddle:'https://docs.unity3d.com/uploads/Main/ScriptingIntroPic.jpg',
+    imgRight:'https://i.ytimg.com/vi/DssoPC5DNs8/maxresdefault.jpg'
+}
 const game = {
   title: 'Gamification Study',
   content: 'We took inspirations from games and Internet of Things(IOT) that have creative builder mode. Differ from software, the Interaction system in games and IOT has much less cognitive overload at the learning stage, and is more entertaining.',
@@ -278,12 +286,13 @@ class Briovr extends React.Component {
       <ProjectTitle content={style} style={style} />
       <div className='project-content-layout'>
         <IntroRole content={introRole} />
-        <Problem content={challenge} style={style} /> {/* early state research */}
-        <TitleDivier content={titleText1} style={style} />
         <LayoutImage content={background} style={style} />
         <LayoutImage content={backgroundLayout} style={style} />
+        <Problem content={challenge} style={style} /> {/* early state research */}
+        <TitleDivier content={titleText1} style={style} />
         <TableComponent content={competitor} style={style} />
         <FindingComponent content={findingCompetitor} style={style} />
+        <LayoutThree content={competitorInterface} style={style} />
         <LayoutHalf content={game} /> {/* Solution */}
         <TitleDivier content={titleText2} style={style} />
         <LayoutImage content={userJourney} />

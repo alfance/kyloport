@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactPlayer from 'react-player'
 import ReactMarkdown from 'react-markdown'
+import classNames from 'classnames'
 
 export default class LayoutHelper {
   static layoutArrayContent (content) {
@@ -21,7 +22,7 @@ export default class LayoutHelper {
     if (image !== undefined) {
       return <div className={`frame-${deviceFrame}`}><DeviceFrame frame={deviceFrame} /><img src={image} className={`device-${deviceFrame}`} /></div>
     } else if (video !== undefined) {
-      return <div className={`frame-${deviceFrame}`}><DeviceFrame frame={deviceFrame} /><ReactPlayer width='100%' height='auto' className='project-video169' url={video} /></div>
+      return <div className={`frame-${deviceFrame}`}><DeviceFrame frame={deviceFrame} /><ReactPlayer width='100' height='100' className={classNames('project-video169',`device-${deviceFrame}`)} url={video} /></div>
     } else {
       return null
     }
