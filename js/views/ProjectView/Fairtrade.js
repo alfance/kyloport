@@ -52,7 +52,7 @@ const introRole = {
     content: 'Fairtrade is a website/app that enables newly arrived underprivileged migrants, refugees, and people in need to "fair trade" items with locals in order to improve the quality of their lives.',
     role: 'I was part of the funding member of Fairtrade, My responsibilities are the development of the app where I conducted',
     duties: [
-        'I was part of the funding member of Fairtrade, My responsibilities are the development of the app where I conducted:',
+        'I was part of the funding member of Fairtrade, I oversaw the development of the app. Some of the methodologies I used to design the app:',
         'Problem and concepts',
         'Audiences & needs',
         'Empathy sketches & affinity mapping',

@@ -19,11 +19,11 @@ const titleText1 = {
 }
 
 const titleText2 = {
-  title: 'Content Architecture'
+  title: 'Ideate the Core Architecture'
 }
 
 const titleText3 = {
-  title: 'Prototype'
+  title: 'Prototype & Validation'
 }
 
 const titleText4 = {
@@ -45,14 +45,14 @@ const titleText7 = {
 const introRole = {
   sectionClass: 'list-style-circle',
   content: 'BRIOVR is an online platform for 3D prototyping and VR/AR visualization. This tool allows users to upload their models to the cloud, create animations and interactions, and share instantly with others.',
-  duties: ['My responsibilities:',
+  duties: ['I was the sole designer and currently one of the leading designers for BRIOVR. I have adapted a variety of UX methodologies:',
     'User interviews',
     'Comparative analysis',
-    'Affinity mapping',
     'Design workshops',
     'Wireframe development',
     'Usability testing',
-    'Prototype development'
+    'Prototype development',
+    'Motion design'
   ],
   img: '../../../assets/images/proj_briovr/behaviourstart.gif'
 }
@@ -66,13 +66,17 @@ const background = {
 const backgroundLayout = {
   deviceFrame: 'laptop',
   img: '../../../assets/images/proj_briovr/background.png',
-  content: 'The fundamental interface of BRIOVR is similar to major design and modeling apps. Majority of the screen is dedicated to the 3D working space as features and tools are located on the side and bottom.'
+  content: 'The fundamental interface of BRIOVR also honours the modern major design and modeling apps. Majority of the screen is dedicated to the 3D working space as supplementary features and tools are located on the side and bottom.'
 }
 
 const challenge = {
   title: 'Challenge - create an intuitive and easy to use interactive system',
   sectionClass: 'list-style-circle',
   content: [' Some of the shareholder requirements include:', 'No coding knowledge is required', 'Preferably as simple as click, drag and drop', 'Do not use Node graph', 'Need to have game mechanics (click, move, pickup etc)']
+}
+
+const challenge2 = {
+    content: '### * "I want to click the launch button and the rocket fires off." * ###'
 }
 
 const competitor = {
@@ -86,7 +90,7 @@ const competitor = {
       Header: 'Code type',
       accessor: 'code'
     }, {
-      Header: 'learning time',
+      Header: 'Tutorial time',
       accessor: 'time'
     }, {
       Header: 'User type',
@@ -95,22 +99,22 @@ const competitor = {
   ],
   data: [
     {
-      name: 'Unreal',
-      code: 'Blueprint (C++)',
+      name: [<img src='../../../assets/images/proj_briovr/logo_competitor_unreal.png' />,' Unreal'],
+      code: 'Blueprint , C++',
       time: '10 hours',
       user: 'Game developer'
     }, {
-      name: 'Unity',
-      code: 'C#',
+      name: [<img src='../../../assets/images/proj_briovr/logo_competitor_unity.png' />,' Unity'],
+      code: 'C#, Javascript',
       time: '12 hours',
       user: 'Game developer'
     }, {
-      name: 'Play Canvas',
+      name: [<img src='../../../assets/images/proj_briovr/logo_competitor_playcanvas.png' />,' Play Canvas'],
       code: 'Javascript',
       time: '2.5 hours',
       user: 'Front End Dev'
     }, {
-      name: 'InstaVR',
+      name: [<img src='../../../assets/images/proj_briovr/logo_competitor_instavr.png' />,' InstaVR'],
       code: '/',
       time: '5 min',
       user: '360 video maker'
@@ -125,14 +129,17 @@ const findingCompetitor = {
 
 const competitorInterface = {
     title:'',
-    content:'Most of the ',
-    imgLeft:'http://i.imgur.com/HT4qdAr.png',
-    imgMiddle:'https://docs.unity3d.com/uploads/Main/ScriptingIntroPic.jpg',
-    imgRight:'https://i.ytimg.com/vi/DssoPC5DNs8/maxresdefault.jpg'
+    content:'We went to each of the competitors and tried to learn their system to create interactions. Some of the apps use one of **programming languages**, which exclude themselves from programmers. Some uses a **visual scripting system** based on the concept of node-based interface for creating gameplay elements. The scripting system inherit the core logistics of programming languages. while it is comparatively visually pleasant and clear, it doesn&#39;t solve the problem of **high barrier to entry**. The last type is easy enough for a non-technical person to learn, but its **ability is limited** to a sinlge or couple usages.',
+    imgLeft:'../../../assets/images/proj_briovr/unity.jpg',
+    contentLeft: '**Unity**: C# or Javascript for scripting interactions.',
+    imgMiddle:'../../../assets/images/proj_briovr/unreal.jpg',
+    contentMiddle: '**Unreal**: Unreal uses C++ or Blueprint (visual scripting system).',
+    imgRight:'../../../assets/images/proj_briovr/instavr.jpg',
+    contentRight: '**InstaVR**: Drag and drop, limited to 360 videos.',
 }
 const game = {
   title: 'Gamification Study',
-  content: 'We took inspirations from games and Internet of Things(IOT) that have creative builder mode. Differ from software, the Interaction system in games and IOT has much less cognitive overload at the learning stage, and is more entertaining.',
+  content: 'We took inspirations from games and Internet of Things(IOT) that have creative builder mode. Differ from software, the Interaction system in **games and IOT has much less cognitive overload** at the learning stage, and is **more entertaining**.',
   contentLeft: '**Little big planet**: creates mode contains lots of trigger for user to create their own level.',
   contentRight: '**Little Bits**: Electronic building blocks empowering kids to build bots. ',
   imgLeft: '../../../assets/images/proj_briovr/planet.jpg',
@@ -289,6 +296,7 @@ class Briovr extends React.Component {
         <LayoutImage content={background} style={style} />
         <LayoutImage content={backgroundLayout} style={style} />
         <Problem content={challenge} style={style} /> {/* early state research */}
+        <LayoutImage content={challenge2} style={style} />
         <TitleDivier content={titleText1} style={style} />
         <TableComponent content={competitor} style={style} />
         <FindingComponent content={findingCompetitor} style={style} />
