@@ -13,6 +13,7 @@ import Layout from './Layout'
 import ProjectMain from './views/ProjectMain'
 import Contact from './views/Contact'
 import Resume from './views/Resume'
+import About from './views/About'
 
 // Project link
 import Briovr from './views/ProjectView/Briovr'
@@ -29,6 +30,7 @@ ReactDOM.render((
       <IndexRoute component={ProjectMain} />
 
       <Route path='ProjectMain' component={ProjectMain} />
+      <Route path='About' component={About} />
       <Route path='Resume' component={Resume} />
       <Route path='Contact' component={Contact} />
 

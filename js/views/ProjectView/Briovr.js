@@ -60,8 +60,8 @@ const introRole = {
 const background = {
   title: 'Background - an online model viewering and editing app',
   deviceFrame: 'laptop',
-  video: 'https://youtu.be/YB8NMkyNdEc',
-  content: 'BRIOVR adapts the control scheme of other major 3D apps and softwares. User clicks, drags and holds to interact with the models and features. The following demo video shows a typical user flow of adding model, changing the background and previewing the scene. '
+  img: '../../../assets/images/proj_briovr/brio_model_import.gif',
+  content: 'BRIOVR adapts the control scheme of other major 3D apps and softwares. User clicks, drags and holds to interact with the models and features. The process to add assets (images, video, 3D model and audio) in BRIOVR is as easy as dragging it to the editor.'
 }
 const backgroundLayout = {
   deviceFrame: 'laptop',
