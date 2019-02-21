@@ -7,10 +7,8 @@ class ProjectMain extends React.Component {
       <div className='main-intro'>
         <div className='project-title-layout designer-intro' >
           <div className='main-intro-title'>Moving forward with design</div>
-          <hr className='main-hr' />
           <h4>I'm <b>Kylo Xue</b>, a product designer specializing in building seamless digital experiences. </h4>
-          {/* <p>As a problem solver and storyteller, I embrace and practice the principles of user-centred design and human-computer interaction. I have delivered projects in mobile & web app, IOT, game, and 3D app with the focus on seamless & delighted user journey.</p> */}
-          <p id='main-p-icon'>When I am not designing, I enjoy spending time polish my skills in <i className='icon-image' /> painting, <i className='icon-present' /> photography, <i className='icon-desktop' /> front-end programming, and <i className='icon-gear2' /> building arduino toys. </p>
+          <hr className='main-hr' />
         </div>
         <PortfolioLayout />
       </div>
