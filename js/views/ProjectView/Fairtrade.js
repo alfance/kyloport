@@ -12,6 +12,7 @@ import LayoutOneThird from './components/LayoutOneThird'
 import LayoutTwoThird from './components/LayoutTwoThird'
 import Reflection from './components/Reflection'
 import LayoutHalf from './components/LayoutHalf'
+import ProjectFooter from './components/ProjectFooter'
 import PortfolioStore from '../../stores/PortfolioStore'
 
 const titleText1 = {
@@ -386,7 +387,7 @@ class Fairtrade extends React.Component {
                 <TitleDivier content={titleText7} style={style}/>
                 <LayoutText content={dobetter} style={style}/>
                 <Reflection content={reflections}/>
-
+                <ProjectFooter content={style} style={style} />
             </div>
         </div>)
     }

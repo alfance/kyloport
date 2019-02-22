@@ -11,6 +11,7 @@ import LayoutText from './components/LayoutText'
 import LayoutThree from './components/LayoutThree'
 import LayoutTwoThird from './components/LayoutTwoThird'
 import Reflection from './components/Reflection'
+import ProjectFooter from './components/ProjectFooter'
 import PortfolioStore from '../../stores/PortfolioStore'
 
 const titleText1 = {title: 'User Insights'}
@@ -428,7 +429,7 @@ class Cycnav extends React.Component {
           <TitleDivier content={titleText5} style={style} />
           <LayoutText content={dobetter} />
           <Reflection content={reflections} />
-
+          <ProjectFooter content={style} style={style} />
         </div>
       </div>
     )

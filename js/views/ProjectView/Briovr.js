@@ -12,6 +12,7 @@ import LayoutTwoThird from './components/LayoutTwoThird'
 import LayoutThree from './components/LayoutThree'
 import Reflection from './components/Reflection'
 import LayoutHalf from './components/LayoutHalf'
+import ProjectFooter from './components/ProjectFooter'
 import PortfolioStore from '../../stores/PortfolioStore'
 
 const titleText1 = {
@@ -331,7 +332,7 @@ class Briovr extends React.Component {
         <LayoutText content={dobetter} />
         <LayoutImage content={kidsimage} />
         <Reflection content={reflections} />
-
+        <ProjectFooter content={style} style={style} />
       </div>
     </div>)
   }
