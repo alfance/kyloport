@@ -46633,7 +46633,7 @@
 
 	var resumeDownload = {
 	    sectionClass: 'experience-pdf',
-	    content: '__[Download Resume](../../../assets/images/kylo_Xue_resume.png "title" target="_blank")__ or __[Visit my Linkedin](https://www.linkedin.com/in/kyloxue/ "title" target="_blank")__'
+	    content: '__[Download Resume](../../../assets/images/kylo_Xue_resume.pdf "title" target="_blank")__ or __[Visit my Linkedin](https://www.linkedin.com/in/kyloxue/ "title" target="_blank")__'
 	};
 
 	var experiences = {
