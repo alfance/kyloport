@@ -6,9 +6,8 @@ class ProjectMain extends React.Component {
     return (
       <div className='main-intro'>
         <div className='project-title-layout designer-intro' >
-          <div className='main-intro-title'>Moving forward with design</div>
+          <div className='main-intro-title'><div>Moving forward with design</div></div>
           <h4>I'm <b>Kylo Xue</b>, a product designer specializing in building seamless digital experiences. </h4>
-          <hr className='main-hr' />
         </div>
         <PortfolioLayout />
       </div>

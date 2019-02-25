@@ -9,7 +9,7 @@ class PortfolioLayout extends React.Component {
     })
     return (
       <div>
-        <h1> Projects </h1>
+        <h4> Projects </h4>
         <div className='projectPanel'>
           {portfolioComponents}
         </div>

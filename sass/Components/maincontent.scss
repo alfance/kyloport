@@ -18,10 +18,30 @@
     }
 
     .main-intro-title {
-      font-size: 80px;
+    background-color: $color-primary;
+     font-size: 80px;
     font-weight: 700;
     text-transform: uppercase;
-    padding-bottom: 24px;
+    padding:32px 40px 40px 40px;
+    color:$color-white;
+
+    @include xlarge {
+        margin-right:64px;
+    }
+    @include small {
+        font-size: 56px;
+    }
+    @include xsmall {
+        font-size: 48px;
+    }
+
+    * {
+        max-width: 608px;
+
+        @include small {
+            max-width: 490px;
+        }
+    }
     }
 }
 
@@ -144,6 +164,15 @@
         width: 100%;
         font-weight: 400;
         margin-bottom: 0px;
+        @include medium {
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        @include xsmall {
+            font-size: 16px;
+            line-height: 24px;
+        }
     }
 
     p {
