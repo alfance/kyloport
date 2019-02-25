@@ -67,7 +67,7 @@ const background = {
 const backgroundLayout = {
   deviceFrame: 'laptop',
   img: '../../../assets/images/proj_briovr/background.png',
-  content: 'The fundamental interface of BRIOVR also honours the modern major design and modelling apps. Majority of the screen is dedicated to the 3D working space as supplementary features and tools are located on the side and bottom.'
+  content: 'The primary interface of BRIOVR honours the modern design and modelling apps. Majority of the screen is dedicated to the 3D working space as additional features and tools occupy the side and bottom.'
 }
 
 const challenge = {
