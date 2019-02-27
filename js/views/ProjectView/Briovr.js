@@ -59,34 +59,36 @@ const introRole = {
 }
 
 const background = {
-  title: 'Background - an online model viewing and editing app',
+  title: 'Heuristic study - App background',
   deviceFrame: 'laptop',
   img: '../../../assets/images/proj_briovr/brio_model_import.gif',
-  content: 'BRIOVR empowers the user to create VR/AR experience at ease. To demo the app, the process to add assets (images, video, 3D model and audio) in BRIOVR is as easy as dragging it to the editor.'
+  content: 'BRIOVR empowers the user to create VR/AR experience at ease. In contrast to the mainstream software, users use BRIOVR to visualize their assets, models and 2D media online with a simplistic click and drag control mechanism.'
 }
 const backgroundLayout = {
-  deviceFrame: 'laptop',
   img: '../../../assets/images/proj_briovr/background.png',
   content: 'The primary interface of BRIOVR honours the modern design and modelling apps. Majority of the screen is dedicated to the 3D working space as additional features and tools occupy the side and bottom.'
 }
 
 const challenge = {
-  title: 'Challenge - create an intuitive and easy to use interactive system',
+  title: 'Challenge',
   sectionClass: 'list-style-circle',
-  content: [' Some of the shareholder requirements include:', 'No coding knowledge is required', 'Preferably as simple as click, drag and drop', 'Do not use Node graph', 'Need to have game mechanics (click, move, pickup etc)']
+  content: [' Create an intuitive and easy to use interactive system. Some of the shareholder requirements include:', 'No coding knowledge is required', 'Preferably as simple as click, drag and drop', 'Do not use Node graph', 'Need to have game mechanics (click, move, pickup etc)']
 }
 
 const challenge2 = {
-    content: '### * "I want to click the launch button and the rocket fires off." * ###'
+  content: '### * "I want to click the launch button and the rocket fires off." * ###'
 }
 
 const interview = {
-    title:'User interviews',
-    content: '### * "I want to click the launch button and the rocket fires off." * ###'
+  title: 'User interviews',
+  sectionClass: 'project-layout-wide',
+  contentLeft: ['Benefited from our existing user base, I conducted survey interviews with over 20 of our registered users and 10 from other resources. The purpose is to find out the expectations from our users and people from a similar background.', 'Some interview questions include:', '__ _ "What is your experience with 3D/VR/AR?" _ __', '__ _ "What is your profession?" _ __','__ _ "Any experience with programming or scripting?" _ __','__ _ "What is your industry?" _ __'],
+  imgRight: '../../../assets/images/proj_briovr/user-question.png'
 }
+
 const competitor = {
   title: 'Comparative analysis',
-  content: 'At the discovery phase of my project, I have researched popular apps and software in the market to get a better understanding of the problem.',
+  content: 'With the quantitative data from the user interview and market research, I narrowed down the competitors to BRIOVR. To develop a better understanding of the problem and how others have tackled it, I compiled a chart for the top 4 apps/software, their market, methods and learning curve.',
   columns: [
     {
       Header: 'Name',
@@ -104,22 +106,22 @@ const competitor = {
   ],
   data: [
     {
-      name: [<img src='../../../assets/images/proj_briovr/logo_competitor_unreal.png' />,' Unreal'],
+      name: [<img src='../../../assets/images/proj_briovr/logo_competitor_unreal.png' />, ' Unreal'],
       code: 'Blueprint , C++',
       time: '10 hours',
       user: 'Game developer'
     }, {
-      name: [<img src='../../../assets/images/proj_briovr/logo_competitor_unity.png' />,' Unity'],
+      name: [<img src='../../../assets/images/proj_briovr/logo_competitor_unity.png' />, ' Unity'],
       code: 'C#, Javascript',
       time: '12 hours',
       user: 'Game developer'
     }, {
-      name: [<img src='../../../assets/images/proj_briovr/logo_competitor_playcanvas.png' />,' Play Canvas'],
+      name: [<img src='../../../assets/images/proj_briovr/logo_competitor_playcanvas.png' />, ' Play Canvas'],
       code: 'Javascript',
       time: '2.5 hours',
       user: 'Front End Dev'
     }, {
-      name: [<img src='../../../assets/images/proj_briovr/logo_competitor_instavr.png' />,' InstaVR'],
+      name: [<img src='../../../assets/images/proj_briovr/logo_competitor_instavr.png' />, ' InstaVR'],
       code: '/',
       time: '5 min',
       user: '360 video maker'
@@ -133,14 +135,14 @@ const findingCompetitor = {
 }
 
 const competitorInterface = {
-    title:'',
-    content:'We went to each of the competitors and tried to learn their system to create interactions. Some of the apps use one of **programming languages**, which exclude themselves from programmers. Some use a **visual scripting system** based on the concept of node-based interface for creating gameplay elements. The scripting system inherits the core logistics of programming languages. while it is comparatively visually pleasant and clear, it doesn&#39;t solve the problem of **high barrier to entry**. The last type is easy enough for a non-technical person to learn, but its **ability is limited** to a single or couple usages.',
-    imgLeft:'../../../assets/images/proj_briovr/unity.jpg',
-    contentLeft: '**Unity**: C# or Javascript for scripting interactions.',
-    imgMiddle:'../../../assets/images/proj_briovr/unreal.jpg',
-    contentMiddle: '**Unreal**: Unreal uses C++ or Blueprint (visual scripting system).',
-    imgRight:'../../../assets/images/proj_briovr/instavr.jpg',
-    contentRight: '**InstaVR**: Drag and drop, limited to 360 videos.',
+  title: '',
+  content: 'In order to create interactions, some of the apps use one of **programming languages**, which exclude themselves from programmers; Some use a **visual scripting system** based on the concept of node-based interface for creating gameplay elements. The scripting system inherits the core logistics of programming languages. while it is comparatively visually pleasant and clear, it doesn&#39;t solve the problem of **high barrier to entry**. The last type is easy enough for a non-technical person to learn, but its **ability is limited** to a single or couple usages.',
+  imgLeft: '../../../assets/images/proj_briovr/unity.jpg',
+  contentLeft: '**Unity**: C# or Javascript for scripting interactions.',
+  imgMiddle: '../../../assets/images/proj_briovr/unreal.jpg',
+  contentMiddle: '**Unreal**: Unreal uses C++ or Blueprint (visual scripting system).',
+  imgRight: '../../../assets/images/proj_briovr/instavr.jpg',
+  contentRight: '**InstaVR**: Drag and drop, limited to 360 videos.'
 }
 const game = {
   title: 'Gamification study',
@@ -206,10 +208,16 @@ const wireframes = {
   imgRight: '../../../assets/images/proj_briovr/wireframe.jpg'
 }
 
-const usability = {
+const usability1 ={
   title: 'Usability test',
+  content:  'We have tried a variety of usability tests with people from different background. The diagram below was a test result from our A/B test. With a difference in onboarding, the testers showed discrepancies in preference and comprehension of the behaviour system.',
+  img:  '../../../assets/images/proj_briovr/abtest.png'
+}
+
+const usability2 = {
+  title:'Comments',
   content: [
-    'For each iteration, We have conducted usability tests with people from different background. The initial designs had limited number of successes.',
+    'We also received comments and suggestions from our testers. We sorted the comments by frequencies and prioritized them accordingly:',
     '**"Tutorial was too fast"**',
     'Users had a hard time following the video tutorial. We switched the tutorial to a more immersive onboarding that guided the users step by step.',
     '**"I want instant feedback"**',
@@ -275,7 +283,7 @@ const dobetter = {
 }
 
 const kidsimage = {
-  img: '../../../assets/images/proj_briovr/kidsuser.jpg'
+  img: '../../../assets/images/proj_briovr/social_prove.jpg'
 }
 const reflections = [
   {
@@ -303,6 +311,7 @@ class Briovr extends React.Component {
         <Problem content={challenge} style={style} /> {/* early state research */}
         <LayoutImage content={challenge2} style={style} />
         <TitleDivier content={titleText1} style={style} />
+        <LayoutOneThird content={interview} style={style} />
         <TableComponent content={competitor} style={style} />
         <FindingComponent content={findingCompetitor} style={style} />
         <LayoutThree content={competitorInterface} style={style} />
@@ -316,7 +325,8 @@ class Briovr extends React.Component {
         <TitleDivier content={titleText3} style={style} />
         <LayoutTwoThird content={sketches} style={style} />
         <LayoutOneThird content={wireframes} style={style} />
-        <LayoutText content={usability} />
+        <LayoutImage content={usability1} />
+        <LayoutText content={usability2} />
         <FindingComponent content={findingTest} style={style} /> {/* UI design */}
         <TitleDivier content={titleText4} style={style} />
         <LayoutImage content={prototypeMain} />
@@ -327,7 +337,7 @@ class Briovr extends React.Component {
         <TitleDivier content={titleText6} style={style} />
         <LayoutImage content={endResult} style={style} /> {/* results and reflections */}
         <LayoutHalf content={achieve} />
-        <iframe id='iframe-brio' src='https://view.briovr.com/1cb632f4-2a89-45d3-9e4e-bd71c93ecaa1' frameBorder='0' allowFullScreen />
+        <iframe id='iframe-brio' src='https://view.briovr.com/3723fa9c-2cc6-499b-b418-4903f5e299cc' frameBorder='0' allowFullScreen />
         <TitleDivier content={titleText7} style={style} />
         <LayoutText content={dobetter} />
         <LayoutImage content={kidsimage} />

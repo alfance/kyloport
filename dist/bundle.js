@@ -47137,21 +47137,20 @@
 	};
 
 	var background = {
-	  title: 'Background - an online model viewing and editing app',
+	  title: 'Heuristic study - App background',
 	  deviceFrame: 'laptop',
 	  img: '../../../assets/images/proj_briovr/brio_model_import.gif',
-	  content: 'BRIOVR empowers the user to create VR/AR experience at ease. To demo the app, the process to add assets (images, video, 3D model and audio) in BRIOVR is as easy as dragging it to the editor.'
+	  content: 'BRIOVR empowers the user to create VR/AR experience at ease. In contrast to the mainstream software, users use BRIOVR to visualize their assets, models and 2D media online with a simplistic click and drag control mechanism.'
 	};
 	var backgroundLayout = {
-	  deviceFrame: 'laptop',
 	  img: '../../../assets/images/proj_briovr/background.png',
 	  content: 'The primary interface of BRIOVR honours the modern design and modelling apps. Majority of the screen is dedicated to the 3D working space as additional features and tools occupy the side and bottom.'
 	};
 
 	var challenge = {
-	  title: 'Challenge - create an intuitive and easy to use interactive system',
+	  title: 'Challenge',
 	  sectionClass: 'list-style-circle',
-	  content: [' Some of the shareholder requirements include:', 'No coding knowledge is required', 'Preferably as simple as click, drag and drop', 'Do not use Node graph', 'Need to have game mechanics (click, move, pickup etc)']
+	  content: [' Create an intuitive and easy to use interactive system. Some of the shareholder requirements include:', 'No coding knowledge is required', 'Preferably as simple as click, drag and drop', 'Do not use Node graph', 'Need to have game mechanics (click, move, pickup etc)']
 	};
 
 	var challenge2 = {
@@ -47160,11 +47159,14 @@
 
 	var interview = {
 	  title: 'User interviews',
-	  content: '### * "I want to click the launch button and the rocket fires off." * ###'
+	  sectionClass: 'project-layout-wide',
+	  contentLeft: ['Benefited from our existing user base, I conducted survey interviews with over 20 of our registered users and 10 from other resources. The purpose is to find out the expectations from our users and people from a similar background.', 'Some interview questions include:', '__ _ "What is your experience with 3D/VR/AR?" _ __', '__ _ "What is your profession?" _ __', '__ _ "Any experience with programming or scripting?" _ __', '__ _ "What is your industry?" _ __'],
+	  imgRight: '../../../assets/images/proj_briovr/user-question.png'
 	};
+
 	var competitor = {
 	  title: 'Comparative analysis',
-	  content: 'At the discovery phase of my project, I have researched popular apps and software in the market to get a better understanding of the problem.',
+	  content: 'With the quantitative data from the user interview and market research, I narrowed down the competitors to BRIOVR. To develop a better understanding of the problem and how others have tackled it, I compiled a chart for the top 4 apps/software, their market, methods and learning curve.',
 	  columns: [{
 	    Header: 'Name',
 	    accessor: 'name' // String-based value accessors!
@@ -47208,7 +47210,7 @@
 
 	var competitorInterface = {
 	  title: '',
-	  content: 'We went to each of the competitors and tried to learn their system to create interactions. Some of the apps use one of **programming languages**, which exclude themselves from programmers. Some use a **visual scripting system** based on the concept of node-based interface for creating gameplay elements. The scripting system inherits the core logistics of programming languages. while it is comparatively visually pleasant and clear, it doesn&#39;t solve the problem of **high barrier to entry**. The last type is easy enough for a non-technical person to learn, but its **ability is limited** to a single or couple usages.',
+	  content: 'In order to create interactions, some of the apps use one of **programming languages**, which exclude themselves from programmers; Some use a **visual scripting system** based on the concept of node-based interface for creating gameplay elements. The scripting system inherits the core logistics of programming languages. while it is comparatively visually pleasant and clear, it doesn&#39;t solve the problem of **high barrier to entry**. The last type is easy enough for a non-technical person to learn, but its **ability is limited** to a single or couple usages.',
 	  imgLeft: '../../../assets/images/proj_briovr/unity.jpg',
 	  contentLeft: '**Unity**: C# or Javascript for scripting interactions.',
 	  imgMiddle: '../../../assets/images/proj_briovr/unreal.jpg',
@@ -47272,9 +47274,15 @@
 	  imgRight: '../../../assets/images/proj_briovr/wireframe.jpg'
 	};
 
-	var usability = {
+	var usability1 = {
 	  title: 'Usability test',
-	  content: ['For each iteration, We have conducted usability tests with people from different background. The initial designs had limited number of successes.', '**"Tutorial was too fast"**', 'Users had a hard time following the video tutorial. We switched the tutorial to a more immersive onboarding that guided the users step by step.', '**"I want instant feedback"**', 'Whenever users added translation changes, they are unable to view the changes right away. A more direct and instant feed is needed', 'The onboarding sometimes was neglected', '**"Can I modify the code?""**', 'This is commonly asked by people with a programming background. After carefully analyzing and discussion, instead of opening up the ability for this user group, we decided to make the system more friendly to technical users.']
+	  content: 'We have tried a variety of usability tests with people from different background. The diagram below was a test result from our A/B test. With a difference in onboarding, the testers showed discrepancies in preference and comprehension of the behaviour system.',
+	  img: '../../../assets/images/proj_briovr/abtest.png'
+	};
+
+	var usability2 = {
+	  title: 'Comments',
+	  content: ['We also received comments and suggestions from our testers. We sorted the comments by frequencies and prioritized them accordingly:', '**"Tutorial was too fast"**', 'Users had a hard time following the video tutorial. We switched the tutorial to a more immersive onboarding that guided the users step by step.', '**"I want instant feedback"**', 'Whenever users added translation changes, they are unable to view the changes right away. A more direct and instant feed is needed', 'The onboarding sometimes was neglected', '**"Can I modify the code?""**', 'This is commonly asked by people with a programming background. After carefully analyzing and discussion, instead of opening up the ability for this user group, we decided to make the system more friendly to technical users.']
 	};
 
 	var findingTest = {
@@ -47327,7 +47335,7 @@
 	};
 
 	var kidsimage = {
-	  img: '../../../assets/images/proj_briovr/kidsuser.jpg'
+	  img: '../../../assets/images/proj_briovr/social_prove.jpg'
 	};
 	var reflections = [{
 	  subject: 'Don not just copy, adapt.',
@@ -47368,6 +47376,7 @@
 	          ' ',
 	          _react2.default.createElement(_LayoutImage2.default, { content: challenge2, style: style }),
 	          _react2.default.createElement(_TitleDivider2.default, { content: titleText1, style: style }),
+	          _react2.default.createElement(_LayoutOneThird2.default, { content: interview, style: style }),
 	          _react2.default.createElement(_TableComponent2.default, { content: competitor, style: style }),
 	          _react2.default.createElement(_FindingComponent2.default, { content: findingCompetitor, style: style }),
 	          _react2.default.createElement(_LayoutThree2.default, { content: competitorInterface, style: style }),
@@ -47383,7 +47392,8 @@
 	          _react2.default.createElement(_TitleDivider2.default, { content: titleText3, style: style }),
 	          _react2.default.createElement(_LayoutTwoThird2.default, { content: sketches, style: style }),
 	          _react2.default.createElement(_LayoutOneThird2.default, { content: wireframes, style: style }),
-	          _react2.default.createElement(_LayoutText2.default, { content: usability }),
+	          _react2.default.createElement(_LayoutImage2.default, { content: usability1 }),
+	          _react2.default.createElement(_LayoutText2.default, { content: usability2 }),
 	          _react2.default.createElement(_FindingComponent2.default, { content: findingTest, style: style }),
 	          ' ',
 	          _react2.default.createElement(_TitleDivider2.default, { content: titleText4, style: style }),
@@ -47397,7 +47407,7 @@
 	          _react2.default.createElement(_LayoutImage2.default, { content: endResult, style: style }),
 	          ' ',
 	          _react2.default.createElement(_LayoutHalf2.default, { content: achieve }),
-	          _react2.default.createElement('iframe', { id: 'iframe-brio', src: 'https://view.briovr.com/1cb632f4-2a89-45d3-9e4e-bd71c93ecaa1', frameBorder: '0', allowFullScreen: true }),
+	          _react2.default.createElement('iframe', { id: 'iframe-brio', src: 'https://view.briovr.com/3723fa9c-2cc6-499b-b418-4903f5e299cc', frameBorder: '0', allowFullScreen: true }),
 	          _react2.default.createElement(_TitleDivider2.default, { content: titleText7, style: style }),
 	          _react2.default.createElement(_LayoutText2.default, { content: dobetter }),
 	          _react2.default.createElement(_LayoutImage2.default, { content: kidsimage }),
@@ -51548,7 +51558,7 @@
 	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
-	    value: true
+	  value: true
 	});
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -51626,410 +51636,418 @@
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 	var titleText1 = {
-	    title: 'Goal'
+	  title: 'Goal'
 	};
 
 	var titleText2 = {
-	    title: 'Getting to know the users'
+	  title: 'Getting to know the users'
 	};
 
 	var titleText3 = {
-	    title: 'Ideation + Validation'
+	  title: 'Ideation + Validation'
 	};
 
 	var titleText4 = {
-	    title: 'Design'
+	  title: 'Design'
 	};
 
 	var titleText5 = {
-	    title: 'Introducing - FairTrade'
+	  title: 'Introducing - FairTrade'
 	};
 
 	var titleText7 = {
-	    title: 'Reflections'
+	  title: 'Reflections'
 	};
 
 	var projectTitle = {
-	    title: 'Fairtrade',
-	    logo: '../../../assets/images/proj_fairtrade/logo-long.svg',
-	    field: 'Product Design & Development',
-	    intro: 'Mobile platform connecting locals and newcomers',
-	    link: 'fairtrade',
-	    bgImg: ''
+	  title: 'Fairtrade',
+	  logo: '../../../assets/images/proj_fairtrade/logo-long.svg',
+	  field: 'Product Design & Development',
+	  intro: 'Mobile platform connecting locals and newcomers',
+	  link: 'fairtrade',
+	  bgImg: ''
 	};
 
 	var introRole = {
-	    sectionClass: 'list-style-circle',
-	    content: 'Fairtrade is a website/app that enables newly arrived underprivileged migrants, refugees, and people in need to "fair trade" items with locals in order to improve the quality of their lives.',
-	    role: 'I was part of the funding member of Fairtrade, My responsibilities are the development of the app where I conducted',
-	    duties: ['I was part of the founding member of Fairtrade, I oversaw the development of the app. Some of the methodologies I used to design the app:', 'Problem and concepts', 'Audiences & needs', 'Empathy sketches & affinity mapping', 'Wireframe development & design workshops', 'Usability testing', 'Prototype development'],
-	    img: '../../../assets/images/proj_fairtrade/thumb.gif'
+	  sectionClass: 'list-style-circle',
+	  content: 'Fairtrade is a website/app that enables newly arrived underprivileged migrants, refugees, and people in need to "fair trade" items with locals in order to improve the quality of their lives.',
+	  role: 'I was part of the funding member of Fairtrade, My responsibilities are the development of the app where I conducted',
+	  duties: ['I was part of the founding member of Fairtrade, I oversaw the development of the app. Some of the methodologies I used to design the app:', 'Problem and concepts', 'Audiences & needs', 'Empathy sketches & affinity mapping', 'Wireframe development & design workshops', 'Usability testing', 'Prototype development'],
+	  img: '../../../assets/images/proj_fairtrade/thumb.gif'
 	};
 
 	var problem = {
-	    title: 'Problem',
-	    sectionClass: 'list-style-circle',
-	    content: 'Most refugees and newcomers arrive in a new country with only the clothes on their backs. Upon arrival, they are immediately reliant on donations. Many local families are willing to help. However, there is almost no way to tell whether the items that are donated in good faith are actually needed by the families that receive them. As a result, the recipients often receive an abundance of products that they do not need. '
+	  title: 'Problem',
+	  sectionClass: 'list-style-circle',
+	  content: 'Most refugees and newcomers arrive in a new country with only the clothes on their backs. Upon arrival, they are immediately reliant on donations. Many local families are willing to help. However, there is almost no way to tell whether the items that are donated in good faith are actually needed by the families that receive them. As a result, the recipients often receive an abundance of products that they do not need. '
 	};
 
 	var goal = {
-	    sectionClass: 'list-style-number',
-	    title: 'Our goal',
-	    content: ['', '1. To help the newcomers and refugees get the necessities when coming to a new country', '2. Bridge the gap between newcomers, refugees and locals', '3. Build communications among people with various backgrounds']
+	  sectionClass: 'list-style-number',
+	  title: 'Our goal',
+	  content: ['', '1. To help the newcomers and refugees get the necessities when coming to a new country', '2. Bridge the gap between newcomers, refugees and locals', '3. Build communications among people with various backgrounds']
+	};
+
+	var interview = {
+	  title: 'Who are our users',
+	  contentLeft: ['All 3 founding members of the app can relate to the pains of newcomers and locals. We kicked off the user interview process by asking ourselves and our family around us: __ What kind of help do you need to live and settle in a new country? __', 'We recruited refugees, immigrants, international students on the one hand, and locals on the other side, to ask their opinions about the other side and their current situation. This helped us form a solid understanding of the user groups.'],
+	  imgMiddle: '../../../assets/images/proj_fairtrade/question2.png',
+	  imgRight: '../../../assets/images/proj_fairtrade/question1.png'
 	};
 
 	var persona0 = {
-	    title: 'Personas',
-	    content: ['Our users are people who are new to the country, and who were born or had spent years in the same country. We researched the habit of each group and conducted informal interviews. Hence we can fit better into the user&#39s life rather than a single problem they are having.', 'Reports have been given us insights on the unique risks people are facing coming to Canada. Other than the most important needs of employment security, People often find the transition to the new country difficult due to language, cultural difference and lack of resources.']
+	  title: 'Personas',
+	  content: ['Our users are people who are new to the country, and who were born or had spent years in the same country. We researched the habit of each group and conducted informal interviews. Hence we can fit better into the user&#39s life rather than a single problem they are having.', 'Reports have been given us insights on the unique risks people are facing coming to Canada. Other than the most important needs of employment security, People often find the transition to the new country difficult due to language, cultural difference and lack of resources.']
 	};
 	var persona1 = {
-	    title: 'Newcomers',
-	    content: '"Canada accepted more than **296,000** permanent residents in 2016, and more than **62,000** of those were re-settled refugees, the Government Canada said in a 2017 report to parliament on immigration. Approximately **78,000** permanent residents were admitted in the "family class"." - _Huffpost_',
-	    imgLeft: '../../../assets/images/proj_fairtrade/personafair-04.png',
-	    imgRight: '../../../assets/images/proj_fairtrade/personafair-03.png',
-	    sectionClass: 'section-persona',
-	    contentLeft: ['**Ralphy**', 'Refugee', 'Less than a week in Canada', 'Has nothing other than clothing', 'Ralphy needs anything to get him started, from small housewares, accessories to large appliances.'],
-	    contentRight: ['**Sol**', 'International Students', 'Less than 2 months in Canada', 'Came with personal belongings', 'Sol needs more for stuff she could not bring overseas, which means furniture for her to start a new life that is not too far from her home country.']
+	  title: 'Newcomers',
+	  content: '"Canada accepted more than **296,000** permanent residents in 2016, and more than **62,000** of those were re-settled refugees, the Government Canada said in a 2017 report to parliament on immigration. Approximately **78,000** permanent residents were admitted in the "family class"." - _Huffpost_',
+	  imgLeft: '../../../assets/images/proj_fairtrade/personafair-04.png',
+	  imgRight: '../../../assets/images/proj_fairtrade/personafair-03.png',
+	  sectionClass: 'section-persona',
+	  contentLeft: ['**Ralphy**', 'Refugee', 'Less than a week in Canada', 'Has nothing other than clothing', 'Ralphy needs anything to get him started, from small housewares, accessories to large appliances.'],
+	  contentRight: ['**Sol**', 'International Students', 'Less than 2 months in Canada', 'Came with personal belongings', 'Sol needs more for stuff she could not bring overseas, which means furniture for her to start a new life that is not too far from her home country.']
 	};
 	var persona2 = {
-	    title: 'Locals',
-	    content: 'The government of Canada provides settlement and resettlement services through several hundred destination communities and service provider organizations across Canada. This is inadequate in comparison to the number of newcomers coming to Canada each year. Many of the locals have express interests to help the newcomers but were limited to be within administrative services and infrastructures. Following are two examples of the local community personas.',
-	    imgLeft: '../../../assets/images/proj_fairtrade/personafair-02.png',
-	    imgRight: '../../../assets/images/proj_fairtrade/personafair-01.png',
-	    sectionClass: 'section-persona',
-	    contentLeft: ['**Rachel**', 'Immigrants', 'Being in Canada for over 10 years', 'Rachel was once a newcomer. After spent over a decade adapting in the new country, she had made a life and would like to help out people whom once were in the same situation.'],
-	    contentRight: ['**Brad**', 'Local', 'Born in Canada', 'brad is a local who never spent time outside of this country. He has abundant of housewares/electronics that he would like to donate to who is in need.']
+	  title: 'Locals',
+	  content: 'The government of Canada provides settlement and resettlement services through several hundred destination communities and service provider organizations across Canada. This is inadequate in comparison to the number of newcomers coming to Canada each year. Many of the locals have express interests to help the newcomers but were limited to be within administrative services and infrastructures. Following are two examples of the local community personas.',
+	  imgLeft: '../../../assets/images/proj_fairtrade/personafair-02.png',
+	  imgRight: '../../../assets/images/proj_fairtrade/personafair-01.png',
+	  sectionClass: 'section-persona',
+	  contentLeft: ['**Rachel**', 'Immigrants', 'Being in Canada for over 10 years', 'Rachel was once a newcomer. After spent over a decade adapting in the new country, she had made a life and would like to help out people whom once were in the same situation.'],
+	  contentRight: ['**Brad**', 'Local', 'Born in Canada', 'brad is a local who never spent time outside of this country. He has abundant of housewares/electronics that he would like to donate to who is in need.']
 	};
 
 	var idea1 = {
-	    title: 'Ideation 1 - Onling donation',
-	    contentLeft: ['The first ideation we came up was focusing on a donating platform dedicated to underprivileged people. Since the pain points lie in the intransparent donation process. What we are hoping to do is to let the users from both sides &#39;communicate&#39; with each other regarding their needs and preferences.', '**Ideation: Online platform for the donors to donate items directly to the shoppers.**'],
-	    imgRight: '../../../assets/images/proj_fairtrade/idea1.svg'
+	  title: 'Ideation 1 - Onling donation',
+	  contentLeft: ['The first ideation we came up was focusing on a donating platform dedicated to underprivileged people. Since the pain points lie in the intransparent donation process. What we are hoping to do is to let the users from both sides &#39;communicate&#39; with each other regarding their needs and preferences.', '**Ideation: Online platform for the donors to donate items directly to the shoppers.**'],
+	  imgRight: '../../../assets/images/proj_fairtrade/idea1.svg'
 	};
 	var validity1 = {
-	    title: 'Validation : Polarized feedbacks',
-	    content: 'After we tested the ideation to potential users we received polarized reactions from the users. Local is very receptive of the idea and are willing to donate their belongs; However, Newcomers perceive the concept as charitable sympathy. On the other hand, the concept of pure taking has put a **burden on the newcomers&#39 self-esteem**, especially if their profiles are exposed online.',
-	    columns: [{
-	        Header: 'User',
-	        accessor: 'user' // String-based value accessors!
-	    }, {
-	        Header: 'Acceptance',
-	        accessor: 'accept'
-	    }, {
-	        Header: 'Needs',
-	        accessor: 'need'
-	    }],
-	    data: [{
-	        user: _react2.default.createElement(
-	            'b',
-	            null,
-	            _react2.default.createElement(
-	                'font',
-	                { color: '55DCB0' },
-	                'Shopper (new comer)'
-	            )
-	        ),
-	        accept: _react2.default.createElement(
-	            'b',
-	            null,
-	            '48%'
-	        ),
-	        need: '4/5'
-	    }, {
-	        user: _react2.default.createElement(
-	            'b',
-	            null,
-	            _react2.default.createElement(
-	                'font',
-	                { color: 'f3446e' },
-	                'Donor (local)'
-	            )
-	        ),
-	        accept: '68%',
-	        need: _react2.default.createElement(
-	            'b',
-	            null,
-	            '44%'
-	        )
-	    }]
+	  title: 'Validation : Polarized feedbacks',
+	  content: 'After we tested the ideation to potential users we received polarized reactions from the users. Local is very receptive of the idea and are willing to donate their belongs; However, Newcomers perceive the concept as charitable sympathy. On the other hand, the concept of pure taking has put a **burden on the newcomers&#39 self-esteem**, especially if their profiles are exposed online.',
+	  columns: [{
+	    Header: 'User',
+	    accessor: 'user' // String-based value accessors!
+	  }, {
+	    Header: 'Acceptance',
+	    accessor: 'accept'
+	  }, {
+	    Header: 'Needs',
+	    accessor: 'need'
+	  }],
+	  data: [{
+	    user: _react2.default.createElement(
+	      'b',
+	      null,
+	      _react2.default.createElement(
+	        'font',
+	        { color: '55DCB0' },
+	        'Shopper (new comer)'
+	      )
+	    ),
+	    accept: _react2.default.createElement(
+	      'b',
+	      null,
+	      '48%'
+	    ),
+	    need: '4/5'
+	  }, {
+	    user: _react2.default.createElement(
+	      'b',
+	      null,
+	      _react2.default.createElement(
+	        'font',
+	        { color: 'f3446e' },
+	        'Donor (local)'
+	      )
+	    ),
+	    accept: '68%',
+	    need: _react2.default.createElement(
+	      'b',
+	      null,
+	      '44%'
+	    )
+	  }]
 	};
 
 	var feedback1 = {
-	    content: '#### *"I don&#39;t want people to perceive me as a taker."* - Shopper'
+	  content: '#### *"I don&#39;t want people to perceive me as a taker."* - Shopper'
 	};
 
 	var idea2 = {
-	    title: 'Ideation 2 - Culturally diversified Homecook',
-	    contentLeft: ['We realized the importance of acknowledging people&#39; pride. While we were conducting interviews, we came across a user type that is present almost in many shopper groups: **housewives** or **househusbands**. We found out that in most refugee or immigrant families, one of the two households would stay with the youngsters rather than making earning due to limitless resources. We wanted to provide a way for the stay-at-home people a way to make a profit while the donors get to experience authentic cuisines from another culture. ', '**Ideation: an app that let the shopper sell their home-cooked meal to the donor.**'],
-	    imgRight: '../../../assets/images/proj_fairtrade/idea2.svg'
+	  title: 'Ideation 2 - Culturally diversified homecook',
+	  contentLeft: ['We realized the importance of acknowledging people&#39; pride. While we were conducting interviews, we came across a user type that is present almost in many shopper groups: **housewives** or **househusbands**. We found out that in most refugee or immigrant families, one of the two households would stay with the youngsters rather than making earning due to limitless resources. We wanted to provide a way for the stay-at-home people a way to make a profit while the donors get to experience authentic cuisines from another culture. ', '**Ideation: an app that let the shopper sell their home-cooked meal to the donor.**'],
+	  imgRight: '../../../assets/images/proj_fairtrade/idea2.svg'
 	};
 	var validity2 = {
-	    title: 'Validation: Kitchen hygiene',
-	    content: 'Both the donors and shoppers are happy about this idea. The shoppers are notably more open and positive compared to ideation 1. However, after conducting validation research and interviews from authorities, the **concerns on the cooking environment** emerged. In order for a home cook to legally sell their dishes, they first need to obtain an operating license after their kitchen got examined by authorized officials. This steeps the difficulty of execution.',
-	    columns: [{
-	        Header: 'User',
-	        accessor: 'user' // String-based value accessors!
-	    }, {
-	        Header: 'Acceptance',
-	        accessor: 'accept'
-	    }, {
-	        Header: 'Needs',
-	        accessor: 'need'
-	    }, {
-	        Header: 'Feasibility',
-	        accessor: 'feasible'
-	    }],
-	    data: [{
-	        user: _react2.default.createElement(
-	            'b',
-	            null,
-	            _react2.default.createElement(
-	                'font',
-	                { color: '55DCB0' },
-	                'Shopper'
-	            )
-	        ),
-	        accept: '92%',
-	        need: '80%',
-	        feasible: _react2.default.createElement(
-	            'b',
-	            null,
-	            '2/5 (cooking environment)'
-	        )
-	    }, {
-	        user: _react2.default.createElement(
-	            'b',
-	            null,
-	            _react2.default.createElement(
-	                'font',
-	                { color: 'f3446e' },
-	                'Donor'
-	            )
-	        ),
-	        accept: '80%',
-	        need: '74%',
-	        feasible: '5/5'
-	    }]
+	  title: 'Validation: Kitchen hygiene',
+	  content: 'Both the donors and shoppers are happy about this idea. The shoppers are notably more open and positive compared to ideation 1. However, after conducting validation research and interviews from authorities, the **concerns on the cooking environment** emerged. In order for a home cook to legally sell their dishes, they first need to obtain an operating license after their kitchen got examined by authorized officials. This steeps the difficulty of execution.',
+	  columns: [{
+	    Header: 'User',
+	    accessor: 'user' // String-based value accessors!
+	  }, {
+	    Header: 'Acceptance',
+	    accessor: 'accept'
+	  }, {
+	    Header: 'Needs',
+	    accessor: 'need'
+	  }, {
+	    Header: 'Feasibility',
+	    accessor: 'feasible'
+	  }],
+	  data: [{
+	    user: _react2.default.createElement(
+	      'b',
+	      null,
+	      _react2.default.createElement(
+	        'font',
+	        { color: '55DCB0' },
+	        'Shopper'
+	      )
+	    ),
+	    accept: '92%',
+	    need: '80%',
+	    feasible: _react2.default.createElement(
+	      'b',
+	      null,
+	      '2/5 (cooking environment)'
+	    )
+	  }, {
+	    user: _react2.default.createElement(
+	      'b',
+	      null,
+	      _react2.default.createElement(
+	        'font',
+	        { color: 'f3446e' },
+	        'Donor'
+	      )
+	    ),
+	    accept: '80%',
+	    need: '74%',
+	    feasible: '5/5'
+	  }]
 	};
 
 	var idea3 = {
-	    title: 'Ideation 3 - Exchange platform',
-	    contentLeft: ['Combining previous ideations and validations, we went back to the drawing board and came to a unanimous decision: an exchange platform that let users &#39;fairtrade&#39; anything. For donors, they can trade the abundant items. For shoppers, they can trade food, item or **karma points**: rewards points that the shoppers give to the donor as a form of appreciation. The karma points can be used as a redeemable currency at shops and stores.', '**Ideation: Platform that allows the donor and shopper to exchange tangible items or &#39;karma&#39;. **'],
-	    imgRight: '../../../assets/images/proj_fairtrade/idea3.svg'
+	  title: 'Ideation 3 - Exchange platform',
+	  contentLeft: ['Combining previous ideations and validations, we went back to the drawing board and came to a unanimous decision: an exchange platform that let users &#39;fairtrade&#39; anything. For donors, they can trade the abundant items. For shoppers, they can trade food, item or **karma points**: rewards points that the shoppers give to the donor as a form of appreciation. The karma points can be used as a redeemable currency at shops and stores.', '**Ideation: Platform that allows the donor and shopper to exchange tangible items or &#39;karma&#39;. **'],
+	  imgRight: '../../../assets/images/proj_fairtrade/idea3.svg'
 	};
 
 	var validity3 = {
-	    title: 'Validation : Executable & accepted',
-	    content: 'The concept is widely accepted by the donors and shoppers and is determined to be feasible from both the business and technical perspective. The shoppers are amenable to the concept of giving back, and the karma point system gives them an available option even if they are scarce on the resource.',
-	    columns: [{
-	        Header: 'User',
-	        accessor: 'user' // String-based value accessors!
-	    }, {
-	        Header: 'Acceptance',
-	        accessor: 'accept'
-	    }, {
-	        Header: 'Needs',
-	        accessor: 'need'
-	    }, {
-	        Header: 'Feasibility',
-	        accessor: 'feasible'
-	    }],
-	    data: [{
-	        user: _react2.default.createElement(
-	            'b',
-	            null,
-	            _react2.default.createElement(
-	                'font',
-	                { color: '55DCB0' },
-	                'Shopper'
-	            )
-	        ),
-	        accept: '84%',
-	        need: '92%',
-	        feasible: '5/5'
-	    }, {
-	        user: _react2.default.createElement(
-	            'b',
-	            null,
-	            _react2.default.createElement(
-	                'font',
-	                { color: 'f3446e' },
-	                'Donor'
-	            )
-	        ),
-	        accept: '80%',
-	        need: '68%',
-	        feasible: '5/5'
-	    }]
+	  title: 'Validation : Executable & accepted',
+	  content: 'The concept is widely accepted by the donors and shoppers and is determined to be feasible from both the business and technical perspective. The shoppers are amenable to the concept of giving back, and the karma point system gives them an available option even if they are scarce on the resource.',
+	  columns: [{
+	    Header: 'User',
+	    accessor: 'user' // String-based value accessors!
+	  }, {
+	    Header: 'Acceptance',
+	    accessor: 'accept'
+	  }, {
+	    Header: 'Needs',
+	    accessor: 'need'
+	  }, {
+	    Header: 'Feasibility',
+	    accessor: 'feasible'
+	  }],
+	  data: [{
+	    user: _react2.default.createElement(
+	      'b',
+	      null,
+	      _react2.default.createElement(
+	        'font',
+	        { color: '55DCB0' },
+	        'Shopper'
+	      )
+	    ),
+	    accept: '84%',
+	    need: '92%',
+	    feasible: '5/5'
+	  }, {
+	    user: _react2.default.createElement(
+	      'b',
+	      null,
+	      _react2.default.createElement(
+	        'font',
+	        { color: 'f3446e' },
+	        'Donor'
+	      )
+	    ),
+	    accept: '80%',
+	    need: '68%',
+	    feasible: '5/5'
+	  }]
 	};
 
 	var pitch = {
-	    content: '### * "There is value to good will." * ###'
+	  content: '### * "There is value to good will." * ###'
 	};
 
 	var flowChart = {
-	    title: 'User Flow Chart',
-	    content: 'Now we have a solid product strategy we proceeded to map out the user flow. Fairtrade would have two separate portals for the shoppers and donors. While their user experience flows are analogous the perception of interaction with the app is dissimilar. To the users, TairTrade is a trading ground that facilitates exchanges on tangible and digital items. We want to make sure the needs and trading items can be expressed clearly and effectively, and the trading process can be as intuitive as possible',
-	    img: '../../../assets/images/proj_fairtrade/flowchart.jpg'
+	  title: 'User flow chart',
+	  content: 'Now we have a solid product strategy we proceeded to map out the user flow. Fairtrade would have two separate portals for the shoppers and donors. While their user experience flows are analogous the perception of interaction with the app is dissimilar. To the users, TairTrade is a trading ground that facilitates exchanges on tangible and digital items. We want to make sure the needs and trading items can be expressed clearly and effectively, and the trading process can be as intuitive as possible',
+	  img: '../../../assets/images/proj_fairtrade/flowchart.jpg'
 	};
 
 	var flowchart2 = {
-	    sectionClass: 'list-style-number',
-	    contentLeft: ['The user flow chart helped us visualize every step the user will take to complete a task. It also layouts the importance of each task and thus we can prioritize the core functions based on the developmental cycle.', '**Add item page**: Add the item people need or want to trade.', '**Discover page**: Explore what&#39;s available', '**Trade Monitor**: Pages that facilitate the trade to make sure everyone gets what they want', '**Message**: Additional communicational method.', '**Search**: Efficient way to let people filter out their needs.'],
-	    imgRight: '../../../assets/images/proj_fairtrade/frame.png'
+	  sectionClass: 'list-style-number',
+	  contentLeft: ['The user flow chart helped us visualize every step the user will take to complete a task. It also layouts the importance of each task and thus we can prioritize the core functions based on the developmental cycle.', '**Add item page**: Add the item people need or want to trade.', '**Discover page**: Explore what&#39;s available', '**Trade Monitor**: Pages that facilitate the trade to make sure everyone gets what they want', '**Message**: Additional communicational method.', '**Search**: Efficient way to let people filter out their needs.'],
+	  imgRight: '../../../assets/images/proj_fairtrade/frame.png'
 	};
 
 	var wireframe1 = {
-	    title: 'Wireframe',
-	    sectionClass: 'project-layout-wide',
-	    content: 'We have gone through numerous versions of the wireframes. With constructive critics from other people, we were able to quickly upgrade the designs without worrying too much about the appearance.',
-	    img: '../../../assets/images/proj_fairtrade/wireframe_eg1.png',
-	    label: '**Wireframe 1**: One of the problems with wireframe1 was laborious registration and onboarding. The user needed to fill their personal and trade item information upfront before moving on to explore page. This takes up approximately **5 pages and 6 steps**. We have discovered a high bounce rate along the registration process, which resulted in poor conversions.'
+	  title: 'Wireframe',
+	  sectionClass: 'project-layout-wide',
+	  content: 'We have gone through numerous versions of the wireframes. With constructive critics from other people, we were able to quickly upgrade the designs without worrying too much about the appearance.',
+	  img: '../../../assets/images/proj_fairtrade/wireframe_eg1.png',
+	  label: '**Wireframe 1**: One of the problems with wireframe1 was laborious registration and onboarding. The user needed to fill their personal and trade item information upfront before moving on to explore page. This takes up approximately **5 pages and 6 steps**. We have discovered a high bounce rate along the registration process, which resulted in poor conversions.'
 	};
 
 	var userTest1 = {
-	    content: ['*Registration process is too long.*', '*How could I tell if a trade is success?*', '*There is no skip button*']
+	  content: ['*Registration process is too long.*', '*How could I tell if a trade is success?*', '*There is no skip button*']
 	};
 
 	var wireframe2 = {
-	    sectionClass: 'project-layout-wide',
-	    content: 'We reduced the registration requirements and process to **2 pages and 3 steps**; separated the funnel between donors and shoppers starting on screen 1; and added flexible options for users to skip certain pages. For instance, users can choose to discover what is out in the market before making a decision or adding an item to trade.',
-	    img: '../../../assets/images/proj_fairtrade/wireframe_eg2.png',
-	    label: '**wireframe2**: Users have an improved experience with the app, however, we discovered that a few people still feel intimidated and a little uncomfortable by the personal questions FairTrade had required at the registration process.'
+	  sectionClass: 'project-layout-wide',
+	  content: 'We reduced the registration requirements and process to **2 pages and 3 steps**; separated the funnel between donors and shoppers starting on screen 1; and added flexible options for users to skip certain pages. For instance, users can choose to discover what is out in the market before making a decision or adding an item to trade.',
+	  img: '../../../assets/images/proj_fairtrade/wireframe_eg2.png',
+	  label: '**wireframe2**: Users have an improved experience with the app, however, we discovered that a few people still feel intimidated and a little uncomfortable by the personal questions FairTrade had required at the registration process.'
 	};
 
 	var wireframe3 = {
-	    sectionClass: 'project-layout-wide',
-	    content: 'To take it a step further, we neglected the registration as the mandatory first step to enter Fairtrade. Instead, we let people discover the trading ground freely upfront. There is no need for registration until people had shown interests in using the app to make a trade. This would help users build trust in us.',
-	    img: '../../../assets/images/proj_fairtrade/wireframe_eg3.png',
-	    label: '**wireframe3**: We have seen promising improvements with the overall app interaction.The trade offer task has noticeably higher click rate and completion rate after we removed the registration barrier.'
+	  sectionClass: 'project-layout-wide',
+	  content: 'To take it a step further, we neglected the registration as the mandatory first step to enter Fairtrade. Instead, we let people discover the trading ground freely upfront. There is no need for registration until people had shown interests in using the app to make a trade. This would help users build trust in us.',
+	  img: '../../../assets/images/proj_fairtrade/wireframe_eg3.png',
+	  label: '**wireframe3**: We have seen promising improvements with the overall app interaction.The trade offer task has noticeably higher click rate and completion rate after we removed the registration barrier.'
 	};
 
 	var color = {
-	    title: 'Colour scheme',
-	    sectionClass: 'list-style-circle',
-	    content: ['Out of all the profit or nonprofit apps and software we have seen, all of them use colours and design styles that are formal and official. We were given the impression that the other apps are government associated. While the placid style could bring calm and tranquil to the users, it also feels distant and solemn. For FairTrade, what we want the user to experience is welcome and cheerfulness. It is hard coming to a new country, but it also means a new starting point with full of opportunities and potentials. In the end, we all agreed upon a **colour scheme that is bright, upbeat and sparks joy**.', 'We separated the two groups with two colours  and used a third colour to indicate neutral ground. The colours are used throughout the app as a guide to indicate various situations and scenarios.'],
-	    img: '../../../assets/images/proj_fairtrade/color-palette.png'
+	  title: 'Colour scheme',
+	  sectionClass: 'list-style-circle',
+	  content: ['Out of all the profit or nonprofit apps and software we have seen, all of them use colours and design styles that are formal and official. We were given the impression that the other apps are government associated. While the placid style could bring calm and tranquil to the users, it also feels distant and solemn. For FairTrade, what we want the user to experience is welcome and cheerfulness. It is hard coming to a new country, but it also means a new starting point with full of opportunities and potentials. In the end, we all agreed upon a **colour scheme that is bright, upbeat and sparks joy**.', 'We separated the two groups with two colours  and used a third colour to indicate neutral ground. The colours are used throughout the app as a guide to indicate various situations and scenarios.'],
+	  img: '../../../assets/images/proj_fairtrade/color-palette.png'
 	};
 
 	var uidesign = {
-	    title: 'UI design',
-	    content: 'Instead of the warm and homie feeling that most social responsible app have, we used modern and trailblazing approach to  '
+	  title: 'UI design',
+	  content: 'Instead of the warm and homie feeling that most social responsible app have, we used modern and trailblazing approach to  '
 	};
 
 	var explore = {
-	    title: 'Explore before register',
-	    deviceFrame: 'phone',
-	    content: 'The main screen has been designed to allow users quick access to the inventory. We strived to design for confidence - no commitment is required to access the major pages. Users are able to discover freely within the app. Depending on the type, the **interface is different for shoppers and donors**.',
-	    imgLeft: '../../../assets/images/proj_fairtrade/donor_explore.png',
-	    contentLeft: '**Donor discovers page**: For donors, the focus is on the shopper&#39;s needs. By showing the shopper, there is a stronger emotional attachment to the donor.',
-	    imgRight: '../../../assets/images/proj_fairtrade/shopper_explore.png',
-	    contentRight: '**Shopper discovers page**: Differ from the donor, shoppers care more about the items. For the donor&#39;s discover page we maximize the number of items per page.'
+	  title: 'Explore before register',
+	  deviceFrame: 'phone',
+	  content: 'The main screen has been designed to allow users quick access to the inventory. We strived to design for confidence - no commitment is required to access the major pages. Users are able to discover freely within the app. Depending on the type, the **interface is different for shoppers and donors**.',
+	  imgLeft: '../../../assets/images/proj_fairtrade/donor_explore.png',
+	  contentLeft: '**Donor discovers page**: For donors, the focus is on the shopper&#39;s needs. By showing the shopper, there is a stronger emotional attachment to the donor.',
+	  imgRight: '../../../assets/images/proj_fairtrade/shopper_explore.png',
+	  contentRight: '**Shopper discovers page**: Differ from the donor, shoppers care more about the items. For the donor&#39;s discover page we maximize the number of items per page.'
 	};
 
 	var trade = {
-	    title: 'Offering trade',
-	    deviceFrame: 'phone',
-	    content: '',
-	    imgLeft: '../../../assets/images/proj_fairtrade/add_item_donor.png',
-	    contentLeft: '**Donor offering trade**: Other than the item specification, the donor also has the ability to decide the preferred delivery method.',
-	    imgRight: '../../../assets/images/proj_fairtrade/add_item_shop.gif',
-	    contentRight: '**Shopper offering trade**: The biggest difference between donor and shopper is that other than offering items, they can offer karma points. '
+	  title: 'Offering trade',
+	  deviceFrame: 'phone',
+	  content: '',
+	  imgLeft: '../../../assets/images/proj_fairtrade/add_item_donor.png',
+	  contentLeft: '**Donor offering trade**: Other than the item specification, the donor also has the ability to decide the preferred delivery method.',
+	  imgRight: '../../../assets/images/proj_fairtrade/add_item_shop.gif',
+	  contentRight: '**Shopper offering trade**: The biggest difference between donor and shopper is that other than offering items, they can offer karma points. '
 	};
 
 	var tradeVideo = {
-	    title: 'Trade process',
-	    sectionClass: 'trade-video',
-	    content: ['We have gone through 4 iterations to came up with the simplistic flow which requires minimal steps, clicks and text to complete a trade. The example video below shows a trade instance offered by the donor and accepted by the shopper.'],
-	    video: 'https://youtu.be/oKzoKQXBJ5Y'
+	  title: 'Trade process',
+	  sectionClass: 'trade-video',
+	  content: ['We have gone through 4 iterations to came up with the simplistic flow which requires minimal steps, clicks and text to complete a trade. The example video below shows a trade instance offered by the donor and accepted by the shopper.'],
+	  video: 'https://youtu.be/oKzoKQXBJ5Y'
 	};
 
 	var angelHack = {
-	    title: 'Social approval',
-	    content: 'We brought the concept to the 2018 Toronto angelHack. At the hackathon, we had 2 days to build a workable prototype and present it to entrepreneurs, influencers, company executives and CEOs. We communicated with various organizations and groups and received valuable suggestions and feedbacks. The event had shaped the path and guided the direction of the FairTrade. Gratefully, our concept had been approved and liked by the public. In the end, we were chosen to be the winner for "Code for a cause" Toronto division and had moved on to compete internationally.',
-	    img: '../../../assets/images/proj_fairtrade/angelhack.png'
+	  title: 'Social approval',
+	  content: 'We brought the concept to the 2018 Toronto angelHack. At the hackathon, we had 2 days to build a workable prototype and present it to entrepreneurs, influencers, company executives and CEOs. We communicated with various organizations and groups and received valuable suggestions and feedbacks. The event had shaped the path and guided the direction of the FairTrade. Gratefully, our concept had been approved and liked by the public. In the end, we were chosen to be the winner for "Code for a cause" Toronto division and had moved on to compete internationally.',
+	  img: '../../../assets/images/proj_fairtrade/angelhack.jpg'
 	};
 
 	var dobetter = {
-	    title: 'What can I do better?',
-	    sectionClass: 'list-style-circle',
-	    content: ['', 'Adding social media sharability', 'Cross-platform compatibility.', 'We still need to have a valid revenue plan.']
+	  title: 'What can I do better?',
+	  sectionClass: 'list-style-circle',
+	  content: ['', 'Adding social media sharability', 'Cross-platform compatibility.', 'We still need to have a valid revenue plan.']
 	};
 
 	var reflections = [{
-	    subject: 'UX design is all user-driven, talk to your users to understand what they really need',
-	    learn: 'What you think and assume is not always what your users&#39;t need, and there is nothing worse than working on a wrong direction since the beginning. This is why it is so important to spend time researching, talking and understanding your users and their problems.'
+	  subject: 'UX design is all user-driven, talk to your users to understand what they really need',
+	  learn: 'What you think and assume is not always what your users&#39;t need, and there is nothing worse than working on a wrong direction since the beginning. This is why it is so important to spend time researching, talking and understanding your users and their problems.'
 	}, {
-	    subject: 'If a solution fails to work, do not give up.',
-	    learn: 'If a solution fails to work, try to understand the reason. Is it not solving the problem? or is it not executable? Keep trying the solution can be inches away. The job of a UX designer is to define the problem, narrow down all the possibilities and seek for the practical answer.'
+	  subject: 'If a solution fails to work, do not give up.',
+	  learn: 'If a solution fails to work, try to understand the reason. Is it not solving the problem? or is it not executable? Keep trying the solution can be inches away. The job of a UX designer is to define the problem, narrow down all the possibilities and seek for the practical answer.'
 	}];
 
 	var Fairtrade = function (_React$Component) {
-	    _inherits(Fairtrade, _React$Component);
+	  _inherits(Fairtrade, _React$Component);
 
-	    function Fairtrade() {
-	        _classCallCheck(this, Fairtrade);
+	  function Fairtrade() {
+	    _classCallCheck(this, Fairtrade);
 
-	        return _possibleConstructorReturn(this, (Fairtrade.__proto__ || Object.getPrototypeOf(Fairtrade)).apply(this, arguments));
+	    return _possibleConstructorReturn(this, (Fairtrade.__proto__ || Object.getPrototypeOf(Fairtrade)).apply(this, arguments));
+	  }
+
+	  _createClass(Fairtrade, [{
+	    key: 'render',
+	    value: function render() {
+	      var style = _PortfolioStore2.default[1];
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(_ProjectTitle2.default, { content: projectTitle, style: style }),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'project-content-layout' },
+	          _react2.default.createElement(_IntroRole2.default, { content: introRole }),
+	          _react2.default.createElement(_Problem2.default, { content: problem, style: style }),
+	          ' ',
+	          _react2.default.createElement(_LayoutText2.default, { content: goal, style: style }),
+	          ' ',
+	          _react2.default.createElement(_TitleDivider2.default, { content: titleText2, style: style }),
+	          _react2.default.createElement(_LayoutThree2.default, { content: interview, style: style }),
+	          _react2.default.createElement(_LayoutText2.default, { content: persona0, style: style }),
+	          _react2.default.createElement(_LayoutHalf2.default, { content: persona1, style: style }),
+	          _react2.default.createElement(_LayoutHalf2.default, { content: persona2, style: style }),
+	          ' ',
+	          _react2.default.createElement(_TitleDivider2.default, { content: titleText3, style: style }),
+	          _react2.default.createElement(_LayoutHalf2.default, { content: idea1, style: style }),
+	          _react2.default.createElement(_TableComponent2.default, { content: validity1, style: style }),
+	          _react2.default.createElement(_LayoutText2.default, { content: feedback1, style: style }),
+	          _react2.default.createElement(_LayoutHalf2.default, { content: idea2, style: style }),
+	          _react2.default.createElement(_TableComponent2.default, { content: validity2, style: style }),
+	          _react2.default.createElement('hr', null),
+	          _react2.default.createElement(_LayoutHalf2.default, { content: idea3, style: style }),
+	          _react2.default.createElement(_TableComponent2.default, { content: validity3, style: style }),
+	          _react2.default.createElement(_LayoutText2.default, { content: pitch, style: style }),
+	          ' ',
+	          _react2.default.createElement(_TitleDivider2.default, { content: titleText4, style: style }),
+	          _react2.default.createElement(_LayoutImage2.default, { content: flowChart, style: style }),
+	          _react2.default.createElement(_LayoutOneThird2.default, { content: flowchart2, style: style }),
+	          _react2.default.createElement(_LayoutImage2.default, { content: wireframe1, style: style }),
+	          _react2.default.createElement('layoutText', { content: userTest1, style: style }),
+	          _react2.default.createElement(_LayoutImage2.default, { content: wireframe2, style: style }),
+	          _react2.default.createElement(_LayoutImage2.default, { content: wireframe3, style: style }),
+	          ' ',
+	          _react2.default.createElement(_TitleDivider2.default, { content: titleText5, style: style }),
+	          _react2.default.createElement(_LayoutImage2.default, { content: color, style: style }),
+	          _react2.default.createElement(_LayoutHalf2.default, { content: explore, style: style }),
+	          _react2.default.createElement(_LayoutHalf2.default, { content: trade, style: style }),
+	          _react2.default.createElement(_LayoutImage2.default, { content: tradeVideo, style: style }),
+	          ' ',
+	          _react2.default.createElement(_LayoutImage2.default, { content: angelHack, style: style }),
+	          _react2.default.createElement(_TitleDivider2.default, { content: titleText7, style: style }),
+	          _react2.default.createElement(_LayoutText2.default, { content: dobetter, style: style }),
+	          _react2.default.createElement(_Reflection2.default, { content: reflections }),
+	          _react2.default.createElement(_ProjectFooter2.default, { content: style, style: style })
+	        )
+	      );
 	    }
+	  }]);
 
-	    _createClass(Fairtrade, [{
-	        key: 'render',
-	        value: function render() {
-	            var style = _PortfolioStore2.default[1];
-	            return _react2.default.createElement(
-	                'div',
-	                null,
-	                _react2.default.createElement(_ProjectTitle2.default, { content: projectTitle, style: style }),
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'project-content-layout' },
-	                    _react2.default.createElement(_IntroRole2.default, { content: introRole }),
-	                    _react2.default.createElement(_Problem2.default, { content: problem, style: style }),
-	                    ' ',
-	                    _react2.default.createElement(_LayoutText2.default, { content: goal, style: style }),
-	                    ' ',
-	                    _react2.default.createElement(_TitleDivider2.default, { content: titleText2, style: style }),
-	                    _react2.default.createElement(_LayoutText2.default, { content: persona0, style: style }),
-	                    _react2.default.createElement(_LayoutHalf2.default, { content: persona1, style: style }),
-	                    _react2.default.createElement(_LayoutHalf2.default, { content: persona2, style: style }),
-	                    ' ',
-	                    _react2.default.createElement(_TitleDivider2.default, { content: titleText3, style: style }),
-	                    _react2.default.createElement(_LayoutHalf2.default, { content: idea1, style: style }),
-	                    _react2.default.createElement(_TableComponent2.default, { content: validity1, style: style }),
-	                    _react2.default.createElement(_LayoutText2.default, { content: feedback1, style: style }),
-	                    _react2.default.createElement(_LayoutHalf2.default, { content: idea2, style: style }),
-	                    _react2.default.createElement(_TableComponent2.default, { content: validity2, style: style }),
-	                    _react2.default.createElement('hr', null),
-	                    _react2.default.createElement(_LayoutHalf2.default, { content: idea3, style: style }),
-	                    _react2.default.createElement(_TableComponent2.default, { content: validity3, style: style }),
-	                    _react2.default.createElement(_LayoutText2.default, { content: pitch, style: style }),
-	                    ' ',
-	                    _react2.default.createElement(_TitleDivider2.default, { content: titleText4, style: style }),
-	                    _react2.default.createElement(_LayoutImage2.default, { content: flowChart, style: style }),
-	                    _react2.default.createElement(_LayoutOneThird2.default, { content: flowchart2, style: style }),
-	                    _react2.default.createElement(_LayoutImage2.default, { content: wireframe1, style: style }),
-	                    _react2.default.createElement('layoutText', { content: userTest1, style: style }),
-	                    _react2.default.createElement(_LayoutImage2.default, { content: wireframe2, style: style }),
-	                    _react2.default.createElement(_LayoutImage2.default, { content: wireframe3, style: style }),
-	                    ' ',
-	                    _react2.default.createElement(_TitleDivider2.default, { content: titleText5, style: style }),
-	                    _react2.default.createElement(_LayoutImage2.default, { content: color, style: style }),
-	                    _react2.default.createElement(_LayoutHalf2.default, { content: explore, style: style }),
-	                    _react2.default.createElement(_LayoutHalf2.default, { content: trade, style: style }),
-	                    _react2.default.createElement(_LayoutImage2.default, { content: tradeVideo, style: style }),
-	                    ' ',
-	                    _react2.default.createElement(_LayoutImage2.default, { content: angelHack, style: style }),
-	                    _react2.default.createElement(_TitleDivider2.default, { content: titleText7, style: style }),
-	                    _react2.default.createElement(_LayoutText2.default, { content: dobetter, style: style }),
-	                    _react2.default.createElement(_Reflection2.default, { content: reflections }),
-	                    _react2.default.createElement(_ProjectFooter2.default, { content: style, style: style })
-	                )
-	            );
-	        }
-	    }]);
-
-	    return Fairtrade;
+	  return Fairtrade;
 	}(_react2.default.Component);
 
 	exports.default = Fairtrade;
