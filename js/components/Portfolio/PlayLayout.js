@@ -1,20 +1,21 @@
 import React from 'react'
 import PortfolioItem from './PortfolioItem'
-import PortfolioStore from '../../stores/PortfolioStore'
+import PlayStore from '../../stores/PlayStore'
 
-class PortfolioLayout extends React.Component {
+class PlayLayout extends React.Component {
   render () {
-    const portfolioComponents = PortfolioStore.map((each) => {
+    const playComponents = PlayStore.map((each) => {
       return <PortfolioItem key={each.id} {...each} />
     })
     return (
       <div>
+        <h3>Passion Project</h3>
         <div className='projectPanel'>
-          {portfolioComponents}
+          {playComponents}
         </div>
       </div>
     )
   }
 }
 
-export default PortfolioLayout
+export default PlayLayout

@@ -1,0 +1,13 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="90" height="80" viewBox="0 0 90 80">
+  <title>step1</title>
+  <polygon points="48.31 11.27 10.02 11.27 10.02 42.41 16.74 42.41 20.5 46.18 24.27 42.41 48.31 42.41 48.31 11.27" fill="#fff"/>
+  <polygon points="78.9 11.27 57.65 11.27 57.65 28.55 61.38 28.55 63.47 30.64 65.56 28.55 78.9 28.55 78.9 11.27" fill="#fff"/>
+  <rect x="17.54" y="22.49" width="14.26" height="14.26" fill="none" stroke="#616161" stroke-miterlimit="10"/>
+  <rect x="63.4" y="14.36" width="9.75" height="9.75" fill="none" stroke="#616161" stroke-miterlimit="10"/>
+  <rect x="28.03" y="15.04" width="14.26" height="14.26" rx="7.13" fill="none" stroke="#616161" stroke-miterlimit="10"/>
+  <rect x="40.61" y="34.68" width="38.29" height="31.14" fill="#fff"/>
+  <rect x="63.08" y="54.8" width="12.25" height="12.25" transform="translate(-22.81 66.78) rotate(-45)" fill="#fff"/>
+  <rect x="48.13" y="43.91" width="14.26" height="14.26" rx="7.13" fill="none" stroke="#616161" stroke-miterlimit="10"/>
+  <rect x="57.65" y="43.91" width="14.26" height="14.26" rx="7.13" fill="none" stroke="#616161" stroke-miterlimit="10"/>
+  <line x1="63.14" y1="19.24" x2="73.15" y2="19.24" fill="none" stroke="#616161" stroke-miterlimit="10"/>
+</svg>

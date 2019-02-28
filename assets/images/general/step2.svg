@@ -1,0 +1,26 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="110" height="80" viewBox="0 0 110 80">
+  <title>step2</title>
+  <rect x="8.41" y="46.05" width="23.4" height="23.4" fill="#fff"/>
+  <rect x="43.78" y="11.31" width="23.4" height="23.4" fill="#fff"/>
+  <rect x="78.68" y="11.31" width="23.4" height="23.4" fill="#fff"/>
+  <rect x="43.78" y="46.05" width="23.4" height="23.4" fill="#fff"/>
+  <polygon points="8.41 11.31 8.41 31.82 11.3 34.71 31.81 34.71 31.81 11.31 8.41 11.31" fill="#fff"/>
+  <polyline points="8.41 31.82 11.3 31.82 11.3 34.71" fill="none" stroke="#616161" stroke-miterlimit="10"/>
+  <line x1="14.54" y1="17.81" x2="25.68" y2="17.81" fill="none" stroke="#616161" stroke-miterlimit="10"/>
+  <line x1="14.54" y1="22.93" x2="25.68" y2="22.93" fill="none" stroke="#616161" stroke-miterlimit="10"/>
+  <line x1="14.54" y1="28.21" x2="25.68" y2="28.21" fill="none" stroke="#616161" stroke-miterlimit="10"/>
+  <line x1="49.83" y1="17.81" x2="60.97" y2="17.81" fill="none" stroke="#616161" stroke-miterlimit="10"/>
+  <line x1="49.83" y1="22.93" x2="60.97" y2="22.93" fill="none" stroke="#616161" stroke-miterlimit="10"/>
+  <line x1="49.83" y1="28.21" x2="60.97" y2="28.21" fill="none" stroke="#616161" stroke-miterlimit="10"/>
+  <line x1="84.98" y1="17.81" x2="96.11" y2="17.81" fill="none" stroke="#616161" stroke-miterlimit="10"/>
+  <line x1="84.98" y1="22.93" x2="96.11" y2="22.93" fill="none" stroke="#616161" stroke-miterlimit="10"/>
+  <line x1="84.98" y1="28.21" x2="96.11" y2="28.21" fill="none" stroke="#616161" stroke-miterlimit="10"/>
+  <line x1="14.34" y1="52.63" x2="25.47" y2="52.63" fill="none" stroke="#616161" stroke-miterlimit="10"/>
+  <line x1="14.34" y1="57.75" x2="25.47" y2="57.75" fill="none" stroke="#616161" stroke-miterlimit="10"/>
+  <line x1="14.34" y1="63.04" x2="25.47" y2="63.04" fill="none" stroke="#616161" stroke-miterlimit="10"/>
+  <line x1="49.93" y1="52.63" x2="61.07" y2="52.63" fill="none" stroke="#616161" stroke-miterlimit="10"/>
+  <line x1="49.93" y1="57.75" x2="61.07" y2="57.75" fill="none" stroke="#616161" stroke-miterlimit="10"/>
+  <circle cx="60.97" cy="17.81" r="3.33" fill="none" stroke="#616161" stroke-miterlimit="10"/>
+  <circle cx="27.55" cy="57.77" r="0.85" fill="#616161"/>
+  <circle cx="63.18" cy="52.53" r="0.85" fill="#616161"/>
+</svg>

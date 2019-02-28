@@ -7,23 +7,24 @@
 
 /////////////////////// top designer intro section ////////////////////
 .designer-intro {
-    color:$color-black;
     max-height: auto;
     font-weight: 400;
-    h1{
-        margin-top:0px;
-    }
-    p {
-        color:$color-black
-    }
+    margin-bottom: 80px !important;
+    position: relative;
 
     .main-intro-title {
     background-color: $color-primary;
-     font-size: 80px;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding:32px 40px 40px 40px;
+    padding:40px 56px 80px 56px;
     color:$color-white;
+
+    font-size: 40px;
+
+    h1 {
+      text-transform: uppercase;
+      font-size: 800;
+        font-weight: 700;
+    }
+
 
     @include xlarge {
         margin-right:64px;
@@ -34,30 +35,20 @@
     @include xsmall {
         font-size: 48px;
     }
-
-    * {
-        max-width: 608px;
-
-        @include small {
-            max-width: 490px;
-        }
-    }
     }
 }
 
-.main-hr {
-  margin-top:0px;
-  margin-bottom: 32px;
-}
+.main-intro-images {
+  display: flex;
+  padding:24px 32px;
+  background-color: $color-grey3;
+  position: absolute;
+  bottom: -40px;
+  right: 0px;
 
-#main-p-icon {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    i {
-        color: $color-grey4;
-        padding: 0px 4px;
-    }
+  @include xsmall {
+    right:-16px;
+  }
 }
 
 //////////////
@@ -91,7 +82,6 @@
   width:100%;
   @include flex-box-setup;
   justify-content: left;
-  padding-bottom:120px;
 
   .single-proj-container {
       @include smallS {

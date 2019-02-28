@@ -12,7 +12,7 @@ import Layout from './Layout'
 // main page
 import ProjectMain from './views/ProjectMain'
 import Contact from './views/Contact'
-import Resume from './views/Resume'
+import Play from './views/Play'
 import About from './views/About'
 
 // Project link
@@ -31,7 +31,7 @@ ReactDOM.render((
 
       <Route path='ProjectMain' component={ProjectMain} />
       <Route path='About' component={About} />
-      <Route path='Resume' component={Resume} />
+      <Route path='Play' component={Play} />
       <Route path='Contact' component={Contact} />
 
       <Route path='briovr' component={Briovr} />

@@ -10,7 +10,12 @@ class NavbarStore extends EventEmitter {
         link: 'projectmain'
       },
       {
-        id: 1,
+        id: 2,
+        name: 'Play',
+        link: 'play'
+      },
+      {
+        id: 3,
         name: 'About',
         link: 'about'
       }
