@@ -43,28 +43,22 @@ const introRole = {
     'UI & Prototype',
     'Implementation'
   ],
-  img: '../../../assets/images/proj_foguang/foguang_thumb.png'
+  img: '../../../assets/images/proj_foguang/foguang_thumb.gif'
 }
 
-const problem = {
+const state = {
   title: 'Current state',
   sectionClass: 'list-style-circle',
   content: 'We had finished developing this project in 2016 as a Chrome extension app, and the phrase 2 had been initiated to expand into other platforms early 2019. If you are curious about Foguang temple,  __[Check out the app](https://chrome.google.com/webstore/detail/foguangapptestapp/nklaaogghgabcbdilaapmfbjlmbinmjp?authuser=1)__.'
 }
 
-const goal = {
-  sectionClass: 'list-style-number',
-  title: 'Our goal',
-  content: ['', '1. To help the newcomers and refugees get the necessities when coming to a new country', '2. Bridge the gap between newcomers, refugees and locals', '3. Build communications among people with various backgrounds']
+const timeline = {
+  img: '../../../assets/images/proj_foguang/timeline.gif'
 }
-
-const interview = {
-  title: 'Who are our users',
-  contentLeft: ['All 3 founding members of the app can relate to the pains of newcomers and locals. We kicked off the user interview process by asking ourselves and our family around us: __ What kind of help do you need to live and settle in a new country? __', 'We recruited refugees, immigrants, international students on the one hand, and locals on the other side, to ask their opinions about the other side and their current situation. This helped us form a solid understanding of the user groups.'],
-  imgMiddle: '../../../assets/images/proj_fairtrade/question2.png',
-  imgRight: '../../../assets/images/proj_fairtrade/question1.png'
+const img360 = {
+  sectionClass: 'play-section-up',
+  img: '../../../assets/images/proj_foguang/360_img.jpg'
 }
-
 
 class Foguang extends React.Component {
   render () {
@@ -73,7 +67,9 @@ class Foguang extends React.Component {
       <ProjectTitle content={projectTitle} style={style} />
       <div className='project-content-layout'>
         <IntroRole content={introRole} />
-        <Problem content={problem} style={style} /> {/* current stage */}
+        <Problem content={state} style={style} /> {/* current stage */}
+        <LayoutImage content={timeline} style={style} />
+        <LayoutImage content={img360} style={style} />
         <ProjectFooter content={style} style={style} />
       </div>
     </div>)
