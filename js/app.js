@@ -19,8 +19,9 @@ import About from './views/About'
 import Briovr from './views/ProjectView/Briovr'
 import Cycnav from './views/ProjectView/Cycnav'
 import Fairtrade from './views/ProjectView/Fairtrade'
-import Project4 from './views/ProjectView/Project4'
+import Foguang from './views/ProjectView/Foguang'
 
+import CityBeats from './views/ProjectView/CityBeats'
 // sass file
 import '../sass/main.scss'
 
@@ -37,7 +38,9 @@ ReactDOM.render((
       <Route path='briovr' component={Briovr} />
       <Route path='cycnav' component={Cycnav} />
       <Route path='fairtrade' component={Fairtrade} />
-      <Route path='Project4' component={Project4} />
+      <Route path='foguang' component={Foguang} />
+
+      <Route path='citybeats' component={CityBeats} />
     </Route>
   </Router>
 ),

@@ -36,13 +36,13 @@ module.exports = [
   },
   {
     id: 4,
-    title: 'M-Arcade',
-    field: 'UX & UI redesign',
-    intro: 'Mobile arcade game app',
-    link: 'Project4',
-    headerImage: '../../assets/images/projects/header/proj1.jpg',
-    logo: '../../assets/images//construction.svg',
-    color: '#232323',
+    title: 'Foguang Temple',
+    field: 'Product design & development',
+    intro: 'Under Construction',
+    link: 'foguang',
+    headerImage: '../../assets/images/proj_foguang/logo2.svg',
+    logo: '../../assets/images/proj_foguang/scroll3.svg',
+    color: '#BC904A',
     url: ''
   }
 ]

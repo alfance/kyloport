@@ -3,6 +3,7 @@
   max-width: $max-layout-width;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 100px;
 }
 
 /////////////////////// top designer intro section ////////////////////
@@ -40,12 +41,15 @@
 
 .main-intro-images {
   display: flex;
-  padding:24px 32px;
-  background-color: $color-grey3;
+  padding:8px 32px;
+  background-color: $color-grey6;
   position: absolute;
   bottom: -40px;
   right: 0px;
-
+  color:$color-white;
+  @include mediumS {
+      right:-24px;
+  }
   @include xsmall {
     right:-16px;
   }

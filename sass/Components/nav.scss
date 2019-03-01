@@ -2,7 +2,9 @@
   display: block;
   width:$nav-width;
   position: fixed;
-
+  @include smallB {
+      text-align: right;
+  }
   @include smallS {
     width:100vw;
     z-index: 99;

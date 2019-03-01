@@ -10,7 +10,7 @@ class ProjectMain extends React.Component {
           <div className='main-intro-title'><h1>Hi, I am Kylo Xue</h1>a product designer specializing in building user-centric digital experiences.
           </div>
           <div className='main-intro-images'>
-            <img src='../../assets/images/general/step2.svg' />
+            <h3>Projects</h3>
           </div>
         </div>
         <PortfolioLayout />
