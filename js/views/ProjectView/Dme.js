@@ -52,8 +52,8 @@ const research = {
 const persona = {
     title: 'Personas',
     content: '',
-    imgLeft: '../../../assets/images/proj_cycnav/avatar-0.svg',
-    imgRight: '../../../assets/images/proj_cycnav/avatar-2.svg',
+    imgLeft: '../../../assets/images/play_dme/persona1.svg',
+    imgRight: '../../../assets/images/play_dme/persona2.svg',
     sectionClass: 'section-persona',
     contentLeft: [
       '**Stephen Chen**',
