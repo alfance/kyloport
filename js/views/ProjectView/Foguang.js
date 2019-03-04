@@ -23,18 +23,9 @@ const titleText2 = {
   title: 'Getting to know the users'
 }
 
-const projectTitle = {
-  title: 'Fairtrade',
-  logo: '../../../assets/images/proj_foguang/logo2.svg',
-  field: 'Product Design & Development',
-  intro: 'Mobile platform connecting locals and newcomers',
-  link: 'fairtrade',
-  bgImg: ''
-}
-
 const introRole = {
   sectionClass: 'list-style-circle',
-  content: '"Meet the Master at Foguang Temple" was an educational project commissioned by the Cultural Heritage Conservation Center, Beijing China. Through the app, users get to learn the hidden story of Foguang Temple - the third earliest preserved timber structure built during the Tang Dynasty.',
+  content: '"Meet the Master at Foguang Temple" was an educational project commissioned by the Cultural Heritage Conservation Center, Beijing China. Through the app, users get to learn the hidden story of Foguang Temple - the third earliest preserved timber structure building during the Tang Dynasty.',
   duties: [
     'I worked as one of the product designers for this project. I also coded the front-end interface of the app. My works can be summarized below:',
     'Defining problems',
@@ -56,7 +47,7 @@ const timeline = {
   img: '../../../assets/images/proj_foguang/timeline.gif'
 }
 const img360 = {
-  sectionClass: 'play-section-up',
+  deviceFrame: 'laptop',
   img: '../../../assets/images/proj_foguang/360_img.jpg'
 }
 
@@ -64,7 +55,7 @@ class Foguang extends React.Component {
   render () {
     const style = PortfolioStore[3]
     return (<div>
-      <ProjectTitle content={projectTitle} style={style} />
+      <ProjectTitle content={style} style={style} />
       <div className='project-content-layout'>
         <IntroRole content={introRole} />
         <Problem content={state} style={style} /> {/* current stage */}

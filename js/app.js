@@ -22,6 +22,7 @@ import Fairtrade from './views/ProjectView/Fairtrade'
 import Foguang from './views/ProjectView/Foguang'
 
 import CityBeats from './views/ProjectView/CityBeats'
+import Dme from './views/ProjectView/Dme'
 // sass file
 import '../sass/main.scss'
 
@@ -41,6 +42,7 @@ ReactDOM.render((
       <Route path='foguang' component={Foguang} />
 
       <Route path='citybeats' component={CityBeats} />
+      <Route path='dme' component={Dme} />
     </Route>
   </Router>
 ),

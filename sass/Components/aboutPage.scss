@@ -24,7 +24,6 @@
     .experience-dot {
         width:16px;
         height: 16px;
-        border-radius: 50%;
         background-color: $color-primary;
         position: absolute;
         margin-left: -56px;
@@ -41,6 +40,7 @@
         li, p {
             padding-bottom: 0px;
             margin-bottom: 0px;
+            background-color: $color-primary;
         }
     }
 }
@@ -62,7 +62,6 @@
     .experience-dot {
         width:16px;
         height: 16px;
-        border-radius: 50%;
         background-color: $color-primary;
         position: absolute;
         margin-left: calc(100% - 8px);

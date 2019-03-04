@@ -5,7 +5,7 @@ module.exports = [
     field: 'UX / UI / Motion Design',
     intro: 'Interaction system for online VR platform',
     link: 'briovr',
-    headerImage: '../../assets/images/proj_briovr/background.png',
+    headerImage: '../../assets/images/proj_briovr//brio_logo_notext.png',
     logo: '../../assets/images/proj_briovr/brio_logo_notext.png',
     color: '#5C41B4',
     url: '',
@@ -18,7 +18,7 @@ module.exports = [
     field: 'Product development',
     intro: 'Non-profit mobile & web platform',
     link: 'fairtrade',
-    headerImage: '../../assets/images/proj_fairtrade/logo-yellow.png',
+    headerImage: '../../assets/images/proj_fairtrade/logo-yellow.svg',
     logo: '../../assets/images/proj_fairtrade/logo-yellow.svg',
     color: '#FDCB1C',
     url: ''
@@ -29,7 +29,7 @@ module.exports = [
     field: 'Product design, UX & UI',
     intro: 'Mobile app & IOT for cyclists',
     link: 'cycnav',
-    headerImage: '../../assets/images/proj_cycnav/title_img2.png',
+    headerImage: '../../assets/images/proj_cycnav/cycnav_logo_c.svg',
     logo: '../../assets/images/proj_cycnav/cycnav_logo_c.svg',
     color: '#1A923C',
     url: ''

@@ -5,7 +5,7 @@ module.exports = [
     field: 'Wiring and soldering',
     intro: 'Physical Computing',
     link: 'citybeats',
-    headerImage: '../../assets/images/proj_briovr/background.png',
+    headerImage: '../../assets/images/play_citybeats/thumb.jpg',
     logo: '../../assets/images/play_citybeats/thumb.jpg',
     color: '#000000',
     url: '',
@@ -17,9 +17,9 @@ module.exports = [
     title: 'DME Website',
     field: 'School department website',
     intro: 'Digital Rebranding',
-    link: 'fairtrade',
-    headerImage: '../../assets/images/proj_fairtrade/logo-yellow.png',
-    logo: '../../assets/images/play_dme/3d_print.svg',
+    link: 'dme',
+    headerImage: '../../assets/images/play_dme/logo-dme-expand.svg',
+    logo: '../../assets/images/play_dme/avatar2.svg',
     color: '#0c4f99',
     url: ''
   }

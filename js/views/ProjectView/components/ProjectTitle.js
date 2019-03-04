@@ -2,7 +2,7 @@
 
  export default class ProjectTitle extends React.Component {
    render () {
-     const {field, logo, bgImg} = this.props.content
+     const {title, logo, bgImg, headerImage} = this.props.content
      const {color, titleBgP} = this.props.style
      const titleBG = {
        backgroundImage: 'url(' + bgImg + ')',
@@ -16,8 +16,8 @@
        <div className='project-title-layout' style={titleBG}>
          <div className='project-title-bg' style={{ backgroundColor: color }} />
          <div className='project-title-text'>
-           <img className=' project-title-logo' src={logo} />
-           <h3> {field}</h3>
+           <img className=' project-title-logo' src={headerImage} />
+           <h2>{title}</h2>
          </div>
        </div>
      )

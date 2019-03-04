@@ -39,15 +39,6 @@ const titleText7 = {
   title: 'Reflections'
 }
 
-const projectTitle = {
-  title: 'Fairtrade',
-  logo: '../../../assets/images/proj_fairtrade/logo-long.svg',
-  field: 'Product Design & Development',
-  intro: 'Mobile platform connecting locals and newcomers',
-  link: 'fairtrade',
-  bgImg: ''
-}
-
 const introRole = {
   sectionClass: 'list-style-circle',
   content: 'Fairtrade is a website/app that enables newly arrived underprivileged migrants, refugees, and people in need to "fair trade" items with locals in order to improve the quality of their lives.',
@@ -358,7 +349,7 @@ class Fairtrade extends React.Component {
   render () {
     const style = PortfolioStore[1]
     return (<div>
-      <ProjectTitle content={projectTitle} style={style} />
+      <ProjectTitle content={style} style={style} />
       <div className='project-content-layout'>
         <IntroRole content={introRole} />
         <Problem content={problem} style={style} /> {/* goal */}

@@ -24,15 +24,6 @@ const titleText4 = {title: 'UI Design'}
 
 const titleText5 = {title: 'Reflections'}
 
-const projectTitle = {
-  title: 'CYCNAV',
-  logo: '../../../assets/images/proj_cycnav/cycnav_logo_c.svg',
-  field: 'UI/UX, Interaction Design',
-  intro: 'Behaviour system for online VR platform',
-  link: 'briovr',
-  bgImg: ''
-}
-
 const introRole = {
   sectionClass: 'list-style-circle',
   content: 'CYCNAV is an IOT bike light guiding cyclists to the best route available in urban environments. Together with the crowd sourcing mobile app, users are updated with the latest road conditions and are provided with the best cycling route.',
@@ -384,7 +375,7 @@ class Cycnav extends React.Component {
     const style = PortfolioStore[2]
     return (
       <div>
-        <ProjectTitle content={projectTitle} style={style} />
+        <ProjectTitle content={style} style={style} />
         <div className='project-content-layout'>
           <IntroRole content={introRole} />
           {/* early state UX research */}
