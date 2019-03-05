@@ -43,12 +43,9 @@ const state = {
   content: 'We had finished developing this project in 2016 as a Chrome extension app, and the phrase 2 had been initiated to expand into other platforms early 2019. If you are curious about Foguang temple,  __[Check out the app](https://chrome.google.com/webstore/detail/foguangapptestapp/nklaaogghgabcbdilaapmfbjlmbinmjp?authuser=1)__.'
 }
 
-const timeline = {
-  img: '../../../assets/images/proj_foguang/timeline.gif'
-}
 const img360 = {
   deviceFrame: 'laptop',
-  img: '../../../assets/images/proj_foguang/360_img.jpg'
+  video: 'https://youtu.be/5q-q4ShvlGA'
 }
 
 class Foguang extends React.Component {
@@ -59,7 +56,6 @@ class Foguang extends React.Component {
       <div className='project-content-layout'>
         <IntroRole content={introRole} />
         <Problem content={state} style={style} /> {/* current stage */}
-        <LayoutImage content={timeline} style={style} />
         <LayoutImage content={img360} style={style} />
         <ProjectFooter content={style} style={style} />
       </div>
