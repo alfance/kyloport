@@ -181,7 +181,7 @@
 
 
 /////////////////////////////////// FRAMES for devices ///////////////////////////////////////////
-.frame-desktop, .frame-laptop, .frame-phone {
+.frame-desktop, .frame-laptop, .frame-phone, .frame-ipad {
   position:relative;
 }
 .frame-desktop {
@@ -204,9 +204,9 @@
     bottom: 10%;
 }
 }
+
 .frame-phone {
     padding-bottom: 14%;
-
 // video in a phone frame has different ratio than 16:9
     .project-video169 {
         position: relative;
@@ -221,11 +221,28 @@
       width: 100%;
       height: 100%;
       left: 0; top: 11% !important;
+    }
 }
+
+.frame-ipad {
+  padding-bottom: 8%;
+  .project-video169 {
+    padding-top: 65.25%;
+  }
 }
-.frame-device-desktop, .frame-device-laptop, .frame-device-phone {
+
+////////////////////////////////////// frame class
+.frame-device-desktop, .frame-device-laptop, .frame-device-phone, .frame-device-ipad {
   position:absolute;
+  z-index: 99;
 }
+
+.frame-device-ipad {
+  top:-4.5%;
+  pointer-events: none;
+}
+
+/////////////////////////// the img and video class
 .device-desktop{
     width: 94.7%;
     margin-left: 2.6%;
@@ -241,6 +258,10 @@
     width: 92%;
     margin-top: 16%;
     margin-left: 4%;
+}
+.device-ipad {
+  left: 3.1%;
+    width: 93.7%;
 }
 
 /////////////////////////////////// get rid the 10px left and right for {myrole} in IntroRole.js ///////////////

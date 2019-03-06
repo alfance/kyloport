@@ -22,7 +22,7 @@ export default class LayoutHelper {
     if (image !== undefined) {
       return <div className={`frame-${deviceFrame}`}><DeviceFrame frame={deviceFrame} /><img src={image} className={`device-${deviceFrame}`} /></div>
     } else if (video !== undefined) {
-      return <div className={`frame-${deviceFrame}`}><DeviceFrame frame={deviceFrame} /><ReactPlayer width='100' height='100' className={classNames('project-video169',`device-${deviceFrame}`)} url={video} /></div>
+      return <div className={`frame-${deviceFrame}`}><DeviceFrame frame={deviceFrame} /><ReactPlayer width='100' height='100' className={classNames('project-video169', `device-${deviceFrame}`)} url={video} /></div>
     } else {
       return null
     }
@@ -34,5 +34,6 @@ function DeviceFrame (frame) {
     : frame.frame === 'desktop' ? <img src='../../../../assets/images/desktop_frame.svg' className='frame-device-desktop' />
       : frame.frame === 'laptop' ? <img src='../../../../assets/images/laptop_frame.svg' className='frame-device-laptop' />
         : frame.frame === 'phone' ? <img src='../../../../assets/images/phone_frame.svg' className='frame-device-phone' />
-          : null
+      : frame.frame === 'ipad' ? <img src='../../../../assets/images/ipad_frame.svg' className='frame-device-ipad' />
+            : null
 }

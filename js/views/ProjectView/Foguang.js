@@ -44,8 +44,8 @@ const state = {
 }
 
 const img360 = {
-  deviceFrame: 'laptop',
-  video: 'https://youtu.be/5q-q4ShvlGA'
+  deviceFrame: 'ipad',
+  video: 'https://youtu.be/d6dYkZa34B8'
 }
 
 class Foguang extends React.Component {

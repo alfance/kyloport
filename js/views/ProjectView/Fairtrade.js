@@ -44,8 +44,8 @@ const introRole = {
   content: 'Fairtrade is a website/app that enables newly arrived underprivileged migrants, refugees, and people in need to "fair trade" items with locals in order to improve the quality of their lives.',
   role: 'I was part of the funding member of Fairtrade, My responsibilities are the development of the app where I conducted',
   duties: [
-    'I was part of the founding member of Fairtrade, I oversaw the development of the app. Some of the methodologies I used to design the app:',
-    'Problem and concepts',
+    'I was apart of the founding members of Fairtrade, I oversaw the development of the app. Some of the methodologies I used to design the app:',
+    'Problems & concepts',
     'Audiences & needs',
     'Empathy sketches & affinity mapping',
     'Wireframe development & design workshops',
@@ -87,24 +87,24 @@ const persona1 = {
   contentLeft: [
     '**Ralphy**', 'Refugee', 'Less than a week in Canada', 'Has nothing other than clothing', 'Ralphy needs anything to get him started, from small housewares, accessories to large appliances.'
   ],
-  contentRight: ['**Sol**', 'International Students', 'Less than 2 months in Canada', 'Came with personal belongings', 'Sol needs more for stuff she could not bring overseas, which means furniture for her to start a new life that is not too far from her home country.']
+  contentRight: ['**Sol**', 'International Students', 'Less than 2 months in Canada', 'Came with personal belongings', 'Sol had to leave behind much large possession back in her native country. She is looking to start a new life and is in need of localized products like furniture, small appliances, cookware, electronics, etc.']
 }
 const persona2 = {
   title: 'Locals',
-  content: 'The government of Canada provides settlement and resettlement services through several hundred destination communities and service provider organizations across Canada. This is inadequate in comparison to the number of newcomers coming to Canada each year. Many of the locals have express interests to help the newcomers but were limited to be within administrative services and infrastructures. Following are two examples of the local community personas.',
+  content: 'The government of Canada provides settlement and resettlement services through several hundred designated communities and service provider organizations across Canada. This is inadequate in comparison to the number of newcomers coming to Canada each year. Many of the locals have express interests to help the newcomers but were limited to administrative services and infrastructures. Following are two examples of the local community personas.',
   imgLeft: '../../../assets/images/proj_fairtrade/personafair-02.png',
   imgRight: '../../../assets/images/proj_fairtrade/personafair-01.png',
   sectionClass: 'section-persona',
   contentLeft: [
     '**Rachel**', 'Immigrants', 'Being in Canada for over 10 years', 'Rachel was once a newcomer. After spent over a decade adapting in the new country, she had made a life and would like to help out people whom once were in the same situation.'
   ],
-  contentRight: ['**Brad**', 'Local', 'Born in Canada', 'brad is a local who never spent time outside of this country. He has abundant of housewares/electronics that he would like to donate to who is in need.']
+  contentRight: ['**Brad**', 'Local', 'Born in Canada', 'Brad is a local who never spent time outside of this country. He has abundant of housewares/electronics that he would like to donate to who is in need.']
 }
 
 const idea1 = {
-  title: 'Ideation 1 - Onling donation',
+  title: 'Ideation 1 - Online donation',
   contentLeft: [
-    'The first ideation we came up was focusing on a donating platform dedicated to underprivileged people. Since the pain points lie in the intransparent donation process. What we are hoping to do is to let the users from both sides &#39;communicate&#39; with each other regarding their needs and preferences.', '**Ideation: Online platform for the donors to donate items directly to the shoppers.**'
+    'The first ideation we came up was focusing on a donating platform dedicated to underprivileged people. Since the pain points lies in the intransparent donation process. What we are hoping to do is to let the users from both sides &#39;communicate&#39; with each other regarding their needs and preferences.', '**Ideation: Online platform for the donors to donate items directly to the shoppers.**'
   ],
   imgRight: '../../../assets/images/proj_fairtrade/idea1.svg'
 }
@@ -147,13 +147,13 @@ const feedback1 = {
 const idea2 = {
   title: 'Ideation 2 - Culturally diversified homecook',
   contentLeft: [
-    'We realized the importance of acknowledging people&#39; pride. While we were conducting interviews, we came across a user type that is present almost in many shopper groups: **housewives** or **househusbands**. We found out that in most refugee or immigrant families, one of the two households would stay with the youngsters rather than making earning due to limitless resources. We wanted to provide a way for the stay-at-home people a way to make a profit while the donors get to experience authentic cuisines from another culture. ', '**Ideation: an app that let the shopper sell their home-cooked meal to the donor.**'
+    'We realized the importance of acknowledging people&#39; pride. While we were conducting interviews, we came across a user type that is exist almost in many shopper groups: **Stay-at-home parents**. We found out that in most refugee or immigrant families, one of the two head of households would stay with the youngsters rather than making earning due to limited resources. We wanted to provide a way for the stay-at-home people a way to provide while the donors get to experience authentic cuisines from another culture. ', '**Ideation: an app that let the shopper sell their home-cooked meal to the donor.**'
   ],
   imgRight: '../../../assets/images/proj_fairtrade/idea2.svg'
 }
 const validity2 = {
   title: 'Validation: Kitchen hygiene',
-  content: 'Both the donors and shoppers are happy about this idea. The shoppers are notably more open and positive compared to ideation 1. However, after conducting validation research and interviews from authorities, the **concerns on the cooking environment** emerged. In order for a home cook to legally sell their dishes, they first need to obtain an operating license after their kitchen got examined by authorized officials. This steeps the difficulty of execution.',
+  content: 'Both the donors and shoppers are happy about this idea. The shoppers are notably more open and positive compared to ideation 1. However, after conducting validation research and interviews from authorities, the **concerns of the cooking environment** emerged. In order for a home cook to properly sell their dishes, they first need to obtain an operating license after their kitchen got examined by authorized officials. This step is difficult to execute.',
   columns: [
     {
       Header: 'User',
