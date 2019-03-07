@@ -8,6 +8,22 @@
     }
 }
 
+.experience-pdf {
+  background-color: $color-primary;
+  p, b, strong, a {
+    color:$color-white;
+  }
+  p {
+    padding:24px;
+  }
+  a {
+    font-size: 18px;
+  }
+  @include mediumB {
+    width:60%;
+  }
+}
+
 // ////////////////////////// right containing work information ///////////////////
 .experience-container {
     padding-left: 48px;

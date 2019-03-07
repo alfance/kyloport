@@ -5,11 +5,11 @@ export default class LayoutText extends React.Component {
   render () {
     const {title, content, sectionClass} = this.props.content
     return (
-        <div>
-      <h3>{title}</h3>
-      <ol start='0'>
-        {LayoutHelper.layoutArrayContent(content)}
-      </ol>
-    </div>)
+      <div className={sectionClass}>
+        <h3>{title}</h3>
+        <ol start='0'>
+          {LayoutHelper.layoutArrayContent(content)}
+        </ol>
+      </div>)
   }
 }
