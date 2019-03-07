@@ -77,7 +77,7 @@ const persona = {
   }
 
 const mascot1 ={
-    title:'Mascot',
+    title:'Mascots',
     sectionClass: 'project-layout-wide dme-mascot',
     content:'One request from the DME is to make the identity of the whole space more approachable. The approach I took was to give each of the 5 branches characteristics. The visual representation can help the DME better promote innovative and novel technologies to the public.',
     imgLeft:'../../../assets/images/play_dme/avatar1.svg',
