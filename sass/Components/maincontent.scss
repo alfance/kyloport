@@ -119,6 +119,11 @@
       height:$project-each-width-medium;
   }
 
+  @media only screen and (max-width: 1279px) and (min-width: 1229px) {
+    width: $project-each-width-large;
+    height: $project-each-width-large;
+  }
+
   // media size
   @include smallS {
       width: $project-each-width-small;
