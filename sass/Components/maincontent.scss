@@ -47,6 +47,10 @@
   bottom: -48px;
   right: 0px;
   color:$color-white;
+
+  a {
+    color:$color-white;
+  }
   @include mediumS {
       right:-24px;
   }

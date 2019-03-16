@@ -2,6 +2,7 @@ import React from 'react'
 import LayoutHalf from './ProjectView/components/LayoutHalf'
 import Cv from './ProjectView/components/CV'
 import LayoutText from './ProjectView/components/LayoutText'
+import { Spring } from 'react-spring'
 
 const aboutMeContent = {
   title: [
@@ -86,17 +87,21 @@ const experiences = {
 
 class About extends React.Component {
   render () {
-    return (<div className='project-content-layout'>
-      <LayoutHalf content={aboutMeContent} />
-      <LayoutText content={resumeDownload} />
-      <Cv content={experiences} />
-      <p>Want to connect? Let's
-                <a href='mailto:jiao_xue@hotmail.com'>
-                  <b> CHAT</b>
-                </a>
-                !
+    return (
+      <Spring from={{ opacity: 0, marginTop: 500 }} to={{opacity: 1, marginTop: 0}}>
+        {({ opacity, marginTop }) =>
+          <div style={{opacity, marginTop}} className='project-content-layout'>
+            <LayoutHalf content={aboutMeContent} />
+            <LayoutText content={resumeDownload} />
+            <Cv content={experiences} />
+            <p>Want to connect? Let's
+            <a href='mailto:jiao_xue@hotmail.com'>
+              <b> CHAT</b>
+            </a>
             </p>
-    </div>)
+          </div>
+        }
+      </Spring>)
   }
 }
 
