@@ -1,4 +1,6 @@
 import React from 'react'
+import LayoutNavbar from './components/LayoutNavbar'
+import {Element} from "react-scroll";
 import TitleDivier from './components/TitleDivider'
 import ProjectTitle from './components/ProjectTitle'
 import IntroRole from './components/IntroRole'
@@ -14,6 +16,7 @@ import Reflection from './components/Reflection'
 import LayoutHalf from './components/LayoutHalf'
 import ProjectFooter from './components/ProjectFooter'
 import PortfolioStore from '../../stores/PortfolioStore'
+
 
 const titleText1 = {
   title: 'Research'
@@ -303,26 +306,27 @@ class Briovr extends React.Component {
     const style = PortfolioStore[0]
 
     return (<div>
+        <LayoutNavbar style={style} />
       <ProjectTitle content={style} style={style} />
       <div className='project-content-layout'>
-        <IntroRole content={introRole} />
+        <Element name='Define'><IntroRole content={introRole} /></Element>
         <LayoutImage content={background} style={style} />
         <LayoutImage content={backgroundLayout} style={style} />
         <Problem content={challenge} style={style} /> {/* early state research */}
         <LayoutImage content={challenge2} style={style} />
-        <TitleDivier content={titleText1} style={style} />
+        <Element name='Research'><TitleDivier content={titleText1} style={style} /></Element>
         <LayoutOneThird content={interview} style={style} />
         <TableComponent content={competitor} style={style} />
         <FindingComponent content={findingCompetitor} style={style} />
         <LayoutThree content={competitorInterface} style={style} />
         <LayoutHalf content={game} /> {/* Solution */}
-        <TitleDivier content={titleText2} style={style} />
+        <Element name='Solution'><TitleDivier content={titleText2} style={style} /></Element>
         <LayoutImage content={userJourney} />
         <LayoutHalf content={rules} />
         <LayoutImage content={behaviourflow1} />
         <LayoutImage content={behaviourflow2} />
         <LayoutImage content={behaviourflow3} /> {/* UX */}
-        <TitleDivier content={titleText3} style={style} />
+        <Element name='Design'><TitleDivier content={titleText3} style={style} /></Element>
         <LayoutTwoThird content={sketches} style={style} />
         <LayoutOneThird content={wireframes} style={style} />
         <LayoutImage content={usability1} />
@@ -334,7 +338,7 @@ class Briovr extends React.Component {
         <LayoutImage content={prototypePop} /> {/* Interaction design */}
         <TitleDivier content={titleText5} style={style} />
         <LayoutHalf content={motion} style={style} />
-        <TitleDivier content={titleText6} style={style} />
+        <Element name='Result'><TitleDivier content={titleText6} style={style} /></Element>
         <LayoutImage content={endResult} style={style} /> {/* results and reflections */}
         <LayoutHalf content={achieve} />
         <iframe id='iframe-brio' src='https://view.briovr.com/3723fa9c-2cc6-499b-b418-4903f5e299cc' frameBorder='0' allowFullScreen />

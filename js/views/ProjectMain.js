@@ -16,9 +16,9 @@ class ProjectMain extends React.Component {
               </div>
             }
           </Spring>
-          <div className='main-intro-images'>
-            <h3><Link activeClass='active' to='project' smooth={true} offset={-70} duration={300} >Projects</Link></h3>
-          </div>
+          <Link activeClass='active' to='project' smooth={true} offset={-70} duration={300} ><div className='main-intro-images'>
+            <h3>Projects</h3>
+          </div></Link>
         </div>
         <Element name='project' ><PortfolioLayout title='Portfolio' /></Element>
         <PlayLayout />

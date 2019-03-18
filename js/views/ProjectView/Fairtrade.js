@@ -1,4 +1,6 @@
 import React from 'react'
+import LayoutNavbar from './components/LayoutNavbar'
+import {Element} from "react-scroll";
 import TitleDivier from './components/TitleDivider'
 import ProjectTitle from './components/ProjectTitle'
 import IntroRole from './components/IntroRole'
@@ -349,12 +351,13 @@ class Fairtrade extends React.Component {
   render () {
     const style = PortfolioStore[1]
     return (<div>
+        <LayoutNavbar style={style} />
       <ProjectTitle content={style} style={style} />
       <div className='project-content-layout'>
-        <IntroRole content={introRole} />
+        <Element name='Define'><IntroRole content={introRole} /></Element>
         <Problem content={problem} style={style} /> {/* goal */}
         <LayoutText content={goal} style={style} /> {/* user */}
-        <TitleDivier content={titleText2} style={style} />
+        <Element name='Research'><TitleDivier content={titleText2} style={style} /></Element>
         <LayoutThree content={interview} style={style} />
         <LayoutText content={persona0} style={style} />
         <LayoutHalf content={persona1} style={style} />
@@ -367,7 +370,7 @@ class Fairtrade extends React.Component {
         <LayoutHalf content={idea2} style={style} />
         <TableComponent content={validity2} style={style} />
         <hr />
-        <LayoutHalf content={idea3} style={style} />
+        <Element name='Solution'><LayoutHalf content={idea3} style={style} /></Element>
         <TableComponent content={validity3} style={style} />
         <LayoutText content={pitch} style={style} /> {/* Design */}
         <TitleDivier content={titleText4} style={style} />
@@ -377,12 +380,12 @@ class Fairtrade extends React.Component {
         <layoutText content={userTest1} style={style} />
         <LayoutImage content={wireframe2} style={style} />
         <LayoutImage content={wireframe3} style={style} /> {/* final prototype */}
-        <TitleDivier content={titleText5} style={style} />
+        <Element name='Design'><TitleDivier content={titleText5} style={style} /></Element>
         <LayoutImage content={color} style={style} />
         <LayoutHalf content={explore} style={style} />
         <LayoutHalf content={trade} style={style} />
         <LayoutImage content={tradeVideo} style={style} /> {/* results and reflections */}
-        <LayoutImage content={angelHack} style={style} />
+        <Element name='Result'><LayoutImage content={angelHack} style={style} /></Element>
         <TitleDivier content={titleText7} style={style} />
         <LayoutText content={dobetter} style={style} />
         <Reflection content={reflections} />

@@ -1,4 +1,6 @@
 import React from 'react'
+import LayoutNavbar from './components/LayoutNavbar'
+import {Element} from "react-scroll";
 import TitleDivier from './components/TitleDivider'
 import ProjectTitle from './components/ProjectTitle'
 import IntroRole from './components/IntroRole'
@@ -13,6 +15,7 @@ import LayoutTwoThird from './components/LayoutTwoThird'
 import Reflection from './components/Reflection'
 import ProjectFooter from './components/ProjectFooter'
 import PortfolioStore from '../../stores/PortfolioStore'
+
 
 const titleText1 = {title: 'User Insights'}
 
@@ -375,13 +378,14 @@ class Cycnav extends React.Component {
     const style = PortfolioStore[2]
     return (
       <div>
+          <LayoutNavbar style={style} />
         <ProjectTitle content={style} style={style} />
         <div className='project-content-layout'>
-          <IntroRole content={introRole} />
+          <Element name='Define'><IntroRole content={introRole} /></Element>
           {/* early state UX research */}
           <Problem content={problem} style={style} />
 
-          <TitleDivier content={titleText1} style={style} />
+          <Element name='Research'><TitleDivier content={titleText1} style={style} /></Element>
           <TableComponent content={interviews} style={style} />
           <LayoutHalf content={persona} />
           <FindingComponent content={findingPersona} style={style} />
@@ -394,7 +398,7 @@ class Cycnav extends React.Component {
           <LayoutHalf content={devices} />
 
           {/* UX solutions */}
-          <TitleDivier content={titleText3} style={style} />
+          <Element name='Solution'><TitleDivier content={titleText3} style={style} /></Element>
           <LayoutImage content={solutions} />
           <LayoutImage content={storyboard} />
           <LayoutImage content={wireframe1} />
@@ -405,7 +409,7 @@ class Cycnav extends React.Component {
           <TableComponent content={testResult} style={style} />
 
           {/* UI design */}
-          <TitleDivier content={titleText4} style={style} />
+          <Element name='Design'><TitleDivier content={titleText4} style={style} /></Element>
           <LayoutThree content={prototypeApp} />
           <LayoutTwoThird content={accessibility} />
           <LayoutThree content={moreprototypes} />
@@ -415,7 +419,7 @@ class Cycnav extends React.Component {
           <LayoutHalf content={variance3D} style={style} />
 
           {/* results and reflections */}
-          <LayoutThree content={useCase} />
+          <Element name='Result'><LayoutThree content={useCase} /></Element>
           <LayoutImage content={combine} />
           <TitleDivier content={titleText5} style={style} />
           <LayoutText content={dobetter} />

@@ -2,6 +2,8 @@ import React from 'react'
 import ReactPlayer from 'react-player'
 import ReactMarkdown from 'react-markdown'
 import classNames from 'classnames'
+import * as Scroll from 'react-scroll';
+import { Link, Element, animateScroll as scroll } from "react-scroll";
 
 export default class LayoutHelper {
   static layoutArrayContent (content) {
@@ -26,6 +28,10 @@ export default class LayoutHelper {
     } else {
       return null
     }
+  }
+
+  static linkElement (element) {
+      return <Link activeClass='active' to={element} smooth={true} offset={-100} duration={300} ><b>{element}</b></Link>
   }
 }
 

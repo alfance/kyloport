@@ -1,0 +1,35 @@
+.project-navbar {
+    @include max-width;
+    display: flex;
+    position: fixed;
+    border-bottom: 2px solid;
+    top: 0;
+    height: 40px;
+    justify-content: space-evenly;
+    background-color: $color-white;
+    z-index: 999;
+    align-items: center;
+    padding: 0 8%;
+    b {
+        color:$color-grey6;
+    }
+
+    @include smallB {
+        width: calc(100vw - 96px - 124px);
+        padding:0px;
+    }
+    @include largeB {
+        margin-left: calc(50vw - 100px - 14px) !important;
+    }
+
+    @include smallS {
+        top: 60px;
+        left:0px;
+        border:none;
+        padding:0px;
+        background-color: $color-primary;
+        b {
+            color:$color-white
+        }
+    }
+}
