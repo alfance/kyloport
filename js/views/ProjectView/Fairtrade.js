@@ -240,7 +240,7 @@ const pitch = {
 }
 
 const flowChart = {
-  title: 'User flow chart',
+  title: 'Information architecture',
   content: 'Now we have a solid product strategy we proceeded to map out the user flow. Fairtrade would have two separate portals for the shoppers and donors. While their user experience flows are analogous the perception of interaction with the app is dissimilar. To the users, TairTrade is a trading ground that facilitates exchanges on tangible and digital items. We want to make sure the needs and trading items can be expressed clearly and effectively, and the trading process can be as intuitive as possible',
   img: '../../../assets/images/proj_fairtrade/flowchart.jpg'
 }

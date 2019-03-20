@@ -326,13 +326,13 @@ class Briovr extends React.Component {
         <LayoutImage content={behaviourflow1} />
         <LayoutImage content={behaviourflow2} />
         <LayoutImage content={behaviourflow3} /> {/* UX */}
-        <Element name='Design'><TitleDivier content={titleText3} style={style} /></Element>
+        <TitleDivier content={titleText3} style={style} />
         <LayoutTwoThird content={sketches} style={style} />
         <LayoutOneThird content={wireframes} style={style} />
         <LayoutImage content={usability1} />
         <LayoutText content={usability2} />
         <FindingComponent content={findingTest} style={style} /> {/* UI design */}
-        <TitleDivier content={titleText4} style={style} />
+        <Element name='Design'><TitleDivier content={titleText4} style={style} /></Element>
         <LayoutImage content={prototypeMain} />
         <LayoutImage content={prototypeChain} />
         <LayoutImage content={prototypePop} /> {/* Interaction design */}
