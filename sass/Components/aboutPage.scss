@@ -1,6 +1,14 @@
 // ////////////////////////// My about page sass ///////////////////
 
-
+.greeting-gradient {
+    h3 {
+        -webkit-text-fill-color: transparent;
+      background-image: url("../assets/images/gradient.gif");
+      background-size: cover;
+      -webkit-background-clip: text;
+      background-repeat: no-repeat;
+    }
+}
 // ////////////////////////// my journey section  ///////////////////
 .project-expriences {
     h3 {

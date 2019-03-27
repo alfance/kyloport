@@ -253,7 +253,7 @@ const flowchart2 = {
     '**Trade Monitor**: Pages that facilitate the trade to make sure everyone gets what they want',
     '**Message**: Additional communicational method.',
     '**Search**: Efficient way to let people filter out their needs.'],
-  imgRight: '../../../assets/images/proj_fairtrade/frame.png'
+  imgRight: '../../../assets/images/proj_fairtrade/frame-content.png'
 }
 
 const wireframe1 = {

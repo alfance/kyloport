@@ -12,7 +12,7 @@ class ProjectMain extends React.Component {
         <div className='project-title-layout designer-intro' >
           <Spring from={{ opacity: 0, marginTop: 200 }} to={{opacity: 1, marginTop: 0}}>
             {({ opacity, marginTop }) =>
-              <div style={{opacity, marginTop}} className='main-intro-title'><h1>Hi, I am Kylo Xue</h1>A product designer specializing in building user-centric digital experiences.
+              <div style={{opacity, marginTop}} className='main-intro-title'><h1>Hi, I am Kylo Xue</h1><span>A product designer specializing in building user-centric digital experiences.</span>
               </div>
             }
           </Spring>
