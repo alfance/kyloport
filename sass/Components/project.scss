@@ -348,8 +348,12 @@
   border: 0;
   height: calc(#{$project-content-width}/1.778);
   padding-top: 24px;
+  @include max-width;
   @include smallS {
     height: 90vh;
+  }
+  @include largeB {
+      height:calc(1280px / 1.778);
   }
 }
 

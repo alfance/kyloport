@@ -14,7 +14,7 @@ export default class LayoutHalf extends React.Component {
             contentLeft,
             contentRight,
             sectionClass,
-            deviceFrame
+            deviceFrame,
         } = this.props.content
 
     return (<div>

@@ -273,7 +273,8 @@ const achieve = {
   title: 'Use case',
   content: 'Through collaboration, we had created an interactive Casino Royal experience for **Crowdlinkers** at Toronto Elevate Conference after-party.',
   imgLeft: '../../../assets/images/proj_briovr/playing1.jpg',
-  imgRight: '../../../assets/images/proj_briovr/playing2.jpg'
+  imgRight: '../../../assets/images/proj_briovr/playing2.jpg',
+  contentLeft:'Try it out below ↓'
 }
 
 const dobetter = {
@@ -341,7 +342,7 @@ class Briovr extends React.Component {
         <Element name='Result'><TitleDivier content={titleText6} style={style} /></Element>
         <LayoutImage content={endResult} style={style} /> {/* results and reflections */}
         <LayoutHalf content={achieve} />
-        <iframe id='iframe-brio' src='https://view.briovr.com/3723fa9c-2cc6-499b-b418-4903f5e299cc' frameBorder='0' allowFullScreen />
+        <iframe id='iframe-brio' src='https://view.briovr.com/3723fa9c-2cc6-499b-b418-4903f5e299cc?minimal=true' frameBorder='0' allowFullScreen />
         <TitleDivier content={titleText7} style={style} />
         <LayoutText content={dobetter} />
         <LayoutImage content={kidsimage} />
