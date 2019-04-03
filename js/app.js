@@ -23,6 +23,7 @@ import Foguang from './views/ProjectView/Foguang'
 
 import CityBeats from './views/ProjectView/CityBeats'
 import Dme from './views/ProjectView/Dme'
+import ThreeD from './views/ProjectView/ThreeD'
 // sass file
 import '../sass/main.scss'
 
@@ -43,6 +44,7 @@ ReactDOM.render((
 
       <Route path='citybeats' component={CityBeats} />
       <Route path='dme' component={Dme} />
+      <Route path='threed' component={ThreeD} />
     </Route>
   </Router>
 ),

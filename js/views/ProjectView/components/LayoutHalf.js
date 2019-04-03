@@ -15,6 +15,8 @@ export default class LayoutHalf extends React.Component {
             contentRight,
             sectionClass,
             deviceFrame,
+            threeDLeft,
+            threeDRight
         } = this.props.content
 
     return (<div>
@@ -24,14 +26,14 @@ export default class LayoutHalf extends React.Component {
       </ol>
       <div className={classNames('project-layout-half', sectionClass)}>
         <div className='div-left'>
-          {LayoutHelper.mediaType(imgLeft, videoLeft, deviceFrame)}
+          {LayoutHelper.mediaType(imgLeft, videoLeft, deviceFrame, threeDLeft)}
           <ol start='0'>
             {LayoutHelper.layoutArrayContent(contentLeft)}
           </ol>
         </div>
 
         <div className='div-right'>
-          {LayoutHelper.mediaType(imgRight, videoRight, deviceFrame)}
+          {LayoutHelper.mediaType(imgRight, videoRight, deviceFrame, threeDRight)}
           <ol start='0'>
             {LayoutHelper.layoutArrayContent(contentRight)}
           </ol>

@@ -20,11 +20,13 @@ export default class LayoutHelper {
     }
   }
 
-  static mediaType (image, video, deviceFrame) {
+  static mediaType (image, video, deviceFrame, threeD) {
     if (image !== undefined) {
       return <div className={`frame-${deviceFrame}`}><DeviceFrame frame={deviceFrame} /><img src={image} className={`device-${deviceFrame}`} /></div>
     } else if (video !== undefined) {
-      return <div className={`frame-${deviceFrame}`}><DeviceFrame frame={deviceFrame} /><ReactPlayer width='100' height='100' className={classNames('project-video169', `device-${deviceFrame}`)} url={video} /></div>
+      return <div className={`frame-${deviceFrame}`}><DeviceFrame frame={deviceFrame} /><ReactPlayer muted='true' autoplay='true' width='100' height='100' className={classNames('project-video169', `device-${deviceFrame}`)} url={video} /></div>
+    } else if (threeD !== undefined){
+      return <div className="sketchfab-embed-wrapper"><iframe src={threeD} frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></div>
     } else {
       return null
     }

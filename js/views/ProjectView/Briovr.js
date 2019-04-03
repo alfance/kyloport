@@ -61,6 +61,10 @@ const introRole = {
   img: '../../../assets/images/proj_briovr/behaviourstart.gif'
 }
 
+const videopromo = {
+  video:'../../../assets/images/proj_briovr/short-video.mp4'
+}
+
 const background = {
   title: 'Heuristic study - App background',
   deviceFrame: 'laptop',
@@ -311,6 +315,7 @@ class Briovr extends React.Component {
       <ProjectTitle content={style} style={style} />
       <div className='project-content-layout'>
         <Element name='Define'><IntroRole content={introRole} /></Element>
+        <LayoutImage content={videopromo} />
         <LayoutImage content={background} style={style} />
         <LayoutImage content={backgroundLayout} style={style} />
         <Problem content={challenge} style={style} /> {/* early state research */}

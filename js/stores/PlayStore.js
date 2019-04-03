@@ -22,5 +22,16 @@ module.exports = [
     logo: '../../assets/images/play_dme/avatar2.svg',
     color: '#0c4f99',
     url: ''
+  },
+  {
+    id: 3,
+    title: '3D',
+    field: 'Mostly hobbits',
+    intro: '3D Modelling',
+    link: 'threed',
+    headerImage: '../../assets/images/play-3d.png',
+    logo: '../../assets/images/play-3d.png',
+    color: '#F0D5CE',
+    url: ''
   }
 ]
