@@ -29,8 +29,8 @@ module.exports = [
     field: 'Mostly hobbits',
     intro: '3D Modelling',
     link: 'threed',
-    headerImage: '../../assets/images/play-3d.png',
-    logo: '../../assets/images/play-3d.png',
+    headerImage: '../../assets/images/play_3d/landing-bg.png',
+    logo: '../../assets/images/play_3d/play-3d.png',
     color: '#F0D5CE',
     url: ''
   }
