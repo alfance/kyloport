@@ -1,6 +1,6 @@
 import React from 'react'
 import LayoutNavbar from './components/LayoutNavbar'
-import {Element} from "react-scroll";
+import {Element} from 'react-scroll'
 import TitleDivier from './components/TitleDivider'
 import ProjectTitle from './components/ProjectTitle'
 import IntroRole from './components/IntroRole'
@@ -16,7 +16,6 @@ import Reflection from './components/Reflection'
 import LayoutHalf from './components/LayoutHalf'
 import ProjectFooter from './components/ProjectFooter'
 import PortfolioStore from '../../stores/PortfolioStore'
-
 
 const titleText1 = {
   title: 'Research'
@@ -62,7 +61,7 @@ const introRole = {
 }
 
 const videopromo = {
-  video:'../../../assets/images/proj_briovr/short-video.mp4'
+  video: '../../../assets/images/proj_briovr/short-video.mp4'
 }
 
 const background = {
@@ -89,7 +88,7 @@ const challenge2 = {
 const interview = {
   title: 'User interviews',
   sectionClass: 'project-layout-wide',
-  contentLeft: ['Benefited from our existing user base, I conducted survey interviews with over 20 of our registered users and 10 from other resources. The purpose is to find out the expectations from our users and people from a similar background.', 'Some interview questions include:', '__ _ "What is your experience with 3D/VR/AR?" _ __', '__ _ "What is your profession?" _ __','__ _ "Any experience with programming or scripting?" _ __','__ _ "What is your industry?" _ __'],
+  contentLeft: ['Benefited from our existing user base, I conducted survey interviews with over 20 of our registered users and 10 from other resources. The purpose is to find out the expectations from our users and people from a similar background.', 'Some interview questions include:', '__ _ "What is your experience with 3D/VR/AR?" _ __', '__ _ "What is your profession?" _ __', '__ _ "Any experience with programming or scripting?" _ __', '__ _ "What is your industry?" _ __'],
   imgRight: '../../../assets/images/proj_briovr/user-question.png'
 }
 
@@ -215,14 +214,14 @@ const wireframes = {
   imgRight: '../../../assets/images/proj_briovr/wireframe.jpg'
 }
 
-const usability1 ={
+const usability1 = {
   title: 'Usability test',
-  content:  'We have tried a variety of usability tests with people from different background. The diagram below was a test result from our A/B test. With a difference in onboarding, the testers showed discrepancies in preference and comprehension of the behaviour system.',
-  img:  '../../../assets/images/proj_briovr/abtest.png'
+  content: 'We have tried a variety of usability tests with people from different background. The diagram below was a test result from our A/B test. With a difference in onboarding, the testers showed discrepancies in preference and comprehension of the behaviour system.',
+  img: '../../../assets/images/proj_briovr/abtest.png'
 }
 
 const usability2 = {
-  title:'Comments',
+  title: 'Comments',
   content: [
     'We also received comments and suggestions from our testers. We sorted the comments by frequencies and prioritized them accordingly:',
     '**"Tutorial was too fast"**',
@@ -278,7 +277,7 @@ const achieve = {
   content: 'Through collaboration, we had created an interactive Casino Royal experience for **Crowdlinkers** at Toronto Elevate Conference after-party.',
   imgLeft: '../../../assets/images/proj_briovr/playing1.jpg',
   imgRight: '../../../assets/images/proj_briovr/playing2.jpg',
-  contentLeft:'Try it out below ↓'
+  contentLeft: 'Try it out below ↓'
 }
 
 const dobetter = {
@@ -311,11 +310,11 @@ class Briovr extends React.Component {
     const style = PortfolioStore[0]
 
     return (<div>
-        <LayoutNavbar style={style} />
+      <LayoutNavbar style={style} />
       <ProjectTitle content={style} style={style} />
       <div className='project-content-layout'>
         <Element name='Define'><IntroRole content={introRole} /></Element>
-        <LayoutImage content={videopromo} />
+        <div className='project-video169' style={{marginTop: '56px'}}><iframe src='https://www.youtube.com/embed/i4HR8qdL4EM?controls=0&autoplay=1&loop=1&playlist=i4HR8qdL4EM' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen /></div>
         <LayoutImage content={background} style={style} />
         <LayoutImage content={backgroundLayout} style={style} />
         <Problem content={challenge} style={style} /> {/* early state research */}
