@@ -60,19 +60,12 @@ const introRole = {
   img: '../../../assets/images/proj_briovr/behaviourstart.gif'
 }
 
-const videopromo = {
-  video: '../../../assets/images/proj_briovr/short-video.mp4'
-}
-
 const background = {
   title: 'Heuristic study - App background',
-  deviceFrame: 'laptop',
-  img: '../../../assets/images/proj_briovr/brio_model_import.gif',
-  content: 'BRIOVR empowers the user to create VR/AR experience at ease. In contrast to the mainstream software, users use BRIOVR to visualize their assets, models and 2D media online with a simplistic click and drag control mechanism.'
-}
-const backgroundLayout = {
-  img: '../../../assets/images/proj_briovr/background.png',
-  content: 'The primary interface of BRIOVR honours the modern design and modelling apps. Majority of the screen is dedicated to the 3D working space as additional features and tools occupy the side and bottom.'
+  deviceFrame: 'desktop',
+  content: 'BRIOVR empowers the user to create VR/AR experience at ease. In contrast to the mainstream software, users use BRIOVR to visualize their assets, models and 2D media online with a simplistic click and drag control mechanism.',
+  img: '../../../assets/images/proj_briovr/layout.gif',
+  label: 'The primary interface of BRIOVR honours the modern design and modelling apps. Majority of the screen is dedicated to the 3D working space as additional features and tools occupy the side and bottom.'
 }
 
 const challenge = {
@@ -316,7 +309,6 @@ class Briovr extends React.Component {
         <Element name='Define'><IntroRole content={introRole} /></Element>
         <div className='project-video169' style={{marginTop: '56px'}}><iframe src='https://www.youtube.com/embed/i4HR8qdL4EM?controls=0&autoplay=1&loop=1&playlist=i4HR8qdL4EM' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen /></div>
         <LayoutImage content={background} style={style} />
-        <LayoutImage content={backgroundLayout} style={style} />
         <Problem content={challenge} style={style} /> {/* early state research */}
         <LayoutImage content={challenge2} style={style} />
         <Element name='Research'><TitleDivier content={titleText1} style={style} /></Element>
