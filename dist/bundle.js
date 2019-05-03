@@ -31625,7 +31625,7 @@
 	          navComponents,
 	          _react2.default.createElement(
 	            'a',
-	            { href: 'mailto:jiao_xue@hotmail.com' },
+	            { target: '_blank', href: 'mailto:jiao_xue@hotmail.com' },
 	            _react2.default.createElement('i', { className: 'icon-mail' })
 	          ),
 	          _react2.default.createElement(
@@ -31637,6 +31637,11 @@
 	            'a',
 	            { target: '_blank', href: 'https://twitter.com/alfancelric' },
 	            _react2.default.createElement('i', { className: 'icon-twitter1' })
+	          ),
+	          _react2.default.createElement(
+	            'a',
+	            { target: '_blank', href: 'https://www.uplabs.com/alfance_elric' },
+	            _react2.default.createElement('i', { className: 'icon-star2' })
 	          )
 	        )
 	      );

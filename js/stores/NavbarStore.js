@@ -16,7 +16,6 @@ class NavbarStore extends EventEmitter {
       }
     ]
   }
-
   getAll () {
     return this.navitems
   }
