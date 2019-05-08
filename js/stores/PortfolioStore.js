@@ -46,13 +46,13 @@ module.exports = [
     url: ''
   },
   {
-    id: 4,
+    id: 5,
     title: 'DME Website',
     field: 'School department website',
     intro: 'Digital rebranding for education',
     link: 'dme',
-    headerImage: '../../assets/images/play_dme/logo-dme-expand.svg',
-    logo: '../../assets/images/play_dme/thumbnail_dme.png',
+    headerImage: '../../assets/images/proj_dme/logo-dme-expand.svg',
+    logo: '../../assets/images/proj_dme/thumbnail_dme.png',
     color: '#0c4f99',
     url: ''
   }
