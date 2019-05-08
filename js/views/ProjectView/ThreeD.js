@@ -35,7 +35,7 @@ const animation ={
 
 class CityBeats extends React.Component {
     render() {
-        const style = PlayStore[2]
+        const style = PlayStore[1]
         return (<div>
             <ProjectTitle content={style} style={style}/>
             <div className='project-content-layout'>

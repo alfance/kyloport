@@ -3,7 +3,7 @@ import React from 'react'
 export default class ProjectFooter extends React.Component {
   render () {
     const {field, logo, bgImg} = this.props.content
-    const {color, titleBgP} = this.props.style
+    const {color} = this.props.style
     const footerStyle = {
       textAlign: 'center',
       borderColor:color

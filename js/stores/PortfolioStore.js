@@ -6,11 +6,11 @@ module.exports = [
     intro: 'Interaction system for online VR platform',
     link: 'briovr',
     headerImage: '../../assets/images/proj_briovr//brio_logo_notext.png',
-    logo: '../../assets/images/proj_briovr/brio_logo_notext.png',
+    logo: '../../assets/images/proj_briovr/thumbnail_brio.png',
     color: '#5C41B4',
     url: '',
     textonColor: 'text-light',
-    titleBgP: 'right'
+    className: 'wide-card'
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ module.exports = [
     intro: 'Non-profit mobile & web platform',
     link: 'fairtrade',
     headerImage: '../../assets/images/proj_fairtrade/logo-yellow.svg',
-    logo: '../../assets/images/proj_fairtrade/logo-yellow.svg',
+    logo: '../../assets/images/proj_fairtrade/thumbnail_fairtrade.png',
     color: '#FDCB1C',
     url: ''
   },
@@ -27,10 +27,10 @@ module.exports = [
     id: 3,
     title: 'CYCNAV',
     field: 'Product design, UX & UI',
-    intro: 'Mobile app & IOT for cyclists',
+    intro: 'Mobile app & IOT for urban cyclists',
     link: 'cycnav',
     headerImage: '../../assets/images/proj_cycnav/cycnav_logo_c.svg',
-    logo: '../../assets/images/proj_cycnav/cycnav_logo_c.svg',
+    logo: '../../assets/images/proj_cycnav/thumbnail_cycnav.png',
     color: '#1A923C',
     url: ''
   },
@@ -38,11 +38,22 @@ module.exports = [
     id: 4,
     title: 'Foguang Temple',
     field: 'Product design & development',
-    intro: 'Under Construction',
+    intro: 'Cultural heritage 360° app (WIP)',
     link: 'foguang',
     headerImage: '../../assets/images/proj_foguang/logo2.svg',
-    logo: '../../assets/images/proj_foguang/scroll3.svg',
+    logo: '../../assets/images/proj_foguang/thumbnail_foguang.png',
     color: '#BC904A',
+    url: ''
+  },
+  {
+    id: 4,
+    title: 'DME Website',
+    field: 'School department website',
+    intro: 'Digital rebranding for education',
+    link: 'dme',
+    headerImage: '../../assets/images/play_dme/logo-dme-expand.svg',
+    logo: '../../assets/images/play_dme/thumbnail_dme.png',
+    color: '#0c4f99',
     url: ''
   }
 ]

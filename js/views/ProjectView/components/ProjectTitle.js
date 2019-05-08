@@ -4,12 +4,11 @@
  export default class ProjectTitle extends React.Component {
    render () {
      const {title, logo, bgImg, headerImage} = this.props.content
-     const {color, titleBgP} = this.props.style
+     const {color} = this.props.style
      const titleBG = {
        backgroundImage: 'url(' + bgImg + ')',
        backgroundColor: color,
        backgroundRepeat: 'no-repeat',
-       backgroundPosition: titleBgP,
        backgroundSize: 'contain'
      }
 
