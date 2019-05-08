@@ -33684,7 +33684,7 @@
 	  id: 1,
 	  title: 'BRIOVR',
 	  field: 'UX / UI / Motion Design',
-	  intro: 'Interaction system for online VR platform',
+	  intro: 'Interaction system for web-based VR platform',
 	  link: 'briovr',
 	  headerImage: '../../assets/images/proj_briovr//brio_logo_notext.png',
 	  logo: '../../assets/images/proj_briovr/thumbnail_brio.png',
@@ -33723,10 +33723,10 @@
 	  color: '#BC904A',
 	  url: ''
 	}, {
-	  id: 4,
+	  id: 5,
 	  title: 'DME Website',
 	  field: 'School department website',
-	  intro: 'Digital rebranding for education',
+	  intro: 'Digital rebranding for ed-tech',
 	  link: 'dme',
 	  headerImage: '../../assets/images/proj_dme/logo-dme-expand.svg',
 	  logo: '../../assets/images/proj_dme/thumbnail_dme.png',
@@ -57414,9 +57414,9 @@
 
 	var _ProjectTitle2 = _interopRequireDefault(_ProjectTitle);
 
-	var _PlayStore = __webpack_require__(111);
+	var _PortfolioStore = __webpack_require__(109);
 
-	var _PlayStore2 = _interopRequireDefault(_PlayStore);
+	var _PortfolioStore2 = _interopRequireDefault(_PortfolioStore);
 
 	var _IntroRole = __webpack_require__(266);
 
@@ -57583,7 +57583,7 @@
 	    _createClass(Dme, [{
 	        key: 'render',
 	        value: function render() {
-	            var style = _PlayStore2.default[1];
+	            var style = _PortfolioStore2.default[4];
 	            return _react2.default.createElement(
 	                'div',
 	                null,
