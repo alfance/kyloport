@@ -33838,13 +33838,13 @@
 
 	module.exports = [{
 	  id: 1,
-	  title: 'City Beats',
+	  title: 'IOT Projects',
 	  field: 'Wiring and soldering',
 	  intro: 'Physical Computing',
 	  link: 'citybeats',
 	  headerImage: '../../assets/images/play_citybeats/thumb.jpg',
-	  logo: '../../assets/images/play_citybeats/thumb.jpg',
-	  color: '#000000',
+	  logo: '../../assets/images/play_citybeats/thumbnail_iot.png',
+	  color: '#540346',
 	  url: '',
 	  textonColor: 'text-light'
 	}, {
@@ -33854,7 +33854,7 @@
 	  intro: '3D Modelling',
 	  link: 'threed',
 	  headerImage: '../../assets/images/play_3d/landing-bg.png',
-	  logo: '../../assets/images/play_3d/play-3d.png',
+	  logo: '../../assets/images/play_3d/thumbnail_3d.png',
 	  color: '#F0D5CE',
 	  url: ''
 	}];
@@ -57263,6 +57263,10 @@
 
 	var _ProjectTitle2 = _interopRequireDefault(_ProjectTitle);
 
+	var _TitleDivider = __webpack_require__(264);
+
+	var _TitleDivider2 = _interopRequireDefault(_TitleDivider);
+
 	var _PlayStore = __webpack_require__(111);
 
 	var _PlayStore2 = _interopRequireDefault(_PlayStore);
@@ -57302,6 +57306,66 @@
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var project1 = {
+	    title: 'Project 1: Vgarden'
+	};
+	var introRolegarden = {
+	    sectionClass: 'list-style-circle',
+	    content: 'The Modular Vertical Garden is a digital and ‘smart’ system that I designed to ease the pain points of maintaining a vertical garden. The modularity allows users to have a garden as big or as small as he/she likes, flexible to the constraints of physical space and personal preference.',
+	    duties: ['This was the capstone project for my master study. I conceptualized, designed and prototyped the whole system', 'Thesis Development', 'Research & Case study', 'UI / UX design', 'Arduino development'],
+	    img: '../../../assets/images/play_citybeats/thumb-vgarden.jpg'
+	};
+
+	var problem1 = {
+	    title: 'Problem',
+	    content: 'Vertical gardens (green wall) are great resource for home use. However, the cost of design, construction and maintenance are factors that hinder the development of vertical garden into different architectural types and expanding into multiple user segments. Because of this, home gardening is still at a lagging stage within the rapid development of digital media.',
+	    imgLeft: '../../../assets/images/play_citybeats/vgarden1.jpg',
+	    imgRight: '../../../assets/images/play_citybeats/vgarden2.jpg',
+	    label: 'photo curtesy: pixabay'
+	};
+
+	var solution1 = {
+	    title: 'Solution',
+	    sectionClass: 'project-layout-wide',
+	    content: 'The modular garden allows users to have a garden as big or as small as he/she likes, flexible to the constraints of physical space and personal preference. It talks to the web, allowing the user to observe and control the vegetation right off of their computer or smartphone device. This project benefits apartment/condo dwellers and people who have limited physical space time and efforts.',
+	    imgLeft: '../../../assets/images/play_citybeats/vgarden_unit2.jpg',
+	    imgRight: '../../../assets/images/play_citybeats/vgarden_unit1.jpg'
+	};
+
+	var design1 = {
+	    title: 'Design Process',
+	    content: ['Software - digital interface that display the status of the plants', 'Hardware - individual units each contain one plant & corresponding water system.'],
+	    imgLeft: '../../../assets/images/play_citybeats/userflow.jpg',
+	    imgRight: '../../../assets/images/play_citybeats/interface1.jpg'
+	};
+
+	var system = {
+	    title: 'Unit System Design',
+	    sectionClass: 'project-layout-wide',
+	    imgLeft: '../../../assets/images/play_citybeats/one_unit_breakdown.png',
+	    imgMiddle: '../../../assets/images/play_citybeats/plant_sys.png',
+	    imgRight: '../../../assets/images/play_citybeats/One_unit_connection_topbottom.png'
+	};
+
+	var model1 = {
+	    title: 'Modelling & Prototyping',
+	    content: 'Part of the project components were 3D printed. For example, the water tube connectors. The bottom part container is laser cutted, and the top part container is made of foam board covered with water-proof spray.',
+	    imgLeft: '../../../assets/images/play_citybeats/model2.jpg',
+	    imgRight: '../../../assets/images/play_citybeats/3dprint.jpg'
+	};
+
+	var final = {
+	    title: 'Makeing the Vgarden work!',
+	    sectionClass: 'project-layout-wide',
+	    content: 'For ever garden, there is a central unit where power source and internet modules are stored. When additinal unit connects to the central unit, Data is transfered. Whenever the customer introduced a new plant or member to the “family”, the transmitter will send the basic information to the app, thus updated in the interface.',
+	    imgLeft: '../../../assets/images/play_citybeats/wires.jpg',
+	    imgRight: '../../../assets/images/play_citybeats/final4.jpg'
+	};
+
+	var project2 = {
+	    title: 'Project 2: CityBeat'
+	};
 
 	var introRole = {
 	    sectionClass: 'list-style-circle',
@@ -57371,6 +57435,15 @@
 	                _react2.default.createElement(
 	                    'div',
 	                    { className: 'project-content-layout' },
+	                    _react2.default.createElement(_TitleDivider2.default, { content: project1, style: style }),
+	                    _react2.default.createElement(_IntroRole2.default, { content: introRolegarden }),
+	                    _react2.default.createElement(_LayoutTwoThird2.default, { content: problem1, style: style }),
+	                    _react2.default.createElement(_LayoutOneThird2.default, { content: solution1, style: style }),
+	                    _react2.default.createElement(_LayoutHalf2.default, { content: design1, style: style }),
+	                    _react2.default.createElement(_LayoutThree2.default, { content: system, style: style }),
+	                    _react2.default.createElement(_LayoutTwoThird2.default, { content: model1, style: style }),
+	                    _react2.default.createElement(_LayoutHalf2.default, { content: final, style: style }),
+	                    _react2.default.createElement(_TitleDivider2.default, { content: project2, style: style }),
 	                    _react2.default.createElement(_IntroRole2.default, { content: introRole }),
 	                    _react2.default.createElement(_LayoutImage2.default, { content: groupphoto }),
 	                    _react2.default.createElement(_LayoutHalf2.default, { content: ideation }),
@@ -57901,7 +57974,7 @@
 /* 296 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "img/img-04bf45.gif";
+	module.exports = __webpack_require__.p + "img/img-9e2eb9.gif";
 
 /***/ },
 /* 297 */
