@@ -38754,7 +38754,7 @@
 	                _react2.default.createElement(
 	                  'b',
 	                  null,
-	                  ' CONNECT'
+	                  ' CHAT'
 	                )
 	              )
 	            )
@@ -51924,10 +51924,10 @@
 	};
 
 	var background = {
-	  title: 'Heuristic study - App background',
-	  deviceFrame: 'desktop',
+	  title: 'Background',
+	  sectionClass: 'project-layout-wide',
 	  content: 'BRIOVR empowers the user to create VR/AR experience at ease. In contrast to the mainstream software, users use BRIOVR to visualize their assets, models and 2D media online with a simplistic click and drag control mechanism.',
-	  img: '../../../assets/images/proj_briovr/layout.gif',
+	  img: '../../../assets/images/proj_briovr/mockup_img.png',
 	  label: 'The primary interface of BRIOVR honours the modern design and modelling apps. Majority of the screen is dedicated to the 3D working space as additional features and tools occupy the side and bottom.'
 	};
 
@@ -51938,7 +51938,7 @@
 	};
 
 	var challenge2 = {
-	  content: '### * "I want to click the launch button and the rocket fires off." * ###'
+	  content: '### * "I want to click the launch button and the rocket fires off." 🚀 * ###'
 	};
 
 	var interview = {

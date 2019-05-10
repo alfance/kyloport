@@ -92,7 +92,7 @@ class About extends React.Component {
             <Cv content={experiences} />
             <p>Want to connect? Let's
             <a target='_blank' href='https://twitter.com/alfancelric'>
-              <b> CONNECT</b>
+              <b> CHAT</b>
             </a>
             </p>
           </div>
