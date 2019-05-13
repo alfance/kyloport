@@ -152,10 +152,19 @@ const game = {
   imgRight: '../../../assets/images/proj_briovr/littlebits.jpg'
 }
 
+const sprint = {
+  title: 'Brainstorm Sessions',
+  content: 'On top of reasearching and evaluating, I organized design jam and brainstorm sessions among the teams to ideate & explore possible solution space. The variety of backgrounds from the paticipants had yeild practical, innovative or even out-of-the box methods, which had provided me guidence in building the system.',
+  imgLeft: '../../../assets/images/proj_briovr/sprint1.jpg',
+  contentLeft:'User journey map conducted among the design team.',
+  imgRight: '../../../assets/images/proj_briovr/sprint2.jpg',
+  contentRight:'Rapid brainstorm sessions among the development team and potential users.'
+}
+
 const userJourney = {
   title: 'Adding interactions comes at the end',
   sectionClass: 'project-layout-wide',
-  content: 'After studying other applications and interviews. I came up with a simplified user journey for the system. This helped me realize that creating **interactions comes at the late stage** of the user flow.',
+  content: 'By studying & analyzing out the core user flow, I came up with a simplified user journey for the system. This helped me realize that creating **interactions comes at the late stage** of the user flow.',
   img: '../../../assets/images/proj_briovr/user_journey_map.png',
   label: 'Behaviour onboarding is separate from the general onboarding.  Combining onboardings have resulted in loss of interests prior to the completion. I then changed the behaviour onboarding to be initiated only when users express interest.'
 }
@@ -316,7 +325,9 @@ class Briovr extends React.Component {
         <TableComponent content={competitor} style={style} />
         <FindingComponent content={findingCompetitor} style={style} />
         <LayoutThree content={competitorInterface} style={style} />
-        <LayoutHalf content={game} /> {/* Solution */}
+        <LayoutHalf content={game} />
+        <LayoutTwoThird content={sprint} />
+        {/* Solution */}
         <Element name='Solution'><TitleDivier content={titleText2} style={style} /></Element>
         <LayoutImage content={userJourney} />
         <LayoutHalf content={rules} />

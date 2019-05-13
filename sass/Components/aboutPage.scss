@@ -9,6 +9,25 @@
       background-repeat: no-repeat;
     }
 }
+
+.thumbnail-image {
+  .div-right{
+    background-image: url("../assets/images/profile_vr.png");
+    background-size: contain;
+    padding-left:0px;
+    margin-left:16px;
+    background-repeat: no-repeat;
+  }
+  img {
+    @include animation('fadeIn 0.35s forwards');
+  }
+  &:hover {
+    img {
+      @include animation('fadeOut 0.35s forwards');
+    }
+  }
+}
+
 // ////////////////////////// my journey section  ///////////////////
 .project-expriences {
     h3 {

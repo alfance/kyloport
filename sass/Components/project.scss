@@ -68,13 +68,19 @@
 @mixin project-container-css {
   width: 100%;
   display: flex;
-  align-items: center;
   // div :first-of-type {
   //     padding-left:8px;
   // }
   // div :last-of-type {
   //     padding-right:8px;
   // }
+  img {
+    align-self: flex-start;
+  }
+  ol, p{
+    align-self: center;
+  }
+
   @include smallS {
     display: inline-block;
   }

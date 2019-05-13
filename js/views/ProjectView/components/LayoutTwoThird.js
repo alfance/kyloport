@@ -19,7 +19,9 @@ export default class LayoutTwoThird extends React.Component {
 
     return (<div>
       <h3>{title}</h3>
-      <p>{content}</p>
+      <ol start='0'>
+        {LayoutHelper.layoutArrayContent(content)}
+      </ol>
       <div className={classNames('project-layout-23', sectionClass)}>
         <div className='div-left'>
           {LayoutHelper.mediaType(imgLeft, videoLeft, deviceFrame)}
