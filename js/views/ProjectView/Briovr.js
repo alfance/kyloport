@@ -154,7 +154,7 @@ const game = {
 
 const sprint = {
   title: 'Brainstorm Sessions',
-  content: 'On top of reasearching and evaluating, I organized design jam and brainstorm sessions among the teams to ideate & explore possible solution space. The variety of backgrounds from the paticipants had yeild practical, innovative or even out-of-the box methods, which had provided me guidence in building the system.',
+  content: 'On top of researching and evaluating, I organized design jam and brainstorm sessions among the teams to ideate & explore possible solution space. The variety of backgrounds from the participants had yield practical, innovative or even out-of-the-box methods, which had provided me guidance in building the system.',
   imgLeft: '../../../assets/images/proj_briovr/sprint1.jpg',
   contentLeft:'User journey map conducted among the design team.',
   imgRight: '../../../assets/images/proj_briovr/sprint2.jpg',
