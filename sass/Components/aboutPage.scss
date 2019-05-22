@@ -2,11 +2,7 @@
 
 .greeting-gradient {
     h3 {
-        -webkit-text-fill-color: transparent;
-      background-image: url("../assets/images/gradient.gif");
-      background-size: cover;
-      -webkit-background-clip: text;
-      background-repeat: no-repeat;
+      @include animation('text-grediant 3.5s infinite');
     }
 }
 
@@ -30,6 +26,7 @@
 
 // ////////////////////////// my journey section  ///////////////////
 .project-expriences {
+  overflow-y: hidden;
     h3 {
         margin-top:24px;
     }

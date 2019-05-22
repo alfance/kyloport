@@ -1,7 +1,7 @@
 // animation mixins
 // find reference here: https://css-tricks.com/snippets/css/keyframe-animation-syntax/
 
-
+@import "../style/colors.scss";
 
 
 @mixin keyframes($animation-name) {
@@ -143,5 +143,31 @@
   100% {
    opacity:0;
    margin-top:-40px;
+  }
+}
+
+///////////////////// Text color animation ///////////////////////////
+@include keyframes(text-grediant) {
+  0% {
+    background: linear-gradient(to right, $color-primary, $color-accent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    background-size: 200% 200%;
+   }
+
+   50% {
+       background: linear-gradient(to right, #4350bc, $color-accent);
+       -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
+       text-decoration: none;
+       background-size: 100% 100%;
+   }
+  100% {
+    background: linear-gradient(to right, $color-primary, $color-accent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    background-size: 200% 200%;
   }
 }

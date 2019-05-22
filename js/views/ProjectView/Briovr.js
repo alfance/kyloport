@@ -78,6 +78,28 @@ const challenge2 = {
   content: '### * "I want to click the launch button and the rocket fires off." 🚀 * ###'
 }
 
+const persona = {
+  title: 'Personas',
+  content: 'AR / VR can be used by a variety of industries and professionals. The group of users we are focusing on are new to the technologies, interested to see what is there for them, and do not have technical backgrounds.',
+  imgLeft: '../../../assets/images/proj_briovr/avatar-13.svg',
+  imgRight: '../../../assets/images/proj_briovr/avatar-6.svg',
+  sectionClass: 'section-persona',
+  contentLeft: [
+    '**Sam Gao**',
+    'Elementary school teacher',
+    '**Age**: mid 30s',
+    '**Status**: Really interested in the new technology of AR and VR. Would like to introduce the new tech to his classrooms, initiate creativity and collaboration among students',
+    '**Problems**:',' High learning curve, complex software system.','Not collaborative.'
+  ],
+  contentRight: [
+    '**Ryan Fisherman**',
+    'Interaction Designer',
+    '**Age**: mid 20s',
+    '**Status**: Started to explore into the AR / VR realm as a new medium to create immersive and interactive prototyping for this next UX project. ',
+    '**Problems**:', ' Doesn&#39;t have time for diving into game engines for the level of interaction he&#39;s dealing.',' Also hard to visualize, build and deploy the experiences. '
+  ]
+}
+
 const interview = {
   title: 'User interviews',
   sectionClass: 'project-layout-wide',
@@ -320,6 +342,7 @@ class Briovr extends React.Component {
         <LayoutImage content={background} style={style} />
         <Problem content={challenge} style={style} /> {/* early state research */}
         <LayoutImage content={challenge2} style={style} />
+        <LayoutHalf content={persona} style={style} />
         <Element name='Research'><TitleDivier content={titleText1} style={style} /></Element>
         <LayoutOneThird content={interview} style={style} />
         <TableComponent content={competitor} style={style} />
