@@ -57498,7 +57498,14 @@
 	};
 	var ideacombine = {
 	  title: 'Combining both ideas',
-	  content: 'The 2 concepts can complement each other well. I would like to combine them together hoping to give users more flexibility and freedom.',
+	  sectionClass: 'project-layout-wide',
+	  content: 'After analyzing the pros and cons for each ideation, I realized that combining the 2 design together will make a seamless flow for user interactions. ',
+	  img: '../../../assets/images/proj_unity/flow.jpg'
+	};
+
+	var ideacombine2 = {
+	  title: 'Combining both ideas',
+	  content: 'The 2 concepts can complement each other well. Following is a connected motion flow of a user going from the community page to the profile page with options.',
 	  img: '../../../assets/images/proj_unity/unity_design.gif'
 	};
 
@@ -57508,6 +57515,11 @@
 	  sectionClass: 'project-layout-wide',
 	  content: 'The following design mockup is for the forum page. The UI design follows the general style of the Unity live platform.',
 	  img: '../../../assets/images/proj_unity/design1.png'
+	};
+	var prototypeApp2 = {
+	  deviceFrame: 'desktop',
+	  content: 'Another design with more detailed information about the user on the Unity Connect main page.',
+	  img: '../../../assets/images/proj_unity/design2.png'
 	};
 
 	var usability = {
@@ -57571,12 +57583,14 @@
 	          _react2.default.createElement(_LayoutOneThird2.default, { content: idea2 }),
 	          _react2.default.createElement(_FindingComponent2.default, { content: idea2cons, style: style }),
 	          _react2.default.createElement(_LayoutImage2.default, { content: ideacombine }),
+	          _react2.default.createElement(_LayoutImage2.default, { content: ideacombine2 }),
 	          _react2.default.createElement(
 	            _reactScroll.Element,
 	            { name: 'Design' },
 	            _react2.default.createElement(_TitleDivider2.default, { content: titleText4, style: style })
 	          ),
 	          _react2.default.createElement(_LayoutImage2.default, { content: prototypeApp }),
+	          _react2.default.createElement(_LayoutImage2.default, { content: prototypeApp2 }),
 	          _react2.default.createElement(_TitleDivider2.default, { content: titleText5, style: style }),
 	          _react2.default.createElement(_LayoutImage2.default, { content: usability, style: style }),
 	          _react2.default.createElement(_ProjectFooter2.default, { content: style, style: style })

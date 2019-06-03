@@ -138,7 +138,14 @@ const idea2cons = {
 }
 const ideacombine = {
   title: 'Combining both ideas',
-  content: 'The 2 concepts can complement each other well. I would like to combine them together hoping to give users more flexibility and freedom.',
+  sectionClass: 'project-layout-wide',
+  content: 'After analyzing the pros and cons for each ideation, I realized that combining the 2 design together will make a seamless flow for user interactions. ',
+  img: '../../../assets/images/proj_unity/flow.jpg',
+}
+
+const ideacombine2 = {
+  title: 'Combining both ideas',
+  content: 'The 2 concepts can complement each other well. Following is a connected motion flow of a user going from the community page to the profile page with options.',
   img: '../../../assets/images/proj_unity/unity_design.gif',
 }
 
@@ -148,6 +155,11 @@ const prototypeApp = {
   sectionClass: 'project-layout-wide',
   content: 'The following design mockup is for the forum page. The UI design follows the general style of the Unity live platform.',
   img: '../../../assets/images/proj_unity/design1.png',
+}
+const prototypeApp2 = {
+  deviceFrame: 'desktop',
+  content: 'Another design with more detailed information about the user on the Unity Connect main page.',
+  img: '../../../assets/images/proj_unity/design2.png',
 }
 
 const usability = {
@@ -197,10 +209,12 @@ class Unity extends React.Component {
           <LayoutOneThird content={idea2} />
           <FindingComponent content={idea2cons} style={style} />
           <LayoutImage content={ideacombine} />
+          <LayoutImage content={ideacombine2} />
 
           {/* UI design */}
           <Element name='Design'><TitleDivier content={titleText4} style={style} /></Element>
           <LayoutImage content={prototypeApp} />
+          <LayoutImage content={prototypeApp2} />
 
           {/* results and reflections */}
           <TitleDivier content={titleText5} style={style} />
