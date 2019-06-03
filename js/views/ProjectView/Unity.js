@@ -35,6 +35,10 @@ const problem = {
     'Merging the various user profiles from different services into one is not feasible nor UX plausible.']
 }
 
+const whoami = {
+  content:['Name: **Kylo **','Profession: **Product Designer**', 'Location: **Toronto, Canada**','Specialization: **web-app, mobile, AR, VR**' ]
+
+}
 const challenge = {
   title: 'My Challenge',
   content: 'Come up with a solution that empowers seamless interactions and information sharing between the users across Unity&#8217s multiple live services.',
@@ -114,7 +118,10 @@ const wireframe1 = {
   content: '**Wireframe for Ideation 1**',
   img: '../../../assets/images/proj_unity/wirefram1.png'
 }
-
+const idea1cons = {
+  content: ['**PROS**: this is a dynamic approach to generating more freedom and flexibility for the users. The hovercard design is also subtle enough that it does not obscure much of the information on the original page. ',
+ '**CONS**: The real estate space is very limited. Certain information has been sacrificed due to a lower priority.  ']
+}
 const idea2 = {
   title: 'Ideation 2: Consistent User Profile Section',
   sectionClass: 'project-layout-wide',
@@ -125,6 +132,10 @@ const idea2 = {
   contentRight:'Ideation 2 Wireframe',
 }
 
+const idea2cons = {
+  content: ['**PROS**: The profile page header section is robust enough to be placed under almost all profile pages. This empowers users to go to any services without complex navigation.',
+ '**CONS**: May require specific customization and extra technical support in order to be implemented to all pages. ']
+}
 const ideacombine = {
   title: 'Combining both ideas',
   content: 'The 2 concepts can complement each other well. I would like to combine them together hoping to give users more flexibility and freedom.',
@@ -166,6 +177,7 @@ class Unity extends React.Component {
         <div className='project-content-layout'>
 
           {/* Problem & Challenge */}
+          <LayoutText content={whoami} style={style} />
           <Problem content={problem} style={style} />
           <Problem content={challenge} style={style} />
 
@@ -181,7 +193,9 @@ class Unity extends React.Component {
           <LayoutImage content={system} />
           <LayoutImage content={idea1} />
           <LayoutImage content={wireframe1} />
+          <FindingComponent content={idea1cons} style={style} />
           <LayoutOneThird content={idea2} />
+          <FindingComponent content={idea2cons} style={style} />
           <LayoutImage content={ideacombine} />
 
           {/* UI design */}

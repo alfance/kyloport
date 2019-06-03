@@ -33862,16 +33862,6 @@
 	  logo: '../../assets/images/play_3d/thumbnail_3d.png',
 	  color: '#F0D5CE',
 	  url: ''
-	}, {
-	  id: 3,
-	  title: 'Unity Design Exercise',
-	  field: 'Challenge',
-	  intro: 'Unity Design Exercise',
-	  link: 'unity',
-	  headerImage: '../../assets/images/proj_unity/unitylogo-w.svg',
-	  logo: '../../assets/images/proj_unity/unitylogo-w.svg',
-	  color: '#000000',
-	  url: ''
 	}];
 
 /***/ },
@@ -57382,6 +57372,10 @@
 	  content: ['User Interactions on Unity Live Platform', 'The disparate nature of how users encounter each other across the ecosystem is a soft blocker today.', 'Users are limited to the service they are currently on when interacting with each other', 'Merging the various user profiles from different services into one is not feasible nor UX plausible.']
 	};
 
+	var whoami = {
+	  content: ['Name: **Kylo **', 'Profession: **Product Designer**', 'Location: **Toronto, Canada**', 'Specialization: **web-app, mobile, AR, VR**']
+
+	};
 	var challenge = {
 	  title: 'My Challenge',
 	  content: 'Come up with a solution that empowers seamless interactions and information sharing between the users across Unity&#8217s multiple live services.'
@@ -57486,7 +57480,9 @@
 	  content: '**Wireframe for Ideation 1**',
 	  img: '../../../assets/images/proj_unity/wirefram1.png'
 	};
-
+	var idea1cons = {
+	  content: ['**PROS**: this is a dynamic approach to generating more freedom and flexibility for the users. The hovercard design is also subtle enough that it does not obscure much of the information on the original page. ', '**CONS**: The real estate space is very limited. Certain information has been sacrificed due to a lower priority.  ']
+	};
 	var idea2 = {
 	  title: 'Ideation 2: Consistent User Profile Section',
 	  sectionClass: 'project-layout-wide',
@@ -57497,6 +57493,9 @@
 	  contentRight: 'Ideation 2 Wireframe'
 	};
 
+	var idea2cons = {
+	  content: ['**PROS**: The profile page header section is robust enough to be placed under almost all profile pages. This empowers users to go to any services without complex navigation.', '**CONS**: May require specific customization and extra technical support in order to be implemented to all pages. ']
+	};
 	var ideacombine = {
 	  title: 'Combining both ideas',
 	  content: 'The 2 concepts can complement each other well. I would like to combine them together hoping to give users more flexibility and freedom.',
@@ -57548,6 +57547,7 @@
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'project-content-layout' },
+	          _react2.default.createElement(_LayoutText2.default, { content: whoami, style: style }),
 	          _react2.default.createElement(_Problem2.default, { content: problem, style: style }),
 	          _react2.default.createElement(_Problem2.default, { content: challenge, style: style }),
 	          _react2.default.createElement(
@@ -57567,7 +57567,9 @@
 	          _react2.default.createElement(_LayoutImage2.default, { content: system }),
 	          _react2.default.createElement(_LayoutImage2.default, { content: idea1 }),
 	          _react2.default.createElement(_LayoutImage2.default, { content: wireframe1 }),
+	          _react2.default.createElement(_FindingComponent2.default, { content: idea1cons, style: style }),
 	          _react2.default.createElement(_LayoutOneThird2.default, { content: idea2 }),
+	          _react2.default.createElement(_FindingComponent2.default, { content: idea2cons, style: style }),
 	          _react2.default.createElement(_LayoutImage2.default, { content: ideacombine }),
 	          _react2.default.createElement(
 	            _reactScroll.Element,
