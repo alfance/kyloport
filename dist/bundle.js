@@ -57522,6 +57522,16 @@
 	  img: '../../../assets/images/proj_unity/design2.png'
 	};
 
+	var prototypeApp3 = {
+	  deviceFrame: 'laptop',
+	  sectionClass: 'project-layout-wide',
+	  content: 'The visual style of the Header section contains consistency with the overall Unity scheme and palette. No matter which community page it is, the header remain unchanged.',
+	  imgLeft: '../../../assets/images/proj_unity/design3.png',
+	  contentLeft: 'Community Answer page',
+	  imgRight: '../../../assets/images/proj_unity/design4.png',
+	  contentRight: 'Unity Connect'
+	};
+
 	var usability = {
 	  title: 'Prospective Usability Test',
 	  content: ['In order to measure the success of the user profile design, there are 2 methods I can adpot to acquire data. One can be executed based on the wireframe and mockup; Another one can be measured using analytic tools after implementation', '1) For the usability test, I will test it with the two interviewers to see if the design can help them better interat with the online platform.Set up the heatmap test case on **quant.ux**. Create 2 tasks for the testers to work on: Find the Asset page through the user profile channel; Find out the projects user is working on.', '2) If the previous measurement had shown a promising result, I would like to implement analytic tools (google or mixpanel) to track the click rate, most clicks and least clicks, time spent and boucne rate on the hovercard / user profile.', '*** Usability Test result coming soon ***']
@@ -57591,6 +57601,7 @@
 	          ),
 	          _react2.default.createElement(_LayoutImage2.default, { content: prototypeApp }),
 	          _react2.default.createElement(_LayoutImage2.default, { content: prototypeApp2 }),
+	          _react2.default.createElement(_LayoutHalf2.default, { content: prototypeApp3 }),
 	          _react2.default.createElement(_TitleDivider2.default, { content: titleText5, style: style }),
 	          _react2.default.createElement(_LayoutImage2.default, { content: usability, style: style }),
 	          _react2.default.createElement(_ProjectFooter2.default, { content: style, style: style })

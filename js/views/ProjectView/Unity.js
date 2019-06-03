@@ -162,6 +162,16 @@ const prototypeApp2 = {
   img: '../../../assets/images/proj_unity/design2.png',
 }
 
+const prototypeApp3 = {
+  deviceFrame: 'laptop',
+  sectionClass: 'project-layout-wide',
+  content: 'The visual style of the Header section contains consistency with the overall Unity scheme and palette. No matter which community page it is, the header remain unchanged.',
+  imgLeft: '../../../assets/images/proj_unity/design3.png',
+  contentLeft:'Community Answer page',
+  imgRight: '../../../assets/images/proj_unity/design4.png',
+  contentRight:'Unity Connect'
+}
+
 const usability = {
   title: 'Prospective Usability Test',
   content: [
@@ -215,6 +225,7 @@ class Unity extends React.Component {
           <Element name='Design'><TitleDivier content={titleText4} style={style} /></Element>
           <LayoutImage content={prototypeApp} />
           <LayoutImage content={prototypeApp2} />
+          <LayoutHalf content={prototypeApp3} />
 
           {/* results and reflections */}
           <TitleDivier content={titleText5} style={style} />
