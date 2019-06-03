@@ -32,14 +32,14 @@ $breakpoint-large:1280px;
 
 // small devices
 @mixin small {
-  @media (min-width: #{$breakpoint-xsmall}) and (max-width:#{$breakpoint-small - 1px}) {
+  @media (hover: none) and (pointer: coarse) and (min-width: #{$breakpoint-xsmall}) and (max-width:#{$breakpoint-small - 1px}) {
     @content;
   }
 }
 
 // Extra Small devices
 @mixin xsmall {
-  @media (max-width:#{$breakpoint-xsmall}) {
+  @media (hover: none) and (pointer: coarse) and (max-width:#{$breakpoint-xsmall}) {
     @content;
   }
 }

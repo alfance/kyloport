@@ -20,6 +20,7 @@ import Briovr from './views/ProjectView/Briovr'
 import Cycnav from './views/ProjectView/Cycnav'
 import Fairtrade from './views/ProjectView/Fairtrade'
 import Foguang from './views/ProjectView/Foguang'
+import Unity from './views/ProjectView/Unity'
 
 import CityBeats from './views/ProjectView/CityBeats'
 import Dme from './views/ProjectView/Dme'
@@ -41,6 +42,7 @@ ReactDOM.render((
       <Route path='cycnav' component={Cycnav} />
       <Route path='fairtrade' component={Fairtrade} />
       <Route path='foguang' component={Foguang} />
+      <Route path='unity' component={Unity} />
 
       <Route path='citybeats' component={CityBeats} />
       <Route path='dme' component={Dme} />

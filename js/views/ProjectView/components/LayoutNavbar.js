@@ -41,7 +41,6 @@ export default class LayoutNavbar extends React.Component {
       color: color
     }
     const className = this.getNavClass()
-    console.log('calssname is ::::::::', className)
     return (
       <div className={className} style={divStyle}>
         {LayoutHelper.linkElement('Define')}
