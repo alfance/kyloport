@@ -33862,6 +33862,16 @@
 	  logo: '../../assets/images/play_3d/thumbnail_3d.png',
 	  color: '#F0D5CE',
 	  url: ''
+	}, {
+	  id: 3,
+	  title: 'Unity Design Exercise',
+	  field: 'Challenge',
+	  intro: 'Unity Design Exercise',
+	  link: 'unity',
+	  headerImage: '../../assets/images/proj_unity/unitylogo-w.svg',
+	  logo: '../../assets/images/proj_unity/unitylogo-w.svg',
+	  color: '#000000',
+	  url: ''
 	}];
 
 /***/ },
