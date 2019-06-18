@@ -172,14 +172,42 @@ const prototypeApp3 = {
   contentRight:'Unity Connect'
 }
 
+const video = {
+  title:'Video Walkthrough',
+  video:'https://youtu.be/eoAf-8rzTyo'
+}
+
 const usability = {
   title: 'Prospective Usability Test',
   content: [
     'In order to measure the success of the user profile design, there are 2 methods I can adpot to acquire data. One can be executed based on the wireframe and mockup; Another one can be measured using analytic tools after implementation',
     '1) For the usability test, I will test it with the two interviewers to see if the design can help them better interat with the online platform.Set up the heatmap test case on **quant.ux**. Create 2 tasks for the testers to work on: Find the Asset page through the user profile channel; Find out the projects user is working on.',
-    '2) If the previous measurement had shown a promising result, I would like to implement analytic tools (google or mixpanel) to track the click rate, most clicks and least clicks, time spent and boucne rate on the hovercard / user profile.',
-    '*** Usability Test result coming soon ***'
+    '2) If the previous measurement had shown a promising result, I would like to implement analytic tools (google or mixpanel) to track the click rate, most clicks and least clicks, time spent and boucne rate on the hovercard / user profile.'
   ]
+}
+
+const test = {
+  title:'Interactive Mockup',
+  content:'Following is an interactive test mockup I sent out to current Unity users and people who don&#8217t use Unity. I have set up a goal and track the completion rate of each tester. '
+}
+
+const result = {
+  title:'Result',
+  content:['In total I tested the prototype with 5 different people, which 4 of them had shown results of goal completion. the objective I give to each of the participants were nagivating to the specific user&#8217s asset store from the page (answer page). There are multiple ways to do so and I set each of the funnel as a task.'],
+  img:'../../../assets/images/proj_unity/result.png',
+  label:['Tasks:','Goal 1: clicking on the user card directly to goto asset store.' ,'Goal 2: Clicking on the asset page button in comunity page.' , 'Goal 3: Clicking on the asset page button in profile page.']
+}
+
+const videoresult ={
+  content:'Following are the heatmaps I recorded from the tests.',
+  imgLeft:'../../../assets/images/proj_unity/heat1.png',
+  imgRight:'../../../assets/images/proj_unity/heat2.png',
+}
+const videoresult1 ={
+  className:'project-layout-wide',
+  imgLeft:'../../../assets/images/proj_unity/heat3.png',
+  imgMiddle:'../../../assets/images/proj_unity/heat5.png',
+  imgRight:'../../../assets/images/proj_unity/heat4.png',
 }
 
 class Unity extends React.Component {
@@ -226,10 +254,16 @@ class Unity extends React.Component {
           <LayoutImage content={prototypeApp} />
           <LayoutImage content={prototypeApp2} />
           <LayoutHalf content={prototypeApp3} />
+          <LayoutImage content={video} />
 
           {/* results and reflections */}
           <TitleDivier content={titleText5} style={style} />
           <LayoutImage content={usability} style={style} />
+          <LayoutText content={test} style={style} />
+          <iframe id='iframe-brio' src="https://www.quant-ux.com/em.html?h=a2aa10a43jZEHTgDZi0r1kmkhZz7eMBtMlHfYVPJqyM6Iz3COohVrwERwq22" allowFullScreen allowTransparency="true" frameborder="0"></iframe>
+          <LayoutImage content={result} style={style} />
+          <LayoutHalf content = {videoresult} />
+          <LayoutThree content = {videoresult1} style={style} />
           <ProjectFooter content={style} style={style} />
         </div>
       </div>
