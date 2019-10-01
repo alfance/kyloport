@@ -66,64 +66,52 @@ const evaluation2 = {
   contentRight:'**Elite Design**: Connect page adapts the newsfeed layout as a user&#8217s major marketing source.',
 }
 
-const result1 = {
+const evaluation3 = {
   title: 'Data Collection & evaluation',
-  content: ['Much to expectation and surprise, The Elite model had triumphed Team by 3 times. ',
-'80% of survey respondents have more than 1 person in the company',
-'39% has > 1 estimator / invoicer',
-'44% has > 1 joisters',
-'What we do not know:',
-'Do users need a team feature?',
-'Are they willing to pay for the feature? How much?']
-}
-
-const interview = {
-  title: 'User Interviews',
-  content: 'To get a better insight into how the user think about the online platform, I did brief coffee interviews with 2 Unity users. One is a seasoned developer and another one is an artist who just transitioned to Unity recently.',
+  content: 'Much to expectation and surprise, The Elite model had triumphed Team by 3 times. Following are some of the feedbacks from the contractors.',
   columns: [{
     Header: <b>Questions</b>,
     accessor: 'questions' // String-based value accessors!
   }, {
-    Header: [<b>Developer</b>, <br />,<img src='../../../assets/images/proj_joist/avatar-13.png' /> ],
+    Header: <b>Joist Team</b>,
     accessor: 'user1'
   },{
-    Header: [<b>Artist</b> , <br />,<img src='../../../assets/images/proj_joist/avatar-0.png' />],
+    Header: <b>Joist Advanved</b> ,
     accessor: 'user2'
   }],
   data: [{
-    questions: <b>How many times have you visited Unity live platform past week</b>,
-    user1: '3, 4 times',
-    user2: 'Couple times'
+    questions: <b>% of user transition from in-app promo message</b>,
+    user1: '8%',
+    user2: '15%'
   }, {
-    questions: <b>What is your most frequently used service/s</b>,
-    user1: 'Asset Store, shop for sale!',
-    user2: 'the Unity Learning centre'
+    questions: <b>% transition from first intro banner</b>,
+    user1: '41%',
+    user2: '69%'
   }, {
-    questions: <b>Where do you search for help</b>,
-    user1: 'Google, Slack group',
-    user2: 'Google, ask friends for help'
+    questions: <b>% Plan selected</b>,
+    user1: '10%',
+    user2: '20%'
   },{
-    questions: <b>How do you connect with other developers & artist</b>,
-    user1: 'Occationally social events, mostly just through work or real life friends',
-    user2: 'Only connect with artists on twitter / Artstation'
+    questions: <b>Number of feedbacks</b>,
+    user1: '2',
+    user2: '11'
   }]
 }
 
 const findingCompare = {
-  subtitle: 'Finding',
-  sectionClass: 'list-style-circle',
-  content: ['One major challenge for the platform is to efficiently distribute the massive resources to the users. I found that Unity has provided a variety of services to encourage user communications and interactions, but when I was speaking to the users, they still rely heavily on external resources. This can be improved by fixing some of the design heuristics.',
- '**Consistency**: Clicking on user profile yields inconsistant results.',
-'**Flexibility**: The connect page is hidden from the users. Path to the service is not flexible',
-'**Support Error Recovery**: Some of the groups under Unity connect generates 503 pages.']
+  title: 'Finding',
+  content: ['The users had told us, and we decide to move forward with the one method that will benefit our users. Following are couple of the comments from the test.',
+'* "I would like to know everything about it and when the new features will be functional. thank you for all your help." *',
+'* "Would like to sample upgrades before committing to subscribe to it." *',
+'* " I want to test this for a few days to learn about this function. I also would like to..." *',]
 }
 
 const system = {
   title: 'First, Let us break down the system',
   sectionClass: 'project-layout-wide',
-  content: 'I laid out the ecosystem of Unity&#39;s online platform focusing exclusively on the user interaction aspects. The diagram shows all the portals and links a user can do to interact with another user. ',
-  img: '../../../assets/images/proj_joist/unity_system.png',
-  label: 'Here comes the question: **What can be done to mitigate all the middles steps & navigational clicks to let people directly access what they want?**'
+  content: 'At the onset of the feature development, we broken down the features into sections with levels of demands and importance, and then desinging for the most optimized and best possible experiences tackling each section',
+  img: '../../../assets/images/proj_joist/section_wireframe_1.png',
+  label: 'Early stage wireframe exploring multiple approaches for adding sections to categorize line items in each documents.'
 }
 
 const idea1 = {
@@ -253,9 +241,8 @@ class Unity extends React.Component {
           <Element name='Research'><TitleDivier content={titleText1} style={style} /></Element>
           <LayoutHalf content={evaluation} style={style} />
           <LayoutHalf content={evaluation2} style={style} />
-          <LayoutImage content={result1} style={style} />
-          <TableComponent content={interview} />
-          <FindingComponent content={findingCompare} style={style} />
+          <TableComponent content={evaluation3} />
+          <Problem content={findingCompare} style={style} />
 
           {/* UX solutions */}
           <Element name='Solution'><TitleDivier content={titleText3} style={style} /></Element>
