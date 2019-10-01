@@ -26,37 +26,55 @@ const titleText4 = {title: 'Design'}
 
 const titleText5 = {title: 'Reflections'}
 
+const whoami = {
+  content:['Name: **Kylo **','Profession: **Product Designer**', 'Location: **Toronto, Canada**','Specialization: **web-app, mobile, AR, VR**' ],
+  img:'../../../assets/images/proj_joist/joist_header_1.png',
+
+}
 
 const problem = {
   title: 'Problem',
   sectionClass: 'list-style-circle',
-  content: [ 'User Interactions on Unity Live Platform','The disparate nature of how users encounter each other across the ecosystem is a soft blocker today.',
+  content: [ 'User Interactions on Unity Live Platform','Small business extremely busy. What is the next feature to help them save time and win job.',
     'Users are limited to the service they are currently on when interacting with each other',
     'Merging the various user profiles from different services into one is not feasible nor UX plausible.']
 }
 
-const whoami = {
-  content:['Name: **Kylo **','Profession: **Product Designer**', 'Location: **Toronto, Canada**','Specialization: **web-app, mobile, AR, VR**' ]
-
-}
 const challenge = {
   title: 'My Challenge',
-  content: 'Come up with a solution that empowers seamless interactions and information sharing between the users across Unity&#8217s multiple live services.',
+  content: ['In charge of the next major objective. key stakeholders want to the do team. ','My Question: Is the somthing the users really need? How can we find out. ']
 }
 
 const evaluation = {
-  title: 'Heuristic Evaluations',
-  content: 'At the discovery phase, I first conducted heuristic evaluations on how user profile is displayed in various Unity&#8217s online services. Following are some findings:',
-  imgLeft:'../../../assets/images/proj_unity/page_forum.jpg',
-  contentLeft:'**Forum Page**: when user name is clicked, a model popups with basic user data.',
-  imgRight:'../../../assets/images/proj_unity/page_answer.jpg',
-  contentRight:'**Answer Page**: The answer page displays the user activities in relevance to the answer section.',
+  title: 'Getting to the problem ',
+  content: ['Getting to the problem by getting to the users. We conducted surveys to get a general option of the users how they think about the team features. around 100 feedbacks. Then selected 10 users to talk to them directly',
+  'What we got from the survey:',
+'80% of survey respondents have more than 1 person in the company',
+'39% has > 1 estimator / invoicer',
+'44% has > 1 joisters',
+'What we do not know:',
+'Do users need a team feature?',
+'Are they willing to pay for the feature? How much?']
 }
+
 const evaluation2 = {
-  imgLeft:'../../../assets/images/proj_unity/page_asset.jpg',
-  contentLeft:'**Asset Page**: All past works uploaded by the user is showed on the asset page.',
-  imgRight:'../../../assets/images/proj_unity/page_connect.jpg',
-  contentRight:'**Connect Page**: Connect page adapts the newsfeed layout as a user&#8217s major marketing source.',
+  title: 'Validate the problemn',
+  content:'It is essential to give us enough confidence to move forward. We are testing out two completely different features at users natural habitat. Tested out 3 pricing variants for each of the design.',
+  imgLeft:'../../../assets/images/proj_joist/team_screenshot.png',
+  contentLeft:'**Team Design**: All past works uploaded by the user is showed on the asset page.',
+  imgRight:'../../../assets/images/proj_joist/elite_screenshot.png',
+  contentRight:'**Elite Design**: Connect page adapts the newsfeed layout as a user&#8217s major marketing source.',
+}
+
+const result1 = {
+  title: 'Data Collection & evaluation',
+  content: ['Much to expectation and surprise, The Elite model had triumphed Team by 3 times. ',
+'80% of survey respondents have more than 1 person in the company',
+'39% has > 1 estimator / invoicer',
+'44% has > 1 joisters',
+'What we do not know:',
+'Do users need a team feature?',
+'Are they willing to pay for the feature? How much?']
 }
 
 const interview = {
@@ -66,10 +84,10 @@ const interview = {
     Header: <b>Questions</b>,
     accessor: 'questions' // String-based value accessors!
   }, {
-    Header: [<b>Developer</b>, <br />,<img src='../../../assets/images/proj_unity/avatar-13.png' /> ],
+    Header: [<b>Developer</b>, <br />,<img src='../../../assets/images/proj_joist/avatar-13.png' /> ],
     accessor: 'user1'
   },{
-    Header: [<b>Artist</b> , <br />,<img src='../../../assets/images/proj_unity/avatar-0.png' />],
+    Header: [<b>Artist</b> , <br />,<img src='../../../assets/images/proj_joist/avatar-0.png' />],
     accessor: 'user2'
   }],
   data: [{
@@ -104,19 +122,19 @@ const system = {
   title: 'First, Let us break down the system',
   sectionClass: 'project-layout-wide',
   content: 'I laid out the ecosystem of Unity&#39;s online platform focusing exclusively on the user interaction aspects. The diagram shows all the portals and links a user can do to interact with another user. ',
-  img: '../../../assets/images/proj_unity/unity_system.png',
+  img: '../../../assets/images/proj_joist/unity_system.png',
   label: 'Here comes the question: **What can be done to mitigate all the middles steps & navigational clicks to let people directly access what they want?**'
 }
 
 const idea1 = {
   title: 'Ideation 1: Username Hovercard',
   content: '1) Hover usercard that expands additional information when mouseover. 2) An icon located next to the username that triggers a dropdown hovercard with additional information and actionable links. Option 2 is for accessibility across multiple devices.',
-  img: '../../../assets/images/proj_unity/idea1.jpg'
+  img: '../../../assets/images/proj_joist/idea1.jpg'
 }
 const wireframe1 = {
   sectionClass: 'project-layout-wide',
   content: '**Wireframe for Ideation 1**',
-  img: '../../../assets/images/proj_unity/wirefram1.png'
+  img: '../../../assets/images/proj_joist/wirefram1.png'
 }
 const idea1cons = {
   content: ['**PROS**: this is a dynamic approach to generating more freedom and flexibility for the users. The hovercard design is also subtle enough that it does not obscure much of the information on the original page. ',
@@ -126,9 +144,9 @@ const idea2 = {
   title: 'Ideation 2: Consistent User Profile Section',
   sectionClass: 'project-layout-wide',
   content: 'While the user profile pages vary in content, layout and style. I discovered that they all share the same elements: user profile image, user name, short description and occationally links. For Ideation 2, I want to propose a **Consistent header section** for all user profile pages that allows visitors to explore different contents.',
-  imgLeft: '../../../assets/images/proj_unity/idea2.jpg',
+  imgLeft: '../../../assets/images/proj_joist/idea2.jpg',
   contentLeft:'Notebook sketch of how the section should look like',
-  imgRight: '../../../assets/images/proj_unity/wireframe2.png',
+  imgRight: '../../../assets/images/proj_joist/wireframe2.png',
   contentRight:'Ideation 2 Wireframe',
 }
 
@@ -140,13 +158,13 @@ const ideacombine = {
   title: 'Combining both ideas',
   sectionClass: 'project-layout-wide',
   content: 'After analyzing the pros and cons for each ideation, I realized that combining the 2 design together will make a seamless flow for user interactions. ',
-  img: '../../../assets/images/proj_unity/flow.jpg',
+  img: '../../../assets/images/proj_joist/flow.jpg',
 }
 
 const ideacombine2 = {
   title: 'Combining both ideas',
   content: 'The 2 concepts can complement each other well. Following is a connected motion flow of a user going from the community page to the profile page with options.',
-  img: '../../../assets/images/proj_unity/unity_design.gif',
+  img: '../../../assets/images/proj_joist/unity_design.gif',
 }
 
 const prototypeApp = {
@@ -154,21 +172,21 @@ const prototypeApp = {
   deviceFrame: 'laptop',
   sectionClass: 'project-layout-wide',
   content: 'The following design mockup is for the forum page. The UI design follows the general style of the Unity live platform.',
-  img: '../../../assets/images/proj_unity/design1.png',
+  img: '../../../assets/images/proj_joist/design1.png',
 }
 const prototypeApp2 = {
   deviceFrame: 'desktop',
   content: 'Another design with more detailed information about the user on the Unity Connect main page.',
-  img: '../../../assets/images/proj_unity/design2.png',
+  img: '../../../assets/images/proj_joist/design2.png',
 }
 
 const prototypeApp3 = {
   deviceFrame: 'laptop',
   sectionClass: 'project-layout-wide',
   content: 'The visual style of the Header section contains consistency with the overall Unity scheme and palette. No matter which community page it is, the header remain unchanged.',
-  imgLeft: '../../../assets/images/proj_unity/design3.png',
+  imgLeft: '../../../assets/images/proj_joist/design3.png',
   contentLeft:'Community Answer page',
-  imgRight: '../../../assets/images/proj_unity/design4.png',
+  imgRight: '../../../assets/images/proj_joist/design4.png',
   contentRight:'Unity Connect'
 }
 
@@ -194,31 +212,31 @@ const test = {
 const result = {
   title:'Result',
   content:['In total I tested the prototype with 5 different people, which 4 of them had shown results of goal completion. the objective I give to each of the participants were nagivating to the specific user&#8217s asset store from the page (answer page). There are multiple ways to do so and I set each of the funnel as a task.'],
-  img:'../../../assets/images/proj_unity/result.png',
+  img:'../../../assets/images/proj_joist/result.png',
   label:['Tasks:','Goal 1: clicking on the user card directly to goto asset store.' ,'Goal 2: Clicking on the asset page button in comunity page.' , 'Goal 3: Clicking on the asset page button in profile page.']
 }
 
 const videoresult ={
   content:'Following are the heatmaps I recorded from the tests.',
-  imgLeft:'../../../assets/images/proj_unity/heat1.png',
-  imgRight:'../../../assets/images/proj_unity/heat2.png',
+  imgLeft:'../../../assets/images/proj_joist/heat1.png',
+  imgRight:'../../../assets/images/proj_joist/heat2.png',
 }
 const videoresult1 ={
   className:'project-layout-wide',
-  imgLeft:'../../../assets/images/proj_unity/heat3.png',
-  imgMiddle:'../../../assets/images/proj_unity/heat5.png',
-  imgRight:'../../../assets/images/proj_unity/heat4.png',
+  imgLeft:'../../../assets/images/proj_joist/heat3.png',
+  imgMiddle:'../../../assets/images/proj_joist/heat5.png',
+  imgRight:'../../../assets/images/proj_joist/heat4.png',
 }
 
 class Unity extends React.Component {
   render () {
     const style = {
-      title: 'Design Collaboration Test',
-      headerImage: '../../assets/images/proj_unity/unitylogo-w.svg',
-      logo: '../../assets/images/proj_unity/unitylogo-w.svg',
-      color: '#2096F3',
+      title: 'A Job Winning Solutions for Contractors',
+      headerImage: '../../assets/images/proj_joist/joist-logo-wht.svg',
+      logo: '../../assets/images/proj_joist/unitylogo-w.svg',
+      color: '#67C118',
       url: '',
-      textonColor: 'text-light'
+      textonColor: 'text-dark'
     }
     return (
       <div>
@@ -227,7 +245,7 @@ class Unity extends React.Component {
         <div className='project-content-layout'>
 
           {/* Problem & Challenge */}
-          <LayoutText content={whoami} style={style} />
+          <LayoutImage content={whoami} style={style} />
           <Problem content={problem} style={style} />
           <Problem content={challenge} style={style} />
 
@@ -235,6 +253,7 @@ class Unity extends React.Component {
           <Element name='Research'><TitleDivier content={titleText1} style={style} /></Element>
           <LayoutHalf content={evaluation} style={style} />
           <LayoutHalf content={evaluation2} style={style} />
+          <LayoutImage content={result1} style={style} />
           <TableComponent content={interview} />
           <FindingComponent content={findingCompare} style={style} />
 

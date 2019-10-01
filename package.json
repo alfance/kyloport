@@ -7,12 +7,12 @@
     "build": "webpack --colors --progress",
     "start": "webpack-dev-server --hot --inline --colors --progress"
   },
-  "author": "",
+  "author": "alfance",
   "license": "ISC",
   "dependencies": {
     "classnames": "^2.2.6",
     "loader-utils": "^1.1.0",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.12.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-helmet": "^5.2.0",
@@ -42,5 +42,10 @@
   "bugs": {
     "url": "https://github.com/ColeMurray/Todo-Tutorial/issues"
   },
-  "homepage": "https://github.com/ColeMurray/Todo-Tutorial"
+  "homepage": "https://github.com/ColeMurray/Todo-Tutorial",
+  "description": "Kylo's portfolio",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alfance/kyloport.git"
+  }
 }
