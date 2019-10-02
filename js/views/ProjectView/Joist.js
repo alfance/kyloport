@@ -154,7 +154,7 @@ const interaction1 = {
 const ideacombine = {
   title: 'Combining ideas',
   sectionClass: 'project-layout-wide',
-  content: 'Combining 2 designs by taking out the high light from them.',
+  content: 'Due to the close results and feedbacks from the users, we ran into the conflict of selecting the design.',
   img: '../../../assets/images/proj_joist/Homepage-Hero-Backgroun.png',
 }
 
