@@ -22,7 +22,7 @@ const titleText1 = {title: '1) Research & empathy'}
 
 const titleText3 = {title: '2) Explore the Solution'}
 
-const titleText4 = {title: 'Design'}
+const titleText4 = {title: 'Case Study on the Development of Sections'}
 
 const titleText5 = {title: 'Reflections'}
 
@@ -34,7 +34,12 @@ const introRole = {
 
 const problem = {
   title: 'Problem',
-  content: 'The majority of Joist&#8217s users are small business owners & contractors who use the app to save time on their paperwork process so they can focus on the labour work. Other major difficulties they experience are to win more jobs and manage their teams more effortlessly. The problem Joist is tackling is to help contractor businesses thrive.',
+  sectionClass:'remove-title-sapce',
+  content: ['The majority of Joist&#8217s users are small business owners & contractors who use the app to save time on their paperwork process so they can focus on the labour work. The major difficulties they experience are to win more jobs and manage their work & company more effortlessly. The problem Joist is tackling is to help contractor businesses thrive.',
+  '** Job-winning problem: **',
+  '#### * "Winning jobs is harder than ever. I feel I’m being priced out of the market on both sides..." 😟 * ####',
+  '** Team management problem: **',
+  '#### * I have grown beyond the point where I can do all of the book work on my own. I need Joist to allow partial access to my employees. 🏘 * ####']
 }
 
 const challenge = {
@@ -46,8 +51,8 @@ const evaluation2 = {
   title: 'Validate the solutions',
   sectionClass: 'project-layout-wide',
   content:['We started with cumulating past user feedbacks and interviews. The most requested features were multi-user management for teams, advanced estimate & invoice customization, monthly/weekly report and social media reviews.',
-'We divided the feature list to **two approaches** by the goal, objective and dev timeline. Afterward, I worked closely with the Android developers to create an in-app test that allows us to **directly collect the interests of the two components** from our users. ',
-'The **"Wizard of Oz"** approach displays a CTA banner to randomly selected users, which then leads the users to go through potential features, pricing options and feedback form. We track the click & transition rate for the two approaches to see which one is truly needed.'],
+'We divided the feature list to **two approaches one focusing on team management and the other one job-winning**. I then worked closely with the Android developers to create an in-app test that allows us to **directly collect the interests of the two components** from our users. ',
+'The **"Wizard of Oz"** approach displays a CTA banner to randomly selected users, which then leads the users to go through an A/B test funnel that display different features, pricing options and feedback form. We track the click & transition rate for the two approaches to see which one is truly needed.'],
   imgLeft:'../../../assets/images/proj_joist/team_screenshot.png',
   contentLeft:'**Joist Team**: Letting the user create unique logins for each team member, adding access controls to the data.',
   imgRight:'../../../assets/images/proj_joist/elite_screenshot.png',
@@ -55,14 +60,14 @@ const evaluation2 = {
 }
 
 const evaluation3 = {
-  title: 'Data collection & evaluation',
+  title: 'Data evaluation & decision making',
   content: 'The test had been running for a week. We collected over four thousands of user data. As a result, Joist Advanced had generated twice as many interests from the users than Joist Team. ',
   img:'../../../assets/images/proj_joist/chart1.svg',
 }
 
 const findingCompare = {
   title: 'Finding',
-  content: ['The data had given us enough confidence to move forward with the Advanced customization approach. To develop a more in-depth understanding, I held 10 phone interviews with the testers to find out the thought process behind their decision. The takeaway was positive and the major reason for test abandonment was due to pricing concern.',
+  content: ['The data had given us enough confidence to **move forward with the Advanced customization approach**. To develop a more in-depth understanding, I held 10 phone interviews with the testers to find out the thought process behind their decision. The takeaway was positive and the major reason for test abandonment was due to pricing concern.',
 '_ "I would like to know everything about it and when the new features will be functional. thank you for all your help." _',
 '_ "Would like to sample upgrades before committing to subscribe to it." _',
 '_ "I want to test this for a few days to learn about this function. I also would like to..." _',]
@@ -70,14 +75,18 @@ const findingCompare = {
 
 const collaboration = {
   title: 'Collaborate to search for the solution space',
-  content: 'At the onset of the feature development, we broken down the features into sections with levels of demands and importance, and then desinging for the most optimized and best possible experiences tackling each section',
+  content: 'With a clear direction, I conducted a round of design ideation sessions with the product team, dev team and customer success team. The purpose was to collect ideations and thoughts of people regarding feature priority, technical constraints and team bandwidth. ',
   imgLeft: '../../../assets/images/proj_joist/collab1.jpg',
   imgRight: '../../../assets/images/proj_joist/collab2.jpg',
-  label: 'Early stage wireframe exploring multiple approaches for adding sections to categorize line items in each documents.'
+}
+
+const featurelist = {
+  content: 'The teams had given me a lot of insights. The following diagram illustrates all the essential features needed to help the contractors win their jobs. The development process we took was a feature-based. With the design team starting with the most critical and complex feature first. ',
+  img: '../../../assets/images/proj_joist/features-list.svg',
 }
 
 const system = {
-  title: 'Rounds of Iteractions',
+  title: 'Starting with low fidelity prototype interaction',
   sectionClass: 'project-layout-wide',
   content: 'At the onset of the feature development, we broken down the features into sections with levels of demands and importance, and then desinging for the most optimized and best possible experiences tackling each section',
   img: '../../../assets/images/proj_joist/section_wireframe_1.png',
@@ -85,15 +94,23 @@ const system = {
 }
 
 const threeSolutions = {
-  title: 'Exploration',
+  title: 'Sections: categorizing line items',
   deviceFrame: 'phone',
-  content: 'We had a few variations for the Prototype as shown below. One consideration that is more important than the asthetics of the app itself, is the readability of the screen under different light conditions.',
+  content: ['Add sections to the estimate to categorize line items is a frequently requested feature. This is important for the contractors to better display their estimation to the homeowners, thus increase their chance of winning the job.',
+  'I prototyped 3 wireframe variations each differs in flexibility & ease of understanding.'],
   imgLeft: '../../../assets/images/proj_joist/advanced_section_v1_diff.png',
   imgMiddle: '../../../assets/images/proj_joist/advanced_section_v3_diff.png',
   imgRight: '../../../assets/images/proj_joist/advanced_section_v5_diff.png',
-  contentLeft: '**Design 1**: Design 1 focused on the chosen travel route and current navigation.',
-  contentMiddle: '**Design 2**: Design 2 extended important components of design 2 and reduce the visibily of trivial components.',
-  contentRight: '**Design 3**: minimized the UI by removing information not needed at current page.'
+  contentLeft: '**Design 1**: Restricted flow. Users must start with adding section first before they can add a line item.',
+  contentMiddle: '**Design 2**: Freedom in adding either section or item. On another hand, items must be wrapped in sections.',
+  contentRight: '**Design 3**: Optimized flexibility. Users can choose to add section or item with no constraints'
+}
+
+const sectiontest = {
+  sectionClass: 'project-layout-wide',
+  content: 'The same approach is used to work out the best solution, we implemented in-app notification to ask volunteers to try out the design variations. ',
+  img: '../../../assets/images/proj_joist/section_wireframe_1.png',
+  label: 'Early stage wireframe exploring multiple approaches for adding sections to categorize line items in each documents.'
 }
 
 const heatmap = {
@@ -189,10 +206,10 @@ const video = {
 class Joist extends React.Component {
   render () {
     const style = {
-      title: 'A Job Winning Solutions for Contractors',
+      title: 'A Job-Winning Solutions for Contractors',
       headerImage: '../../assets/images/proj_joist/joist-logo-wht.svg',
       logo: '../../assets/images/proj_joist/unitylogo-w.svg',
-      color: '#67C118',
+      color: '#484ADF',
       url: '',
       textonColor: 'text-dark'
     }
@@ -216,16 +233,18 @@ class Joist extends React.Component {
           {/* UX solutions */}
           <Element name='Solution'><TitleDivier content={titleText3} style={style} /></Element>
           <LayoutHalf content={collaboration} />
+          <LayoutImage content={featurelist} />
           <LayoutImage content={system} />
+
+          {/* UI design */}
+          <Element name='Design'><TitleDivier content={titleText4} style={style} /></Element>
           <LayoutThree content={threeSolutions} />
+          <LayoutImage content={sectiontest} />
           <LayoutImage content={heatmap} />
           <TableComponent content={evaluation4} />
           <FindingComponent content={idea1cons} style={style} />
           <LayoutHalf content={interaction1} />
           <LayoutImage content={ideacombine} />
-
-          {/* UI design */}
-          <Element name='Design'><TitleDivier content={titleText4} style={style} /></Element>
           <LayoutImage content={prototypeApp} />
           <LayoutImage content={prototypeApp2} />
           <LayoutHalf content={prototypeApp3} />
