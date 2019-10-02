@@ -244,6 +244,7 @@ class Joist extends React.Component {
           <LayoutThree content={ideacombine} />
           <LayoutHalf content={interaction1} />
 
+          <Element name='Result'></Element>
           <Problem content={finalComments} style={style} />
           <Reflection content={reflections} />
           <ProjectFooter content={style} style={style} />
