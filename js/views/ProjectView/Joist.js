@@ -159,8 +159,13 @@ const chart2 = {
   label:'**Chart**: Do the users who completed the tasks understand the purpose & functionality of the prototype?'
 }
 const idea1cons = {
-  content: ['**PROS**: this is a dynamic approach to generating more freedom and flexibility for the users. The hovercard design is also subtle enough that it does not obscure much of the information on the original page. ',
- '**CONS**: The real estate space is very limited. Certain information has been sacrificed due to a lower priority.  ']
+  content: ['The test result had given me clear insights into the pro and cons of each prototype. After a round of analysis and evaluation, we decide to remove design 3 due to poor performance & technical difficulty. Design 1 and 2 have pros and cons that we do not want to settle. ',
+  '**Design 1**:',
+  'PROS: Very clear flow & steps for the user to follow.',
+ 'CONS: It creates friction for contractors who don&#39;tt need sections.',
+  '**Design 2**:',
+  'PROS: PROS: Offers flexibility for both types of contractors. ',
+  'CONS: It is more complex and creates a understanding barrier']
 }
 
 const ideacombine = {
