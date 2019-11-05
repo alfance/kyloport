@@ -181,7 +181,6 @@ const ideacombine = {
 }
 
 const interaction1 = {
-  deviceFrame: 'phone',
   contentLeft: 'The new solution combines the advantages of design 1 and 2 by providing very clear guidance in the flow and enough amount of flexibility and freedom for all users. All stakeholders feel confident to implement this new approach with the supporting data. ',
   videoRight: '../../../assets/images/proj_joist/section_design3.mp4',
 }
