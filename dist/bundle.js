@@ -33709,13 +33709,13 @@
 	  url: ''
 	}, {
 	  id: 3,
-	  title: 'CYCNAV',
-	  field: 'Product design, UX & UI',
-	  intro: 'Mobile app & IOT for urban cyclists',
-	  link: 'cycnav',
-	  headerImage: '../../assets/images/proj_cycnav/cycnav_logo_c.svg',
-	  logo: '../../assets/images/proj_cycnav/thumbnail_cycnav.png',
-	  color: '#1A923C',
+	  title: 'Joist',
+	  field: 'Company Vision',
+	  intro: 'Cross-platform invoice app',
+	  link: 'joist',
+	  headerImage: '../../assets/images/proj_joist/joist_thumb.png',
+	  logo: '../../assets/images/proj_joist/joist_thumb.png',
+	  color: '#67C118',
 	  url: ''
 	}, {
 	  id: 4,
