@@ -3,7 +3,6 @@
     @include max-width;
     display: flex;
     position: fixed;
-    border-bottom: 2px solid;
     top: 0;
     height: 40px;
     justify-content: space-evenly;
@@ -11,6 +10,7 @@
     z-index: 999;
     align-items: center;
     padding: 0 8%;
+    box-shadow: $item-shadow-20;
     b {
         color:$color-grey6;
         cursor: pointer;
@@ -22,6 +22,8 @@
     }
     @include largeB {
         margin-left: calc(50vw - 100px - 14px) !important;
+        top: 16px;
+        border-radius: $border-radius-16;
     }
 
     @include smallS {

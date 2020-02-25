@@ -9,7 +9,6 @@ export default class PortfolioItem extends React.Component {
   render () {
     const {title, link, intro, field, color, logo, className} = this.props
     const portfolioStyle = {
-      boxShadow:'10px 5px 20px #ced0d3',
       backgroundRepeat: 'no-repeat'
     }
     const textColor = {

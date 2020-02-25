@@ -24,9 +24,6 @@
     }
 
 
-    @include xlarge {
-        margin-right:64px;
-    }
     @include small {
         font-size: 56px;
     }
@@ -45,7 +42,8 @@
 
     span {
         padding-right:64px;
-
+        color:$color-grey4;
+        
         @include smallS {
             padding-right: none;
         }
@@ -171,8 +169,8 @@
 }
 
 .projectItem {
-  border-radius: 16px;
-  box-shadow: 4px 4px 8px;
+  border-radius: $border-radius-16;
+  box-shadow: $item-shadow-20;
   background-color: $color-white;
   width:$project-each-width;
   height:$project-each-width;

@@ -85,7 +85,9 @@ hr {
 ///////////////  react table /////////////////
 
 .ReactTable {
-    border: 1px solid $color-grey1
+    border: 1px solid $color-grey1;
+    border-radius: $item-shadow-20;
+    background-color: $color-white;
 }
 
 .ReactTable .rt-th, .ReactTable .rt-td {
