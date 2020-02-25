@@ -11,6 +11,7 @@ class Layout extends React.Component {
         </Helmet>
         <Nav />
         <div className='page-container'>{this.props.children}</div>
+        <div className='gradient-bg' />
       </div>
     )
   }

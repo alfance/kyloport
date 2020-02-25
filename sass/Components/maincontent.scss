@@ -10,7 +10,6 @@
 .designer-intro {
     max-height: auto;
     font-weight: 400;
-    margin-bottom: 80px !important;
     position: relative;
 
     .main-intro-title {
@@ -36,23 +35,6 @@
     }
     }
 }
-
-.main-intro-images {
-  display: flex;
-  padding:0px 32px;
-  background-color: $color-grey6;
-  position: absolute;
-  bottom: -48px;
-  right: 0px;
-  color:$color-white;
-
-  cursor:pointer;
-
-  a {
-    color:$color-white;
-  }
-}
-
 
 
 // /////////////////////////////// Main page PLAY SECTION ///////////////////////////////
@@ -189,9 +171,11 @@
 }
 
 .projectItem {
+  border-radius: 16px;
+  box-shadow: 4px 4px 8px;
+  background-color: $color-white;
   width:$project-each-width;
   height:$project-each-width;
-  background-color: $color-white;
   position: relative;
   overflow: hidden;
 
@@ -257,7 +241,7 @@
 
     p {
         margin:0px;
-        color:$color-grey1;
+        color:$color-grey4;
         opacity: 0
     }
   }
