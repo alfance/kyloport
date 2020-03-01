@@ -12,13 +12,17 @@ class ProjectMain extends React.Component {
         <div className='project-title-layout designer-intro' >
           <Spring from={{ opacity: 0, marginTop: 200 }} to={{opacity: 1, marginTop: 0}}>
             {({ opacity, marginTop }) =>
-              <div style={{opacity, marginTop}} className='main-intro-title'><h1>Hi, I am Kylo Xue</h1><span>A product designer specializing in building user-centric digital experiences.</span>
+              <div style={{opacity, marginTop}} className='main-intro-title'><h1>Hi, I am Kylo Xue</h1><h3>A product designer specializing in building user-centric digital experiences ⚒️.</h3>
               </div>
             }
           </Spring>
-          <Link activeClass='active' to='project' smooth={true} offset={-70} duration={300} ><div className='main-intro-images'>
+          <div className='main-intro-play-container'>
+          <div className='main-intro-play-title'>
+          <Link activeClass='active' to='project' smooth={true} offset={-70} duration={300} >
             <h3>Projects</h3>
-          </div></Link>
+          </Link></div>
+          <span>Sometimes I get to tinker around with interesting projects that not just stretch my skill set to another realm, but also allow me to work my imagination to the broad extent. </span>
+          </div>
         </div>
         <Element name='project' ><PortfolioLayout title='Portfolio' /></Element>
         <PlayLayout />

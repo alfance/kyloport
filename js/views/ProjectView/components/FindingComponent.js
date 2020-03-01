@@ -13,7 +13,7 @@ export default class FindingComponent extends React.Component {
       borderStyle: 'solid'
     }
     return (
-      <div className={classNames('finding-div')} style={divStyle}><b style={{color: color}}>{subtitle} </b> {LayoutHelper.layoutArrayContent(content)}</div>
+      <div className={classNames('finding-div')}><b style={{color: color}}>{subtitle} </b> {LayoutHelper.layoutArrayContent(content)}</div>
     )
   }
 }

@@ -6,14 +6,12 @@ export default class Problem extends React.Component {
     const {title, content, label, sectionClass} = this.props.content
     const {color} = this.props.style
     const probStyle = {
-      borderWidth: 1,
-      borderColor: color,
-      borderStyle: 'solid',
-      padding: '24px'
+      padding: '24px',
+      backgroundColor:'white',
     }
     return (<div className={sectionClass}>
       <h3>{title}</h3>
-      <div style={probStyle}>
+      <div style={probStyle} className='problem-style'>
         <ol start='0'>
           {LayoutHelper.layoutArrayContent(content)}
         </ol>

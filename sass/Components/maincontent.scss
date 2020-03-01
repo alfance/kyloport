@@ -10,7 +10,6 @@
 .designer-intro {
     max-height: auto;
     font-weight: 400;
-    margin-bottom: 80px !important;
     position: relative;
 
     .main-intro-title {
@@ -25,9 +24,6 @@
     }
 
 
-    @include xlarge {
-        margin-right:64px;
-    }
     @include small {
         font-size: 56px;
     }
@@ -36,23 +32,6 @@
     }
     }
 }
-
-.main-intro-images {
-  display: flex;
-  padding:0px 32px;
-  background-color: $color-grey6;
-  position: absolute;
-  bottom: -48px;
-  right: 0px;
-  color:$color-white;
-
-  cursor:pointer;
-
-  a {
-    color:$color-white;
-  }
-}
-
 
 
 // /////////////////////////////// Main page PLAY SECTION ///////////////////////////////
@@ -63,7 +42,8 @@
 
     span {
         padding-right:64px;
-
+        color:$color-grey4;
+        
         @include smallS {
             padding-right: none;
         }
@@ -189,9 +169,11 @@
 }
 
 .projectItem {
+  border-radius: $border-radius-16;
+  box-shadow: $item-shadow-20;
+  background-color: $color-white;
   width:$project-each-width;
   height:$project-each-width;
-  background-color: $color-white;
   position: relative;
   overflow: hidden;
 
@@ -257,7 +239,7 @@
 
     p {
         margin:0px;
-        color:$color-grey1;
+        color:$color-grey4;
         opacity: 0
     }
   }

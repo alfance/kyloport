@@ -34,17 +34,18 @@
 
 .experience-pdf {
   background-color: $color-primary;
+  border-radius: $border-radius-16;
+  box-shadow: $item-shadow-20;
+  background-color: $color-white;
+  text-align: center;
   p, b, strong, a {
-    color:$color-white;
+    color:$color-black;
   }
   p {
     padding:24px;
   }
   a {
     font-size: 18px;
-  }
-  @include mediumB {
-    width:60%;
   }
 }
 
@@ -58,13 +59,15 @@
     }
 
     .experience-year {
-        color:$color-primary
+        color:$color-primary;
     }
 
     .experience-dot {
         width:16px;
         height: 16px;
-        background-color: $color-primary;
+        background-color: $color-white;
+        border-radius: $border-radius-16;
+        box-shadow: $item-shadow-20;
         position: absolute;
         margin-left: -56px;
 
@@ -80,7 +83,6 @@
         li, p {
             padding-bottom: 0px;
             margin-bottom: 0px;
-            background-color: $color-primary;
         }
     }
 }
@@ -102,7 +104,9 @@
     .experience-dot {
         width:16px;
         height: 16px;
-        background-color: $color-primary;
+        background-color: $color-white;
+        border-radius: $border-radius-16;
+        box-shadow: $item-shadow-20;
         position: absolute;
         margin-left: calc(100% - 8px);
 

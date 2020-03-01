@@ -85,7 +85,9 @@ hr {
 ///////////////  react table /////////////////
 
 .ReactTable {
-    border: 1px solid $color-grey1
+    border: 1px solid $color-grey1;
+    border-radius: $item-shadow-20;
+    background-color: $color-white;
 }
 
 .ReactTable .rt-th, .ReactTable .rt-td {
@@ -102,4 +104,43 @@ hr {
 
 .ReactTable .rt-thead .rt-th, .ReactTable .rt-thead .rt-td {
     padding:8px;
+}
+
+.gradient-bg {
+  position: fixed;
+  width:100vw;
+  height: 100vh;
+  top:0px;
+  left:0px;
+  z-index: -10;
+
+//add a nice gradient animation to the overall background.
+  background: linear-gradient(160deg, $color-white, $color-grey1);
+  background-size: 600% 600%;
+
+  -webkit-animation: AnimationName 8s ease infinite;
+  -moz-animation: AnimationName 8s ease infinite;
+  -o-animation: AnimationName 8s ease infinite;
+  animation: AnimationName 8s ease infinite;
+
+  @-webkit-keyframes AnimationName {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 51%}
+      100%{background-position:0% 50%}
+  }
+  @-moz-keyframes AnimationName {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 51%}
+      100%{background-position:0% 50%}
+  }
+  @-o-keyframes AnimationName {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 51%}
+      100%{background-position:0% 50%}
+  }
+  @keyframes AnimationName {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 51%}
+      100%{background-position:0% 50%}
+  }
 }
