@@ -33447,11 +33447,6 @@
 	                  'Projects'
 	                )
 	              )
-	            ),
-	            _react2.default.createElement(
-	              'span',
-	              null,
-	              'Sometimes I get to tinker around with interesting projects that not just stretch my skill set to another realm, but also allow me to work my imagination to the broad extent. '
 	            )
 	          )
 	        ),
@@ -38973,7 +38968,7 @@
 	        return _react2.default.createElement(
 	          'div',
 	          { className: 'sketchfab-embed-wrapper' },
-	          _react2.default.createElement('iframe', { src: threeD, frameborder: '0', allow: 'autoplay; fullscreen; vr', mozallowfullscreen: 'true', webkitallowfullscreen: 'true' })
+	          _react2.default.createElement('iframe', { src: threeD, frameborder: '0', allow: 'autoPlay; fullscreen; vr', mozallowfullscreen: 'true', webkitallowfullscreen: 'true' })
 	        );
 	      } else {
 	        return null;
@@ -52200,7 +52195,7 @@
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'project-video169', style: { marginTop: '56px' } },
-	            _react2.default.createElement('iframe', { src: 'https://www.youtube.com/embed/i4HR8qdL4EM?controls=0&autoplay=1&loop=1&playlist=i4HR8qdL4EM', frameborder: '0', allow: 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowfullscreen: true })
+	            _react2.default.createElement('iframe', { src: 'https://www.youtube.com/embed/i4HR8qdL4EM?controls=0&autoPlay=1&loop=1&playlist=i4HR8qdL4EM', frameborder: '0', allow: 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowfullscreen: true })
 	          ),
 	          _react2.default.createElement(_LayoutImage2.default, { content: background, style: style }),
 	          _react2.default.createElement(_Problem2.default, { content: challenge, style: style }),

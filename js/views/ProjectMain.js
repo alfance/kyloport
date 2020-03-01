@@ -21,7 +21,6 @@ class ProjectMain extends React.Component {
           <Link activeClass='active' to='project' smooth={true} offset={-70} duration={300} >
             <h3>Projects</h3>
           </Link></div>
-          <span>Sometimes I get to tinker around with interesting projects that not just stretch my skill set to another realm, but also allow me to work my imagination to the broad extent. </span>
           </div>
         </div>
         <Element name='project' ><PortfolioLayout title='Portfolio' /></Element>
