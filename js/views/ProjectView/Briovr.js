@@ -338,7 +338,7 @@ class Briovr extends React.Component {
       <ProjectTitle content={style} style={style} />
       <div className='project-content-layout'>
         <Element name='Define'><IntroRole content={introRole} /></Element>
-        <div className='project-video169' style={{marginTop: '56px'}}><iframe src='https://www.youtube.com/embed/i4HR8qdL4EM?controls=0&autoplay=1&loop=1&playlist=i4HR8qdL4EM' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen /></div>
+        <div className='project-video169' style={{marginTop: '56px'}}><iframe src='https://www.youtube.com/embed/i4HR8qdL4EM?controls=0&autoPlay=1&loop=1&playlist=i4HR8qdL4EM' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen /></div>
         <LayoutImage content={background} style={style} />
         <Problem content={challenge} style={style} /> {/* early state research */}
         <LayoutImage content={challenge2} style={style} />
