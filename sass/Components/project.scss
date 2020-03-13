@@ -192,6 +192,7 @@
 /////////////////////////////////// FRAMES for devices ///////////////////////////////////////////
 .frame-desktop, .frame-laptop, .frame-phone, .frame-ipad {
   position:relative;
+  filter:drop-shadow($device-shadow);
 }
 .frame-desktop {
     padding-bottom: 18%;
