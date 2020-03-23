@@ -6,6 +6,69 @@
   padding-bottom: 100px;
 }
 
+/////////////////////// top device animation part ////////////////////
+.device-animation{
+  position: absolute;
+  right:$project-each-width;
+
+  @include xlarge {
+    left:calc(#{$container-wrapper-width}/2 + #{$project-each-width}/2);
+  }
+
+  @include mediumS {
+    opacity: 0.7;
+    right:calc(#{$project-each-width} /1.6);;
+  }
+}
+
+.device-animation-shadow {
+  position: absolute;
+  filter: blur(1.0rem);
+  z-index: -1;
+}
+.device-animation-iphone{
+  width:calc(#{$project-each-width} /2.2);
+  position: absolute;
+  top:-8vh;
+
+  @include mediumS {
+    top: -5vh;
+  }
+}
+.device-animation-ipad{
+  width:calc(#{$project-each-width} /1.3);
+  position: absolute;
+  top:5vh;
+
+  @include mediumS {
+    top: 2vh;
+  }
+
+  .device-animation-shadow {
+    top:4vh;
+    left:10%;
+    width: 80%;
+  }
+}
+.device-animation-mac{
+  width:calc(#{$project-each-width});
+  position: absolute;
+  top:25vh;
+
+  @include mediumS {
+    top: 13vh;
+  }
+
+  .device-animation-shadow {
+    top:16vh;
+    left:5%;
+    width: 80%;
+
+    @include mediumS {
+      top: 9vh;
+    }
+  }
+}
 /////////////////////// top designer intro section ////////////////////
 .designer-intro {
     max-height: auto;
@@ -43,7 +106,7 @@
     span {
         padding-right:64px;
         color:$color-grey4;
-        
+
         @include smallS {
             padding-right: none;
         }
