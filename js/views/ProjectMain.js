@@ -10,6 +10,7 @@ class ProjectMain extends React.Component {
     return (
       <div className='main-intro'>
       <div className='device-animation'>
+
         <div className='device-animation-mac'>
           <img className='device-animation-shadow' src='../../../assets/images/devices/mac_shadow.svg' />
           <img src='../../../assets/images/devices/clay_mac.png' />
@@ -25,6 +26,7 @@ class ProjectMain extends React.Component {
           <img src='../../../assets/images/devices/clay_iphone.png' />
         </div>
       </div>
+
         <div className='project-title-layout designer-intro' >
           <Spring from={{ opacity: 0, marginTop: 200 }} to={{opacity: 1, marginTop: 0}}>
             {({ opacity, marginTop }) =>

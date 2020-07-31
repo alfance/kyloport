@@ -146,6 +146,43 @@
   }
 }
 
+@include keyframes(move-y) {
+  0% {
+    transform: translateY(0px);
+   }
+  100% {
+   transform: translateY(-50px);
+  }
+}
+
+///////////////////// 3 deivces in landing move animation ///////////////////////////
+@keyframes device-move {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-33px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes ipad-move {
+  0% {
+    transform: rotateX(0);
+    transform: translateY(0px);
+  }
+  50% {
+    transform: rotateX(20deg);
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: rotateX(0);
+    transform: translateY(0px);
+  }
+}
+
 ///////////////////// Text color animation ///////////////////////////
 @include keyframes(text-grediant) {
   0% {
