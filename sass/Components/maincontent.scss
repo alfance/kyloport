@@ -42,7 +42,7 @@
   width:calc(#{$project-each-width} /1.3);
   position: absolute;
   top:5vh;
-  animation: 10s ease infinite device-move;
+  animation: 15s ease infinite device-move;
 
   @include mediumS {
     top: 2vh;
