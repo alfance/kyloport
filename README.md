@@ -35,6 +35,7 @@ https://localhost:8080
 
 ```
 $ npm -d build
+$ npm run-script build
 
 ```
 
