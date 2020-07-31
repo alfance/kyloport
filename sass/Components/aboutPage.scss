@@ -121,13 +121,14 @@
 
     .experience-master {
         @include smallB {
+        margin-top:760px;
         }
     }
 
     .experience-undergrad {
         @include smallB {
             position:absolute;
-            bottom: -300%;
+            bottom: 30px;
             padding-right:48px;
         }
         padding-right: 32px;

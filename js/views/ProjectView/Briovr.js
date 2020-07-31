@@ -45,6 +45,12 @@ const titleText7 = {
   title: 'Reflections'
 }
 
+const introResponsibilities = {
+  time: 'Spring 2017',
+  Tools:'Pen & Paper, Adobe XD, Unity, BrioVR, ThreeJS',
+  Url:'https://experience.briovr.com/',
+  Role:'Research, UX Design, UI Design, Design System'
+}
 const introRole = {
   sectionClass: 'list-style-circle',
   content: 'BRIOVR is an online platform for 3D prototyping and VR/AR visualization. This tool allows users to upload their models to the cloud, create animations and interactions, and share instantly with others.',

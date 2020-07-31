@@ -12,7 +12,7 @@ export default class PortfolioItem extends React.Component {
       backgroundRepeat: 'no-repeat'
     }
     const textColor = {
-      color: color
+      color: "black"
     }
     return (
       <div className={classNames('single-proj-container', className)} >

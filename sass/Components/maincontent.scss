@@ -84,12 +84,6 @@
     font-weight: 400;
     position: relative;
 
-    user-select: none;
-        -moz-user-select: none;
-        -khtml-user-select: none;
-        -webkit-user-select: none;
-        -o-user-select: none;
-
     .main-intro-title {
       padding:40px 0px 80px 0px;
       font-size: 40px;
@@ -279,6 +273,7 @@
       padding-left:auto;
       padding-right:auto;
   }
+
   .projectLogo {
     object-fit: contain;
     max-height: 80%;
@@ -292,7 +287,7 @@
     left:50%;
     transform: translateX(-50%);
     width:100%;
-    bottom: -32px;
+    bottom: 0px;
     padding: 0px 24px;
 
     h3 {
@@ -304,6 +299,7 @@
         width: 100%;
         font-weight: 400;
         margin-bottom: 0px;
+        padding-bottom: 0px;
         @include mediumS {
           font-weight: 600;
             font-size: 16px;
@@ -318,7 +314,6 @@
     p {
         margin:0px;
         color:$color-grey4;
-        opacity: 0
     }
   }
 

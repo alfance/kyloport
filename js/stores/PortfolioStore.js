@@ -26,7 +26,7 @@ module.exports = [
   {
     id: 3,
     title: 'Joist',
-    field: 'Company Vision',
+    field: 'Product Design',
     intro: 'Cross-platform invoice app',
     link: 'joist',
     headerImage: '../../assets/images/proj_joist/joist_thumb.png',
