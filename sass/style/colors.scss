@@ -28,6 +28,13 @@ $color-warn:#FDEE35;
     }
 }
 
+.text-grey4 {
+  color:$color-grey4;
+  * {
+      color:$color-grey4;
+  }
+}
+
 .text-dark {
     color:$color-black;
     * {

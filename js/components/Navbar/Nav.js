@@ -23,9 +23,10 @@ export default class Nav extends React.Component {
         <div className='nav-content'>
           <Link to='projectmain'><img className='nav-logo' src={logo} /></Link>
           {navComponents}
+          <p><a target='_blank' href='https://www.artstation.com/alfance' class='text-grey4'><b>Arts</b></a></p>
+          <p><a target='_blank' href='https://www.uplabs.com/alfance_elric' class='text-grey4'><b>UI</b></a></p>
           <a target='_blank' href='https://www.linkedin.com/in/kyloxue/'><i className='icon-linkedin1' /></a>
           <a target='_blank' href='https://twitter.com/alfancelric'><i className='icon-twitter1' /></a>
-          <a target='_blank' href='https://www.uplabs.com/alfance_elric'><i className='icon-uplabs2' /></a>
         </div>
       </div>
     )
