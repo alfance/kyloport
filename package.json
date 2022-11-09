@@ -12,7 +12,7 @@
   "dependencies": {
     "classnames": "^2.2.6",
     "indicative": "^7.2.1",
-    "loader-utils": "^1.1.0",
+    "loader-utils": "^1.4.1",
     "node-sass": "^4.13.1",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
