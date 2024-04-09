@@ -12,18 +12,18 @@ class ProjectMain extends React.Component {
       <div className='device-animation'>
 
         <div className='device-animation-mac'>
-          <img className='device-animation-shadow' src='../../../assets/images/devices/mac_shadow.svg' />
-          <img src='../../../assets/images/devices/clay_mac.png' />
+          <img className='device-animation-shadow' src='./assets/images/devices/mac_shadow.svg' />
+          <img src='./assets/images/devices/clay_mac.png' />
         </div>
 
         <div className='device-animation-ipad'>
-          <img className='device-animation-shadow' src='../../../assets/images/devices/ipad_shadow.svg' />
-          <img src='../../../assets/images/devices/clay_ipad.png' />
+          <img className='device-animation-shadow' src='./assets/images/devices/ipad_shadow.svg' />
+          <img src='./assets/images/devices/clay_ipad.png' />
         </div>
 
         <div className='device-animation-iphone'>
-          <img className='device-animation-shadow' src='../../../assets/images/devices/iphone_shadow.svg' />
-          <img src='../../../assets/images/devices/clay_iphone.png' />
+          <img className='device-animation-shadow' src='./assets/images/devices/iphone_shadow.svg' />
+          <img src='./assets/images/devices/clay_iphone.png' />
         </div>
       </div>
 

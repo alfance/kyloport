@@ -39,9 +39,9 @@ export default class LayoutHelper {
 
 function DeviceFrame (frame) {
   return frame.frame === undefined ? null
-    : frame.frame === 'desktop' ? <img src='../../../../assets/images/desktop_frame.svg' className='frame-device-desktop' />
-      : frame.frame === 'laptop' ? <img src='../../../../assets/images/laptop_frame.svg' className='frame-device-laptop' />
-        : frame.frame === 'phone' ? <img src='../../../../assets/images/phone_frame.svg' className='frame-device-phone' />
-      : frame.frame === 'ipad' ? <img src='../../../../assets/images/ipad_frame.svg' className='frame-device-ipad' />
+    : frame.frame === 'desktop' ? <img src='.././assets/images/desktop_frame.svg' className='frame-device-desktop' />
+      : frame.frame === 'laptop' ? <img src='.././assets/images/laptop_frame.svg' className='frame-device-laptop' />
+        : frame.frame === 'phone' ? <img src='.././assets/images/phone_frame.svg' className='frame-device-phone' />
+      : frame.frame === 'ipad' ? <img src='.././assets/images/ipad_frame.svg' className='frame-device-ipad' />
             : null
 }

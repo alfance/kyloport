@@ -28,7 +28,7 @@ const titleText5 = {title: 'Reflections'}
 
 const introRole = {
   content: '#### Joist is a cross-platform app build for trade contractors to create quick estimates & professional invoices, and getting paid. Being the leading product designer, I was responsible for the start-to-finish feature development. ####',
-  img: '../../../assets/images/proj_joist/joist_header_1.png',
+  img: './assets/images/proj_joist/joist_header_1.png',
   sectionClass: 'project-layout-wide'
 }
 
@@ -53,16 +53,16 @@ const evaluation2 = {
   content:['We started with cumulating past user feedbacks and interviews. The most requested features were multi-user management for teams, advanced estimate & invoice customization, monthly/weekly report and social media reviews.',
 'We divided the feature list to **two approaches one focusing on team management and the other one job-winning**. I then worked closely with the Android developers to create an in-app test that allows us to **directly collect the interests of the two components** from our users. ',
 'The **"Wizard of Oz"** approach displays a CTA banner to randomly selected users, which then leads the users to go through an A/B test funnel that display different features, pricing options and feedback form. We track the click & transition rate for the two approaches to see which one is truly needed.'],
-  imgLeft:'../../../assets/images/proj_joist/team_screenshot.png',
+  imgLeft:'./assets/images/proj_joist/team_screenshot.png',
   contentLeft:'**Joist Team**: Letting the user create unique logins for each team member, adding access controls to the data.',
-  imgRight:'../../../assets/images/proj_joist/elite_screenshot.png',
+  imgRight:'./assets/images/proj_joist/elite_screenshot.png',
   contentRight:'**Joist Advanced**: Focusing on document customization, social approval and job tracking.',
 }
 
 const evaluation3 = {
   title: 'Data evaluation & decision making',
   content: 'The test had been running for a week. We collected over four thousands of user data. As a result, Joist Advanced had generated twice as many interests from the users than Joist Team. ',
-  img:'../../../assets/images/proj_joist/chart1.svg',
+  img:'./assets/images/proj_joist/chart1.svg',
 }
 
 const findingCompare = {
@@ -76,20 +76,20 @@ const findingCompare = {
 const collaboration = {
   title: 'Collaborate to search for the solution space',
   content: 'With a clear direction, I conducted a round of design ideation sessions with the product team, dev team and customer success team. The purpose was to collect ideations and thoughts of people regarding feature priority, technical constraints and team bandwidth. ',
-  imgLeft: '../../../assets/images/proj_joist/collab1.jpg',
-  imgRight: '../../../assets/images/proj_joist/collab2.jpg',
+  imgLeft: './assets/images/proj_joist/collab1.jpg',
+  imgRight: './assets/images/proj_joist/collab2.jpg',
 }
 
 const featurelist = {
   content: 'The teams had given me a lot of insights. The following diagram illustrates all the essential features needed to help the contractors win their jobs. The development process we took was a feature-based. With the design team starting with the most critical and complex feature first. ',
-  img: '../../../assets/images/proj_joist/features-list.svg',
+  img: './assets/images/proj_joist/features-list.svg',
 }
 
 const system = {
   title: 'Starting with low fidelity prototype interaction',
   sectionClass: 'project-layout-wide',
   content: 'At the onset of the feature development, we broken down the features into sections with levels of demands and importance, and then desinging for the most optimized and best possible experiences tackling each section',
-  img: '../../../assets/images/proj_joist/section_wireframe_1.png',
+  img: './assets/images/proj_joist/section_wireframe_1.png',
   label: 'Early stage wireframe exploring multiple approaches for adding sections to categorize line items in each documents.'
 }
 
@@ -98,9 +98,9 @@ const threeSolutions = {
   deviceFrame: 'phone',
   content: ['Add sections to the estimate to categorize line items is a frequently requested feature. This is important for the contractors to better display their estimation to the homeowners, thus increase their chance of winning the job.',
   'I prototyped 3 wireframe variations each differs in flexibility & ease of understanding.'],
-  imgLeft: '../../../assets/images/proj_joist/advanced_section_v1_diff.png',
-  imgMiddle: '../../../assets/images/proj_joist/advanced_section_v3_diff.png',
-  imgRight: '../../../assets/images/proj_joist/advanced_section_v5_diff.png',
+  imgLeft: './assets/images/proj_joist/advanced_section_v1_diff.png',
+  imgMiddle: './assets/images/proj_joist/advanced_section_v3_diff.png',
+  imgRight: './assets/images/proj_joist/advanced_section_v5_diff.png',
   contentLeft: '**Design 1**: Restricted flow. Users must start with adding section first before they can add a line item.',
   contentMiddle: '**Design 2**: Freedom in adding either section or item. On another hand, items must be wrapped in sections.',
   contentRight: '**Design 3**: Optimized flexibility. Users can choose to add section or item with no constraints'
@@ -110,14 +110,14 @@ const sectiontest = {
   title:'Test out the designs',
   sectionClass: 'project-layout-wide',
   content: 'The same approach is used to work out the best solution, we implemented in-app notification to ask volunteers to try out the design variations. ',
-  img: '../../../assets/images/proj_joist/test-flow.png',
+  img: './assets/images/proj_joist/test-flow.png',
   label: '**Test flow**: users would see a notification asking to test out the prototype. After they have agreed to the terms, we randomly assign the a variation and track the progress they have made.'
 }
 
 const heatmap = {
   sectionClass: 'project-layout-wide',
   content: 'We have sent out the test to around 400 users. Out of the 90 users who completed all the tasks, we were able to track their clicks, events and flow together with the users who did not make it to the end. Following is a heatmap showing the clicks on each screen from one of the variants. ',
-  img: '../../../assets/images/proj_joist/section_heatmap.png'
+  img: './assets/images/proj_joist/section_heatmap.png'
 }
 const evaluation4 = {
   content:'Usability test at every stage',
@@ -155,7 +155,7 @@ const evaluation4 = {
 }
 
 const chart2 = {
-  img: '../../../assets/images/proj_joist/chart2.svg',
+  img: './assets/images/proj_joist/chart2.svg',
   label:'**Chart**: Do the users who completed the tasks understand the purpose & functionality of the prototype?'
 }
 const idea1cons = {
@@ -172,9 +172,9 @@ const ideacombine = {
   title: 'Combining the best cases to form a new solution',
   deviceFrame: 'phone',
   content: ['Both design 1 and design 2 have the potential to be the solution for creating sections. However, there are concerns associated with each of the prototypes as well. After engaging a couple of conversations with the product team, I combined the two prototypes to create a new solution.'],
-  imgLeft: '../../../assets/images/proj_joist/combine1.png',
-  imgMiddle: '../../../assets/images/proj_joist/combine2.png',
-  imgRight: '../../../assets/images/proj_joist/combine13.png',
+  imgLeft: './assets/images/proj_joist/combine1.png',
+  imgMiddle: './assets/images/proj_joist/combine2.png',
+  imgRight: './assets/images/proj_joist/combine13.png',
   contentLeft: '**Step 1**: Users have the freedom to toggle section on or off.',
   contentMiddle: '**Step 2**: Once section is on, users must start with creating section.',
   contentRight: '**Step 3**: Creating line items is enabled after section is been created.'
@@ -182,7 +182,7 @@ const ideacombine = {
 
 const interaction1 = {
   contentLeft: 'The new solution combines the advantages of design 1 and 2 by providing very clear guidance in the flow and enough amount of flexibility and freedom for all users. All stakeholders feel confident to implement this new approach with the supporting data. ',
-  videoRight: '../../../assets/images/proj_joist/section_design3.mp4',
+  videoRight: './assets/images/proj_joist/section_design3.mp4',
 }
 
 const finalComments = {

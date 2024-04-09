@@ -7,14 +7,14 @@ import { Spring } from 'react-spring'
 const aboutMeContent = {
   title: 'Nice to meet you :)',
   sectionClass:'thumbnail-image', 
-  imgRight: '../../../assets/images/profile_glass.svg',
+  imgRight: './assets/images/profile_glass.svg',
   contentLeft: ['As a problem solver and storyteller, I embrace and practice the principles of user-centred design and human-computer interaction. With a background in digital media, I have the opportunities to deliver projects in the mobile & web app, 3D app, internet of things and games.', 'My belief to achieve delightful and seamless user experience is always through inquiry and empathy.', 'When I am not designing, I enjoy spending time polish my skills in painting, photography, front-end programming, and building Arduino toys.']
 }
 
 const resumeDownload = {
   sectionClass: 'experience-pdf',
   content:
-    '__[Download Resume](../../../assets/images/kylo_Xue_designer_resume.pdf "title" target="_blank")__ or __[Visit my Linkedin](https://www.linkedin.com/in/kyloxue/ "title" target="_blank")__'
+    '__[Download Resume](./assets/images/kylo_Xue_designer_resume.pdf "title" target="_blank")__ or __[Visit my Linkedin](https://www.linkedin.com/in/kyloxue/ "title" target="_blank")__'
 }
 
 const experiences = {

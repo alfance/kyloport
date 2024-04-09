@@ -54,7 +54,7 @@ const introRole = {
     'Usability testing',
     'Prototype development'
   ],
-  img: '../../../assets/images/proj_fairtrade/thumb.gif'
+  img: './assets/images/proj_fairtrade/thumb.gif'
 }
 
 const problem = {
@@ -72,8 +72,8 @@ const goal = {
 const interview = {
   title: 'Who are our users',
   contentLeft: ['All 3 founding members of the app can relate to the pains of newcomers and locals. We kicked off the user interview process by asking ourselves and our family around us: __ What kind of help do you need to live and settle in a new country? __', 'We recruited refugees, immigrants, international students on the one hand, and locals on the other side, to ask their opinions about the other side and their current situation. This helped us form a solid understanding of the user groups.'],
-  imgMiddle: '../../../assets/images/proj_fairtrade/question2.png',
-  imgRight: '../../../assets/images/proj_fairtrade/question1.png'
+  imgMiddle: './assets/images/proj_fairtrade/question2.png',
+  imgRight: './assets/images/proj_fairtrade/question1.png'
 }
 
 const persona0 = {
@@ -83,8 +83,8 @@ const persona0 = {
 const persona1 = {
   title: 'Newcomers',
   content: '"Canada accepted more than **296,000** permanent residents in 2016, and more than **62,000** of those were re-settled refugees, the Government Canada said in a 2017 report to parliament on immigration. Approximately **78,000** permanent residents were admitted in the "family class"." - _Huffpost_',
-  imgLeft: '../../../assets/images/proj_fairtrade/personafair-04.png',
-  imgRight: '../../../assets/images/proj_fairtrade/personafair-03.png',
+  imgLeft: './assets/images/proj_fairtrade/personafair-04.png',
+  imgRight: './assets/images/proj_fairtrade/personafair-03.png',
   sectionClass: 'section-persona',
   contentLeft: [
     '**Ralphy**', 'Refugee', 'Less than a week in Canada', 'Has nothing other than clothing', 'Ralphy needs anything to get him started, from small housewares, accessories to large appliances.'
@@ -94,8 +94,8 @@ const persona1 = {
 const persona2 = {
   title: 'Locals',
   content: 'The government of Canada provides settlement and resettlement services through several hundred designated communities and service provider organizations across Canada. This is inadequate in comparison to the number of newcomers coming to Canada each year. Many of the locals have express interests to help the newcomers but were limited to administrative services and infrastructures. Following are two examples of the local community personas.',
-  imgLeft: '../../../assets/images/proj_fairtrade/personafair-02.png',
-  imgRight: '../../../assets/images/proj_fairtrade/personafair-01.png',
+  imgLeft: './assets/images/proj_fairtrade/personafair-02.png',
+  imgRight: './assets/images/proj_fairtrade/personafair-01.png',
   sectionClass: 'section-persona',
   contentLeft: [
     '**Rachel**', 'Immigrants', 'Being in Canada for over 10 years', 'Rachel was once a newcomer. After spent over a decade adapting in the new country, she had made a life and would like to help out people whom once were in the same situation.'
@@ -108,7 +108,7 @@ const idea1 = {
   contentLeft: [
     'The first ideation we came up was focusing on a donating platform dedicated to underprivileged people. Since the pain points lies in the intransparent donation process. What we are hoping to do is to let the users from both sides &#39;communicate&#39; with each other regarding their needs and preferences.', '**Ideation: Online platform for the donors to donate items directly to the shoppers.**'
   ],
-  imgRight: '../../../assets/images/proj_fairtrade/idea1.svg'
+  imgRight: './assets/images/proj_fairtrade/idea1.svg'
 }
 const validity1 = {
   title: 'Validation : Polarized feedbacks',
@@ -151,7 +151,7 @@ const idea2 = {
   contentLeft: [
     'We realized the importance of acknowledging people&#39; pride. While we were conducting interviews, we came across a user type that is exist almost in many shopper groups: **Stay-at-home parents**. We found out that in most refugee or immigrant families, one of the two head of households would stay with the youngsters rather than making earning due to limited resources. We wanted to provide a way for the stay-at-home people a way to provide while the donors get to experience authentic cuisines from another culture. ', '**Ideation: an app that let the shopper sell their home-cooked meal to the donor.**'
   ],
-  imgRight: '../../../assets/images/proj_fairtrade/idea2.svg'
+  imgRight: './assets/images/proj_fairtrade/idea2.svg'
 }
 const validity2 = {
   title: 'Validation: Kitchen hygiene',
@@ -195,7 +195,7 @@ const idea3 = {
   contentLeft: [
     'Combining previous ideations and validations, we went back to the drawing board and came to a unanimous decision: an exchange platform that let users &#39;fairtrade&#39; anything. For donors, they can trade the abundant items. For shoppers, they can trade food, item or **karma points**: rewards points that the shoppers give to the donor as a form of appreciation. The karma points can be used as a redeemable currency at shops and stores.', '**Ideation: Platform that allows the donor and shopper to exchange tangible items or &#39;karma&#39;. **'
   ],
-  imgRight: '../../../assets/images/proj_fairtrade/idea3.svg'
+  imgRight: './assets/images/proj_fairtrade/idea3.svg'
 }
 
 const validity3 = {
@@ -242,7 +242,7 @@ const pitch = {
 const flowChart = {
   title: 'Information architecture',
   content: 'Now we have a solid product strategy we proceeded to map out the user flow. Fairtrade would have two separate portals for the shoppers and donors. While their user experience flows are analogous the perception of interaction with the app is dissimilar. To the users, TairTrade is a trading ground that facilitates exchanges on tangible and digital items. We want to make sure the needs and trading items can be expressed clearly and effectively, and the trading process can be as intuitive as possible',
-  img: '../../../assets/images/proj_fairtrade/flowchart.jpg'
+  img: './assets/images/proj_fairtrade/flowchart.jpg'
 }
 
 const flowchart2 = {
@@ -253,14 +253,14 @@ const flowchart2 = {
     '**Trade Monitor**: Pages that facilitate the trade to make sure everyone gets what they want',
     '**Message**: Additional communicational method.',
     '**Search**: Efficient way to let people filter out their needs.'],
-  imgRight: '../../../assets/images/proj_fairtrade/frame-content.png'
+  imgRight: './assets/images/proj_fairtrade/frame-content.png'
 }
 
 const wireframe1 = {
   title: 'Wireframe',
   sectionClass: 'project-layout-wide',
   content: 'We have gone through numerous versions of the wireframes. With constructive critics from other people, we were able to quickly upgrade the designs without worrying too much about the appearance.',
-  img: '../../../assets/images/proj_fairtrade/wireframe_eg1.png',
+  img: './assets/images/proj_fairtrade/wireframe_eg1.png',
   label: '**Wireframe 1**: One of the problems with wireframe1 was laborious registration and onboarding. The user needed to fill their personal and trade item information upfront before moving on to explore page. This takes up approximately **5 pages and 6 steps**. We have discovered a high bounce rate along the registration process, which resulted in poor conversions.'
 }
 
@@ -271,14 +271,14 @@ const userTest1 = {
 const wireframe2 = {
   sectionClass: 'project-layout-wide',
   content: 'We reduced the registration requirements and process to **2 pages and 3 steps**; separated the funnel between donors and shoppers starting on screen 1; and added flexible options for users to skip certain pages. For instance, users can choose to discover what is out in the market before making a decision or adding an item to trade.',
-  img: '../../../assets/images/proj_fairtrade/wireframe_eg2.png',
+  img: './assets/images/proj_fairtrade/wireframe_eg2.png',
   label: '**wireframe2**: Users have an improved experience with the app, however, we discovered that a few people still feel intimidated and a little uncomfortable by the personal questions FairTrade had required at the registration process.'
 }
 
 const wireframe3 = {
   sectionClass: 'project-layout-wide',
   content: 'To take it a step further, we neglected the registration as the mandatory first step to enter Fairtrade. Instead, we let people discover the trading ground freely upfront. There is no need for registration until people had shown interests in using the app to make a trade. This would help users build trust in us.',
-  img: '../../../assets/images/proj_fairtrade/wireframe_eg3.png',
+  img: './assets/images/proj_fairtrade/wireframe_eg3.png',
   label: '**wireframe3**: We have seen promising improvements with the overall app interaction.The trade offer task has noticeably higher click rate and completion rate after we removed the registration barrier.'
 }
 
@@ -288,7 +288,7 @@ const color = {
   content: [
     'Out of all the profit or nonprofit apps and software we have seen, all of them use colours and design styles that are formal and official. We were given the impression that the other apps are government associated. While the placid style could bring calm and tranquil to the users, it also feels distant and solemn. For FairTrade, what we want the user to experience is welcome and cheerfulness. It is hard coming to a new country, but it also means a new starting point with full of opportunities and potentials. In the end, we all agreed upon a **colour scheme that is bright, upbeat and sparks joy**.', 'We separated the two groups with two colours  and used a third colour to indicate neutral ground. The colours are used throughout the app as a guide to indicate various situations and scenarios.'
   ],
-  img: '../../../assets/images/proj_fairtrade/color-palette.png'
+  img: './assets/images/proj_fairtrade/color-palette.png'
 }
 
 const uidesign = {
@@ -300,9 +300,9 @@ const explore = {
   title: 'Explore before register',
   deviceFrame: 'phone',
   content: 'The main screen has been designed to allow users quick access to the inventory. We strived to design for confidence - no commitment is required to access the major pages. Users are able to discover freely within the app. Depending on the type, the **interface is different for shoppers and donors**.',
-  imgLeft: '../../../assets/images/proj_fairtrade/donor_explore.png',
+  imgLeft: './assets/images/proj_fairtrade/donor_explore.png',
   contentLeft: '**Donor discovers page**: For donors, the focus is on the shopper&#39;s needs. By showing the shopper, there is a stronger emotional attachment to the donor.',
-  imgRight: '../../../assets/images/proj_fairtrade/shopper_explore.png',
+  imgRight: './assets/images/proj_fairtrade/shopper_explore.png',
   contentRight: '**Shopper discovers page**: Differ from the donor, shoppers care more about the items. For the donor&#39;s discover page we maximize the number of items per page.'
 }
 
@@ -310,9 +310,9 @@ const trade = {
   title: 'Offering trade',
   deviceFrame: 'phone',
   content: '',
-  imgLeft: '../../../assets/images/proj_fairtrade/add_item_donor.png',
+  imgLeft: './assets/images/proj_fairtrade/add_item_donor.png',
   contentLeft: '**Donor offering trade**: Other than the item specification, the donor also has the ability to decide the preferred delivery method.',
-  imgRight: '../../../assets/images/proj_fairtrade/add_item_shop.gif',
+  imgRight: './assets/images/proj_fairtrade/add_item_shop.gif',
   contentRight: '**Shopper offering trade**: The biggest difference between donor and shopper is that other than offering items, they can offer karma points. '
 }
 
@@ -328,7 +328,7 @@ const tradeVideo = {
 const angelHack = {
   title: 'Social approval',
   content: 'We brought the concept to the 2018 Toronto angelHack. At the hackathon, we had 2 days to build a workable prototype and present it to entrepreneurs, influencers, company executives and CEOs. We communicated with various organizations and groups and received valuable suggestions and feedbacks. The event had shaped the path and guided the direction of the FairTrade. Gratefully, our concept had been approved and liked by the public. In the end, we were chosen to be the winner for "Code for a cause" Toronto division and had moved on to compete internationally.',
-  img: '../../../assets/images/proj_fairtrade/angelhack.jpg'
+  img: './assets/images/proj_fairtrade/angelhack.jpg'
 }
 
 const dobetter = {

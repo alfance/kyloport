@@ -31593,7 +31593,7 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var logo = '../../../assets/images/kx_logo.svg';
+	var logo = './assets/images/kx_logo.svg';
 
 	var Nav = function (_React$Component) {
 	  _inherits(Nav, _React$Component);
@@ -33434,20 +33434,20 @@
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'device-animation-mac' },
-	            _react2.default.createElement('img', { className: 'device-animation-shadow', src: '../../../assets/images/devices/mac_shadow.svg' }),
-	            _react2.default.createElement('img', { src: '../../../assets/images/devices/clay_mac.png' })
+	            _react2.default.createElement('img', { className: 'device-animation-shadow', src: './assets/images/devices/mac_shadow.svg' }),
+	            _react2.default.createElement('img', { src: './assets/images/devices/clay_mac.png' })
 	          ),
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'device-animation-ipad' },
-	            _react2.default.createElement('img', { className: 'device-animation-shadow', src: '../../../assets/images/devices/ipad_shadow.svg' }),
-	            _react2.default.createElement('img', { src: '../../../assets/images/devices/clay_ipad.png' })
+	            _react2.default.createElement('img', { className: 'device-animation-shadow', src: './assets/images/devices/ipad_shadow.svg' }),
+	            _react2.default.createElement('img', { src: './assets/images/devices/clay_ipad.png' })
 	          ),
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'device-animation-iphone' },
-	            _react2.default.createElement('img', { className: 'device-animation-shadow', src: '../../../assets/images/devices/iphone_shadow.svg' }),
-	            _react2.default.createElement('img', { src: '../../../assets/images/devices/clay_iphone.png' })
+	            _react2.default.createElement('img', { className: 'device-animation-shadow', src: './assets/images/devices/iphone_shadow.svg' }),
+	            _react2.default.createElement('img', { src: './assets/images/devices/clay_iphone.png' })
 	          )
 	        ),
 	        _react2.default.createElement(
@@ -39103,13 +39103,13 @@
 	var aboutMeContent = {
 	  title: 'Nice to meet you :)',
 	  sectionClass: 'thumbnail-image',
-	  imgRight: '../../../assets/images/profile_glass.svg',
+	  imgRight: './assets/images/profile_glass.svg',
 	  contentLeft: ['As a problem solver and storyteller, I embrace and practice the principles of user-centred design and human-computer interaction. With a background in digital media, I have the opportunities to deliver projects in the mobile & web app, 3D app, internet of things and games.', 'My belief to achieve delightful and seamless user experience is always through inquiry and empathy.', 'When I am not designing, I enjoy spending time polish my skills in painting, photography, front-end programming, and building Arduino toys.']
 	};
 
 	var resumeDownload = {
 	  sectionClass: 'experience-pdf',
-	  content: '__[Download Resume](../../../assets/images/kylo_Xue_designer_resume.pdf "title" target="_blank")__ or __[Visit my Linkedin](https://www.linkedin.com/in/kyloxue/ "title" target="_blank")__'
+	  content: '__[Download Resume](./assets/images/kylo_Xue_designer_resume.pdf "title" target="_blank")__ or __[Visit my Linkedin](https://www.linkedin.com/in/kyloxue/ "title" target="_blank")__'
 	};
 
 	var experiences = {
@@ -39441,7 +39441,7 @@
 
 
 	function DeviceFrame(frame) {
-	  return frame.frame === undefined ? null : frame.frame === 'desktop' ? _react2.default.createElement('img', { src: '../../../../assets/images/desktop_frame.svg', className: 'frame-device-desktop' }) : frame.frame === 'laptop' ? _react2.default.createElement('img', { src: '../../../../assets/images/laptop_frame.svg', className: 'frame-device-laptop' }) : frame.frame === 'phone' ? _react2.default.createElement('img', { src: '../../../../assets/images/phone_frame.svg', className: 'frame-device-phone' }) : frame.frame === 'ipad' ? _react2.default.createElement('img', { src: '../../../../assets/images/ipad_frame.svg', className: 'frame-device-ipad' }) : null;
+	  return frame.frame === undefined ? null : frame.frame === 'desktop' ? _react2.default.createElement('img', { src: '.././assets/images/desktop_frame.svg', className: 'frame-device-desktop' }) : frame.frame === 'laptop' ? _react2.default.createElement('img', { src: '.././assets/images/laptop_frame.svg', className: 'frame-device-laptop' }) : frame.frame === 'phone' ? _react2.default.createElement('img', { src: '.././assets/images/phone_frame.svg', className: 'frame-device-phone' }) : frame.frame === 'ipad' ? _react2.default.createElement('img', { src: '.././assets/images/ipad_frame.svg', className: 'frame-device-ipad' }) : null;
 	}
 
 /***/ },
@@ -52384,14 +52384,14 @@
 	  sectionClass: 'list-style-circle',
 	  content: 'BRIOVR is an online platform for 3D prototyping and VR/AR visualization. This tool allows users to upload their models to the cloud, create animations and interactions, and share instantly with others.',
 	  duties: ['I was the sole designer and currently one of the leading designers for BRIOVR. I have adopted a variety of UX methodologies:', 'User interviews', 'Comparative analysis', 'Design workshops', 'Wireframe development', 'Usability testing', 'Prototype development', 'Motion design'],
-	  img: '../../../assets/images/proj_briovr/behaviourstart.gif'
+	  img: './assets/images/proj_briovr/behaviourstart.gif'
 	};
 
 	var background = {
 	  title: 'Background',
 	  sectionClass: 'project-layout-wide',
 	  content: 'BRIOVR empowers the user to create VR/AR experience at ease. In contrast to the mainstream software, users use BRIOVR to visualize their assets, models and 2D media online with a simplistic click and drag control mechanism.',
-	  img: '../../../assets/images/proj_briovr/mockup_img.png',
+	  img: './assets/images/proj_briovr/mockup_img.png',
 	  label: 'The primary interface of BRIOVR honours the modern design and modelling apps. Majority of the screen is dedicated to the 3D working space as additional features and tools occupy the side and bottom.'
 	};
 
@@ -52408,8 +52408,8 @@
 	var persona = {
 	  title: 'Personas',
 	  content: 'AR / VR can be used by a variety of industries and professionals. The group of users we are focusing on are new to the technologies, interested to see what is there for them, and do not have technical backgrounds.',
-	  imgLeft: '../../../assets/images/proj_briovr/avatar-13.svg',
-	  imgRight: '../../../assets/images/proj_briovr/avatar-6.svg',
+	  imgLeft: './assets/images/proj_briovr/avatar-13.svg',
+	  imgRight: './assets/images/proj_briovr/avatar-6.svg',
 	  sectionClass: 'section-persona',
 	  contentLeft: ['**Sam Gao**', 'Elementary school teacher', '**Age**: mid 30s', '**Status**: Really interested in the new technology of AR and VR. Would like to introduce the new tech to his classrooms, initiate creativity and collaboration among students', '**Problems**:', ' High learning curve, complex software system.', 'Not collaborative.'],
 	  contentRight: ['**Ryan Fisherman**', 'Interaction Designer', '**Age**: mid 20s', '**Status**: Started to explore into the AR / VR realm as a new medium to create immersive and interactive prototyping for this next UX project. ', '**Problems**:', ' Doesn&#39;t have time for diving into game engines for the level of interaction he&#39;s dealing.', ' Also hard to visualize, build and deploy the experiences. ']
@@ -52419,7 +52419,7 @@
 	  title: 'User interviews',
 	  sectionClass: 'project-layout-wide',
 	  contentLeft: ['Benefited from our existing user base, I conducted survey interviews with over 20 of our registered users and 10 from other resources. The purpose is to find out the expectations from our users and people from a similar background.', 'Some interview questions include:', '__ _ "What is your experience with 3D/VR/AR?" _ __', '__ _ "What is your profession?" _ __', '__ _ "Any experience with programming or scripting?" _ __', '__ _ "What is your industry?" _ __'],
-	  imgRight: '../../../assets/images/proj_briovr/user-question.png'
+	  imgRight: './assets/images/proj_briovr/user-question.png'
 	};
 
 	var competitor = {
@@ -52439,22 +52439,22 @@
 	    accessor: 'user'
 	  }],
 	  data: [{
-	    name: [_react2.default.createElement('img', { src: '../../../assets/images/proj_briovr/logo_competitor_unreal.png' }), ' Unreal'],
+	    name: [_react2.default.createElement('img', { src: './assets/images/proj_briovr/logo_competitor_unreal.png' }), ' Unreal'],
 	    code: 'Blueprint , C++',
 	    time: '10 hours',
 	    user: 'Game developer'
 	  }, {
-	    name: [_react2.default.createElement('img', { src: '../../../assets/images/proj_briovr/logo_competitor_unity.png' }), ' Unity'],
+	    name: [_react2.default.createElement('img', { src: './assets/images/proj_briovr/logo_competitor_unity.png' }), ' Unity'],
 	    code: 'C#, Javascript',
 	    time: '12 hours',
 	    user: 'Game developer'
 	  }, {
-	    name: [_react2.default.createElement('img', { src: '../../../assets/images/proj_briovr/logo_competitor_playcanvas.png' }), ' Play Canvas'],
+	    name: [_react2.default.createElement('img', { src: './assets/images/proj_briovr/logo_competitor_playcanvas.png' }), ' Play Canvas'],
 	    code: 'Javascript',
 	    time: '2.5 hours',
 	    user: 'Front End Dev'
 	  }, {
-	    name: [_react2.default.createElement('img', { src: '../../../assets/images/proj_briovr/logo_competitor_instavr.png' }), ' InstaVR'],
+	    name: [_react2.default.createElement('img', { src: './assets/images/proj_briovr/logo_competitor_instavr.png' }), ' InstaVR'],
 	    code: '/',
 	    time: '5 min',
 	    user: '360 video maker'
@@ -52469,11 +52469,11 @@
 	var competitorInterface = {
 	  title: '',
 	  content: 'In order to create interactions, some of the apps use one of **programming languages**, which exclude themselves from programmers; Some use a **visual scripting system** based on the concept of node-based interface for creating gameplay elements. The scripting system inherits the core logistics of programming languages. while it is comparatively visually pleasant and clear, it doesn&#39;t solve the problem of **high barrier to entry**. The last type is easy enough for a non-technical person to learn, but its **ability is limited** to a single or couple usages.',
-	  imgLeft: '../../../assets/images/proj_briovr/unity.jpg',
+	  imgLeft: './assets/images/proj_briovr/unity.jpg',
 	  contentLeft: '**Unity**: C# or Javascript for scripting interactions.',
-	  imgMiddle: '../../../assets/images/proj_briovr/unreal.jpg',
+	  imgMiddle: './assets/images/proj_briovr/unreal.jpg',
 	  contentMiddle: '**Unreal**: Unreal uses C++ or Blueprint (visual scripting system).',
-	  imgRight: '../../../assets/images/proj_briovr/instavr.jpg',
+	  imgRight: './assets/images/proj_briovr/instavr.jpg',
 	  contentRight: '**InstaVR**: Drag and drop, limited to 360 videos.'
 	};
 	var game = {
@@ -52481,16 +52481,16 @@
 	  content: 'We took inspirations from games and Internet of Things(IoT) that have creative builder mode. Differ from software, the Interaction system in **games and IoT has a much less cognitive overload** at the learning stage and is **more entertaining**.',
 	  contentLeft: '**Little big planet**: creates mode contains lots of trigger for user to create their own level.',
 	  contentRight: '**Little Bits**: Electronic building blocks empowering kids to build bots. ',
-	  imgLeft: '../../../assets/images/proj_briovr/planet.jpg',
-	  imgRight: '../../../assets/images/proj_briovr/littlebits.jpg'
+	  imgLeft: './assets/images/proj_briovr/planet.jpg',
+	  imgRight: './assets/images/proj_briovr/littlebits.jpg'
 	};
 
 	var sprint = {
 	  title: 'Brainstorm Sessions',
 	  content: 'On top of researching and evaluating, I organized design jam and brainstorm sessions among the teams to ideate & explore possible solution space. The variety of backgrounds from the participants had yield practical, innovative or even out-of-the-box methods, which had provided me guidance in building the system.',
-	  imgLeft: '../../../assets/images/proj_briovr/sprint1.jpg',
+	  imgLeft: './assets/images/proj_briovr/sprint1.jpg',
 	  contentLeft: 'User journey map conducted among the design team.',
-	  imgRight: '../../../assets/images/proj_briovr/sprint2.jpg',
+	  imgRight: './assets/images/proj_briovr/sprint2.jpg',
 	  contentRight: 'Rapid brainstorm sessions among the development team and potential users.'
 	};
 
@@ -52498,15 +52498,15 @@
 	  title: 'Adding interactions comes at the end',
 	  sectionClass: 'project-layout-wide',
 	  content: 'By studying & analyzing out the core user flow, I came up with a simplified user journey for the system. This helped me realize that creating **interactions comes at the late stage** of the user flow.',
-	  img: '../../../assets/images/proj_briovr/user_journey_map.png',
+	  img: './assets/images/proj_briovr/user_journey_map.png',
 	  label: 'Behaviour onboarding is separate from the general onboarding.  Combining onboardings have resulted in loss of interests prior to the completion. I then changed the behaviour onboarding to be initiated only when users express interest.'
 	};
 
 	var rules = {
 	  title: 'Setting rules & logics',
 	  content: 'After studying the preceders and conducting studies to gather insights, I have layout the essential components of a viable interaction system. The system is constructed by two types: motion and trigger.',
-	  imgLeft: '../../../assets/images/proj_briovr/action-icon.svg',
-	  imgRight: '../../../assets/images/proj_briovr/trigger-icon.svg',
+	  imgLeft: './assets/images/proj_briovr/action-icon.svg',
+	  imgRight: './assets/images/proj_briovr/trigger-icon.svg',
 	  contentLeft: ['**Action**', 'Physical transformation and animation that altered the state of an object.', '**Example**: move, rotate, scale'],
 	  contentRight: ['**Trigger**', 'The logic that sets off the mechanism.', '**Example**: click, look, time']
 	};
@@ -52514,23 +52514,23 @@
 	var behaviourflow1 = {
 	  title: 'Interactive behaviour flow',
 	  content: ['The first priority of behaviour flow is **simplicity and flexibility**. My reasoning behind is that if a user wants to make an item scale in size, they should not need to do excessive steps other than specifying a scale value on the item', 'Method 1 and method 2 yield the same outcome. This gives users maximum freedom to achieve their goals.'],
-	  img: '../../../assets/images/proj_briovr/actionflow.png'
+	  img: './assets/images/proj_briovr/actionflow.png'
 	};
 
 	var behaviourflow2 = {
 	  content: ['Trigger in BRIOVR is equivalent to conditionals in coding. In order to compromise users with different technical backgrounds, I adapted the same logic as the basic mechanism.', 'In the following diagram, method 1 and method 2 have the same outcome. To trigger an action, the mandatory criteria are the item and the trigger method, the order is not critical.'],
-	  img: '../../../assets/images/proj_briovr/actionflow1.png'
+	  img: './assets/images/proj_briovr/actionflow1.png'
 	};
 
 	var behaviourflow3 = {
 	  content: 'To expand further along the road, more complex interactions can be generated. An example would be object A triggers an action of object B.',
-	  img: '../../../assets/images/proj_briovr/actionflow2.png'
+	  img: './assets/images/proj_briovr/actionflow2.png'
 	};
 
 	var sketches = {
 	  title: 'Sketches',
 	  sectionClass: 'project-layout-wide',
-	  imgLeft: '../../../assets/images/proj_briovr/brio_sketch.jpg',
+	  imgLeft: './assets/images/proj_briovr/brio_sketch.jpg',
 	  contentRight: 'In the design process, I started with low fidelity sketches. This method allowed me to iterate many design options in a quick manner. At the same time, I asked my team to provid their sketches during the design sprint. This activity allows us to share our ideas and aligned them better in a technical aspect.'
 	};
 
@@ -52538,13 +52538,13 @@
 	  title: 'Wireframes',
 	  sectionClass: 'project-layout-wide',
 	  contentLeft: ['I have created both low and high fidelity wireframes for different user test purposes.', 'The  paper wireframes are used to quickly obtain user feedback at group design workshops - testers were mainly from within the team.', 'The digital wireframes are used for individual user test so all the user behaviours are closely observed and recorded. Afterwards, I expanded the testers to be outside the company. '],
-	  imgRight: '../../../assets/images/proj_briovr/wireframe.jpg'
+	  imgRight: './assets/images/proj_briovr/wireframe.jpg'
 	};
 
 	var usability1 = {
 	  title: 'Usability test',
 	  content: 'We have tried a variety of usability tests with people from different background. The diagram below was a test result from our A/B test. With a difference in onboarding, the testers showed discrepancies in preference and comprehension of the behaviour system.',
-	  img: '../../../assets/images/proj_briovr/abtest.png'
+	  img: './assets/images/proj_briovr/abtest.png'
 	};
 
 	var usability2 = {
@@ -52561,25 +52561,25 @@
 	  sectionClass: 'project-layout-wide',
 	  deviceFrame: 'laptop',
 	  content: 'The overall layout embraces the design of the app. The main feature panel at the bottom allows users to open up the sub-features list, and divided the triggers and actions.',
-	  img: '../../../assets/images/proj_briovr/ui-main.png'
+	  img: './assets/images/proj_briovr/ui-main.png'
 	};
 	var prototypeChain = {
 	  title: 'Behaviour chain panel',
 	  content: 'The behaviour chain contains all the logic happening on an object. We embraced the flow of a node based system; however, we decide to take a bold step by making the behaviour chain linear. This comes at a cost of reduced flexibility but reached our standards for simplicity and ease of use. ',
-	  img: '../../../assets/images/proj_briovr/behaviour_chain.png'
+	  img: './assets/images/proj_briovr/behaviour_chain.png'
 	};
 	var prototypePop = {
 	  title: 'Property popup',
-	  img: '../../../assets/images/proj_briovr/property_panel.png',
+	  img: './assets/images/proj_briovr/property_panel.png',
 	  content: 'Property pop-up serves as an adjustable value controller for each individual trigger and action. We made the popup in the context of the menu location and semi-Automatic. '
 	};
 
 	var motion = {
 	  sectionClass: 'list-style-circle',
 	  content: ['Differ from 2D apps, Motion in 3D plays an important role especially true for behaviours. By applying motion design into our usability test, we have seen significant improvements in:', 'Maintaining user attention.', 'A more clear understanding of upcoming steps', 'Increase tolerance in wait time'],
-	  imgLeft: '../../../assets/images/proj_briovr/animate1.gif',
+	  imgLeft: './assets/images/proj_briovr/animate1.gif',
 	  contentLeft: '**Up**: Add behaviour to object. **Right**: Modify and Deleting a behaviour',
-	  imgRight: '../../../assets/images/proj_briovr/animate23.gif'
+	  imgRight: './assets/images/proj_briovr/animate23.gif'
 	};
 
 	var endResult = {
@@ -52591,8 +52591,8 @@
 	var achieve = {
 	  title: 'Use case',
 	  content: 'Through collaboration, we had created an interactive Casino Royal experience for **Crowdlinkers** at Toronto Elevate Conference after-party.',
-	  imgLeft: '../../../assets/images/proj_briovr/playing1.jpg',
-	  imgRight: '../../../assets/images/proj_briovr/playing2.jpg',
+	  imgLeft: './assets/images/proj_briovr/playing1.jpg',
+	  imgRight: './assets/images/proj_briovr/playing2.jpg',
 	  contentLeft: 'Try it out below ↓'
 	};
 
@@ -52603,7 +52603,7 @@
 	};
 
 	var kidsimage = {
-	  img: '../../../assets/images/proj_briovr/social_prove.jpg'
+	  img: './assets/images/proj_briovr/social_prove.jpg'
 	};
 	var reflections = [{
 	  subject: 'Don not just copy, adapt.',
@@ -56696,7 +56696,7 @@
 	  sectionClass: 'list-style-circle',
 	  content: 'CYCNAV is an IOT bike light guiding cyclists to the best route available in urban environments. Together with the crowd sourcing mobile app, users are updated with the latest road conditions and are provided with the best cycling route.',
 	  duties: ['I worked as the UX designerfor this project. Some of my responsibilities included:', 'Conduct user and market research and analysis', 'Defining strategies & scope', 'Facilitate ideation & design decisions', 'Create wireframes & prototypes', '3D modeling & printing of the physical component', 'Validation test and evaluations'],
-	  img: '../../../assets/images/proj_cycnav/cyc_thumb.png'
+	  img: './assets/images/proj_cycnav/cyc_thumb.png'
 	};
 
 	var problem = {
@@ -56747,8 +56747,8 @@
 	var persona = {
 	  title: 'Personas',
 	  content: 'As a result, the two types of users that would benefit the most from our app are student bikers and Food delivery individual.Their commonality is the need for safe and accurate route when cycling in the urban environment.',
-	  imgLeft: '../../../assets/images/proj_cycnav/avatar-0.svg',
-	  imgRight: '../../../assets/images/proj_cycnav/avatar-2.svg',
+	  imgLeft: './assets/images/proj_cycnav/avatar-0.svg',
+	  imgRight: './assets/images/proj_cycnav/avatar-2.svg',
 	  sectionClass: 'section-persona',
 	  contentLeft: ['**Ann Goldshire**', 'Student', 'Age: 17 to 27', 'Bikes 2 - 6 times a day', 'Ann uses her bike for most of her daily commute. Thus Ann values most effortless routes.'],
 	  contentRight: ['**Oliver Dimaran**', 'Food Delivery', 'Age: 19 to 40', 'Bikes multiple times a day', 'Biking is Oliver&#8217;s main source of income and he wants nothing but to get to the destination in the shortest amount of time.']
@@ -56763,7 +56763,7 @@
 	  title: 'User Roadmap',
 	  sectionClass: 'project-layout-wide',
 	  content: 'Cycnav focuses on the two main purposes: 1) Get to the destination. 2) Fast and safe routes.',
-	  img: '../../../assets/images/proj_cycnav/roadmap.png',
+	  img: './assets/images/proj_cycnav/roadmap.png',
 	  label: 'The highlighted bubble are the main user functions will be using, while supporting features(grey bubble) will be the key to the overall NUX'
 	};
 
@@ -56771,24 +56771,24 @@
 	  sectionClass: 'project-layout-wide',
 	  title: 'Storyboard',
 	  content: 'I created a storyboard to better help us visualize and predict the user experience with Cycnav. This let us realize that majority of the usage happens on the road where the bike light navigates cyclists. At the same time, the app runs in the background to do all the calculation and processing.',
-	  img: '../../../assets/images/proj_cycnav/storyboard.jpg'
+	  img: './assets/images/proj_cycnav/storyboard.jpg'
 	};
 
 	var comparativeAnalysis = {
 	  title: 'Comparactive Analysis',
 	  data: [{
 	    number: 1,
-	    app: [_react2.default.createElement('img', { src: '../../../assets/images/proj_cycnav/google_map.png' }), _react2.default.createElement('br', null), 'Google maps'],
+	    app: [_react2.default.createElement('img', { src: './assets/images/proj_cycnav/google_map.png' }), _react2.default.createElement('br', null), 'Google maps'],
 	    work: ['• Bike friendly trails and lanes', _react2.default.createElement('br', null), '• Route suggestion based on cyclists preference', _react2.default.createElement('br', null)],
 	    nowork: ['•Driving centric navigation', _react2.default.createElement('br', null), '• No Bike share map']
 	  }, {
 	    number: 2,
-	    app: [_react2.default.createElement('img', { src: '../../../assets/images/proj_cycnav/vanhawks_logo.png' }), _react2.default.createElement('br', null), 'Vanhawks'],
+	    app: [_react2.default.createElement('img', { src: './assets/images/proj_cycnav/vanhawks_logo.png' }), _react2.default.createElement('br', null), 'Vanhawks'],
 	    work: ['• Self sustained, no need for phone / GPS', _react2.default.createElement('br', null), '• Speed tracking', _react2.default.createElement('br', null), '• Feature that notifies nearby traffic in the blindspot.'],
 	    nowork: ['• Costly', _react2.default.createElement('br', null), '• No live updates of current road condition']
 	  }, {
 	    number: 3,
-	    app: [_react2.default.createElement('img', { src: '../../../assets/images/proj_cycnav/waze.png' }), _react2.default.createElement('br', null), 'Waze'],
+	    app: [_react2.default.createElement('img', { src: './assets/images/proj_cycnav/waze.png' }), _react2.default.createElement('br', null), 'Waze'],
 	    work: ['• User Contribution', _react2.default.createElement('br', null), '• Social feature, friends option'],
 	    nowork: ['• Car focused, not for cyclists', _react2.default.createElement('br', null), '• No offline map']
 	  }],
@@ -56811,8 +56811,8 @@
 
 	var devices = {
 	  title: 'App vs IOT',
-	  imgLeft: '../../../assets/images/proj_cycnav/phone.svg',
-	  imgRight: '../../../assets/images/proj_cycnav/bikelight.svg',
+	  imgLeft: './assets/images/proj_cycnav/phone.svg',
+	  imgRight: './assets/images/proj_cycnav/bikelight.svg',
 	  sectionClass: 'section-devices',
 	  contentLeft: ['**Digital App**', '**Pros**: accurate and fast route search', '**Cons**: Distractive, pro to light flare'],
 	  contentRight: ['**Physical Device**', '**Pros**: Safe & all-in-one navigation and user contribution', '**Cons**: Costly']
@@ -56820,7 +56820,7 @@
 
 	var solutions = {
 	  content: 'Based on comparative analysis, we decide to approach the problem using both digital and physical solutions. In result, we build a physical navigational device that would be powered by a digital app.',
-	  img: '../../../assets/images/proj_cycnav/phone_iot_wireframe.png',
+	  img: './assets/images/proj_cycnav/phone_iot_wireframe.png',
 	  label: ['**Nav App**: The app uses googles map api to calculate the best route for the users, users can also input their finding of road conditions using the app.', '**Bike light**:The bike light is connected to the app using bluetooth. While the app is calculating and adjusting the route, the bike light functions as the visual portal to help guide cyclists while they are biking.']
 	};
 
@@ -56828,12 +56828,12 @@
 	  title: 'Wireframe',
 	  sectionClass: 'project-layout-wide',
 	  content: '**Navigation App Wireframe 1**: For the earlier wireframe versions, we used Balsamiq to quickly block out the basic functionalities that cyclists had given us. We want to make sure we include everything needed by our users and nothing unnecessary.',
-	  img: '../../../assets/images/proj_cycnav/wireframes1.png'
+	  img: './assets/images/proj_cycnav/wireframes1.png'
 	};
 	var wireframe2 = {
 	  sectionClass: 'project-layout-wide',
 	  content: '**Navigation App Wireframe 2**: I started laying out the frameworks of the app with consideration of the app&#39;s interaction with the IOT.',
-	  img: '../../../assets/images/proj_cycnav/wireframes2.png'
+	  img: './assets/images/proj_cycnav/wireframes2.png'
 	};
 
 	var usability = {
@@ -56845,7 +56845,7 @@
 	  title: 'Iterations',
 	  sectionClass: 'list-style-circle',
 	  content: ['We focused to improve on the following two major components:', '1) Spend more time with the user on the onboarding, especially when they are connecting the bike light to the app.', '2) Reformat the UI of buttons on the bike lights, increase the size to max out accessibility.'],
-	  img: '../../../assets/images/proj_cycnav/journey_map.jpg'
+	  img: './assets/images/proj_cycnav/journey_map.jpg'
 
 	};
 
@@ -56886,9 +56886,9 @@
 	  title: 'Prototype - APP',
 	  deviceFrame: 'phone',
 	  content: 'We had a few variations for the Prototype as shown below. One consideration that is more important than the asthetics of the app itself, is the readability of the screen under different light conditions.',
-	  imgLeft: '../../../assets/images/proj_cycnav/app_prototype1.jpg',
-	  imgMiddle: '../../../assets/images/proj_cycnav/prototye-2.png',
-	  imgRight: '../../../assets/images/proj_cycnav/app_prototype3.png',
+	  imgLeft: './assets/images/proj_cycnav/app_prototype1.jpg',
+	  imgMiddle: './assets/images/proj_cycnav/prototye-2.png',
+	  imgRight: './assets/images/proj_cycnav/app_prototype3.png',
 	  contentLeft: '**Design 1**: Design 1 focused on the chosen travel route and current navigation.',
 	  contentMiddle: '**Design 2**: Design 2 extended important components of design 2 and reduce the visibily of trivial components.',
 	  contentRight: '**Design 3**: minimized the UI by removing information not needed at current page.'
@@ -56897,15 +56897,15 @@
 	var moreprototypes = {
 	  deviceFrame: 'phone',
 	  contentLeft: ['#### Crowd sourcing map ####', 'Crowdsourcing is an addon component to help live update the route. While doing research, we founded out that many of the minor road changes and modifications are not recorded in mainstream navigational apps. We wanted to adopt a similar strategy as Wazer. ', 'This is most beneficial to delivery courier due to their high demand on the road conditions.'],
-	  imgMiddle: '../../../assets/images/proj_cycnav/prototype2.png',
-	  imgRight: '../../../assets/images/proj_cycnav/prototype3.png'
+	  imgMiddle: './assets/images/proj_cycnav/prototype2.png',
+	  imgRight: './assets/images/proj_cycnav/prototype3.png'
 	};
 
 	var accessibility = {
 	  title: 'Accessibility',
 	  sectionClass: 'project-layout-wide',
 	  content: 'Cycnav will be used by users with various backgrounds under unpredictable lighting conditions. It is our utmost priority to ensure the readability of the UI not only for regular users but also users with vision disabilities.',
-	  imgLeft: '../../../assets/images/proj_cycnav/app_color.png',
+	  imgLeft: './assets/images/proj_cycnav/app_color.png',
 	  contentRight: ['The color scheme of Cycnav should be accessible for vision deficient users. This is the reason for us to use complimentary colors in the navigational part. We had tested the accessibility of each screen to make sure they are readable for everyone.', '**Left**: Red-Weak/Protanomaly', '**Middle**: Blue-Blind/Tritanopia', '**Right**: Blue Cone Monochromacy', 'In the end, we decide to go with design 3 due to its readability even under extreme cenarios and conditions.']
 	};
 
@@ -56919,7 +56919,7 @@
 	var prototypeDevice = {
 	  title: 'Prototype - Bike Light',
 	  content: 'Same as the app, we tested multiple paper prototypes before making a decision. ',
-	  img: '../../../assets/images/proj_cycnav/light_prototype.jpg',
+	  img: './assets/images/proj_cycnav/light_prototype.jpg',
 	  label: 'The Best result is a fluid capsule with a slanted angle for optimized viewing experience.'
 	};
 
@@ -56927,15 +56927,15 @@
 	  title: '3D & UI - Bike Light',
 	  sectionClass: 'project-layout-wide',
 	  content: 'We want to minimize the UI so bikers will not get distracted when using the bike light. ',
-	  img: '../../../assets/images/proj_cycnav/3d_design.png'
+	  img: './assets/images/proj_cycnav/3d_design.png'
 	};
 
 	var variance3D = {
 	  content: 'Thanks to the modern technology, I was able to rapidly model the light in Rhinoceros and 3D print it using Makerbot. By having a tangible prototype, It allowed us to perform user test beyong a conceptual level.',
 	  sectionClass: 'project-layout-wide',
-	  imgLeft: '../../../assets/images/proj_cycnav/final_model.jpg',
+	  imgLeft: './assets/images/proj_cycnav/final_model.jpg',
 	  contentLeft: '**3D model**',
-	  imgRight: '../../../assets/images/proj_cycnav/3dprint.jpg',
+	  imgRight: './assets/images/proj_cycnav/3dprint.jpg',
 	  contentRight: '**3D printed light**'
 	};
 
@@ -56943,9 +56943,9 @@
 	  title: 'Testing on the road',
 	  sectionClass: 'project-layout-wide',
 	  content: ['There is no better way to test the prototype other than use it like a real use, so we 3D printed the prototype and brought the light to the road to see how it responded to an actual use case environment.', 'Real life testing was a lot different than monitored testing, we had acquired usability data that could not be collected in a staged environment.'],
-	  imgLeft: '../../../assets/images/proj_cycnav/case_img1.jpg',
-	  imgMiddle: '../../../assets/images/proj_cycnav/case_img2.jpg',
-	  imgRight: '../../../assets/images/proj_cycnav/case_img3.jpg'
+	  imgLeft: './assets/images/proj_cycnav/case_img1.jpg',
+	  imgMiddle: './assets/images/proj_cycnav/case_img2.jpg',
+	  imgRight: './assets/images/proj_cycnav/case_img3.jpg'
 	};
 
 	var combine = {
@@ -57179,7 +57179,7 @@
 	  content: 'Fairtrade is a website/app that enables newly arrived underprivileged migrants, refugees, and people in need to "fair trade" items with locals in order to improve the quality of their lives.',
 	  role: 'I was part of the funding member of Fairtrade, My responsibilities are the development of the app where I conducted',
 	  duties: ['I was apart of the founding members of Fairtrade, I oversaw the development of the app. Some of the methodologies I used to design the app:', 'Problems & concepts', 'Audiences & needs', 'Empathy sketches & affinity mapping', 'Wireframe development & design workshops', 'Usability testing', 'Prototype development'],
-	  img: '../../../assets/images/proj_fairtrade/thumb.gif'
+	  img: './assets/images/proj_fairtrade/thumb.gif'
 	};
 
 	var problem = {
@@ -57197,8 +57197,8 @@
 	var interview = {
 	  title: 'Who are our users',
 	  contentLeft: ['All 3 founding members of the app can relate to the pains of newcomers and locals. We kicked off the user interview process by asking ourselves and our family around us: __ What kind of help do you need to live and settle in a new country? __', 'We recruited refugees, immigrants, international students on the one hand, and locals on the other side, to ask their opinions about the other side and their current situation. This helped us form a solid understanding of the user groups.'],
-	  imgMiddle: '../../../assets/images/proj_fairtrade/question2.png',
-	  imgRight: '../../../assets/images/proj_fairtrade/question1.png'
+	  imgMiddle: './assets/images/proj_fairtrade/question2.png',
+	  imgRight: './assets/images/proj_fairtrade/question1.png'
 	};
 
 	var persona0 = {
@@ -57208,8 +57208,8 @@
 	var persona1 = {
 	  title: 'Newcomers',
 	  content: '"Canada accepted more than **296,000** permanent residents in 2016, and more than **62,000** of those were re-settled refugees, the Government Canada said in a 2017 report to parliament on immigration. Approximately **78,000** permanent residents were admitted in the "family class"." - _Huffpost_',
-	  imgLeft: '../../../assets/images/proj_fairtrade/personafair-04.png',
-	  imgRight: '../../../assets/images/proj_fairtrade/personafair-03.png',
+	  imgLeft: './assets/images/proj_fairtrade/personafair-04.png',
+	  imgRight: './assets/images/proj_fairtrade/personafair-03.png',
 	  sectionClass: 'section-persona',
 	  contentLeft: ['**Ralphy**', 'Refugee', 'Less than a week in Canada', 'Has nothing other than clothing', 'Ralphy needs anything to get him started, from small housewares, accessories to large appliances.'],
 	  contentRight: ['**Sol**', 'International Students', 'Less than 2 months in Canada', 'Came with personal belongings', 'Sol had to leave behind much large possession back in her native country. She is looking to start a new life and is in need of localized products like furniture, small appliances, cookware, electronics, etc.']
@@ -57217,8 +57217,8 @@
 	var persona2 = {
 	  title: 'Locals',
 	  content: 'The government of Canada provides settlement and resettlement services through several hundred designated communities and service provider organizations across Canada. This is inadequate in comparison to the number of newcomers coming to Canada each year. Many of the locals have express interests to help the newcomers but were limited to administrative services and infrastructures. Following are two examples of the local community personas.',
-	  imgLeft: '../../../assets/images/proj_fairtrade/personafair-02.png',
-	  imgRight: '../../../assets/images/proj_fairtrade/personafair-01.png',
+	  imgLeft: './assets/images/proj_fairtrade/personafair-02.png',
+	  imgRight: './assets/images/proj_fairtrade/personafair-01.png',
 	  sectionClass: 'section-persona',
 	  contentLeft: ['**Rachel**', 'Immigrants', 'Being in Canada for over 10 years', 'Rachel was once a newcomer. After spent over a decade adapting in the new country, she had made a life and would like to help out people whom once were in the same situation.'],
 	  contentRight: ['**Brad**', 'Local', 'Born in Canada', 'Brad is a local who never spent time outside of this country. He has abundant of housewares/electronics that he would like to donate to who is in need.']
@@ -57227,7 +57227,7 @@
 	var idea1 = {
 	  title: 'Ideation 1 - Online donation',
 	  contentLeft: ['The first ideation we came up was focusing on a donating platform dedicated to underprivileged people. Since the pain points lies in the intransparent donation process. What we are hoping to do is to let the users from both sides &#39;communicate&#39; with each other regarding their needs and preferences.', '**Ideation: Online platform for the donors to donate items directly to the shoppers.**'],
-	  imgRight: '../../../assets/images/proj_fairtrade/idea1.svg'
+	  imgRight: './assets/images/proj_fairtrade/idea1.svg'
 	};
 	var validity1 = {
 	  title: 'Validation : Polarized feedbacks',
@@ -57284,7 +57284,7 @@
 	var idea2 = {
 	  title: 'Ideation 2 - Culturally diversified homecook',
 	  contentLeft: ['We realized the importance of acknowledging people&#39; pride. While we were conducting interviews, we came across a user type that is exist almost in many shopper groups: **Stay-at-home parents**. We found out that in most refugee or immigrant families, one of the two head of households would stay with the youngsters rather than making earning due to limited resources. We wanted to provide a way for the stay-at-home people a way to provide while the donors get to experience authentic cuisines from another culture. ', '**Ideation: an app that let the shopper sell their home-cooked meal to the donor.**'],
-	  imgRight: '../../../assets/images/proj_fairtrade/idea2.svg'
+	  imgRight: './assets/images/proj_fairtrade/idea2.svg'
 	};
 	var validity2 = {
 	  title: 'Validation: Kitchen hygiene',
@@ -57338,7 +57338,7 @@
 	var idea3 = {
 	  title: 'Ideation 3 - Exchange platform',
 	  contentLeft: ['Combining previous ideations and validations, we went back to the drawing board and came to a unanimous decision: an exchange platform that let users &#39;fairtrade&#39; anything. For donors, they can trade the abundant items. For shoppers, they can trade food, item or **karma points**: rewards points that the shoppers give to the donor as a form of appreciation. The karma points can be used as a redeemable currency at shops and stores.', '**Ideation: Platform that allows the donor and shopper to exchange tangible items or &#39;karma&#39;. **'],
-	  imgRight: '../../../assets/images/proj_fairtrade/idea3.svg'
+	  imgRight: './assets/images/proj_fairtrade/idea3.svg'
 	};
 
 	var validity3 = {
@@ -57393,20 +57393,20 @@
 	var flowChart = {
 	  title: 'Information architecture',
 	  content: 'Now we have a solid product strategy we proceeded to map out the user flow. Fairtrade would have two separate portals for the shoppers and donors. While their user experience flows are analogous the perception of interaction with the app is dissimilar. To the users, TairTrade is a trading ground that facilitates exchanges on tangible and digital items. We want to make sure the needs and trading items can be expressed clearly and effectively, and the trading process can be as intuitive as possible',
-	  img: '../../../assets/images/proj_fairtrade/flowchart.jpg'
+	  img: './assets/images/proj_fairtrade/flowchart.jpg'
 	};
 
 	var flowchart2 = {
 	  sectionClass: 'list-style-number',
 	  contentLeft: ['The user flow chart helped us visualize every step the user will take to complete a task. It also layouts the importance of each task and thus we can prioritize the core functions based on the developmental cycle.', '**Add item page**: Add the item people need or want to trade.', '**Discover page**: Explore what&#39;s available', '**Trade Monitor**: Pages that facilitate the trade to make sure everyone gets what they want', '**Message**: Additional communicational method.', '**Search**: Efficient way to let people filter out their needs.'],
-	  imgRight: '../../../assets/images/proj_fairtrade/frame-content.png'
+	  imgRight: './assets/images/proj_fairtrade/frame-content.png'
 	};
 
 	var wireframe1 = {
 	  title: 'Wireframe',
 	  sectionClass: 'project-layout-wide',
 	  content: 'We have gone through numerous versions of the wireframes. With constructive critics from other people, we were able to quickly upgrade the designs without worrying too much about the appearance.',
-	  img: '../../../assets/images/proj_fairtrade/wireframe_eg1.png',
+	  img: './assets/images/proj_fairtrade/wireframe_eg1.png',
 	  label: '**Wireframe 1**: One of the problems with wireframe1 was laborious registration and onboarding. The user needed to fill their personal and trade item information upfront before moving on to explore page. This takes up approximately **5 pages and 6 steps**. We have discovered a high bounce rate along the registration process, which resulted in poor conversions.'
 	};
 
@@ -57417,14 +57417,14 @@
 	var wireframe2 = {
 	  sectionClass: 'project-layout-wide',
 	  content: 'We reduced the registration requirements and process to **2 pages and 3 steps**; separated the funnel between donors and shoppers starting on screen 1; and added flexible options for users to skip certain pages. For instance, users can choose to discover what is out in the market before making a decision or adding an item to trade.',
-	  img: '../../../assets/images/proj_fairtrade/wireframe_eg2.png',
+	  img: './assets/images/proj_fairtrade/wireframe_eg2.png',
 	  label: '**wireframe2**: Users have an improved experience with the app, however, we discovered that a few people still feel intimidated and a little uncomfortable by the personal questions FairTrade had required at the registration process.'
 	};
 
 	var wireframe3 = {
 	  sectionClass: 'project-layout-wide',
 	  content: 'To take it a step further, we neglected the registration as the mandatory first step to enter Fairtrade. Instead, we let people discover the trading ground freely upfront. There is no need for registration until people had shown interests in using the app to make a trade. This would help users build trust in us.',
-	  img: '../../../assets/images/proj_fairtrade/wireframe_eg3.png',
+	  img: './assets/images/proj_fairtrade/wireframe_eg3.png',
 	  label: '**wireframe3**: We have seen promising improvements with the overall app interaction.The trade offer task has noticeably higher click rate and completion rate after we removed the registration barrier.'
 	};
 
@@ -57432,7 +57432,7 @@
 	  title: 'Colour scheme',
 	  sectionClass: 'list-style-circle',
 	  content: ['Out of all the profit or nonprofit apps and software we have seen, all of them use colours and design styles that are formal and official. We were given the impression that the other apps are government associated. While the placid style could bring calm and tranquil to the users, it also feels distant and solemn. For FairTrade, what we want the user to experience is welcome and cheerfulness. It is hard coming to a new country, but it also means a new starting point with full of opportunities and potentials. In the end, we all agreed upon a **colour scheme that is bright, upbeat and sparks joy**.', 'We separated the two groups with two colours  and used a third colour to indicate neutral ground. The colours are used throughout the app as a guide to indicate various situations and scenarios.'],
-	  img: '../../../assets/images/proj_fairtrade/color-palette.png'
+	  img: './assets/images/proj_fairtrade/color-palette.png'
 	};
 
 	var uidesign = {
@@ -57444,9 +57444,9 @@
 	  title: 'Explore before register',
 	  deviceFrame: 'phone',
 	  content: 'The main screen has been designed to allow users quick access to the inventory. We strived to design for confidence - no commitment is required to access the major pages. Users are able to discover freely within the app. Depending on the type, the **interface is different for shoppers and donors**.',
-	  imgLeft: '../../../assets/images/proj_fairtrade/donor_explore.png',
+	  imgLeft: './assets/images/proj_fairtrade/donor_explore.png',
 	  contentLeft: '**Donor discovers page**: For donors, the focus is on the shopper&#39;s needs. By showing the shopper, there is a stronger emotional attachment to the donor.',
-	  imgRight: '../../../assets/images/proj_fairtrade/shopper_explore.png',
+	  imgRight: './assets/images/proj_fairtrade/shopper_explore.png',
 	  contentRight: '**Shopper discovers page**: Differ from the donor, shoppers care more about the items. For the donor&#39;s discover page we maximize the number of items per page.'
 	};
 
@@ -57454,9 +57454,9 @@
 	  title: 'Offering trade',
 	  deviceFrame: 'phone',
 	  content: '',
-	  imgLeft: '../../../assets/images/proj_fairtrade/add_item_donor.png',
+	  imgLeft: './assets/images/proj_fairtrade/add_item_donor.png',
 	  contentLeft: '**Donor offering trade**: Other than the item specification, the donor also has the ability to decide the preferred delivery method.',
-	  imgRight: '../../../assets/images/proj_fairtrade/add_item_shop.gif',
+	  imgRight: './assets/images/proj_fairtrade/add_item_shop.gif',
 	  contentRight: '**Shopper offering trade**: The biggest difference between donor and shopper is that other than offering items, they can offer karma points. '
 	};
 
@@ -57470,7 +57470,7 @@
 	var angelHack = {
 	  title: 'Social approval',
 	  content: 'We brought the concept to the 2018 Toronto angelHack. At the hackathon, we had 2 days to build a workable prototype and present it to entrepreneurs, influencers, company executives and CEOs. We communicated with various organizations and groups and received valuable suggestions and feedbacks. The event had shaped the path and guided the direction of the FairTrade. Gratefully, our concept had been approved and liked by the public. In the end, we were chosen to be the winner for "Code for a cause" Toronto division and had moved on to compete internationally.',
-	  img: '../../../assets/images/proj_fairtrade/angelhack.jpg'
+	  img: './assets/images/proj_fairtrade/angelhack.jpg'
 	};
 
 	var dobetter = {
@@ -57675,7 +57675,7 @@
 	  sectionClass: 'list-style-circle',
 	  content: '"Meet the Master at Foguang Temple" was an educational project commissioned by the Cultural Heritage Conservation Center, Beijing China. Through the app, users get to learn the hidden story of Foguang Temple - the third earliest preserved timber structure building during the Tang Dynasty.',
 	  duties: ['I worked as one of the product designers for this project. I also coded the front-end interface of the app. My works can be summarized below:', 'Defining problems', 'Research on the users & content', 'Wireframing, storyboard & validation', 'UI & Prototype', 'Implementation'],
-	  img: '../../../assets/images/proj_foguang/foguang_thumb.gif'
+	  img: './assets/images/proj_foguang/foguang_thumb.gif'
 	};
 
 	var state = {
@@ -57828,7 +57828,7 @@
 
 	var introRole = {
 	  content: '#### Joist is a cross-platform app build for trade contractors to create quick estimates & professional invoices, and getting paid. Being the leading product designer, I was responsible for the start-to-finish feature development. ####',
-	  img: '../../../assets/images/proj_joist/joist_header_1.png',
+	  img: './assets/images/proj_joist/joist_header_1.png',
 	  sectionClass: 'project-layout-wide'
 	};
 
@@ -57847,16 +57847,16 @@
 	  title: 'Validate the solutions',
 	  sectionClass: 'project-layout-wide',
 	  content: ['We started with cumulating past user feedbacks and interviews. The most requested features were multi-user management for teams, advanced estimate & invoice customization, monthly/weekly report and social media reviews.', 'We divided the feature list to **two approaches one focusing on team management and the other one job-winning**. I then worked closely with the Android developers to create an in-app test that allows us to **directly collect the interests of the two components** from our users. ', 'The **"Wizard of Oz"** approach displays a CTA banner to randomly selected users, which then leads the users to go through an A/B test funnel that display different features, pricing options and feedback form. We track the click & transition rate for the two approaches to see which one is truly needed.'],
-	  imgLeft: '../../../assets/images/proj_joist/team_screenshot.png',
+	  imgLeft: './assets/images/proj_joist/team_screenshot.png',
 	  contentLeft: '**Joist Team**: Letting the user create unique logins for each team member, adding access controls to the data.',
-	  imgRight: '../../../assets/images/proj_joist/elite_screenshot.png',
+	  imgRight: './assets/images/proj_joist/elite_screenshot.png',
 	  contentRight: '**Joist Advanced**: Focusing on document customization, social approval and job tracking.'
 	};
 
 	var evaluation3 = {
 	  title: 'Data evaluation & decision making',
 	  content: 'The test had been running for a week. We collected over four thousands of user data. As a result, Joist Advanced had generated twice as many interests from the users than Joist Team. ',
-	  img: '../../../assets/images/proj_joist/chart1.svg'
+	  img: './assets/images/proj_joist/chart1.svg'
 	};
 
 	var findingCompare = {
@@ -57867,20 +57867,20 @@
 	var collaboration = {
 	  title: 'Collaborate to search for the solution space',
 	  content: 'With a clear direction, I conducted a round of design ideation sessions with the product team, dev team and customer success team. The purpose was to collect ideations and thoughts of people regarding feature priority, technical constraints and team bandwidth. ',
-	  imgLeft: '../../../assets/images/proj_joist/collab1.jpg',
-	  imgRight: '../../../assets/images/proj_joist/collab2.jpg'
+	  imgLeft: './assets/images/proj_joist/collab1.jpg',
+	  imgRight: './assets/images/proj_joist/collab2.jpg'
 	};
 
 	var featurelist = {
 	  content: 'The teams had given me a lot of insights. The following diagram illustrates all the essential features needed to help the contractors win their jobs. The development process we took was a feature-based. With the design team starting with the most critical and complex feature first. ',
-	  img: '../../../assets/images/proj_joist/features-list.svg'
+	  img: './assets/images/proj_joist/features-list.svg'
 	};
 
 	var system = {
 	  title: 'Starting with low fidelity prototype interaction',
 	  sectionClass: 'project-layout-wide',
 	  content: 'At the onset of the feature development, we broken down the features into sections with levels of demands and importance, and then desinging for the most optimized and best possible experiences tackling each section',
-	  img: '../../../assets/images/proj_joist/section_wireframe_1.png',
+	  img: './assets/images/proj_joist/section_wireframe_1.png',
 	  label: 'Early stage wireframe exploring multiple approaches for adding sections to categorize line items in each documents.'
 	};
 
@@ -57888,9 +57888,9 @@
 	  title: 'Sections: categorizing line items',
 	  deviceFrame: 'phone',
 	  content: ['Add sections to the estimate to categorize line items is a frequently requested feature. This is important for the contractors to better display their estimation to the homeowners, thus increase their chance of winning the job.', 'I prototyped 3 wireframe variations each differs in flexibility & ease of understanding.'],
-	  imgLeft: '../../../assets/images/proj_joist/advanced_section_v1_diff.png',
-	  imgMiddle: '../../../assets/images/proj_joist/advanced_section_v3_diff.png',
-	  imgRight: '../../../assets/images/proj_joist/advanced_section_v5_diff.png',
+	  imgLeft: './assets/images/proj_joist/advanced_section_v1_diff.png',
+	  imgMiddle: './assets/images/proj_joist/advanced_section_v3_diff.png',
+	  imgRight: './assets/images/proj_joist/advanced_section_v5_diff.png',
 	  contentLeft: '**Design 1**: Restricted flow. Users must start with adding section first before they can add a line item.',
 	  contentMiddle: '**Design 2**: Freedom in adding either section or item. On another hand, items must be wrapped in sections.',
 	  contentRight: '**Design 3**: Optimized flexibility. Users can choose to add section or item with no constraints'
@@ -57900,14 +57900,14 @@
 	  title: 'Test out the designs',
 	  sectionClass: 'project-layout-wide',
 	  content: 'The same approach is used to work out the best solution, we implemented in-app notification to ask volunteers to try out the design variations. ',
-	  img: '../../../assets/images/proj_joist/test-flow.png',
+	  img: './assets/images/proj_joist/test-flow.png',
 	  label: '**Test flow**: users would see a notification asking to test out the prototype. After they have agreed to the terms, we randomly assign the a variation and track the progress they have made.'
 	};
 
 	var heatmap = {
 	  sectionClass: 'project-layout-wide',
 	  content: 'We have sent out the test to around 400 users. Out of the 90 users who completed all the tasks, we were able to track their clicks, events and flow together with the users who did not make it to the end. Following is a heatmap showing the clicks on each screen from one of the variants. ',
-	  img: '../../../assets/images/proj_joist/section_heatmap.png'
+	  img: './assets/images/proj_joist/section_heatmap.png'
 	};
 	var evaluation4 = (_evaluation = {
 	  content: 'Usability test at every stage',
@@ -57978,7 +57978,7 @@
 	}]), _evaluation);
 
 	var chart2 = {
-	  img: '../../../assets/images/proj_joist/chart2.svg',
+	  img: './assets/images/proj_joist/chart2.svg',
 	  label: '**Chart**: Do the users who completed the tasks understand the purpose & functionality of the prototype?'
 	};
 	var idea1cons = {
@@ -57989,9 +57989,9 @@
 	  title: 'Combining the best cases to form a new solution',
 	  deviceFrame: 'phone',
 	  content: ['Both design 1 and design 2 have the potential to be the solution for creating sections. However, there are concerns associated with each of the prototypes as well. After engaging a couple of conversations with the product team, I combined the two prototypes to create a new solution.'],
-	  imgLeft: '../../../assets/images/proj_joist/combine1.png',
-	  imgMiddle: '../../../assets/images/proj_joist/combine2.png',
-	  imgRight: '../../../assets/images/proj_joist/combine13.png',
+	  imgLeft: './assets/images/proj_joist/combine1.png',
+	  imgMiddle: './assets/images/proj_joist/combine2.png',
+	  imgRight: './assets/images/proj_joist/combine13.png',
 	  contentLeft: '**Step 1**: Users have the freedom to toggle section on or off.',
 	  contentMiddle: '**Step 2**: Once section is on, users must start with creating section.',
 	  contentRight: '**Step 3**: Creating line items is enabled after section is been created.'
@@ -57999,7 +57999,7 @@
 
 	var interaction1 = {
 	  contentLeft: 'The new solution combines the advantages of design 1 and 2 by providing very clear guidance in the flow and enough amount of flexibility and freedom for all users. All stakeholders feel confident to implement this new approach with the supporting data. ',
-	  videoRight: '../../../assets/images/proj_joist/section_design3.mp4'
+	  videoRight: './assets/images/proj_joist/section_design3.mp4'
 	};
 
 	var finalComments = {
@@ -58166,14 +58166,14 @@
 	    sectionClass: 'list-style-circle',
 	    content: 'The Modular Vertical Garden is a digital and ‘smart’ system that I designed to ease the pain points of maintaining a vertical garden. The modularity allows users to have a garden as big or as small as he/she likes, flexible to the constraints of physical space and personal preference.',
 	    duties: ['This was the capstone project for my master study. I conceptualized, designed and prototyped the whole system', 'Thesis Development', 'Research & Case study', 'UI / UX design', 'Arduino development'],
-	    img: '../../../assets/images/play_citybeats/thumb-vgarden.jpg'
+	    img: './assets/images/play_citybeats/thumb-vgarden.jpg'
 	};
 
 	var problem1 = {
 	    title: 'Problem',
 	    content: 'Vertical gardens (green wall) are great resource for home use. However, the cost of design, construction and maintenance are factors that hinder the development of vertical garden into different architectural types and expanding into multiple user segments. Because of this, home gardening is still at a lagging stage within the rapid development of digital media.',
-	    imgLeft: '../../../assets/images/play_citybeats/vgarden1.jpg',
-	    imgRight: '../../../assets/images/play_citybeats/vgarden2.jpg',
+	    imgLeft: './assets/images/play_citybeats/vgarden1.jpg',
+	    imgRight: './assets/images/play_citybeats/vgarden2.jpg',
 	    label: 'photo curtesy: pixabay'
 	};
 
@@ -58181,38 +58181,38 @@
 	    title: 'Solution',
 	    sectionClass: 'project-layout-wide',
 	    content: 'The modular garden allows users to have a garden as big or as small as he/she likes, flexible to the constraints of physical space and personal preference. It talks to the web, allowing the user to observe and control the vegetation right off of their computer or smartphone device. This project benefits apartment/condo dwellers and people who have limited physical space time and efforts.',
-	    imgLeft: '../../../assets/images/play_citybeats/vgarden_unit2.jpg',
-	    imgRight: '../../../assets/images/play_citybeats/vgarden_unit1.jpg'
+	    imgLeft: './assets/images/play_citybeats/vgarden_unit2.jpg',
+	    imgRight: './assets/images/play_citybeats/vgarden_unit1.jpg'
 	};
 
 	var design1 = {
 	    title: 'Design Process',
 	    content: ['Software - digital interface that display the status of the plants', 'Hardware - individual units each contain one plant & corresponding water system.'],
-	    imgLeft: '../../../assets/images/play_citybeats/userflow.jpg',
-	    imgRight: '../../../assets/images/play_citybeats/interface1.jpg'
+	    imgLeft: './assets/images/play_citybeats/userflow.jpg',
+	    imgRight: './assets/images/play_citybeats/interface1.jpg'
 	};
 
 	var system = {
 	    title: 'Unit System Design',
 	    sectionClass: 'project-layout-wide',
-	    imgLeft: '../../../assets/images/play_citybeats/one_unit_breakdown.png',
-	    imgMiddle: '../../../assets/images/play_citybeats/plant_sys.png',
-	    imgRight: '../../../assets/images/play_citybeats/One_unit_connection_topbottom.png'
+	    imgLeft: './assets/images/play_citybeats/one_unit_breakdown.png',
+	    imgMiddle: './assets/images/play_citybeats/plant_sys.png',
+	    imgRight: './assets/images/play_citybeats/One_unit_connection_topbottom.png'
 	};
 
 	var model1 = {
 	    title: 'Modelling & Prototyping',
 	    content: 'Part of the project components were 3D printed. For example, the water tube connectors. The bottom part container is laser cutted, and the top part container is made of foam board covered with water-proof spray.',
-	    imgLeft: '../../../assets/images/play_citybeats/model2.jpg',
-	    imgRight: '../../../assets/images/play_citybeats/3dprint.jpg'
+	    imgLeft: './assets/images/play_citybeats/model2.jpg',
+	    imgRight: './assets/images/play_citybeats/3dprint.jpg'
 	};
 
 	var final = {
 	    title: 'Makeing the Vgarden work!',
 	    sectionClass: 'project-layout-wide',
 	    content: 'For ever garden, there is a central unit where power source and internet modules are stored. When additinal unit connects to the central unit, Data is transfered. Whenever the customer introduced a new plant or member to the “family”, the transmitter will send the basic information to the app, thus updated in the interface.',
-	    imgLeft: '../../../assets/images/play_citybeats/wires.jpg',
-	    imgRight: '../../../assets/images/play_citybeats/final4.jpg'
+	    imgLeft: './assets/images/play_citybeats/wires.jpg',
+	    imgRight: './assets/images/play_citybeats/final4.jpg'
 	};
 
 	var project2 = {
@@ -58223,48 +58223,48 @@
 	    sectionClass: 'list-style-circle',
 	    content: 'CityBeat is an interactive dress with colour changing LEDs. It is responsive to the Open source data of Toronto, the colours changes according to the current traffic of the municipality. The purpose of the project is to connect your city via fashion.',
 	    duties: ['I worked mainly on the physical wiring between the Arduino and the LEDs. Besides, sewing the dress together. This garment was made in Hack’n’Talk 2015, where I had the fortune to work with a few talented people:', '__[Danning Lu](https://danninglu.com/)__', 'Shamraiz Gul', 'Fernando Toro'],
-	    img: '../../../assets/images/play_citybeats/citybeat.png'
+	    img: './assets/images/play_citybeats/citybeat.png'
 	};
 
 	var groupphoto = {
-	    img: '../../../assets/images/play_citybeats/group.jpg'
+	    img: './assets/images/play_citybeats/group.jpg'
 	};
 
 	var ideation = {
 	    title: 'Ideation phase',
 	    content: 'The topic of Hack&#39n&#39Talk is fashion-inspired wearable technology. With all 4 group members coming from different countries, we found ourselves sharing the same feeling for the city that unit us - Toronto. Spending half a day ideate, we decided to work on a garment that reflects the municipality.',
-	    imgLeft: '../../../assets/images/play_citybeats/idea1.jpg',
-	    imgRight: '../../../assets/images/play_citybeats/idea2.jpg'
+	    imgLeft: './assets/images/play_citybeats/idea1.jpg',
+	    imgRight: './assets/images/play_citybeats/idea2.jpg'
 	};
 
 	var making = {
 	    title: 'Sewing, Coding and Tinkering',
 	    sectionClass: 'project-layout-wide',
 	    content: ['Toronto is a dynamic metropolis with a beautiful city line and soaring skyscrapers, and we want to visualize the city using wearable Arduino and real-time data abstractly.', 'In conclusion, We decide to use fibre optic lights attached to a black dress to resemble the vibrant night of Toronto. The colours of the lights are corresponding by real-time Toronto transit data.'],
-	    imgLeft: '../../../assets/images/play_citybeats/making1.jpg',
-	    imgMiddle: '../../../assets/images/play_citybeats/making2.jpg',
-	    imgRight: '../../../assets/images/play_citybeats/code.jpg'
+	    imgLeft: './assets/images/play_citybeats/making1.jpg',
+	    imgMiddle: './assets/images/play_citybeats/making2.jpg',
+	    imgRight: './assets/images/play_citybeats/code.jpg'
 	};
 
 	var final1 = {
 	    title: 'Introducing: CityBeats',
 	    sectionClass: 'project-layout-wide',
-	    imgLeft: '../../../assets/images/play_citybeats/0016.jpg',
-	    imgRight: '../../../assets/images/play_citybeats/0005.jpg'
+	    imgLeft: './assets/images/play_citybeats/0016.jpg',
+	    imgRight: './assets/images/play_citybeats/0005.jpg'
 	};
 	var final2 = {
 	    sectionClass: 'project-layout-wide play-section-up',
-	    imgLeft: '../../../assets/images/play_citybeats/0011.jpg',
-	    imgRight: '../../../assets/images/play_citybeats/0010.jpg'
+	    imgLeft: './assets/images/play_citybeats/0011.jpg',
+	    imgRight: './assets/images/play_citybeats/0010.jpg'
 	};
 
 	var present = {
-	    img: '../../../assets/images/play_citybeats/present.jpg',
+	    img: './assets/images/play_citybeats/present.jpg',
 	    label: 'Presenting CityBeats to the panellists at Hack&#39n&#39Talk.'
 	};
 	var result = {
 	    content: 'In the end, one of the incubators from the University of Ryerson- Fashion Zone had liked CityBeats. We were grateful to exhibit the garment in the Zone office.',
-	    img: '../../../assets/images/play_citybeats/display.jpg'
+	    img: './assets/images/play_citybeats/display.jpg'
 	};
 
 	var CityBeats = function (_React$Component) {
@@ -58407,7 +58407,7 @@
 	    sectionClass: 'list-style-circle',
 	    content: 'The DME is a digital learning lab at the University of Ryerson aiming at increasing digital literacy for the students and faculties. The topics taught at the DME are Virtual Reality, 3D Printing, Digital Design, Physical Computing and Computer Programming.',
 	    duties: ['The DME had helped me with my Capstone project at Ryerson University. During my time spent there, I noticed some of the problems they had with their online presence. I offered to come up with solutions tackling the issues. The methods I used include research, ideation, designing & programming.'],
-	    img: '../../../assets/images/proj_dme/thumb_dme.gif'
+	    img: './assets/images/proj_dme/thumb_dme.gif'
 	};
 
 	var problem = {
@@ -58418,14 +58418,14 @@
 	var research = {
 	    title: 'Define the users',
 	    contentLeft: 'I conducted one-on-one interviews with the DME stuff to find out more information about the visitors and users of the space. The DME hosts weekly seminars and lessons on different topics and level of expertise.',
-	    imgRight: '../../../assets/images/proj_dme/teach.jpg'
+	    imgRight: './assets/images/proj_dme/teach.jpg'
 	};
 
 	var persona = {
 	    title: 'Personas',
 	    content: '',
-	    imgLeft: '../../../assets/images/proj_dme/persona1.svg',
-	    imgRight: '../../../assets/images/proj_dme/persona2.svg',
+	    imgLeft: './assets/images/proj_dme/persona1.svg',
+	    imgRight: './assets/images/proj_dme/persona2.svg',
 	    sectionClass: 'section-persona',
 	    contentLeft: ['**Stephen Chen**', 'Student', 'Computer science major', 'Stephen is well-versed with all the recent technologies. He comes to the DME for the resources and technical support to work on his school or passion projects..'],
 	    contentRight: ['**Mandy Fisher**', 'Student', 'Fashion major', 'Mandy is exploring alternative ways for her next fashion project. Hearing that the DME offers classes on wearable Arduino, she is curious to find out more.']
@@ -58435,61 +58435,61 @@
 	    title: 'Brainstorming',
 	    sectionClass: 'list-style-circle',
 	    contentRight: ['I started by sitting down with the DME stuff to create a flow chart of the services offered at the DME. There are 5 different branches of technologies: ', '__Physical computing__: Arduino, RasberryPie & LittleBits', '__Videography__: Adobe Premier & After Effect', '__Graphic design__: Adobe Photoshop & Illustrator', '__Programming__: HTML, CSS, Javascript & Python', '__3D printing__: Maker bot & Maya'],
-	    imgLeft: '../../../assets/images/proj_dme/brain.jpg'
+	    imgLeft: './assets/images/proj_dme/brain.jpg'
 	};
 
 	var mascot1 = {
 	    title: 'Mascots',
 	    sectionClass: 'project-layout-wide dme-mascot',
 	    content: 'One request from the DME is to make the identity of the whole space more approachable. The approach I took was to give each of the 5 branches characteristics. The visual representation can help the DME better promote innovative and novel technologies to the public.',
-	    imgLeft: '../../../assets/images/proj_dme/avatar1.svg',
+	    imgLeft: './assets/images/proj_dme/avatar1.svg',
 	    contentLeft: '__Physical computing__',
-	    imgMiddle: '../../../assets/images/proj_dme/avatar2.svg',
+	    imgMiddle: './assets/images/proj_dme/avatar2.svg',
 	    contentMiddle: '__Videography__',
-	    imgRight: '../../../assets/images/proj_dme/avatar3.svg',
+	    imgRight: './assets/images/proj_dme/avatar3.svg',
 	    contentRight: '__Graphic design__'
 	};
 
 	var mascot2 = {
 	    sectionClass: 'dme-mascot',
-	    imgLeft: '../../../assets/images/proj_dme/avatar4.svg',
+	    imgLeft: './assets/images/proj_dme/avatar4.svg',
 	    contentLeft: '__Programming__',
-	    imgRight: '../../../assets/images/proj_dme/avatar5.svg',
+	    imgRight: './assets/images/proj_dme/avatar5.svg',
 	    contentRight: '__3D printing__'
 	};
 
 	var sketches = {
 	    title: 'Sketches',
 	    content: 'For the actual look of the mascots, I had come up with a couple to several sketch variations. After a few rounds of in-depth conversations and updates, we nailed the look at the end.',
-	    imgLeft: '../../../assets/images/proj_dme/sketch1.jpg',
+	    imgLeft: './assets/images/proj_dme/sketch1.jpg',
 	    contentLeft: 'Early stage sketches, exploration on different options',
-	    imgRight: '../../../assets/images/proj_dme/sketch2.jpg',
+	    imgRight: './assets/images/proj_dme/sketch2.jpg',
 	    contentRight: 'Digital illustraion in Photoshop before turning to vector'
 	};
 
 	var website1 = {
 	    deviceFrame: 'desktop',
-	    img: '../../../assets/images/proj_dme/landing.jpg'
+	    img: './assets/images/proj_dme/landing.jpg'
 	};
 
 	var about = {
 	    title: 'About the DME',
 	    sectionClass: 'project-layout-wide',
 	    content: 'The About page provides detailed information about the DME. Visitors can find the purpose and topics of the DME. By clicking on the CTA button in each section, visitors will be directed to the page of their interests.',
-	    imgLeft: '../../../assets/images/proj_dme/about1.jpg',
-	    imgRight: '../../../assets/images/proj_dme/about2.jpg'
+	    imgLeft: './assets/images/proj_dme/about1.jpg',
+	    imgRight: './assets/images/proj_dme/about2.jpg'
 	};
 
 	var booking = {
 	    title: 'Easy booking system',
 	    content: 'The Workshop page is a convenient portal for students and faculty to search, filter and register for the upcoming events and workshops of the DME. The Google calendar API will directly add the workshop to the user&#39s school calendar.',
-	    img: '../../../assets/images/proj_dme/booking.png'
+	    img: './assets/images/proj_dme/booking.png'
 	};
 
 	var projects = {
 	    title: 'Showcasing your projects',
 	    contentLeft: 'The Project page is a place for everyone to display their creations in the DME. This page feeds the DME&#39s photos using Instagram&#39s API, which erases the pain for the stuff to manually repeat the uploading process and becomes one-stop for the visitors to check out the recent and past projects',
-	    imgRight: '../../../assets/images/proj_dme/projects.jpg'
+	    imgRight: './assets/images/proj_dme/projects.jpg'
 	};
 
 	var final = {

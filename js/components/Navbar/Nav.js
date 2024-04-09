@@ -3,7 +3,7 @@ import NavbarStore from '../../stores/NavbarStore'
 import NavItem from './NavItem'
 import { Link } from 'react-router'
 
-const logo = '../../../assets/images/kx_logo.svg'
+const logo = './assets/images/kx_logo.svg'
 
 export default class Nav extends React.Component {
   constructor () {

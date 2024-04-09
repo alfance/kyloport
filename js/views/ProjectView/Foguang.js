@@ -34,7 +34,7 @@ const introRole = {
     'UI & Prototype',
     'Implementation'
   ],
-  img: '../../../assets/images/proj_foguang/foguang_thumb.gif'
+  img: './assets/images/proj_foguang/foguang_thumb.gif'
 }
 
 const state = {
